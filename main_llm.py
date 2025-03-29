@@ -149,7 +149,6 @@ messages = agent.invoke({"messages": messages})
 
 def evaluate_llm3(dir_, lvl):
     print(f"Evaluating {dir_} on {lvl}")
-      # all = 0s 1% of his previous week's weig
     right_raw = 0
     right_after_cleaning = 0
     right_latex = 0
