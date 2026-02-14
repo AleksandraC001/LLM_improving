@@ -39,11 +39,6 @@ MODEL = 'llama-3.3-70b-versatile'
 
 client = Groq(api_key='api_key') # Zostawiam 'api_key' zgodnie z oryginałem
 
-'''#SEKCJA 1: PROSTE WYWOŁANIE LLM
-llm_simple = ChatGroq(model_name=MODEL, temperature=0.7, api_key=GROQ_API_KEY)
-response = llm_simple.invoke("opowiedz żart")
-print(response.content)'''
-
 import os
 import json
 from llama_index.core.schema import Document
@@ -93,7 +88,7 @@ def evaluate_model_on_problem(data) -> ModelEvaluation:
     try:
         # Wywołujemy skompilowany graf
         #result = graph.invoke(inputs)
-        result = graph.invoke({"messages": [{"role": "user", "content": data["problem"]}]})
+        result = graph.invoke({"messages": [{"role": "user", "content": data["problem"]}]}, config={"recursion_limit": 12})
         for i in result["messages"]:
             pprint(i)
         print(result["messages"][-1].content)
@@ -101,6 +96,9 @@ def evaluate_model_on_problem(data) -> ModelEvaluation:
     except httpx.ReadTimeout:
         print("Timeout")
         return ModelEvaluation.ERROR
+    except GraphRecursionError:
+        print("Recursion limit exceeded (Model się zapętlił)")
+        return ModelEvaluation.WRONG  # Traktujemy pętlę jako błąd rozwiązania
     except groq.BadRequestError:
         print("Bad request")
         return ModelEvaluation.ERROR
@@ -174,7 +172,7 @@ llm = init_chat_model(
 )
 llm_with_tools = llm.bind_tools(tools)
 
-def agent(state: State):
+def solver(state: State):
     messages = state["messages"]
     system_prompt = SystemMessage(content="""
         You are a helpful mathematical assistant with access to tools.
@@ -189,29 +187,73 @@ def agent(state: State):
         - When you reach the final answer from the tool you must return it in LaTeX box: \\boxed{answer}
         - Example: \\boxed{42}
         
+        IF YOU HAVE THE FINAL ANSWER RETURN IT TO THE VERIFIER.
         """)
 
     prompt_with_history = [system_prompt] + messages
     response = llm_with_tools.invoke(prompt_with_history)
     return {"messages": [response]}
 
-def should_continue(state: State):
+
+def verifier(state: State):
+    messages = state["messages"]
+    last_message = messages[-1]
+
+    system_prompt = SystemMessage(content="""
+        You are a strict Quality Assurance Auditor for math problems. 
+        Review the user's problem and the solver's proposed solution.
+
+        CHECKLIST:
+        1. Did the Python code execute successfully? (Look for tool outputs).
+        2. Does the final answer logically follow from the code output?
+        3. Is the format \\boxed{...} present?
+        4. Does the answer make sense (e.g., is it an integer if asked for an integer)?
+
+        OUTPUT RULES (CRITICAL):
+        - If the solution is CORRECT: You MUST output ONLY the final answer in the box. 
+          Copy it exactly from the solver. Example: "\\boxed{{42}}"
+          DO NOT write "The answer is correct". DO NOT write "Verified". JUST THE BOX.
+          
+        - If the solution is WRONG: Start your response with "FEEDBACK:" and explain the error. """)
+
+    response = llm.invoke([system_prompt] + messages)
+    return {"messages": [response]}
+
+
+def solver_router(state: State):
     messages = state["messages"]
     last_message = messages[-1]
     if last_message.tool_calls:
         return "tools"
+    return "verifier"
+
+def verifier_router(state: State):
+    messages = state["messages"]
+    last_message = messages[-1]
+    content = last_message.content
+
+    if "FEEDBACK:" in content:
+        return "solver"
+
+    if "\\boxed{" in content:
+        return END
+
     return END
 
 # Budowa grafu
 tool_node = ToolNode(tools)
 graph_builder = StateGraph(State)
 
-graph_builder.add_node("agent", agent)
+graph_builder.add_node("solver", verifier)
 graph_builder.add_node("tools", tool_node)
+graph_builder.add_node("verifier", solver)
 
-graph_builder.add_edge(START, "agent")
-graph_builder.add_conditional_edges("agent", should_continue, ["tools", END])
-graph_builder.add_edge("tools", "agent")
+graph_builder.add_edge(START, "solver")
+graph_builder.add_conditional_edges("solver", solver_router, {"tools": "tools", "verifier": "verifier"})
+graph_builder.add_edge("tools", "solver")
+
+# Verifier decyduje: Koniec czy Poprawka
+graph_builder.add_conditional_edges("verifier", verifier_router,{"solver": "solver", END: END})
 
 graph = graph_builder.compile()
 
@@ -245,10 +287,10 @@ print(state["messages"][-1].content)'''
 try:
     print("Generowanie wizualizacji grafu...")
     graph_image = graph.get_graph().draw_mermaid_png()
-    with open("moj_agent_graf_new.png", "wb") as f:
+    with open("multi_agent_graph.png", "wb") as f:
         f.write(graph_image)
-    print("Graf został zapisany jako 'moj_agent_graf_new.png'")
+    print("Graf został zapisany jako 'multi_agent_graf.png'")
 except Exception:
     print("Nie udało się wygenerować grafu")
 
-evaluate_llm("/home/olacz/Downloads/MATH/test/number_theory", "Level 5")
+evaluate_llm("/home/olacz/Downloads/MATH/test/number_theory", "Level 3")
