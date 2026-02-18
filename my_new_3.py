@@ -75,7 +75,6 @@ class ModelEvaluation(Enum):
     RIGHT_LATEX = 4
 
 def evaluate_model_on_problem(data) -> ModelEvaluation:
-    # 1. Wyciągnięcie poprawnej odpowiedzi z klucza "solution"
     # Szukamy zawartości \boxed{...}
     match_right = re.search(r'\\boxed{(.*)}', data["solution"])
     right_answer = match_right.group(1) if match_right else ""
@@ -83,10 +82,9 @@ def evaluate_model_on_problem(data) -> ModelEvaluation:
     if not right_answer:
         print(f"BŁĄD: Nie znaleziono poprawnej odpowiedzi w formacie \\boxed{{}} w kluczu solution.")
 
-    # 2. Przygotowanie wiadomości dla agenta
+    #Przygotowanie wiadomości dla agenta
     inputs = {"messages": [HumanMessage(content=data["problem"])]}
     try:
-        # Wywołujemy skompilowany graf
         #result = graph.invoke(inputs)
         result = graph.invoke({"messages": [{"role": "user", "content": data["problem"]}]}, config={"recursion_limit": 12})
         for i in result["messages"]:
@@ -106,7 +104,7 @@ def evaluate_model_on_problem(data) -> ModelEvaluation:
         print(f"Inny błąd: {e}")
         return ModelEvaluation.ERROR
 
-    # 3. Pobranie ostatniej wiadomości i wyciągnięcie odpowiedzi z \boxed{...}
+    # Pobranie ostatniej wiadomości i wyciągnięcie odpowiedzi z \boxed{...}
     last_message = result['messages'][-1].content
     print(f"OSTATNIA WIADOMOSC: {last_message}")
 
@@ -118,13 +116,11 @@ def evaluate_model_on_problem(data) -> ModelEvaluation:
 
     llm_answer = match_llm.group(1)
 
-    # 4. Porównanie odpowiedzi
+    # Porównanie odpowiedzi
     if right_answer == llm_answer:
         return ModelEvaluation.RIGHT_RAW
     else:
         print(f"powinno być: {right_answer}, a jest: {llm_answer}")
-        # Możesz tu dodać dodatkową logikę czyszczenia stringów,
-        # jeśli np. spacja lub formatowanie LaTeX robi różnicę
         return ModelEvaluation.WRONG
 
 def evaluate_llm(dir_, lvl):
@@ -144,7 +140,6 @@ def evaluate_llm(dir_, lvl):
             if i > 200:
                 break
 
-#SEKCJA 3: DEFINICJA NARZĘDZI AGENTA
 python_tool = PythonREPLTool()
 
 @tool
@@ -157,7 +152,7 @@ def python_interpreter(code: str):
 
 tools = [python_interpreter]
 
-#SEKCJA 4: LOGIKA AGENTA (LANGGRAPH)
+
 class State(TypedDict):
     messages: Annotated[list, add_messages]
     message_type: str | None
@@ -207,8 +202,6 @@ def verifier(state: State):
     messages = state["messages"]
     state["calls"] = state.get("calls", 0) + 1
     print(f"ilosc wywołań weryfikatora:{state.get("calls", "puste")}")
-    # 1. Budujemy "scenariusz" rozmowy w czystym tekście.
-    # To ukrywa przed modelem skomplikowaną strukturę ToolCalli, która go zawiesza.
     conversation_transcript = ""
 
     for msg in messages:
@@ -225,7 +218,6 @@ def verifier(state: State):
         elif isinstance(msg, ToolMessage):
             conversation_transcript += f"SYSTEM (CODE OUTPUT): {msg.content}\n\n"
 
-    # 2. Tworzymy jeden jasny prompt z wklejonym scenariuszem
     audit_prompt = f"""
     You are a strictly text-based Quality Assurance Auditor.
     You will read a transcript of a math solver's attempt.
@@ -256,11 +248,7 @@ def verifier(state: State):
     #print("co dostasł weryfikator:")
     #print(audit_prompt)
     #print("koniec wiadomości do weryfikatora")
-    # 3. Wysyłamy do modelu jako JEDNĄ wiadomość od użytkownika.
-    # Dzięki temu model nie widzi historii narzędzi i nie próbuje ich używać.
     response = llm.invoke([HumanMessage(content=audit_prompt)])
-
-    # Zabezpieczenie na wypadek, gdyby model i tak zwrócił pusto (bardzo rzadkie przy tej metodzie)
     if not response.content:
         # Fallback ostateczny
         return {"messages": [AIMessage(content=messages[-1].content)]}
