@@ -102,9 +102,6 @@ def evaluate_model_on_problem(data) -> ModelEvaluation:
     except groq.BadRequestError:
         print("Bad request")
         return ModelEvaluation.ERROR
-    except GraphRecursionError:
-        print("Recursion limit exceeded")
-        return ModelEvaluation.ERROR
     except Exception as e:
         print(f"Inny błąd: {e}")
         return ModelEvaluation.ERROR
@@ -125,6 +122,7 @@ def evaluate_model_on_problem(data) -> ModelEvaluation:
     if right_answer == llm_answer:
         return ModelEvaluation.RIGHT_RAW
     else:
+        print(f"powinno być: {right_answer}, a jest: {llm_answer}")
         # Możesz tu dodać dodatkową logikę czyszczenia stringów,
         # jeśli np. spacja lub formatowanie LaTeX robi różnicę
         return ModelEvaluation.WRONG
@@ -163,6 +161,7 @@ tools = [python_interpreter]
 class State(TypedDict):
     messages: Annotated[list, add_messages]
     message_type: str | None
+    calls: Annotated[int, lambda x, y: x + y]
 
 llm = init_chat_model(
     "llama-3.3-70b-versatile",
@@ -174,6 +173,8 @@ llm_with_tools = llm.bind_tools(tools)
 
 def solver(state: State):
     messages = state["messages"]
+    print(f"główny solver działa, dostaje:{state["messages"][-1].content}")
+
     system_prompt = SystemMessage(content="""
         You are a helpful mathematical assistant with access to tools.
         Solve the problem step-by-step. U need to use python to solve the problem. Do not solve it by yourself.
@@ -182,46 +183,95 @@ def solver(state: State):
         - Look at the observation.
         - Then use Python again for the next sub-problem.
         - If the answer from python tool is empty call the previous step with the python tool again. 
+        - if you reached final answer return it to the verifier immediately
          
         OUTPUT FORMAT:
         - When you reach the final answer from the tool you must return it in LaTeX box: \\boxed{answer}
         - Example: \\boxed{42}
         
         IF YOU HAVE THE FINAL ANSWER RETURN IT TO THE VERIFIER.
+        
+        You cooperate with verifier, if you get any feedback do not repeat mistakes that have been pointed out.
         """)
-
     prompt_with_history = [system_prompt] + messages
     response = llm_with_tools.invoke(prompt_with_history)
+
     return {"messages": [response]}
+
+
+from langchain_core.messages import HumanMessage, AIMessage, ToolMessage
 
 
 def verifier(state: State):
+    print("weryfikator")
     messages = state["messages"]
-    last_message = messages[-1]
+    state["calls"] = state.get("calls", 0) + 1
+    print(f"ilosc wywołań weryfikatora:{state.get("calls", "puste")}")
+    # 1. Budujemy "scenariusz" rozmowy w czystym tekście.
+    # To ukrywa przed modelem skomplikowaną strukturę ToolCalli, która go zawiesza.
+    conversation_transcript = ""
 
-    system_prompt = SystemMessage(content="""
-        You are a strict Quality Assurance Auditor for math problems. 
-        Review the user's problem and the solver's proposed solution.
+    for msg in messages:
+        if isinstance(msg, HumanMessage):
+            conversation_transcript += f"USER QUESTION: {msg.content}\n\n"
+        elif isinstance(msg, AIMessage):
+            if msg.tool_calls:
+                # Wyciągamy kod, który Solver chciał uruchomić
+                for tc in msg.tool_calls:
+                    args = tc.get('args', '')
+                    conversation_transcript += f"SOLVER (CODE ATTEMPT):\n{args}\n"
+            else:
+                conversation_transcript += f"SOLVER (TEXT RESPONSE): {msg.content}\n\n"
+        elif isinstance(msg, ToolMessage):
+            conversation_transcript += f"SYSTEM (CODE OUTPUT): {msg.content}\n\n"
 
-        CHECKLIST:
-        1. Did the Python code execute successfully? (Look for tool outputs).
-        2. Does the final answer logically follow from the code output?
-        3. Is the format \\boxed{...} present?
-        4. Does the answer make sense (e.g., is it an integer if asked for an integer)?
+    # 2. Tworzymy jeden jasny prompt z wklejonym scenariuszem
+    audit_prompt = f"""
+    You are a strictly text-based Quality Assurance Auditor.
+    You will read a transcript of a math solver's attempt.
 
-        OUTPUT RULES (CRITICAL):
-        - If the solution is CORRECT: You MUST output ONLY the final answer in the box. 
-          Copy it exactly from the solver. Example: "\\boxed{{42}}"
-          DO NOT write "The answer is correct". DO NOT write "Verified". JUST THE BOX.
-          
-        - If the solution is WRONG: Start your response with "FEEDBACK:" and explain the error. """)
+    --- START TRANSCRIPT ---
+    {conversation_transcript}
+    --- END TRANSCRIPT ---
 
-    response = llm.invoke([system_prompt] + messages)
-    return {"messages": [response]}
+    Instruction:
+    1. Is the steps of the solution logical? 
+    2. Did the 'SOLVER' actually run code (is there a 'CODE ATTEMPT' and 'CODE OUTPUT')?
+    3. Did the 'CODE OUTPUT' support the final answer?
+    4. Is the final answer in \\boxed{{...}} format?
+    
+    If the answer to all of the above questions is 'yes' then respond in the following format:
+    OUTPUT(IF YOU HAVE THE FINAL ANSWER):
+    Answer: \\boxed{{final_answer}}
+    
+    Examples output:
+    Answer: \\boxed{500}
+    Answer: \\boxed{6}
+    
+    Otherwise (if there was at least one 'no'):
+    Answer: FEEDBACK: [Fail reason and short advice to solver how to avoid it]
+    
+    -DO NOT return anything other than final answer or feedback about fail
+    """
+    #print("co dostasł weryfikator:")
+    #print(audit_prompt)
+    #print("koniec wiadomości do weryfikatora")
+    # 3. Wysyłamy do modelu jako JEDNĄ wiadomość od użytkownika.
+    # Dzięki temu model nie widzi historii narzędzi i nie próbuje ich używać.
+    response = llm.invoke([HumanMessage(content=audit_prompt)])
+
+    # Zabezpieczenie na wypadek, gdyby model i tak zwrócił pusto (bardzo rzadkie przy tej metodzie)
+    if not response.content:
+        # Fallback ostateczny
+        return {"messages": [AIMessage(content=messages[-1].content)]}
+
+
+    return {"messages": [response], "calls": 1}
 
 
 def solver_router(state: State):
     messages = state["messages"]
+    print(f"ilosc wywołań weryfikatora(solver router):{state.get("calls", "puste")}")
     last_message = messages[-1]
     if last_message.tool_calls:
         return "tools"
@@ -231,11 +281,14 @@ def verifier_router(state: State):
     messages = state["messages"]
     last_message = messages[-1]
     content = last_message.content
-
-    if "FEEDBACK:" in content:
+    #state["calls"] = state.get("calls", 0) + 1
+    print(f"ilosc wywołań weryfikatora:{state.get("calls", "puste")}")
+    if "FEEDBACK:" in content and state["calls"] < 2:
+        print("wracamy do solvera")
         return "solver"
 
-    if "\\boxed{" in content:
+    if "\\boxed{" in content or state["calls"] >= 2:
+        print("konczymy")
         return END
 
     return END
@@ -244,9 +297,9 @@ def verifier_router(state: State):
 tool_node = ToolNode(tools)
 graph_builder = StateGraph(State)
 
-graph_builder.add_node("solver", verifier)
+graph_builder.add_node("solver", solver)
 graph_builder.add_node("tools", tool_node)
-graph_builder.add_node("verifier", solver)
+graph_builder.add_node("verifier", verifier)
 
 graph_builder.add_edge(START, "solver")
 graph_builder.add_conditional_edges("solver", solver_router, {"tools": "tools", "verifier": "verifier"})
@@ -260,14 +313,14 @@ graph = graph_builder.compile()
 #URUCHOMIENIE I TESTY
 from zadania_testowe import *
 
-state = graph.invoke({"messages": [{"role": "user", "content": user_input_0}]})
+'''state = graph.invoke({"messages": [{"role": "user", "content": user_input_0}]})
 print(state["messages"][-1].content)
 print('\n')
 state = graph.invoke({"messages": [{"role": "user", "content": user_input}]})
 for msg in state["messages"]:
     pprint(msg)
 print(state["messages"][-1].content)
-print('\n')
+print('\n')'''
 '''state = graph.invoke({"messages": [{"role": "user", "content": user_input1}]})
 for msg in state["messages"]:
     pprint(msg)
