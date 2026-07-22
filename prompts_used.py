@@ -121,9 +121,9 @@ def get_solver_prompt(rag_context: str = None) -> str:
 
 TOOL SELECTION STRATEGY (You decide which to use):
 - PYTHON: Your PRIMARY computational tool. Prefer it for numerical computations, algebraic manipulations, algorithms, and logic verification.
-- WOLFRAM ALPHA: Use 'ask_wolfram' for complex symbolic mathematics, difficult integrals, or physical constants where Python might struggle or require too much custom code.
-- BRAVE SEARCH: Use 'brave_search' to find general mathematical definitions, theorems, formulas, or quick context from the internet.
-- ARXIV: Use 'search_arxiv' if you lack deep theoretical knowledge on advanced academic topics and need to search scientific papers.
+- WOLFRAM ALPHA (Optional): Use 'ask_wolfram' for complex symbolic mathematics, difficult integrals, or physical constants where Python might struggle or require too much custom code.
+- BRAVE SEARCH (Optional): Use 'brave_search' to find general mathematical definitions, theorems, formulas, or quick context from the internet.
+- ARXIV (Optional): Use 'search_arxiv' if you lack deep theoretical knowledge on advanced academic topics and need to search scientific papers.
 
 CRITICAL MULTITASKING RULE: You MUST ONLY call ONE tool at a time. Never try to use multiple tools in the exact same response. Wait for the tool output before taking the next step.
 
@@ -205,7 +205,7 @@ OUTPUT FORMAT:
 """
 
 
-def get_verifier_prompt(solver_response: str) -> str:
+'''def get_verifier_prompt(solver_response: str) -> str:
     return f"""
     You are a strict data extraction assistant.
     Your ONLY job is to read the mathematical solution below and extract the final answer.
@@ -225,7 +225,7 @@ def get_verifier_prompt(solver_response: str) -> str:
 
     Do not add any additional text, explanations, or words. Just the boxed answer.
     """
-
+'''
 def get_solver_prompt_without_verifier(rag_context: str = None) -> str:
     base_prompt = """You are an advanced mathematical solver agent within a Multi-Agent System. Your goal is to solve complex mathematical problems step-by-step.
 
@@ -256,7 +256,7 @@ OUTPUT FORMAT:
 - Example: \\boxed{42}
 - You MUST also include the exact word FINAL_ANSWER in your response when handing it over for verification.
 
-IF YOU HAVE THE FINAL ANSWER, RETURN IT TO THE VERIFIER IMMEDIATELY.
+IF YOU HAVE THE FINAL ANSWER, RETURN IT IMMEDIATELY.
 """
 
     # Blok dodawany TYLKO wtedy, gdy agent RAG coś znalazł
@@ -276,3 +276,20 @@ IF YOU HAVE THE FINAL ANSWER, RETURN IT TO THE VERIFIER IMMEDIATELY.
         base_prompt += rag_instructions
 
     return base_prompt
+
+def new_get_verifier_prompt(conversation_transcript: str) -> str:
+    return f"""
+        You are a rigorous Quality Assurance Auditor evaluating a mathematical solver's performance.
+        You will read a transcript of the solver's attempt, including their logical steps and tool usage (Python, Wolfram Alpha, Arxiv, Brave Search).
+
+        --- START TRANSCRIPT ---
+        {conversation_transcript}
+        --- END TRANSCRIPT ---
+
+        Instruction - Analyze the transcript based strictly on the following criteria:
+        1. Logical Correctness: Are the mathematical steps logically sound and free of calculation errors?
+        2. Tool Integrity: Did the 'SOLVER' actually use the available tools (is there a 'CODE/TOOL ATTEMPT' and 'CODE/TOOL OUTPUT')? 
+        3. Anti-Hallucination: Did the tools return valid results? If a tool returned an error (e.g., "Failed to query", "Syntax Error"), the solver MUST NOT hallucinate a final answer based on failed executions.
+        4. Evidence-Based: Does the final output from the tools strictly and unequivocally support the proposed final answer?
+        5. Question Alignment: Does the final answer directly address the SPECIFIC question asked in the initial prompt (e.g., solving for the correct variable, correct units)?
+        """
