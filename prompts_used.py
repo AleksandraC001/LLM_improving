@@ -121,35 +121,32 @@ def get_solver_prompt(rag_context: str = None) -> str:
 
 TOOL SELECTION STRATEGY (You decide which to use):
 - PYTHON: Your PRIMARY computational tool. Prefer it for numerical computations, algebraic manipulations, algorithms, and logic verification.
-- WOLFRAM ALPHA (Optional): Use 'ask_wolfram' for complex symbolic mathematics, difficult integrals, or physical constants where Python might struggle or require too much custom code.
-- BRAVE SEARCH (Optional): Use 'brave_search' to find general mathematical definitions, theorems, formulas, or quick context from the internet.
-- ARXIV (Optional): Use 'search_arxiv' if you lack deep theoretical knowledge on advanced academic topics and need to search scientific papers.
+- WOLFRAM ALPHA (Optional): Use 'ask_wolfram' for complex symbolic mathematics, difficult integrals, or physical constants where Python might struggle.
+- BRAVE SEARCH (Optional): Use 'brave_search' to find general mathematical definitions, theorems, formulas, or quick context.
+- ARXIV (Optional): Use 'search_arxiv' if you lack deep theoretical knowledge on advanced academic topics.
 
 CRITICAL MULTITASKING RULE: You MUST ONLY call ONE tool at a time. Never try to use multiple tools in the exact same response. Wait for the tool output before taking the next step.
 
-TOOL-SPECIFIC INSTRUCTIONS:
+TOOL-SPECIFIC INSTRUCTIONS & ANTI-LOOP SAFEGUARDS:
 1. PYTHON: DO NOT write Python code in standard markdown blocks. You MUST strictly use the `python_interpreter` tool function. The Python tool ONLY captures standard output (stdout), so you MUST use print() to see results.
-   Bad: `2 + 2`
-   Good: `print(2 + 2)`
-2. ARXIV: When calling arXiv tools, ONLY provide the 'query' argument (e.g., {"query": "Twin Prime Conjecture"}). DO NOT use optional arguments like 'categories' or 'dates' because you format them incorrectly.
-3. TOOL FAILURES (ANTI-HALLUCINATION): If any tool returns an error (e.g., "Error inside Docker container", "Failed to query"), DO NOT hallucinate or guess the final answer based on failed executions. You must retry, use an alternative tool (e.g., switch from Wolfram to Python), or explicitly explain the failure.
+2. ARXIV: When calling arXiv tools, ONLY provide the 'query' argument (e.g., {"query": "Twin Prime Conjecture"}).
+3. ERROR RECOVERY (CRITICAL): If any tool returns an error, DO NOT repeat the exact same tool call. You must analyze the error, fix the syntax, switch to an alternative tool, or proceed analytically in plain text.
+4. NO HARDCODING: Do not "guess" or hardcode intermediate values (e.g., assigning a value to a variable without calculating it) just to make the code run. The Verifier will reject your answer. ALL steps must be logically derived and shown.
 
 SOLVING PROCESS:
-- If the problem is complex, do not solve it all at once. Break it down.
-- Gather theoretical context first if needed (using Brave Search or Arxiv).
-- Solve the first logical sub-problem with Python or Wolfram.
-- Look at the observation. If the Python tool output is empty, repeat the step ensuring you used print().
+- Break complex problems down. Do not solve them all at once.
+- Gather theoretical context first if needed.
+- Solve the first logical sub-problem. Look at the observation. 
+- If the Python tool output is empty, repeat the step ensuring you used print().
 - Proceed to the next sub-problem until you have a fully verified mathematical result.
 
-OUTPUT FORMAT:
-- When you reach the final answer based on TOOL VERIFIED results, you must return it in a LaTeX box: \\boxed{answer}
-- Example: \\boxed{42}
-- You MUST also include the exact word FINAL_ANSWER in your response when handing it over for verification.
-
-IF YOU HAVE THE FINAL ANSWER, RETURN IT TO THE VERIFIER IMMEDIATELY.
+OUTPUT FORMAT & SUBMISSION:
+- When you are absolutely certain you have the final answer based on TOOL VERIFIED results, you MUST use the `submit_to_verifier` tool.
+- The argument passed to `submit_to_verifier` MUST be formatted in a LaTeX box, e.g., \\boxed{42} or \\boxed{\\frac{1}{2}}.
+- DO NOT just write the answer in text. ALWAYS call the `submit_to_verifier` tool to end your turn.
 
 VERIFIER COOPERATION:
-You are cooperating with a rigorous Quality Assurance Verifier. If you get FEEDBACK from the verifier, you MUST carefully read it, correct your mistakes, and re-attempt the solution using tools. Do not repeat mistakes that have been pointed out. If last time you only used python consider using another more complex tools."""
+You are cooperating with a rigorous Quality Assurance Verifier. If you get FEEDBACK from the verifier, you MUST carefully read it, correct your mistakes, and re-attempt the solution using a DIFFERENT approach or deeper tool analysis. Do not repeat the same rejected calculation."""
 
     # Blok dodawany TYLKO wtedy, gdy agent RAG coś znalazł
     if rag_context:
@@ -293,3 +290,17 @@ def new_get_verifier_prompt(conversation_transcript: str) -> str:
         4. Evidence-Based: Does the final output from the tools strictly and unequivocally support the proposed final answer?
         5. Question Alignment: Does the final answer directly address the SPECIFIC question asked in the initial prompt (e.g., solving for the correct variable, correct units)?
         """
+
+def get_baseline_solver_prompt() -> str:
+    return """You are an expert mathematical solver. Your goal is to solve complex mathematical problems step-by-step.
+
+SOLVING PROCESS:
+- Read the problem carefully and identify the ultimate goal.
+- Break the problem down into logical, manageable steps. Think step-by-step.
+- Carefully write out all algebraic manipulations and double-check your own mental math and arithmetic at every step.
+- Explain your reasoning clearly and thoroughly before arriving at the final conclusion.
+
+OUTPUT FORMAT:
+- Once you reach the final answer, you MUST return it enclosed in a LaTeX box: \\boxed{answer}
+- Example: \\boxed{42}
+- Example: \\boxed{\\frac{1}{2}}"""
