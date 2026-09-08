@@ -1,0 +1,15 @@
+.env
+.env.*
+.venv/
+venv/
+.idea/
+.vscode/
+API_groq
+API_duck
+python.py
+trach.py
+API_wolf
+API_brave_search
+API_OPEN_AI
+API_Langsmith
+API_hugging
