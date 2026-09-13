@@ -1,0 +1,20 @@
+[project]
+name = "tools-llm"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "langchain-core>=1.6.3",
+    "langchain-openai>=1.6.2",
+    "langgraph>=1.2.11",
+    "llama-index-core>=0.14.24",
+    "llama-index-tools-mcp>=0.6.0",
+    "llama-index-embeddings-huggingface>=0.8.0",
+    "pick>=2.6.0",
+    "typing-extensions>=4.16.0",
+    "langsmith>=0.12.4",
+    "openai>=3.13.0",
+    "httpx>=0.28.1",
+    "pydantic>=2.13.5",
+]

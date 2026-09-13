@@ -1,4 +1,5 @@
 import os
+import functools
 import json
 from typing import List
 from pydantic import BaseModel, Field
@@ -12,8 +13,6 @@ from llama_index.embeddings.huggingface import HuggingFaceEmbedding
 from llama_index.core import VectorStoreIndex, StorageContext, load_index_from_storage
 from llama_index.core.retrievers import VectorIndexRetriever
 import prompts_used
-from asy_check import problem_text
-
 
 def load_math_documents(directory):
     documents = []
@@ -34,7 +33,7 @@ def load_math_documents(directory):
             documents.append(doc)
     return documents
 
-
+@functools.cache
 def initialize_retriever(train_path='/home/olacz/Downloads/MATH/train/', persist_dir="./math_index2"):
     try:
         topics = os.listdir(train_path)
@@ -62,11 +61,9 @@ def initialize_retriever(train_path='/home/olacz/Downloads/MATH/train/', persist
     return VectorIndexRetriever(index=index, similarity_top_k=3)
 
 
-RETRIEVER = initialize_retriever()
-
 llm_RAG = ChatOpenAI(
     model="nvidia/Llama-3.3-70B-Instruct-NVFP4",
-    api_key="empty",
+    api_key=None,
     base_url="http://localhost:8001/v1",
     temperature=0,
     timeout=70.0,
@@ -80,8 +77,8 @@ class RAGEvaluation(BaseModel):
 
 async def rag_agent(state: dict):
     original_problem = state["messages"][0].content
-
-    retrieved_docs = await RETRIEVER.aretrieve(original_problem)
+    retriever = initialize_retriever()
+    retrieved_docs = await retriever.aretrieve(original_problem)
 
     examples_for_evaluation = ""
     for i, doc in enumerate(retrieved_docs, 1):
