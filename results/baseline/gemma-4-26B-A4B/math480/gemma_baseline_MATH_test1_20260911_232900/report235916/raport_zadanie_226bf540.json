@@ -1,0 +1,23 @@
+{
+    "task_file": "raport_zadanie_226bf540",
+    "zadanie": "A 5-inch by 7-inch picture is placed on a rectangular piece of red paper such that a 0.5-inch wide red border is seen along each side of the picture. What is the area of the visible red border, in square inches?",
+    "oczekiwana_odpowiedz": "The piece of red paper must have dimensions of 6 inches by 8 inches in order to have a 0.5 inch border on each side. The area of the paper is 48 square inches, of which $5\\cdot 7 = 35$ square inches are obscured by the picture. Therefore, the area of the visible red border is $48 - 35 = \\boxed{13}$ square inches.",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nA 5-inch by 7-inch picture is placed on a rectangular piece of red paper such that a 0.5-inch wide red border is seen along each side of the picture. What is the area of the visible red border, in square inches?\n",
+        "[AI]:\nTo find the area of the visible red border, we need to determine the dimensions of the larger rectangle (the red paper) and subtract the area of the smaller rectangle (the picture).\n\n**Step 1: Determine the dimensions of the picture.**\nThe dimensions of the picture are given as:\n- Width of picture = $5$ inches\n- Length of picture = $7$ inches\n\n**Step 2: Calculate the area of the picture.**\nThe area of the picture is:\n$$\\text{Area}_{\\text{picture}} = 5 \\text{ in} \\times 7 \\text{ in} = 35 \\text{ sq in}$$\n\n**Step 3: Determine the dimensions of the red paper.**\nThe problem states that there is a $0.5$-inch wide red border along **each** side of the picture. This means we must add the width of the border to both sides of the width and both sides of the length.\n- Width of red paper = $5 \\text{ in} + 0.5 \\text{ in} + 0.5 \\text{ in} = 5 + 1 = 6 \\text{ inches}$\n- Length of red paper = $7 \\text{ in} + 0.5 \\text{ in} + 0.5 \\text{ in} = 7 + 1 = 8 \\text{ inches}$\n\n**Step 4: Calculate the area of the red paper.**\nThe total area of the rectangular piece of red paper is:\n$$\\text{Area}_{\\text{paper}} = 6 \\text{ in} \\times 8 \\text{ in} = 48 \\text{ sq in}$$\n\n**Step 5: Calculate the area of the visible red border.**\nThe visible red border is the area of the red paper minus the area covered by the picture:\n$$\\text{Area}_{\\text{border}} = \\text{Area}_{\\text{paper}} - \\text{Area}_{\\text{picture}}$$\n$$\\text{Area}_{\\text{border}} = 48 \\text{ sq in} - 35 \\text{ sq in} = 13 \\text{ sq in}$$\n\nAlternatively, we can calculate the border area by summing the areas of the four rectangular strips:\n- Two strips along the width: $2 \\times (6 \\text{ in} \\times 0.5 \\text{ in}) = 6 \\text{ sq in}$\n- Two strips along the remaining length: $2 \\times (7 \\text{ in} \\times 0.5 \\text{ in}) = 7 \\text{ sq in}$\n- Total: $6 + 7 = 13 \\text{ sq in}$\n\nThe area of the visible red border is 13 square inches.\n\n\\boxed{13}\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\BOXED{13}$ SQUARE INCHES, AND THE STUDENT'S FINAL ANSWER IS ALSO $\\BOXED{13}$ SQUARE INCHES. THESE TWO ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY REPRESENT THE SAME NUMERICAL VALUE.\n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 123.82,
+    "zuzycie_tokenow": {
+        "wejsciowe": 129,
+        "wyjsciowe": 606,
+        "suma": 735
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

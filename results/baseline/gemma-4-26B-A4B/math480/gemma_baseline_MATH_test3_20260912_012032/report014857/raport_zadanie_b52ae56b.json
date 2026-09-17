@@ -1,0 +1,23 @@
+{
+    "task_file": "raport_zadanie_b52ae56b",
+    "zadanie": "If a girl 5 feet tall could walk around the equator, how many feet further would the top of her head travel than her feet? Assume that the earth is a sphere. Express your answer in terms of $\\pi$.",
+    "oczekiwana_odpowiedz": "Let $r$ be the radius of the earth in feet. The girl's feet travel along a circle of radius $r$, while the girl's head travels along a circle of radius $r+5$. The circumference of the first circle is $2\\pi r$, while the circumference of the second circle is $2\\pi(r+5) = 2\\pi r + 10\\pi$. So her head travels $(2\\pi r + 10\\pi) - 2\\pi r = \\boxed{10\\pi}$ feet more than her feet.",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nIf a girl 5 feet tall could walk around the equator, how many feet further would the top of her head travel than her feet? Assume that the earth is a sphere. Express your answer in terms of $\\pi$.\n",
+        "[AI]:\nTo solve this problem, we model the Earth as a sphere and the girl as a vertical line segment extending radially from the surface.\n\n1.  **Define the variables:**\n    *   Let $R$ be the radius of the Earth.\n    *   Let $h$ be the height of the girl ($h = 5$ feet).\n    *   The feet of the girl are at a distance $R$ from the center of the Earth.\n    *   The top of the girl's head is at a distance $R + h$ from the center of the Earth.\n\n2.  **Calculate the distance traveled by the feet:**\n    The distance traveled by a point at a distance $r$ from the center of a sphere while completing one full revolution (walking around the equator) is equal to the circumference of the circle at that radius.\n    The circumference $C_{feet}$ is given by:\n    $$C_{feet} = 2\\pi R$$\n\n3.  **Calculate the distance traveled by the top of her head:**\n    The top of her head is at a radius of $R + h$. Therefore, the distance traveled by the top of her head $C_{head}$ is:\n    $$C_{head} = 2\\pi(R + h)$$\n\n4.  **Find the difference in distance:**\n    The question asks how many feet *further* the top of her head travels than her feet. This is the difference between the two circumferences:\n    $$\\text{Difference} = C_{head} - C_{feet}$$\n    $$\\text{Difference} = 2\\pi(R + h) - 2\\pi R$$\n\n5.  **Simplify the expression:**\n    Distribute the $2\\pi$:\n    $$\\text{Difference} = 2\\pi R + 2\\pi h - 2\\pi R$$\n    The $2\\pi R$ terms cancel out:\n    $$\\text{Difference} = 2\\pi h$$\n\n6.  **Substitute the given value for $h$:**\n    We are given that the girl is 5 feet tall, so $h = 5$.\n    $$\\text{Difference} = 2\\pi(5)$$\n    $$\\text{Difference} = 10\\pi$$\n\nThe distance the top of her head travels further than her feet is independent of the radius of the Earth.\n\n\\boxed{10\\pi}\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $10\\PI$, AND THE STUDENT'S FINAL ANSWER IS ALSO $10\\PI$. THESE TWO ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY REPRESENT THE SAME VALUE. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 72.56,
+    "zuzycie_tokenow": {
+        "wejsciowe": 119,
+        "wyjsciowe": 525,
+        "suma": 644
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

@@ -1,0 +1,23 @@
+{
+    "task_file": "raport_zadanie_1cf05e56",
+    "zadanie": "Two complementary angles, A and B, have measures in the ratio of 7 to 23, respectively. What is the ratio of the measure of the complement of angle A to the measure of the complement of angle B? Express your answer as a common fraction.",
+    "oczekiwana_odpowiedz": "The complement of angle $A$ is just $B$, and the complement of $B$ is $A$.  So we seek the ratio of $B$ to $A$, which is reciprocal of $A$ to $B$, or just $\\boxed{\\frac{23}{7}}$.",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n\n\n    CONTEXT INSTRUCTIONS:\n    Below you will find a [HELPFUL CONTEXT FROM RAG] block. It contains a solved mathematical problems that shares similar logic of the solution to your current problem.\n    - Analize given examples and use their context to understand the required methodology, the solution concept, theorems, or algebraic tricks BEFORE proceeding with your solving process.\n\n    [HELPFUL CONTEXT FROM RAG]\n    \n    --- USEFUL EXAMPLE ---\nProblem: Two complementary angles are in a ratio of $3:2$. What is the measure, in degrees, of the smaller angle?\nSolution: Let the measure of the larger angle be $3x$.  Then the measure of the smaller angle is $2x$, and because the angles are complementary we have $3x+2x=90^\\circ$.  It follows that $x=90^\\circ/5=18^\\circ$, so the measure of the smaller angle is $2x=\\boxed{36}$ degrees.\n\n\n    \n    [/HELPFUL CONTEXT FROM RAG]\n",
+        "[HUMAN]:\nTwo complementary angles, A and B, have measures in the ratio of 7 to 23, respectively. What is the ratio of the measure of the complement of angle A to the measure of the complement of angle B? Express your answer as a common fraction.\n",
+        "[AI]:\nTo find the measures of angles A and B, we first need to establish their relationship based on the given ratio and the fact that they are complementary.\n\nLet the measure of angle A be $7x$ and the measure of angle B be $23x$. Since A and B are complementary, their sum equals $90^\\circ$. Therefore, we have:\n\\[7x + 23x = 90^\\circ\\]\n\nSolving for $x$, we get:\n\\[30x = 90^\\circ\\]\n\\[x = 3^\\circ\\]\n\nSo, the measure of angle A is $7x = 7 \\times 3^\\circ = 21^\\circ$, and the measure of angle B is $23x = 23 \\times 3^\\circ = 69^\\circ$.\n\nThe complement of an angle is $90^\\circ$ minus the measure of the angle. Thus, the complement of angle A is $90^\\circ - 21^\\circ = 69^\\circ$, and the complement of angle B is $90^\\circ - 69^\\circ = 21^\\circ$.\n\nTo find the ratio of the measure of the complement of angle A to the measure of the complement of angle B, we calculate:\n\\[\\frac{\\text{Measure of complement of A}}{\\text{Measure of complement of B}} = \\frac{69^\\circ}{21^\\circ}\\]\n\nSimplifying this fraction gives us:\n\\[\\frac{69}{21} = \\frac{23 \\times 3}{7 \\times 3} = \\frac{23}{7}\\]\n\nTherefore, the ratio of the measure of the complement of angle A to the measure of the complement of angle B is $\\frac{23}{7}$.\n\nThe final answer is: $\\boxed{\\frac{23}{7}}$\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\FRAC{23}{7}$, AND THE STUDENT'S FINAL ANSWER IS ALSO $\\FRAC{23}{7}$. THESE TWO ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY REPRESENT THE SAME FRACTION. \nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 218.0,
+    "zuzycie_tokenow": {
+        "wejsciowe": 350,
+        "wyjsciowe": 378,
+        "suma": 728
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 1
+}

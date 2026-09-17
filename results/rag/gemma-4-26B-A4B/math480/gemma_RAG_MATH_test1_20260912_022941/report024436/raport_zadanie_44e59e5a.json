@@ -1,0 +1,19 @@
+{
+    "task_file": "raport_zadanie_44e59e5a",
+    "zadanie": "Let $\\mathbb{Q}^+$ denote the set of positive rational numbers.  Let $f : \\mathbb{Q}^+ \\to \\mathbb{Q}^+$ be a function such that\n\\[f \\left( x + \\frac{y}{x} \\right) = f(x) + \\frac{f(y)}{f(x)} + 2y\\]for all $x,$ $y \\in \\mathbb{Q}^+.$\n\nFind all possible values of $f \\left( \\frac{1}{3} \\right).$  Enter all the possible values, separated by commas.",
+    "oczekiwana_odpowiedz": "Timeout - Endpoint API nie odpowiedzia\u0142 w wyznaczonym czasie",
+    "pelny_przebieg_rozumowania": [],
+    "decyzja_sedziego": "EMPTY",
+    "wynik_ewaluacji": "ERROR",
+    "czas_wykonania": 233.69,
+    "zuzycie_tokenow": {
+        "wejsciowe": 0,
+        "wyjsciowe": 0,
+        "suma": 0
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

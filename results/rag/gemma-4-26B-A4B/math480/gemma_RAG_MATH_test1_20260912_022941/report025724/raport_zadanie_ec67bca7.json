@@ -1,0 +1,19 @@
+{
+    "task_file": "raport_zadanie_ec67bca7",
+    "zadanie": "Convert $\\frac{3}{16}$ to base 2. Express your answer in binary with a radix point.",
+    "oczekiwana_odpowiedz": "Timeout - Endpoint API nie odpowiedzia\u0142 w wyznaczonym czasie",
+    "pelny_przebieg_rozumowania": [],
+    "decyzja_sedziego": "EMPTY",
+    "wynik_ewaluacji": "ERROR",
+    "czas_wykonania": 232.91,
+    "zuzycie_tokenow": {
+        "wejsciowe": 0,
+        "wyjsciowe": 0,
+        "suma": 0
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

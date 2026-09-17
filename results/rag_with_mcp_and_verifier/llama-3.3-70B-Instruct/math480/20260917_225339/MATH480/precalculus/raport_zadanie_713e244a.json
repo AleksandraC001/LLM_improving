@@ -1,0 +1,19 @@
+{
+    "task_file": "raport_zadanie_713e244a",
+    "zadanie": "A line passing through the point $(1,1,1)$ intersects the line defined by\n\\[\\begin{pmatrix} 1 \\\\ 2 \\\\ 3 \\end{pmatrix} + t \\begin{pmatrix} 2 \\\\ 3 \\\\ 4 \\end{pmatrix}\\]at $P,$ and intersects the line defined by\n\\[\\begin{pmatrix} -2 \\\\ 3 \\\\ -1 \\end{pmatrix} + s \\begin{pmatrix} 1 \\\\ 2 \\\\ 4 \\end{pmatrix}\\]at $Q.$  Find point $Q.$",
+    "oczekiwana_odpowiedz": "Timeout - Endpoint API nie odpowiedzia\u0142 w wyznaczonym czasie",
+    "pelny_przebieg_rozumowania": [],
+    "decyzja_sedziego": "EMPTY",
+    "wynik_ewaluacji": "ERROR",
+    "czas_wykonania": 721.5,
+    "zuzycie_tokenow": {
+        "wejsciowe": 0,
+        "wyjsciowe": 0,
+        "suma": 0
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

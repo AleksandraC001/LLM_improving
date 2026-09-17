@@ -1,0 +1,19 @@
+{
+    "task_file": "raport_zadanie_d4e914d3",
+    "zadanie": "When rolling a certain unfair six-sided die with faces numbered 1, 2, 3, 4, 5, and 6, the probability of obtaining face $F$ is greater than $1/6$, the probability of obtaining the face opposite face $F$ is less than $1/6$, the probability of obtaining each of the other faces is $1/6$, and the sum of the numbers on each pair of opposite faces is 7. When two such dice are rolled, the probability of obtaining a sum of 7 is $ \\frac{47}{288} $. Given that the probability of obtaining face $F$ is $m/n$, where $m$ and $n$ are relatively prime positive integers, find $m+n$.",
+    "oczekiwana_odpowiedz": "Timeout - Endpoint API nie odpowiedzia\u0142 w wyznaczonym czasie",
+    "pelny_przebieg_rozumowania": [],
+    "decyzja_sedziego": "EMPTY",
+    "wynik_ewaluacji": "ERROR",
+    "czas_wykonania": 721.83,
+    "zuzycie_tokenow": {
+        "wejsciowe": 0,
+        "wyjsciowe": 0,
+        "suma": 0
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

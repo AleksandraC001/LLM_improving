@@ -1,0 +1,19 @@
+{
+    "task_file": "raport_zadanie_27830c2b",
+    "zadanie": "Let $f(x) = \\log_{10} \\left(\\sin(\\pi x) \\cdot \\sin(2 \\pi x) \\cdot \\sin (3 \\pi x) \\cdots \\sin(8 \\pi x)\\right)$. The intersection of the domain of $f(x)$ with the interval $[0,1]$ is a union of $n$ disjoint open intervals. What is $n$?",
+    "oczekiwana_odpowiedz": "Timeout - Endpoint API nie odpowiedzia\u0142 w wyznaczonym czasie",
+    "pelny_przebieg_rozumowania": [],
+    "decyzja_sedziego": "EMPTY",
+    "wynik_ewaluacji": "ERROR",
+    "czas_wykonania": 813.6,
+    "zuzycie_tokenow": {
+        "wejsciowe": 0,
+        "wyjsciowe": 0,
+        "suma": 0
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

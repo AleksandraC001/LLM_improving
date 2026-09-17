@@ -1,0 +1,19 @@
+{
+    "task_file": "raport_zadanie_0d0e92cc",
+    "zadanie": "What simplified common fraction is equivalent to $0.0\\overline{57}$?",
+    "oczekiwana_odpowiedz": "Recursion limit exceeded (Model si\u0119 zap\u0119tli\u0142)",
+    "pelny_przebieg_rozumowania": [],
+    "decyzja_sedziego": "EMPTY",
+    "wynik_ewaluacji": "ERROR",
+    "czas_wykonania": 127.13,
+    "zuzycie_tokenow": {
+        "wejsciowe": 0,
+        "wyjsciowe": 0,
+        "suma": 0
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

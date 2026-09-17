@@ -1,0 +1,23 @@
+{
+    "task_file": "raport_zadanie_021e3570",
+    "zadanie": "A square is drawn such that one of its sides coincides with the line $y = 7$, and so that the endpoints of this side lie on the parabola $y = 2x^2 + 8x + 4$. What is the area of the square?",
+    "oczekiwana_odpowiedz": "The points of intersection of the line $y = 7$ and $y = 2x^2 + 8x + 4$, by substitution, are found when $2x^2 + 8x + 4 = 7 \\Longrightarrow 2x^2 + 8x - 3 = 0$. By the quadratic formula, $$x = \\frac{-8 \\pm \\sqrt{8^2 - 4 \\cdot 2 \\cdot (-3)}}{2 \\cdot 2}.$$We want to find the difference of these roots to find the difference of the x-coordinates of the point of intersection, which will give a side length of the square. The difference is given by $\\frac{\\sqrt{8^2 - 4 \\cdot 2 \\cdot (-3)}}2 = \\frac{\\sqrt{88}}{2} = \\sqrt{22}$. Thus, the area of the square is $\\boxed{22}$.",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nA square is drawn such that one of its sides coincides with the line $y = 7$, and so that the endpoints of this side lie on the parabola $y = 2x^2 + 8x + 4$. What is the area of the square?\n",
+        "[AI]:\nTo find the area of the square, we first need to determine the length of its side.\n\n1.  **Identify the side of the square on the line $y = 7$:**\n    The problem states that one side of the square lies on the line $y = 7$. The endpoints of this side lie on the parabola $y = 2x^2 + 8x + 4$.\n\n2.  **Find the x-coordinates of the endpoints:**\n    To find where the line $y = 7$ intersects the parabola, we set the equations equal to each other:\n    $$7 = 2x^2 + 8x + 4$$\n    Subtract 7 from both sides to form a quadratic equation:\n    $$2x^2 + 8x - 3 = 0$$\n\n3.  **Solve the quadratic equation for $x$:**\n    We use the quadratic formula $x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$, where $a = 2$, $b = 8$, and $c = -3$:\n    $$x = \\frac{-8 \\pm \\sqrt{8^2 - 4(2)(-3)}}{2(2)}$$\n    $$x = \\frac{-8 \\pm \\sqrt{64 + 24}}{4}$$\n    $$x = \\frac{-8 \\pm \\sqrt{88}}{4}$$\n    Simplify the square root: $\\sqrt{88} = \\sqrt{4 \\times 22} = 2\\sqrt{22}$.\n    $$x = \\frac{-8 \\pm 2\\sqrt{22}}{4}$$\n    $$x = -2 \\pm \\frac{\\sqrt{22}}{2}$$\n    The two x-coordinates are $x_1 = -2 - \\frac{\\sqrt{22}}{2}$ and $x_2 = -2 + \\frac{\\sqrt{22}}{2}$.\n\n4.  **Calculate the length of the side of the square:**\n    The side length $s$ is the distance between these two points on the line $y = 7$:\n    $$s = x_2 - x_1 = \\left(-2 + \\frac{\\sqrt{22}}{2}\\right) - \\left(-2 - \\frac{\\sqrt{22}}{2}\\right)$$\n    $$s = \\frac{\\sqrt{22}}{2} + \\frac{\\sqrt{22}}{2} = \\sqrt{22}$$\n\n5.  **Calculate the area of the square:**\n    The area $A$ of a square is the square of its side length:\n    $$A = s^2 = (\\sqrt{22})^2 = 22$$\n\nFinal check: The side length is $\\sqrt{22}$. The endpoints are $(-2 - \\frac{\\sqrt{22}}{2}, 7)$ and $(-2 + \\frac{\\sqrt{22}}{2}, 7)$. Plugging $x = -2 \\pm \\frac{\\sqrt{22}}{2}$ into the parabola:\n$y = 2(-2 \\pm \\frac{\\sqrt{22}}{2})^2 + 8(-2 \\pm \\frac{\\sqrt{22}}{2}) + 4$\n$y = 2(4 \\mp 2\\sqrt{22} + \\frac{22}{4}) - 16 \\pm 4\\sqrt{22} + 4$\n$y = 8 \\mp 4\\sqrt{22} + 11 - 16 \\pm 4\\sqrt{22} + 4 = 7$.\nThe points are correct.\n\nThe area is 22.\n\n\\boxed{22}\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\BOXED{22}$, AND THE STUDENT'S FINAL ANSWER IS ALSO $\\BOXED{22}$. THESE TWO ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY REPRESENT THE SAME NUMERICAL VALUE. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 114.06,
+    "zuzycie_tokenow": {
+        "wejsciowe": 130,
+        "wyjsciowe": 823,
+        "suma": 953
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

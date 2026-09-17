@@ -1,0 +1,23 @@
+{
+    "task_file": "raport_zadanie_256399fd",
+    "zadanie": "Let $a,$ $b,$ $c$ be real numbers such that\n\\[a + 3b + 4c = a^2 + b^2 + c^2 = 25.\\]Find the largest possible value of $a.$",
+    "oczekiwana_odpowiedz": "By Cauchy-Schwarz,\n\\[(3^2 + 4^2)(b^2 + c^2) \\ge (3b + 4c)^2.\\]Since $a + 3b + 4c = a^2 + b^2 + c^2 = 25,$ we can write this as\n\\[25(25 - a^2) \\ge (25 - a)^2.\\]Expanding, we get\n\\[625 - 25a^2 \\ge 625 - 50a + a^2,\\]so $26a^2 - 50a \\le 0.$  This factors as $2a(13a - 25) \\le 0.$  This implies $a \\le \\frac{25}{13}.$\n\nFor $a = \\frac{25}{13},$ since we have equality above, we want $\\frac{b^2}{9} = \\frac{c^2}{16}.$  We also want $a + 3b + 4c = 25.$  We can solve to get $b = \\frac{36}{13}$ and $c = \\frac{48}{13},$ so the largest possible value of $a$ is $\\boxed{\\frac{25}{13}}.$",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nLet $a,$ $b,$ $c$ be real numbers such that\n\\[a + 3b + 4c = a^2 + b^2 + c^2 = 25.\\]Find the largest possible value of $a.$\n",
+        "[AI]:\n## Step 1: Understand the given conditions\nWe are given that $a + 3b + 4c = 25$ and $a^2 + b^2 + c^2 = 25$. We need to find the largest possible value of $a$.\n\n## Step 2: Apply the Cauchy-Schwarz inequality\nThe Cauchy-Schwarz inequality states that for any real numbers $x_1, x_2, \\ldots, x_n$ and $y_1, y_2, \\ldots, y_n$, we have\n\\[(x_1^2 + x_2^2 + \\cdots + x_n^2)(y_1^2 + y_2^2 + \\cdots + y_n^2) \\ge (x_1y_1 + x_2y_2 + \\cdots + x_ny_n)^2.\\]\nIn our case, we can let $x_1 = a$, $x_2 = b$, $x_3 = c$, $y_1 = 1$, $y_2 = 3$, and $y_3 = 4$.\n\n## Step 3: Plug in the values into the Cauchy-Schwarz inequality\nApplying the Cauchy-Schwarz inequality, we have\n\\[(1^2 + 3^2 + 4^2)(a^2 + b^2 + c^2) \\ge (a + 3b + 4c)^2,\\]\nwhich simplifies to\n\\[(1 + 9 + 16)(a^2 + b^2 + c^2) \\ge (a + 3b + 4c)^2,\\]\nor\n\\[26(a^2 + b^2 + c^2) \\ge (a + 3b + 4c)^2.\\]\n\n## Step 4: Substitute the given conditions\nWe know that $a^2 + b^2 + c^2 = 25$ and $a + 3b + 4c = 25$. Substituting these values into the inequality, we get\n\\[26(25) \\ge (25)^2,\\]\nwhich simplifies to\n\\[650 \\ge 625.\\]\nThis inequality is true, so the Cauchy-Schwarz inequality holds.\n\n## Step 5: Find the equality condition\nEquality occurs in the Cauchy-Schwarz inequality when the two sequences are proportional. That is, when\n\\[\\frac{a}{1} = \\frac{b}{3} = \\frac{c}{4} = k,\\]\nfor some constant $k$. This means $a = k$, $b = 3k$, and $c = 4k$.\n\n## Step 6: Substitute the equality condition into the given conditions\nSubstituting $a = k$, $b = 3k$, and $c = 4k$ into the equation $a + 3b + 4c = 25$, we get\n\\[k + 3(3k) + 4(4k) = 25,\\]\nwhich simplifies to\n\\[k + 9k + 16k = 25,\\]\nor\n\\[26k = 25.\\]\nSolving for $k$, we find $k = \\frac{25}{26}$.\n\n## Step 7: Find the value of $a$\nSince $a = k$, we have $a = \\frac{25}{26}$.\n\nThe final answer is: $\\boxed{\\frac{25}{26}}$\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\FRAC{25}{13}$, AND THE STUDENT'S FINAL ANSWER IS $\\FRAC{25}{26}$. THESE TWO ANSWERS ARE NOT MATHEMATICALLY EQUIVALENT, AS THEY REPRESENT DIFFERENT VALUES. \n\nVERDICT: NO",
+    "wynik_ewaluacji": "WRONG",
+    "czas_wykonania": 267.34,
+    "zuzycie_tokenow": {
+        "wejsciowe": 140,
+        "wyjsciowe": 764,
+        "suma": 904
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

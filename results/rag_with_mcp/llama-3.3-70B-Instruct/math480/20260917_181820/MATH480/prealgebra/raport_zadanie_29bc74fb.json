@@ -1,0 +1,19 @@
+{
+    "task_file": "raport_zadanie_29bc74fb",
+    "zadanie": "An elephant and a lion are currently 1 mile apart. The elephant runs directly away from the lion at 19 miles per hour, while the lion runs directly towards the elephant at 24 miles per hour.  How many minutes will it take for the lion to catch the elephant?",
+    "oczekiwana_odpowiedz": "API Connection Error: OpenAIConnectionError('Connection error.'); cause=APIConnectionError('Connection error.')",
+    "pelny_przebieg_rozumowania": [],
+    "decyzja_sedziego": "EMPTY",
+    "wynik_ewaluacji": "ERROR",
+    "czas_wykonania": 14.67,
+    "zuzycie_tokenow": {
+        "wejsciowe": 0,
+        "wyjsciowe": 0,
+        "suma": 0
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

@@ -1,0 +1,23 @@
+{
+    "task_file": "raport_zadanie_96ef1986",
+    "zadanie": "Completely simplify and rationalize the denominator: $$\\frac{\\sqrt{160}}{\\sqrt{252}}\\times\\frac{\\sqrt{245}}{\\sqrt{108}}$$",
+    "oczekiwana_odpowiedz": "To begin, we can combine all of these square roots into a single square root: $$\\frac{\\sqrt{160}}{\\sqrt{252}}\\times\\frac{\\sqrt{245}}{\\sqrt{108}}=\\sqrt{\\frac{160}{252}}\\times\\sqrt{\\frac{245}{108}}=\\sqrt{\\frac{160\\cdot245}{252\\cdot108}}$$Now, simplify under the square root by canceling common factors.  To start, 160 and 108 are both divisible by 4.  252 and 160 also share a factor of 4.  This leaves us with: $$\\sqrt{\\frac{10\\cdot245}{63\\cdot27}}$$Looking carefully, we can see that 63 and 245 both share a factor of 7.  Cancel this, and simplify: $$\\sqrt{\\frac{10\\cdot35}{9\\cdot27}}=\\frac{5}{9}\\sqrt{\\frac{14}{3}}=\\boxed{\\frac{5\\sqrt{42}}{27}}$$",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nCompletely simplify and rationalize the denominator: $$\\frac{\\sqrt{160}}{\\sqrt{252}}\\times\\frac{\\sqrt{245}}{\\sqrt{108}}$$\n",
+        "[AI]:\n## Step 1: Simplify the square roots in the numerators and denominators\nTo simplify $\\sqrt{160}$, we look for perfect square factors of $160$. Since $160 = 16 \\times 10$ and $16$ is a perfect square ($4^2$), $\\sqrt{160} = \\sqrt{16 \\times 10} = 4\\sqrt{10}$. Similarly, for $\\sqrt{252}$, we find that $252 = 36 \\times 7$, so $\\sqrt{252} = \\sqrt{36 \\times 7} = 6\\sqrt{7}$. For $\\sqrt{245}$, we notice that $245 = 49 \\times 5$, thus $\\sqrt{245} = \\sqrt{49 \\times 5} = 7\\sqrt{5}$. Lastly, $\\sqrt{108}$ simplifies to $\\sqrt{36 \\times 3} = 6\\sqrt{3}$.\n\n## Step 2: Substitute the simplified forms back into the original expression\nSubstituting the simplified forms of the square roots back into the expression gives: $$\\frac{4\\sqrt{10}}{6\\sqrt{7}} \\times \\frac{7\\sqrt{5}}{6\\sqrt{3}}$$\n\n## Step 3: Multiply the numerators and denominators\nMultiplying the numerators together and the denominators together yields: $$\\frac{4\\sqrt{10} \\times 7\\sqrt{5}}{6\\sqrt{7} \\times 6\\sqrt{3}} = \\frac{28\\sqrt{50}}{36\\sqrt{21}}$$\n\n## Step 4: Further simplify the expression\n$\\sqrt{50}$ can be simplified as $\\sqrt{25 \\times 2} = 5\\sqrt{2}$, and $\\sqrt{21}$ remains as $\\sqrt{21}$ because it does not have a perfect square factor. Thus, the expression becomes: $$\\frac{28 \\times 5\\sqrt{2}}{36\\sqrt{21}} = \\frac{140\\sqrt{2}}{36\\sqrt{21}}$$\n\n## Step 5: Rationalize the denominator\nTo rationalize the denominator, we multiply both the numerator and the denominator by $\\sqrt{21}$: $$\\frac{140\\sqrt{2}}{36\\sqrt{21}} \\times \\frac{\\sqrt{21}}{\\sqrt{21}} = \\frac{140\\sqrt{2} \\times \\sqrt{21}}{36\\sqrt{21} \\times \\sqrt{21}} = \\frac{140\\sqrt{42}}{36 \\times 21}$$\n\n## Step 6: Simplify the fraction\n$\\sqrt{42}$ can be simplified as $\\sqrt{6 \\times 7}$. The expression now is: $$\\frac{140\\sqrt{42}}{36 \\times 21} = \\frac{140\\sqrt{6 \\times 7}}{756}$$\n\n## Step 7: Final simplification\nSince $\\sqrt{42} = \\sqrt{6 \\times 7}$, and there are no common factors to cancel out in the fraction $\\frac{140}{756}$, we simplify the fraction: $$\\frac{140}{756} = \\frac{70}{378} = \\frac{35}{189}$$ Thus, the expression simplifies to: $$\\frac{35\\sqrt{42}}{189}$$\n\nThe final answer is: $\\boxed{\\frac{35\\sqrt{42}}{189}}$\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\FRAC{5\\SQRT{42}}{27}$, AND THE STUDENT'S FINAL ANSWER IS $\\FRAC{35\\SQRT{42}}{189}$. THESE TWO ANSWERS ARE MATHEMATICALLY EQUIVALENT SINCE $\\FRAC{5\\SQRT{42}}{27} = \\FRAC{5\\SQRT{42} \\TIMES 7}{27 \\TIMES 7} = \\FRAC{35\\SQRT{42}}{189}$. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 276.98,
+    "zuzycie_tokenow": {
+        "wejsciowe": 125,
+        "wyjsciowe": 761,
+        "suma": 886
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

@@ -1,0 +1,20 @@
+{
+    "task_file": "raport_zadanie_02190730",
+    "zadanie": "Let $x$ be a positive number such that $2x^2 = 4x + 9.$ If $x$ can be written in simplified form as $\\dfrac{a + \\sqrt{b}}{c}$ such that $a,$ $b,$ and $c$ are positive integers, what is $a + b + c$?",
+    "oczekiwana_odpowiedz": "First, we move all terms to one side to get $2x^2 - 4x - 9 = 0.$ Seeing that factoring will not work, we apply the Quadratic Formula: \\begin{align*}\nx &= \\frac{-(-4) \\pm \\sqrt{(-4)^2 - 4(2)(-9)}}{2 (2)}\\\\\n&= \\frac{4 \\pm \\sqrt{16 + 72}}{4} = \\frac{4 \\pm \\sqrt{88}}{4}\\\\\n&= \\frac{4 \\pm 2\\sqrt{22}}{4} = \\frac{2 \\pm \\sqrt{22}}{2}.\n\\end{align*}Since $x$ is positive, $x$ can be written as $\\dfrac{2 + \\sqrt{22}}{2},$ so our answer is $2 + 22 + 2 = \\boxed{26}.$",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nLet $x$ be a positive number such that $2x^2 = 4x + 9.$ If $x$ can be written in simplified form as $\\dfrac{a + \\sqrt{b}}{c}$ such that $a,$ $b,$ and $c$ are positive integers, what is $a + b + c$?\n",
+        "[AI]:\nTo solve the equation \\( 2x^2 = 4x + 9 \\), we first rearrange it into standard quadratic form:\n\n\\[\n2x^2 - 4x - 9 = 0.\n\\]\n\nNext, we can apply the quadratic formula, which is given by:\n\n\\[\nx = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a},\n\\]\n\nwhere \\( a = 2 \\), \\( b = -4 \\), and \\( c = -9 \\).\n\nFirst, we calculate the discriminant \\( b^2 - 4ac \\):\n\n\\[\nb^2 = (-4)^2 = 16,\n\\]\n\\[\n4ac = 4 \\cdot 2 \\cdot (-9) = -72.\n\\]\nThus, the discriminant is:\n\n\\[\nb^2 - 4ac = 16 - (-72) = 16 + 72 = 88.\n\\]\n\nNow we can substitute \\( a \\), \\( b \\), and \\( c \\) into the quadratic formula:\n\n\\[\nx = \\frac{-(-4) \\pm \\sqrt{88}}{2 \\cdot 2} = \\frac{4 \\pm \\sqrt{88}}{4}.\n\\]\n\nNext, we simplify \\( \\sqrt{88} \\):\n\n\\[\n\\sqrt{88} = \\sqrt{4 \\cdot 22} = 2\\sqrt{22}.\n\\]\n\nSubstituting this back into our expression for \\( x \\):\n\n\\[\nx = \\frac{4 \\pm 2\\sqrt{22}}{4} = \\frac{4}{4} \\pm \\frac{2\\sqrt{22}}{4} = 1 \\pm \\frac{\\sqrt{22}}{2}.\n\\]\n\nSince \\( x \\) must be a positive number, we take the positive root:\n\n\\[\nx = 1 + \\frac{\\sqrt{22}}{2}.\n\\]\n\nTo express \\( x \\) in the form \\( \\frac{a + \\sqrt{b}}{c} \\), we rewrite it:\n\n\\[\nx = \\frac{2 + \\sqrt{22}}{2}.\n\\]\n\nHere, we identify \\( a = 2 \\), \\( b = 22 \\), and \\( c = 2 \\). Now we compute \\( a + b + c \\):\n\n\\[\na + b + c = 2 + 22 + 2 = 26.\n\\]\n\nThus, the final answer is:\n\n\\[\n\\boxed{26}.\n\\]\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\BOXED{26}$, AND THE STUDENT'S FINAL ANSWER IS ALSO $\\BOXED{26}$. THESE TWO ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY REPRESENT THE SAME NUMERICAL VALUE. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 5.42,
+    "zuzycie_tokenow": {
+        "wejsciowe": 141,
+        "wyjsciowe": 539,
+        "suma": 680
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_rag": 0
+}

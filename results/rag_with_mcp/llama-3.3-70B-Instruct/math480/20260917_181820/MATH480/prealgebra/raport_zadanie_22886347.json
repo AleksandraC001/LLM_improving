@@ -1,0 +1,19 @@
+{
+    "task_file": "raport_zadanie_22886347",
+    "zadanie": "There are ten meerkats in a colony. Every night, two meerkats stand guard while the others sleep. During a certain period of nights, every meerkat stands guard with every other meerkat exactly once. During that period, how many nights of sleep does each meerkat get?",
+    "oczekiwana_odpowiedz": "API Connection Error: OpenAIConnectionError('Connection error.'); cause=APIConnectionError('Connection error.')",
+    "pelny_przebieg_rozumowania": [],
+    "decyzja_sedziego": "EMPTY",
+    "wynik_ewaluacji": "ERROR",
+    "czas_wykonania": 14.79,
+    "zuzycie_tokenow": {
+        "wejsciowe": 0,
+        "wyjsciowe": 0,
+        "suma": 0
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

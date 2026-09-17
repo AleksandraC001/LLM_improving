@@ -1,0 +1,23 @@
+{
+    "task_file": "raport_zadanie_9951cbab",
+    "zadanie": "What is the sum of all integer values of $x$ such that $\\frac{67}{2x - 23}$ is an integer?",
+    "oczekiwana_odpowiedz": "Checking the primes less than $\\sqrt{67}$, namely 2, 3, 5, and 7, as potential divisors, we find that 67 is prime. Thus, $\\frac{67}{2x-23}$ is an integer if and only if $2x-23=\\pm1$ or $2x-23=\\pm67$. The first equation yields $x=12$ or $x=11$ and the second gives $x=45$ or $x=-22$. The sum is $12+11+45-22=\\boxed{46}$.",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nWhat is the sum of all integer values of $x$ such that $\\frac{67}{2x - 23}$ is an integer?\n",
+        "[AI]:\n## Step 1: Understand the problem\nTo find the sum of all integer values of $x$ such that $\\frac{67}{2x - 23}$ is an integer, we first recognize that for the fraction to yield an integer, $2x - 23$ must be a factor of 67.\n\n## Step 2: Identify factors of 67\nSince 67 is a prime number, its only factors are 1 and 67. However, considering negative factors as well, we also have -1 and -67 as factors.\n\n## Step 3: Set up equations for the factors\nWe set up equations for $2x - 23$ equal to each of the factors of 67, including the negative factors:\n1. $2x - 23 = 1$\n2. $2x - 23 = 67$\n3. $2x - 23 = -1$\n4. $2x - 23 = -67$\n\n## Step 4: Solve each equation for x\nSolving each equation:\n1. $2x = 1 + 23 = 24$, so $x = 12$\n2. $2x = 67 + 23 = 90$, so $x = 45$\n3. $2x = -1 + 23 = 22$, so $x = 11$\n4. $2x = -67 + 23 = -44$, so $x = -22$\n\n## Step 5: Sum the integer values of x\nNow, we sum the integer values of $x$ that we found:\n$12 + 45 + 11 - 22 = 46$\n\nThe final answer is: $\\boxed{46}$\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\BOXED{46}$, AND THE STUDENT'S FINAL ANSWER IS ALSO $\\BOXED{46}$. THESE TWO ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY REPRESENT THE SAME NUMERICAL VALUE. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 108.65,
+    "zuzycie_tokenow": {
+        "wejsciowe": 117,
+        "wyjsciowe": 357,
+        "suma": 474
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

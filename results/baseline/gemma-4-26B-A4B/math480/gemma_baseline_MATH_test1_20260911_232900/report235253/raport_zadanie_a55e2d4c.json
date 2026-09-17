@@ -1,0 +1,23 @@
+{
+    "task_file": "raport_zadanie_a55e2d4c",
+    "zadanie": "How many natural numbers less than 1000 have exactly three distinct positive integer divisors?",
+    "oczekiwana_odpowiedz": "By the formula for the total number of positive divisors, only natural numbers in the form $p^{2}$ for some prime $p$ have exactly three positive divisors. Thus we must count the number of primes between 1 and $\\sqrt{1000}$ (the squares of these primes are all the natural numbers less than 1000 that have exactly three positive divisors). There are $\\boxed{11}$ such primes: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, and 31.",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nHow many natural numbers less than 1000 have exactly three distinct positive integer divisors?\n",
+        "[AI]:\nTo find how many natural numbers less than 1000 have exactly three distinct positive integer divisors, we must first understand the property of numbers with exactly three divisors.\n\n### Step 1: Determine the form of numbers with exactly three divisors\nLet $n$ be a natural number. Let its prime factorization be $n = p_1^{a_1} p_2^{a_2} \\dots p_k^{a_k}$.\nThe number of divisors of $n$, denoted by $d(n)$, is given by the formula:\n$$d(n) = (a_1 + 1)(a_2 + 1) \\dots (a_k + 1)$$\n\nWe are given that $d(n) = 3$. Since 3 is a prime number, the only way to express 3 as a product of integers greater than or equal to 1 is $3 = (2 + 1)$.\nThis implies that there can only be one prime factor ($k=1$) and its exponent must be $a_1 = 2$.\n\nTherefore, a number has exactly three distinct positive integer divisors if and only if it is the **square of a prime number**.\nIf $n = p^2$ where $p$ is a prime, the divisors are $\\{1, p, p^2\\}$.\n\n### Step 2: Identify the condition for the range\nWe are looking for natural numbers $n < 1000$ such that $n = p^2$ for some prime $p$.\nThis is equivalent to finding all primes $p$ such that:\n$$p^2 < 1000$$\nTaking the square root of both sides:\n$$p < \\sqrt{1000}$$\nSince $31^2 = 961$ and $32^2 = 1024$, we have:\n$$p \\le 31$$\n\n### Step 3: List the prime numbers up to 31\nWe need to count all prime numbers $p$ such that $p \\le 31$.\nThe prime numbers are:\n2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31.\n\n### Step 4: Count the primes\nLet's list them and count:\n1. $2^2 = 4$\n2. $3^2 = 9$\n3. $5^2 = 25$\n4. $7^2 = 49$\n5. $11^2 = 121$\n6. $13^2 = 169$\n7. $17^2 = 289$\n8. $19^2 = 361$\n9. $23^2 = 529$\n10. $29^2 = 841$\n11. $31^2 = 961$\n\nThere are 11 such prime numbers.\n\n### Conclusion\nThe numbers are $\\{4, 9, 25, 49, 121, 169, 289, 361, 529, 841, 961\\}$.\nThe total count is 11.\n\n\\boxed{11}\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\BOXED{11}$, AND THE STUDENT'S FINAL ANSWER IS ALSO $\\BOXED{11}$. THESE TWO ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY BOTH REPRESENT THE SAME NUMERICAL VALUE. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 67.33,
+    "zuzycie_tokenow": {
+        "wejsciowe": 93,
+        "wyjsciowe": 739,
+        "suma": 832
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

@@ -1,0 +1,19 @@
+{
+    "task_file": "raport_zadanie_ff8a7482",
+    "zadanie": "The largest solution to\n\\[9x^3 - 20x = 8 \\sqrt{2}\\]can be written in the form $\\frac{\\sqrt{a} + \\sqrt{b}}{c},$ where $a,$ $b,$ and $c$ are positive integers, when simplified.  Find $a + b + c.$",
+    "oczekiwana_odpowiedz": "Recursion limit exceeded (Model si\u0119 zap\u0119tli\u0142)",
+    "pelny_przebieg_rozumowania": [],
+    "decyzja_sedziego": "EMPTY",
+    "wynik_ewaluacji": "ERROR",
+    "czas_wykonania": 90.84,
+    "zuzycie_tokenow": {
+        "wejsciowe": 0,
+        "wyjsciowe": 0,
+        "suma": 0
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

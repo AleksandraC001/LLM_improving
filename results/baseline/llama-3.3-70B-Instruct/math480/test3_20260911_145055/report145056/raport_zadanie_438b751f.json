@@ -1,0 +1,23 @@
+{
+    "task_file": "raport_zadanie_438b751f",
+    "zadanie": "If $3^{x + y} = 81$ and $81^{x - y} = 3,$ then what is the value of the product $xy$? Express your answer as a common fraction.",
+    "oczekiwana_odpowiedz": "Since $81 = 3^4$, then $3 = 81^{1/4}$. Comparing exponents, it follows that we have the system of equations \\begin{align*}\nx+y &= 4 \\\\\nx -y &= 1/4.\n\\end{align*} Summing the two equations yields that $2x = 4+1/4 = 17/4$, so $x = 17/8$. Subtracting the two equations yields that $2y = 4-1/4 = 15/4$, so $y = 15/8$. Thus, $xy = \\frac{17}{8} \\cdot \\frac{15}{8} = \\boxed{\\frac{255}{64}}$.",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nIf $3^{x + y} = 81$ and $81^{x - y} = 3,$ then what is the value of the product $xy$? Express your answer as a common fraction.\n",
+        "[AI]:\n## Step 1: Rewrite the given equations using exponent properties\nWe start by rewriting the given equations using exponent properties to simplify them. The first equation $3^{x + y} = 81$ can be rewritten as $3^{x + y} = 3^4$ since $81 = 3^4$. The second equation $81^{x - y} = 3$ can be rewritten as $(3^4)^{x - y} = 3$, which simplifies to $3^{4(x - y)} = 3$.\n\n## Step 2: Set the exponents equal in the first equation\nFrom the first equation $3^{x + y} = 3^4$, we can set the exponents equal to each other, giving us $x + y = 4$.\n\n## Step 3: Set the exponents equal in the second equation\nFrom the second equation $3^{4(x - y)} = 3$, we can set the exponents equal to 1 (since $3^1 = 3$), giving us $4(x - y) = 1$.\n\n## Step 4: Solve the system of linear equations\nNow we have a system of linear equations:\n1. $x + y = 4$\n2. $4(x - y) = 1$\n\nWe can solve this system for $x$ and $y$. First, simplify the second equation to $4x - 4y = 1$.\n\n## Step 5: Solve for x and y\nFrom the first equation, we can express $y$ in terms of $x$: $y = 4 - x$.\n\nSubstitute $y = 4 - x$ into the simplified second equation: $4x - 4(4 - x) = 1$. This simplifies to $4x - 16 + 4x = 1$, which further simplifies to $8x - 16 = 1$. Solving for $x$, we get $8x = 17$, so $x = \\frac{17}{8}$.\n\n## Step 6: Find the value of y\nSubstitute $x = \\frac{17}{8}$ into $y = 4 - x$ to find $y$: $y = 4 - \\frac{17}{8} = \\frac{32}{8} - \\frac{17}{8} = \\frac{15}{8}$.\n\n## Step 7: Calculate the product xy\nNow, calculate the product $xy$ using the values of $x$ and $y$ found: $xy = \\frac{17}{8} \\times \\frac{15}{8}$.\n\n## Step 8: Simplify the product\n$xy = \\frac{17 \\times 15}{8 \\times 8} = \\frac{255}{64}$.\n\nThe final answer is: $\\boxed{\\frac{255}{64}}$\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\FRAC{255}{64}$, AND THE STUDENT'S FINAL ANSWER IS ALSO $\\FRAC{255}{64}$. THESE TWO ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY REPRESENT THE SAME FRACTION. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 225.98,
+    "zuzycie_tokenow": {
+        "wejsciowe": 132,
+        "wyjsciowe": 617,
+        "suma": 749
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

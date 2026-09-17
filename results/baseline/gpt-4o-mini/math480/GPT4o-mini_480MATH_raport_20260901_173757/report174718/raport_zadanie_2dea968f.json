@@ -1,0 +1,20 @@
+{
+    "task_file": "raport_zadanie_2dea968f",
+    "zadanie": "A Senate committee has 5 Democrats and 5 Republicans.  In how many distinguishable ways can they sit around a circular table if all the members of each party all sit next to each other?  (If the table is rotated, it should be counted as the same seating.)",
+    "oczekiwana_odpowiedz": "Choose any 5 consecutive seats in which to place the Democrats -- it doesn't matter which 5 consecutive seats that we choose, since we can rotate the table.  Then there are $5!$ ways to place the Democrats in their seats, and $5!$ ways to place the Republicans in their seats, for a total of $5! \\times 5! = \\boxed{14,\\!400}$ arrangements.",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nA Senate committee has 5 Democrats and 5 Republicans.  In how many distinguishable ways can they sit around a circular table if all the members of each party all sit next to each other?  (If the table is rotated, it should be counted as the same seating.)\n",
+        "[AI]:\nTo solve the problem of how many distinguishable ways the Senate committee can sit around a circular table with the condition that all members of each party sit next to each other, we can follow these steps:\n\n1. **Group the Parties**: Since all Democrats must sit next to each other and all Republicans must sit next to each other, we can treat the group of Democrats as one single unit (block) and the group of Republicans as another single unit (block). This means we have two blocks to arrange around the table.\n\n2. **Arranging the Blocks**: In a circular arrangement, the number of ways to arrange \\( n \\) distinct objects is given by \\( (n-1)! \\). Here, we have 2 blocks (the Democrats and the Republicans), so the number of ways to arrange these two blocks around the table is:\n   \\[\n   (2-1)! = 1! = 1\n   \\]\n\n3. **Arranging Members Within Each Block**: Next, we need to arrange the members within each block. \n   - For the Democrats, there are 5 members, and they can be arranged among themselves in \\( 5! \\) ways.\n   - For the Republicans, there are also 5 members, and they can be arranged among themselves in \\( 5! \\) ways.\n\n   Therefore, the total arrangements for the members within each block is:\n   \\[\n   5! \\times 5!\n   \\]\n\n4. **Calculating Factorials**: Now we calculate \\( 5! \\):\n   \\[\n   5! = 5 \\times 4 \\times 3 \\times 2 \\times 1 = 120\n   \\]\n\n5. **Total Arrangements**: Now we can combine the arrangements of the blocks and the arrangements within each block:\n   \\[\n   \\text{Total arrangements} = 1 \\times (5! \\times 5!) = 1 \\times (120 \\times 120) = 14400\n   \\]\n\nThus, the total number of distinguishable ways the committee can sit around the table, with all members of each party sitting next to each other, is:\n\n\\[\n\\boxed{14400}\n\\]\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\BOXED{14,\\!400}$, AND THE FINAL ANSWER IN THE STUDENT'S TEXT IS $\\BOXED{14400}$. THESE TWO FINAL ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS $14,\\!400$ AND $14400$ REPRESENT THE SAME NUMERICAL VALUE. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 5.2,
+    "zuzycie_tokenow": {
+        "wejsciowe": 124,
+        "wyjsciowe": 460,
+        "suma": 584
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_rag": 0
+}

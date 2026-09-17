@@ -1,0 +1,23 @@
+{
+    "task_file": "raport_zadanie_4d866680",
+    "zadanie": "Patrick started walking at a constant rate along a straight road from school to the park. One hour after Patrick left, Tanya started running along the same road from school to the park. One hour after Tanya left, Jose started bicycling along the same road from school to the park. Tanya ran at a constant rate of $2$ miles per hour faster than Patrick walked, Jose bicycled at a constant rate of $7$ miles per hour faster than Tanya ran, and all three arrived at the park at the same time. The distance from the school to the park is $\\frac{m}{n}$ miles, where $m$ and $n$ are relatively prime positive integers. Find $m + n$.",
+    "oczekiwana_odpowiedz": "\\boxed{277}",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nPatrick started walking at a constant rate along a straight road from school to the park. One hour after Patrick left, Tanya started running along the same road from school to the park. One hour after Tanya left, Jose started bicycling along the same road from school to the park. Tanya ran at a constant rate of $2$ miles per hour faster than Patrick walked, Jose bicycled at a constant rate of $7$ miles per hour faster than Tanya ran, and all three arrived at the park at the same time. The distance from the school to the park is $\\frac{m}{n}$ miles, where $m$ and $n$ are relatively prime positive integers. Find $m + n$.\n",
+        "[AI]:\nTo solve this problem, we define the following variables:\n- Let $v$ be Patrick's walking speed in miles per hour (mph).\n- Let $d$ be the distance from the school to the park in miles.\n- Let $t$ be the time Patrick spent walking in hours.\n\nFrom the problem description, we have the following speeds:\n- Patrick's speed: $v$\n- Tanya's speed: $v + 2$\n- Jose's speed: $(v + 2) + 7 = v + 9$\n\nWe are given the timing of their departures and arrivals:\n1. Patrick leaves at time $T=0$ and arrives at time $T=t$.\n2. Tanya leaves 1 hour after Patrick ($T=1$) and arrives at the same time as Patrick ($T=t$). Thus, Tanya's travel time is $t - 1$.\n3. Jose leaves 1 hour after Tanya ($T=2$) and arrives at the same time as Patrick ($T=t$). Thus, Jose's travel time is $t - 2$.\n\nUsing the relationship $\\text{distance} = \\text{speed} \\times \\text{time}$, we can set up a system of equations:\n1) $d = v \\cdot t$\n2) $d = (v + 2)(t - 1)$\n3) $d = (v + 9)(t - 2)$\n\nFrom (1) and (2):\n$vt = (v + 2)(t - 1)$\n$vt = vt - v + 2t - 2$\n$0 = -v + 2t - 2 \\implies v = 2t - 2$\n\nFrom (1) and (3):\n$vt = (v + 9)(t - 2)$\n$vt = vt - 2v + 9t - 18$\n$0 = -2v + 9t - 18 \\implies 2v = 9t - 18$\n\nNow we substitute $v = 2t - 2$ into the second equation:\n$2(2t - 2) = 9t - 18$\n$4t - 4 = 9t - 18$\n$14 = 5t$\n$t = \\frac{14}{5}$\n\nNow we find $v$:\n$v = 2\\left(\\frac{14}{5}\\right) - 2 = \\frac{28}{5} - \\frac{10}{5} = \\frac{18}{5}$\n\nFinally, we calculate the distance $d$:\n$d = v \\cdot t = \\left(\\frac{18}{5}\\right) \\left(\\frac{14}{5}\\right) = \\frac{252}{25}$\n\nThe distance is given as $\\frac{m}{n}$ where $m$ and $n$ are relatively prime.\n$m = 252$ and $n = 25$.\nWe check if they are relatively prime:\n$252 = 2^2 \\cdot 3^2 \\cdot 7$\n$25 = 5^2$\nSince they share no common factors, they are relatively prime.\n\nThe question asks for $m + n$:\n$m + n = 252 + 25 = 277$\n\n\\boxed{277}\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\BOXED{277}$, AND THE STUDENT'S FINAL ANSWER IS ALSO $\\BOXED{277}$. THESE TWO ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY REPRESENT THE SAME NUMERICAL VALUE.\n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 419.41,
+    "zuzycie_tokenow": {
+        "wejsciowe": 218,
+        "wyjsciowe": 765,
+        "suma": 983
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

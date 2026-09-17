@@ -1,0 +1,23 @@
+{
+    "task_file": "raport_zadanie_aa09d39d",
+    "zadanie": "The matrix\n\\[\\begin{pmatrix} -\\frac{7}{25} & \\frac{24}{25} \\\\ \\frac{24}{25} & \\frac{7}{25} \\end{pmatrix}\\]corresponds to reflecting over a certain vector $\\begin{pmatrix} x \\\\ y \\end{pmatrix}.$  Find $\\frac{y}{x}.$",
+    "oczekiwana_odpowiedz": "Note that the reflecting $\\begin{pmatrix} x \\\\ y \\end{pmatrix}$ over itself results in itself, so\n\\[\\begin{pmatrix} -\\frac{7}{25} & \\frac{24}{25} \\\\ \\frac{24}{25} & \\frac{7}{25} \\end{pmatrix} \\begin{pmatrix} x \\\\ y \\end{pmatrix} = \\begin{pmatrix} x \\\\ y \\end{pmatrix}.\\]Then $-\\frac{7}{25} x + \\frac{24}{25} y = x$ and $\\frac{24}{25} x + \\frac{7}{25} y = y.$  Both equations lead to $\\frac{y}{x} = \\boxed{\\frac{4}{3}}.$",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nThe matrix\n\\[\\begin{pmatrix} -\\frac{7}{25} & \\frac{24}{25} \\\\ \\frac{24}{25} & \\frac{7}{25} \\end{pmatrix}\\]corresponds to reflecting over a certain vector $\\begin{pmatrix} x \\\\ y \\end{pmatrix}.$  Find $\\frac{y}{x}.$\n",
+        "[AI]:\nTo find the vector over which the given matrix reflects, we first recall the properties of a reflection matrix.\n\nA reflection matrix $R$ across a line passing through the origin in $\\mathbb{R}^2$ has the form:\n\\[ R = \\begin{pmatrix} \\cos(2\\theta) & \\sin(2\\theta) \\\\ \\sin(2\\theta) & -\\cos(2\\theta) \\end{pmatrix} \\]\nwhere $\\theta$ is the angle the line of reflection makes with the positive $x$-axis. However, the given matrix is:\n\\[ A = \\begin{pmatrix} -\\frac{7}{25} & \\frac{24}{25} \\\\ \\frac{24}{25} & \\frac{7}{25} \\end{pmatrix} \\]\nLet's check the determinant of $A$:\n\\[ \\det(A) = \\left(-\\frac{7}{25}\\right)\\left(\\frac{7}{25}\\right) - \\left(\\frac{24}{25}\\right)\\left(\\frac{24}{25}\\right) = -\\frac{49}{625} - \\frac{576}{625} = -\\frac{625}{625} = -1 \\]\nSince the determinant is $-1$ and the matrix is symmetric ($A^T = A$), it is indeed a reflection matrix.\n\nA reflection across a line (or vector) $\\mathbf{v} = \\begin{pmatrix} x \\\\ y \\end{pmatrix}$ leaves the vector $\\mathbf{v}$ unchanged. That is, $A\\mathbf{v} = \\mathbf{v}$. This means $\\mathbf{v}$ is an eigenvector of $A$ corresponding to the eigenvalue $\\lambda = 1$.\n\nWe solve the equation $(A - I)\\mathbf{v} = \\mathbf{0}$:\n\\[ \\begin{pmatrix} -\\frac{7}{25} - 1 & \\frac{24}{25} \\\\ \\frac{24}{25} & \\frac{7}{25} - 1 \\end{pmatrix} \\begin{pmatrix} x \\\\ y \\end{pmatrix} = \\begin{pmatrix} 0 \\\\ 0 \\end{pmatrix} \\]\n\\[ \\begin{pmatrix} -\\frac{32}{25} & \\frac{24}{25} \\\\ \\frac{24}{25} & -\\frac{18}{25} \\end{pmatrix} \\begin{pmatrix} x \\\\ y \\end{pmatrix} = \\begin{pmatrix} 0 \\\\ 0 \\end{pmatrix} \\]\n\nFrom the first row, we have:\n\\[ -\\frac{32}{25}x + \\frac{24}{25}y = 0 \\]\nMultiplying by 25:\n\\[ -32x + 24y = 0 \\]\nDivide by 8:\n\\[ -4x + 3y = 0 \\]\n\\[ 3y = 4x \\]\n\\[ \\frac{y}{x} = \\frac{4}{3} \\]\n\nWe can verify this with the second row:\n\\[ \\frac{24}{25}x - \\frac{18}{25}y = 0 \\]\nMultiplying by 25:\n\\[ 24x - 18y = 0 \\]\nDivide by 6:\n\\[ 4x - 3y = 0 \\implies 3y = 4x \\implies \\frac{y}{x} = \\frac{4}{3} \\]\n\nThe vector $\\begin{pmatrix} x \\\\ y \\end{pmatrix}$ lies on the line of reflection. The question asks for the ratio $\\frac{y}{x}$.\n\nFinal calculation:\n$\\frac{y}{x} = \\frac{4}{3}$\n\n\\boxed{4/3}\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\FRAC{Y}{X} = \\FRAC{4}{3}$, AND THE STUDENT'S FINAL ANSWER IS ALSO $\\FRAC{Y}{X} = \\FRAC{4}{3}$. THESE TWO ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY REPRESENT THE SAME RATIO. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 100.23,
+    "zuzycie_tokenow": {
+        "wejsciowe": 156,
+        "wyjsciowe": 848,
+        "suma": 1004
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

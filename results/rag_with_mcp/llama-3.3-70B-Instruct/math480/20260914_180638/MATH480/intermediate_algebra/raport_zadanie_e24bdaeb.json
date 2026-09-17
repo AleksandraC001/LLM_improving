@@ -1,0 +1,19 @@
+{
+    "task_file": "raport_zadanie_e24bdaeb",
+    "zadanie": "Let $a_1,$ $a_2,$ $\\dots,$ $a_{4001}$ be an arithmetic sequence such that $a_1 + a_{4001} = 50$ and\n\\[\\frac{1}{a_1 a_2} + \\frac{1}{a_2 a_3} + \\dots + \\frac{1}{a_{4000} a_{4001}} = 10.\\]Find $|a_1 - a_{4001}|.$",
+    "oczekiwana_odpowiedz": "Timeout - Endpoint API nie odpowiedzia\u0142 w wyznaczonym czasie",
+    "pelny_przebieg_rozumowania": [],
+    "decyzja_sedziego": "EMPTY",
+    "wynik_ewaluacji": "ERROR",
+    "czas_wykonania": 775.03,
+    "zuzycie_tokenow": {
+        "wejsciowe": 0,
+        "wyjsciowe": 0,
+        "suma": 0
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

@@ -1,0 +1,23 @@
+{
+    "task_file": "raport_zadanie_f710970e",
+    "zadanie": "Let $a,$ $b,$ $c$ be positive real numbers such that $a + b + c = 4abc.$  Find the maximum value of\n\\[\\frac{4 \\sqrt{a} + 6 \\sqrt{b} + 12 \\sqrt{c}}{\\sqrt{abc}}.\\]",
+    "oczekiwana_odpowiedz": "By Cauchy-Schwarz,\n\\[(4 \\sqrt{a} + 6 \\sqrt{b} + 12 \\sqrt{c})^2 \\le (4^2 + 6^2 + 12^2)(a + b + c) = (196)(4abc) = 784abc,\\]so\n\\[4 \\sqrt{a} + 6 \\sqrt{b} + 12 \\sqrt{c} \\le 28 \\sqrt{abc},\\]and\n\\[\\frac{4 \\sqrt{a} + 6 \\sqrt{b} + 12 \\sqrt{c}}{\\sqrt{abc}} \\le 28.\\]Equality occurs when\n\\[\\frac{a}{16} = \\frac{b}{36} = \\frac{c}{144}.\\]Along with the condition $a + b + c = 4abc,$ we can solve to get $a = \\frac{7}{18},$ $b = \\frac{7}{8},$ $c = \\frac{7}{2}.$  Therefore, the maximum value is $\\boxed{28}.$",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nLet $a,$ $b,$ $c$ be positive real numbers such that $a + b + c = 4abc.$  Find the maximum value of\n\\[\\frac{4 \\sqrt{a} + 6 \\sqrt{b} + 12 \\sqrt{c}}{\\sqrt{abc}}.\\]\n",
+        "[AI]:\nTo find the maximum value of the expression $E = \\frac{4 \\sqrt{a} + 6 \\sqrt{b} + 12 \\sqrt{c}}{\\sqrt{abc}}$, we first simplify the expression:\n\\[E = \\frac{4\\sqrt{a}}{\\sqrt{abc}} + \\frac{6\\sqrt{b}}{\\sqrt{abc}} + \\frac{12\\sqrt{c}}{\\sqrt{abc}} = \\frac{4}{\\sqrt{bc}} + \\frac{6}{\\sqrt{ac}} + \\frac{12}{\\sqrt{ab}}.\\]\nLet $x = \\frac{1}{\\sqrt{a}}$, $y = \\frac{1}{\\sqrt{b}}$, and $z = \\frac{1}{\\sqrt{c}}$. Since $a, b, c > 0$, we have $x, y, z > 0$.\nThen $a = \\frac{1}{x^2}$, $b = \\frac{1}{y^2}$, and $c = \\frac{1}{z^2}$.\nThe given condition $a + b + c = 4abc$ becomes:\n\\[\\frac{1}{x^2} + \\frac{1}{y^2} + \\frac{1}{z^2} = \\frac{4}{x^2 y^2 z^2}.\\]\nMultiplying both sides by $x^2 y^2 z^2$, we get:\n\\[y^2 z^2 + x^2 z^2 + x^2 y^2 = 4.\\]\nThe expression we want to maximize is:\n\\[E = 4yz + 6xz + 12xy.\\]\nWe want to maximize $E = 12xy + 6xz + 4yz$ subject to $x^2 y^2 + x^2 z^2 + y^2 z^2 = 4$.\nLet $u = xy$, $v = xz$, and $w = yz$. Then the constraint is $u^2 + v^2 + w^2 = 4$.\nThe expression is $E = 12u + 6v + 4w$.\nBy the Cauchy-Schwarz inequality:\n\\[(12u + 6v + 4w)^2 \\le (12^2 + 6^2 + 4^2)(u^2 + v^2 + w^2).\\]\nCalculating the constants:\n\\[12^2 + 6^2 + 4^2 = 144 + 36 + 16 = 196.\\]\nThe constraint is $u^2 + v^2 + w^2 = 4$.\nSo,\n\\[E^2 \\le 196 \\cdot 4 = 784.\\]\nTaking the square root:\n\\[E \\le \\sqrt{784} = 28.\\]\nEquality holds when the vectors $(u, v, w)$ and $(12, 6, 4)$ are proportional:\n\\[\\frac{u}{12} = \\frac{v}{6} = \\frac{w}{4} = k.\\]\nThen $u = 12k$, $v = 6k$, $w = 4k$.\nSubstituting into the constraint $u^2 + v^2 + w^2 = 4$:\n\\[(12k)^2 + (6k)^2 + (4k)^2 = 4 \\implies 144k^2 + 36k^2 + 16k^2 = 4 \\implies 196k^2 = 4 \\implies k^2 = \\frac{4}{196} = \\frac{1}{49}.\\]\nSince $u, v, w > 0$, we have $k = \\frac{1}{7}$.\nThen $u = \\frac{12}{7}$, $v = \\frac{6}{7}$, $w = \\frac{4}{7}$.\nWe must check if there exist $x, y, z > 0$ such that $xy = \\frac{12}{7}$, $xz = \\frac{6}{7}$, and $yz = \\frac{4}{7}$.\nMultiplying these three equations: $(xyz)^2 = \\frac{12 \\cdot 6 \\cdot 4}{7^3} = \\frac{288}{343}$.\nWait, let's check the consistency:\n$x^2 = \\frac{(xy)(xz)}{yz} = \\frac{(12/7)(6/7)}{4/7} = \\frac{72/49}{4/7} = \\frac{72}{49} \\cdot \\frac{7}{4} = \\frac{18}{7}$.\n$y^2 = \\frac{(xy)(yz)}{xz} = \\frac{(12/7)(4/7)}{6/7} = \\frac{48/49}{6/7} = \\frac{48}{49} \\cdot \\frac{7}{6} = \\frac{8}{7}$.\n$z^2 = \\frac{(xz)(yz)}{xy} = \\frac{(6/7)(4/7)}{12/7} = \\frac{24/49}{12/7} = \\frac{24}{49} \\cdot \\frac{7}{12} = \\frac{2}{7}$.\nSince $x^2, y^2, z^2 > 0$, such $x, y, z$ exist.\nThe maximum value is $E = 12(\\frac{12}{7}) + 6(\\frac{6}{7}) + 4(\\frac{4}{7}) = \\frac{144 + 36 + 16}{7} = \\frac{196}{7} = 28$.\n\n\\boxed{28}\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\BOXED{28}$, AND THE STUDENT'S FINAL ANSWER IS ALSO $28$. THESE TWO ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY REPRESENT THE SAME NUMERICAL VALUE. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 329.68,
+    "zuzycie_tokenow": {
+        "wejsciowe": 140,
+        "wyjsciowe": 1316,
+        "suma": 1456
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

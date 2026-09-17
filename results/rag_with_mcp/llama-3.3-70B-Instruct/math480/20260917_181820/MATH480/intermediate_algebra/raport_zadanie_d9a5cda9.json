@@ -1,0 +1,19 @@
+{
+    "task_file": "raport_zadanie_d9a5cda9",
+    "zadanie": "Let $g(x) = x^2 - 11x + 30,$ and let $f(x)$ be a polynomial such that\n\\[g(f(x)) = x^4 - 14x^3 + 62x^2 - 91x + 42.\\]Find the sum of all possible values of $f(10^{100}).$",
+    "oczekiwana_odpowiedz": "Timeout - Endpoint API nie odpowiedzia\u0142 w wyznaczonym czasie",
+    "pelny_przebieg_rozumowania": [],
+    "decyzja_sedziego": "EMPTY",
+    "wynik_ewaluacji": "ERROR",
+    "czas_wykonania": 761.84,
+    "zuzycie_tokenow": {
+        "wejsciowe": 0,
+        "wyjsciowe": 0,
+        "suma": 0
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

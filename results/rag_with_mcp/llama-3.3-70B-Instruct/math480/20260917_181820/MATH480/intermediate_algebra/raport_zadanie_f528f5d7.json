@@ -1,0 +1,19 @@
+{
+    "task_file": "raport_zadanie_f528f5d7",
+    "zadanie": "The sequence $a_0$, $a_1$, $a_2$, $\\ldots\\,$ satisfies the recurrence equation\n\\[\n  a_n = 2 a_{n-1} - 2 a_{n - 2} + a_{n - 3}\n\\]for every integer $n \\ge 3$.  If $a_{20} = 1$, $a_{25} = 10$, and $a_{30} = 100$, what is the value of $a_{1331}$?",
+    "oczekiwana_odpowiedz": "Timeout - Endpoint API nie odpowiedzia\u0142 w wyznaczonym czasie",
+    "pelny_przebieg_rozumowania": [],
+    "decyzja_sedziego": "EMPTY",
+    "wynik_ewaluacji": "ERROR",
+    "czas_wykonania": 756.4,
+    "zuzycie_tokenow": {
+        "wejsciowe": 0,
+        "wyjsciowe": 0,
+        "suma": 0
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

@@ -1,0 +1,23 @@
+{
+    "task_file": "raport_zadanie_021e3570",
+    "zadanie": "A square is drawn such that one of its sides coincides with the line $y = 7$, and so that the endpoints of this side lie on the parabola $y = 2x^2 + 8x + 4$. What is the area of the square?",
+    "oczekiwana_odpowiedz": "The points of intersection of the line $y = 7$ and $y = 2x^2 + 8x + 4$, by substitution, are found when $2x^2 + 8x + 4 = 7 \\Longrightarrow 2x^2 + 8x - 3 = 0$. By the quadratic formula, $$x = \\frac{-8 \\pm \\sqrt{8^2 - 4 \\cdot 2 \\cdot (-3)}}{2 \\cdot 2}.$$We want to find the difference of these roots to find the difference of the x-coordinates of the point of intersection, which will give a side length of the square. The difference is given by $\\frac{\\sqrt{8^2 - 4 \\cdot 2 \\cdot (-3)}}2 = \\frac{\\sqrt{88}}{2} = \\sqrt{22}$. Thus, the area of the square is $\\boxed{22}$.",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nA square is drawn such that one of its sides coincides with the line $y = 7$, and so that the endpoints of this side lie on the parabola $y = 2x^2 + 8x + 4$. What is the area of the square?\n",
+        "[AI]:\nTo find the area of the square, we first need to determine the length of the side that lies on the line $y = 7$.\n\n**Step 1: Find the endpoints of the side on the parabola.**\nThe problem states that the endpoints of one side of the square lie on the parabola $y = 2x^2 + 8x + 4$ and also lie on the line $y = 7$. To find the $x$-coordinates of these endpoints, we set the equations equal to each other:\n$$2x^2 + 8x + 4 = 7$$\n\n**Step 2: Solve the quadratic equation for $x$.**\nSubtract 7 from both sides:\n$$2x^2 + 8x - 3 = 0$$\nWe can use the quadratic formula $x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$ where $a = 2$, $b = 8$, and $c = -3$:\n$$x = \\frac{-8 \\pm \\sqrt{8^2 - 4(2)(-3)}}{2(2)}$$\n$$x = \\frac{-8 \\pm \\sqrt{64 + 24}}{4}$$\n$$x = \\frac{-8 \\pm \\sqrt{88}}{4}$$\nSimplify the square root: $\\sqrt{88} = \\sqrt{4 \\times 22} = 2\\sqrt{22}$.\n$$x = \\frac{-8 \\pm 2\\sqrt{22}}{4}$$\n$$x = \\frac{-4 \\pm \\sqrt{22}}{2}$$\nSo, the two $x$-coordinates are $x_1 = \\frac{-4 - \\sqrt{22}}{2}$ and $x_2 = \\frac{-4 + \\sqrt{22}}{2}$.\n\n**Step 3: Calculate the length of the side of the square.**\nThe side of the square lies on the horizontal line $y = 7$. The length of this side, $s$, is the distance between the two $x$-coordinates:\n$$s = |x_2 - x_1|$$\n$$s = \\left| \\frac{-4 + \\sqrt{22}}{2} - \\left( \\frac{-4 - \\sqrt{22}}{2} \\right) \\right|$$\n$$s = \\left| \\frac{-4 + \\sqrt{22} + 4 + \\sqrt{22}}{2} \\right|$$\n$$s = \\frac{2\\sqrt{22}}{2} = \\sqrt{22}$$\n\n**Step 4: Calculate the area of the square.**\nThe area $A$ of a square is given by the square of its side length:\n$$A = s^2$$\n$$A = (\\sqrt{22})^2$$\n$$A = 22$$\n\nThe area of the square is 22.\n\n\\boxed{22}\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\BOXED{22}$, AND THE STUDENT'S FINAL ANSWER IS ALSO $\\BOXED{22}$. THESE TWO ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY REPRESENT THE SAME NUMERICAL VALUE. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 125.09,
+    "zuzycie_tokenow": {
+        "wejsciowe": 130,
+        "wyjsciowe": 650,
+        "suma": 780
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

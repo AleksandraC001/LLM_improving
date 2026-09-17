@@ -1,0 +1,19 @@
+{
+    "task_file": "raport_zadanie_294085a2",
+    "zadanie": "Let $\\mathbf{a},$ $\\mathbf{b},$ and $\\mathbf{c}$ be three unit vectors such that $\\mathbf{a} \\cdot \\mathbf{b} = \\mathbf{a} \\cdot \\mathbf{c} = 0,$ and the angle between $\\mathbf{b}$ and $\\mathbf{c}$ is $60^\\circ.$  Compute $|\\mathbf{a} \\cdot (\\mathbf{b} \\times \\mathbf{c})|.$",
+    "oczekiwana_odpowiedz": "Timeout - Endpoint API nie odpowiedzia\u0142 w wyznaczonym czasie",
+    "pelny_przebieg_rozumowania": [],
+    "decyzja_sedziego": "EMPTY",
+    "wynik_ewaluacji": "ERROR",
+    "czas_wykonania": 721.64,
+    "zuzycie_tokenow": {
+        "wejsciowe": 0,
+        "wyjsciowe": 0,
+        "suma": 0
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

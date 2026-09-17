@@ -1,0 +1,19 @@
+{
+    "task_file": "raport_zadanie_ad49d736",
+    "zadanie": "The real numbers $a,$ $b,$ $c,$ and $d$ satisfy\n\\[a^2 + b^2 + c^2 + 519 = d + 36 \\sqrt{10a + 14b + 22c - d}.\\]Find $a + b + c + d.$",
+    "oczekiwana_odpowiedz": "Timeout - Endpoint API nie odpowiedzia\u0142 w wyznaczonym czasie",
+    "pelny_przebieg_rozumowania": [],
+    "decyzja_sedziego": "EMPTY",
+    "wynik_ewaluacji": "ERROR",
+    "czas_wykonania": 783.47,
+    "zuzycie_tokenow": {
+        "wejsciowe": 0,
+        "wyjsciowe": 0,
+        "suma": 0
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

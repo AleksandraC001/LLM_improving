@@ -1,0 +1,19 @@
+{
+    "task_file": "raport_zadanie_ff3869ce",
+    "zadanie": "The five tallest buildings in Los Angeles in 1985 had a mean height of 733 feet. The tallest of the five buildings has a height of 858 feet, the shortest of the five 625 feet. If a new building were constructed with a height of 885 feet, by how many feet would it increase the mean height of the five tallest buildings of the city?",
+    "oczekiwana_odpowiedz": "API Connection Error: OpenAIConnectionError('Connection error.'); cause=APIConnectionError('Connection error.')",
+    "pelny_przebieg_rozumowania": [],
+    "decyzja_sedziego": "EMPTY",
+    "wynik_ewaluacji": "ERROR",
+    "czas_wykonania": 14.84,
+    "zuzycie_tokenow": {
+        "wejsciowe": 0,
+        "wyjsciowe": 0,
+        "suma": 0
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

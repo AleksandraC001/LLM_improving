@@ -1,0 +1,19 @@
+{
+    "task_file": "raport_zadanie_465bc4b2",
+    "zadanie": "The polynomial $p(x)$ satisfies $p(1) = 210$ and\n\\[(x + 10) p(2x) = 8(x - 4) p(x + 6)\\]for all real numbers $x.$  Find $p(10).$",
+    "oczekiwana_odpowiedz": "Timeout - Endpoint API nie odpowiedzia\u0142 w wyznaczonym czasie",
+    "pelny_przebieg_rozumowania": [],
+    "decyzja_sedziego": "EMPTY",
+    "wynik_ewaluacji": "ERROR",
+    "czas_wykonania": 721.67,
+    "zuzycie_tokenow": {
+        "wejsciowe": 0,
+        "wyjsciowe": 0,
+        "suma": 0
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

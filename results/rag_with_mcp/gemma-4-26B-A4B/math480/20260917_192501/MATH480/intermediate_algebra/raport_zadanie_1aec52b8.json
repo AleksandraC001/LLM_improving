@@ -1,0 +1,19 @@
+{
+    "task_file": "raport_zadanie_1aec52b8",
+    "zadanie": "Suppose that $x,$ $y,$ and $z$ are complex numbers such that \\[\\begin{aligned} xy &= -80 - 320i, \\\\ yz &=60, \\\\ zx &= -96 + 24i, \\end{aligned}\\]where $i^2 = -1.$ Compute $|x+y+z|.$",
+    "oczekiwana_odpowiedz": "API Connection Error: OpenAIConnectionError('Connection error.'); cause=APIConnectionError('Connection error.')",
+    "pelny_przebieg_rozumowania": [],
+    "decyzja_sedziego": "EMPTY",
+    "wynik_ewaluacji": "ERROR",
+    "czas_wykonania": 1175.14,
+    "zuzycie_tokenow": {
+        "wejsciowe": 0,
+        "wyjsciowe": 0,
+        "suma": 0
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

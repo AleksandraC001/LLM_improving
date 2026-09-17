@@ -1,0 +1,23 @@
+{
+    "task_file": "raport_zadanie_88a16bdb",
+    "zadanie": "How many integers between 100 and 500 have at least two 3s as digits?",
+    "oczekiwana_odpowiedz": "First consider the two $3$s to appear in the units and tens places. Between $100$ and $500$, there are four such numbers: $133$, $233$, $333$, and $433$. Now consider the two $3$s to appear in the units and hundreds places. The numbers will be in the $300$s, so we don't need to worry about if they are between $100$ and $500$. There are $10$ choices for the tens digit, but we have already counted $333$, so such a scenario will add nine numbers. Finally, consider the two $3$s to appear in the tens and hundreds places. Again, these numbers are automatically between $100$ and $500$. There are $10$ choices for the units digit, but we again discard $333$ for a final count of nine such numbers. Thus, our answer is $4+9+9 = \\boxed{22}$.",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nHow many integers between 100 and 500 have at least two 3s as digits?\n",
+        "[AI]:\n## Step 1: Determine the range of numbers\nWe are looking for integers between 100 and 500. This means the first digit can be 1, 2, 3, or 4.\n\n## Step 2: Consider the cases for the hundreds digit\nIf the hundreds digit is 3, then we need at least one more 3 in the tens or units digit. If the hundreds digit is not 3, then we need two 3s in the tens and units digits.\n\n## Step 3: Calculate the number of integers with 3 as the hundreds digit and at least one more 3\nFor the hundreds digit being 3, there are 10 possibilities for the tens digit (0-9) and 10 possibilities for the units digit (0-9), resulting in 100 possible numbers. However, we need to exclude those without any additional 3s. There are 9 possibilities for the tens digit (excluding 3) and 9 possibilities for the units digit (excluding 3), resulting in 9*9 = 81 numbers without an additional 3. Therefore, there are 100 - 81 = 19 numbers with 3 as the hundreds digit and at least one more 3.\n\n## Step 4: Calculate the number of integers with at least two 3s and the hundreds digit not being 3\nFor the hundreds digit not being 3 (1, 2, or 4), we have 3 choices for the hundreds digit. For the tens and units digits, we need at least two 3s, which can be achieved in two ways: the tens digit is 3 and the units digit is 3. There is 1 way to choose the tens digit (3) and 1 way to choose the units digit (3), resulting in 1 possibility for each hundreds digit choice. Therefore, there are 3 * 1 = 3 numbers with at least two 3s and the hundreds digit not being 3.\n\n## Step 5: Add the results of steps 3 and 4\nTo find the total number of integers between 100 and 500 with at least two 3s as digits, we add the results from steps 3 and 4: 19 + 3 = 22.\n\nThe final answer is: $\\boxed{22}$\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\BOXED{22}$, AND THE STUDENT'S FINAL ANSWER IS ALSO $\\BOXED{22}$. THESE TWO ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY REPRESENT THE SAME NUMERICAL VALUE. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 179.77,
+    "zuzycie_tokenow": {
+        "wejsciowe": 107,
+        "wyjsciowe": 483,
+        "suma": 590
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

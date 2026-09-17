@@ -1,0 +1,20 @@
+{
+    "task_file": "raport_zadanie_ea1397aa",
+    "zadanie": "Find the maximum value of\n\\[\\frac{x - y}{x^4 + y^4 + 6}\\]over all real numbers $x$ and $y.$",
+    "oczekiwana_odpowiedz": "Clearly, the maximum occurs when $x$ is positive and $y$ is negative.  Let $z = -y,$ so $z$ is positive, and $y = -z.$  Then\n\\[\\frac{x - y}{x^4 + y^4 + 6} = \\frac{x + z}{x^4 + z^4 + 6}.\\]By AM-GM,\n\\[x^4 + 1 + 1 + 1 \\ge 4 \\sqrt[4]{x^4} = 4x,\\]and\n\\[z^4 + 1 + 1 + 1 \\ge 4 \\sqrt[4]{z^4} = 4z.\\]Then $x^4 + z^4 + 6 \\ge 4(x + z),$ which implies\n\\[\\frac{x + z}{x^4 + z^4 + 6} \\le \\frac{1}{4}.\\]Equality occurs when $x = z = 1,$ so the maximum value is $\\boxed{\\frac{1}{4}}.$",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nFind the maximum value of\n\\[\\frac{x - y}{x^4 + y^4 + 6}\\]over all real numbers $x$ and $y.$\n",
+        "[AI]:\nTo find the maximum value of the expression \n\n\\[\nf(x, y) = \\frac{x - y}{x^4 + y^4 + 6},\n\\]\n\nwe start by analyzing the numerator and the denominator separately. The numerator \\(x - y\\) can take any real value depending on the values of \\(x\\) and \\(y\\). The denominator \\(x^4 + y^4 + 6\\) is always positive since \\(x^4\\) and \\(y^4\\) are non-negative for all real \\(x\\) and \\(y\\).\n\nTo maximize \\(f(x, y)\\), we can rewrite it in terms of a single variable by letting \\(y = kx\\) for some constant \\(k\\). This gives us:\n\n\\[\nf(x, kx) = \\frac{x - kx}{x^4 + (kx)^4 + 6} = \\frac{(1 - k)x}{x^4 + k^4 x^4 + 6} = \\frac{(1 - k)x}{(1 + k^4)x^4 + 6}.\n\\]\n\nNext, we can simplify this expression further by letting \\(x = 1\\) (since the expression is homogeneous of degree 0, we can scale \\(x\\) and \\(y\\) without loss of generality):\n\n\\[\nf(1, k) = \\frac{1 - k}{(1 + k^4) + 6} = \\frac{1 - k}{k^4 + 7}.\n\\]\n\nNow, we need to maximize \\(g(k) = \\frac{1 - k}{k^4 + 7}\\). To do this, we can find the derivative \\(g'(k)\\) and set it to zero:\n\n\\[\ng(k) = \\frac{1 - k}{k^4 + 7}.\n\\]\n\nUsing the quotient rule, we have:\n\n\\[\ng'(k) = \\frac{(k^4 + 7)(-1) - (1 - k)(4k^3)}{(k^4 + 7)^2}.\n\\]\n\nSetting the numerator equal to zero gives:\n\n\\[\n-(k^4 + 7) - 4k^3(1 - k) = 0.\n\\]\n\nThis simplifies to:\n\n\\[\n-k^4 - 7 - 4k^3 + 4k^4 = 0 \\implies 3k^4 - 4k^3 - 7 = 0.\n\\]\n\nTo find the roots of this polynomial, we can use numerical methods or graphing techniques. However, we can also evaluate \\(g(k)\\) at specific values of \\(k\\) to find the maximum.\n\n1. For \\(k = 0\\):\n\n\\[\ng(0) = \\frac{1 - 0}{0^4 + 7} = \\frac{1}{7}.\n\\]\n\n2. For \\(k = 1\\):\n\n\\[\ng(1) = \\frac{1 - 1}{1^4 + 7} = 0.\n\\]\n\n3. For \\(k = -1\\):\n\n\\[\ng(-1) = \\frac{1 - (-1)}{(-1)^4 + 7} = \\frac{2}{1 + 7} = \\frac{2}{8} = \\frac{1}{4}.\n\\]\n\n4. For \\(k = 2\\):\n\n\\[\ng(2) = \\frac{1 - 2}{2^4 + 7} = \\frac{-1}{16 + 7} = \\frac{-1}{23}.\n\\]\n\n5. For \\(k = -2\\):\n\n\\[\ng(-2) = \\frac{1 - (-2)}{(-2)^4 + 7} = \\frac{3}{16 + 7} = \\frac{3}{23}.\n\\]\n\nFrom these evaluations, we see that \\(g(0) = \\frac{1}{7}\\) and \\(g(-1) = \\frac{1}{4}\\) are the largest values we have found. \n\nTo confirm that \\(g(-1) = \\frac{1}{4}\\) is indeed the maximum, we can check the behavior of \\(g(k)\\) as \\(k \\to \\pm \\infty\\) and find that it approaches \\(0\\).\n\nThus, the maximum value of \\(f(x, y)\\) is \n\n\\[\n\\boxed{\\frac{1}{4}}.\n\\]\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\FRAC{1}{4}$, AND THE STUDENT'S FINAL ANSWER IS ALSO $\\FRAC{1}{4}$. THESE TWO ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY REPRESENT THE SAME FRACTION. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 11.2,
+    "zuzycie_tokenow": {
+        "wejsciowe": 103,
+        "wyjsciowe": 955,
+        "suma": 1058
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_rag": 0
+}

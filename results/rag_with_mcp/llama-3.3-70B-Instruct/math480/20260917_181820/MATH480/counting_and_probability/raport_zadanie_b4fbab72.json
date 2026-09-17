@@ -1,0 +1,19 @@
+{
+    "task_file": "raport_zadanie_b4fbab72",
+    "zadanie": "A regular dodecahedron is a convex polyhedron with 12 regular pentagonal faces and 20 vertices.  If two distinct vertices are chosen at random, what is the probability that the line connecting them lies inside the dodecahedron?",
+    "oczekiwana_odpowiedz": "Timeout - Endpoint API nie odpowiedzia\u0142 w wyznaczonym czasie",
+    "pelny_przebieg_rozumowania": [],
+    "decyzja_sedziego": "EMPTY",
+    "wynik_ewaluacji": "ERROR",
+    "czas_wykonania": 768.76,
+    "zuzycie_tokenow": {
+        "wejsciowe": 0,
+        "wyjsciowe": 0,
+        "suma": 0
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

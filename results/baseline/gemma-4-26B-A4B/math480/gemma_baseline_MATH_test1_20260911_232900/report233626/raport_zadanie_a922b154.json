@@ -1,0 +1,23 @@
+{
+    "task_file": "raport_zadanie_a922b154",
+    "zadanie": "In a class of 28 students, the teacher selects four people at random to participate in a geography contest. What is the probability that this group of four students includes at least two of the top three geography students in the class? Express your answer as a common fraction.",
+    "oczekiwana_odpowiedz": "We count the number of ways to choose a group of four students including at least two of the top three geography students.  This is just  $\\binom{3}{2}\\cdot \\binom{25}{2} + \\binom{3}{3}\\cdot\\binom{25}{1} = 925$, since we can choose either 2 or 3 of the top students to be in this group.  In all, there are $\\binom{28}{4} = 20475$ groups of four students.  Thus our desired probability is $\\frac{925}{20475} = \\boxed{\\frac{37}{819}}$.",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nIn a class of 28 students, the teacher selects four people at random to participate in a geography contest. What is the probability that this group of four students includes at least two of the top three geography students in the class? Express your answer as a common fraction.\n",
+        "[AI]:\nTo find the probability that a group of four students selected from a class of 28 includes at least two of the top three geography students, we can use combinatorial methods.\n\n**1. Total number of ways to select 4 students:**\nThe total number of ways to choose 4 students out of 28 is given by the combination formula $\\binom{n}{k} = \\frac{n!}{k!(n-k)!}$.\n$$\\binom{28}{4} = \\frac{28 \\times 27 \\times 26 \\times 25}{4 \\times 3 \\times 2 \\times 1} = 7 \\times 9 \\times 13 \\times 25 = 20475$$\n\n**2. Define the \"special\" group:**\nThere are 3 top students (let's call them $T$) and 25 other students (let's call them $O$). We want to find the number of ways to select 4 students such that the number of students from group $T$ is $\\ge 2$.\n\n**3. Calculate the favorable outcomes:**\nThere are two cases that satisfy the condition \"at least two of the top three\":\n- **Case 1: Exactly 2 students from the top three are selected.**\n  We choose 2 students from the 3 top students and 2 students from the remaining 25 students.\n  $$\\text{Ways} = \\binom{3}{2} \\times \\binom{25}{2}$$\n  $$\\binom{3}{2} = 3$$\n  $$\\binom{25}{2} = \\frac{25 \\times 24}{2} = 300$$\n  $$\\text{Ways (Case 1)} = 3 \\times 300 = 900$$\n\n- **Case 2: Exactly 3 students from the top three are selected.**\n  We choose all 3 top students and 1 student from the remaining 25 students.\n  $$\\text{Ways} = \\binom{3}{3} \\times \\binom{25}{1}$$\n  $$\\binom{3}{3} = 1$$\n  $$\\binom{25}{1} = 25$$\n  $$\\text{Ways (Case 2)} = 1 \\times 25 = 25$$\n\n**4. Total favorable outcomes:**\n$$\\text{Total Favorable} = 900 + 25 = 925$$\n\n**5. Calculate the probability:**\nThe probability $P$ is the ratio of favorable outcomes to total outcomes:\n$$P = \\frac{925}{20475}$$\n\n**6. Simplify the fraction:**\nBoth numbers are divisible by 25:\n$$925 \\div 25 = 37$$\n$$20475 \\div 25 = 819$$\n\nCheck if 37 is a factor of 819:\n$819 \\div 37 \\approx 22.13$ (No)\nSince 37 is a prime number and does not divide 819, the fraction is in simplest form.\n\nFinal calculation check:\n$\\binom{28}{4} = \\frac{28 \\cdot 27 \\cdot 26 \\cdot 25}{24} = 20475$.\n$\\binom{3}{2}\\binom{25}{2} = 3 \\cdot 300 = 900$.\n$\\binom{3}{3}\\binom{25}{1} = 1 \\cdot 25 = 25$.\n$900 + 25 = 925$.\n$925/20475 = 37/819$.\n\n\\boxed{\\frac{37}{819}}\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\FRAC{37}{819}$, AND THE STUDENT'S FINAL ANSWER IS ALSO $\\FRAC{37}{819}$. THESE TWO ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY REPRESENT THE SAME FRACTION. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 103.91,
+    "zuzycie_tokenow": {
+        "wejsciowe": 129,
+        "wyjsciowe": 852,
+        "suma": 981
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

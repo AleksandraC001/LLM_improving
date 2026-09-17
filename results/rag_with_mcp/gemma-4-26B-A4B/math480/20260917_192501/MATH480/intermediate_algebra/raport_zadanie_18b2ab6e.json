@@ -1,0 +1,19 @@
+{
+    "task_file": "raport_zadanie_18b2ab6e",
+    "zadanie": "Let $a,$ $b,$ $c,$ and $d$ be positive real numbers such that $36a + 4b + 4c + 3d = 25.$  Find the maximum value of\n\\[a \\times \\sqrt{b} \\times \\sqrt[3]{c} \\times \\sqrt[4]{d}.\\]",
+    "oczekiwana_odpowiedz": "API Connection Error: OpenAIConnectionError('Connection error.'); cause=APIConnectionError('Connection error.')",
+    "pelny_przebieg_rozumowania": [],
+    "decyzja_sedziego": "EMPTY",
+    "wynik_ewaluacji": "ERROR",
+    "czas_wykonania": 157.11,
+    "zuzycie_tokenow": {
+        "wejsciowe": 0,
+        "wyjsciowe": 0,
+        "suma": 0
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

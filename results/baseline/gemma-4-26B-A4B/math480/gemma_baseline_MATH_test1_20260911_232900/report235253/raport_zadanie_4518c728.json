@@ -1,0 +1,23 @@
+{
+    "task_file": "raport_zadanie_4518c728",
+    "zadanie": "Let $m$ and $n$ be positive integers such that $m = 24n + 51$. What is the largest possible value of the greatest common divisor of $2m$ and $3n$?",
+    "oczekiwana_odpowiedz": "Using the Euclidean Algorithm, we obtain \\begin{align*}\n\\text{gcd}(2m, 3n) &= \\text{gcd}(2m-3n\\cdot16, 3n) \\\\\n&= \\text{gcd}(2\\cdot(24n+51)-48n, 3n) \\\\\n&= \\text{gcd}(102, 3n) \\\\\n&\\leq 102.\n\\end{align*}Therefore, the largest possible value of $\\text{gcd}(2m, 3n)$ is $\\boxed{102}$. For example, this is possible when $n=34 \\Rightarrow m=867$, as $3n=102$ and $2m=1734=102\\cdot17$.",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nLet $m$ and $n$ be positive integers such that $m = 24n + 51$. What is the largest possible value of the greatest common divisor of $2m$ and $3n$?\n",
+        "[AI]:\nTo find the largest possible value of the greatest common divisor (GCD) of $2m$ and $3n$, we start with the given equation:\n$m = 24n + 51$\n\nWe want to find $\\gcd(2m, 3n)$.\nFirst, substitute the expression for $m$ into the GCD:\n$\\gcd(2m, 3n) = \\gcd(2(24n + 51), 3n)$\n$\\gcd(2m, 3n) = \\gcd(48n + 102, 3n)$\n\nUsing the property of GCD, $\\gcd(a, b) = \\gcd(a - kb, b)$ for any integer $k$. We can subtract a multiple of $3n$ from $48n + 102$ to simplify the expression. Let $k = 16$:\n$\\gcd(48n + 102, 3n) = \\gcd(48n + 102 - 16(3n), 3n)$\n$\\gcd(48n + 102, 3n) = \\gcd(48n + 102 - 48n, 3n)$\n$\\gcd(48n + 102, 3n) = \\gcd(102, 3n)$\n\nNow we need to find the largest possible value of $\\gcd(102, 3n)$.\nThe GCD of two numbers must be a divisor of both numbers. Therefore, $\\gcd(102, 3n)$ must be a divisor of $102$.\nThe divisors of $102$ are: $1, 2, 3, 6, 17, 34, 51, 102$.\n\nHowever, the second term is $3n$. This means the GCD must also be a divisor of $3n$. Since $3$ is a factor of $3n$, any divisor of $102$ that is a multiple of $3$ is a potential candidate for the GCD, provided we can find an $n$ that makes it work.\nLet $g = \\gcd(102, 3n)$.\nFor $g$ to be the GCD, $g$ must divide $102$ and $g$ must divide $3n$.\nThe divisors of $102$ are $\\{1, 2, 3, 6, 17, 34, 51, 102\\}$.\nThe divisors of $102$ that are multiples of $3$ are $\\{3, 6, 51, 102\\}$.\n\nLet's check if $g = 102$ is possible:\nIf $\\gcd(102, 3n) = 102$, then $102$ must divide $3n$.\n$3n = 102k$ for some integer $k$.\n$n = 34k$.\nIf $n = 34$, then $3n = 102$.\n$\\gcd(102, 102) = 102$.\nLet's verify if this works with the original $m$:\nIf $n = 34$, $m = 24(34) + 51 = 816 + 51 = 867$.\nThen $2m = 2(867) = 1734$.\n$3n = 3(34) = 102$.\n$\\gcd(1734, 102)$:\n$1734 = 17 \\times 102$.\nSo $\\gcd(1734, 102) = 102$.\n\nSince $102$ is the largest divisor of $102$, and we have found a value of $n$ that achieves it, $102$ is the largest possible value.\n\nFinal check:\n$m = 24n + 51$\n$2m = 48n + 102$\n$\\gcd(48n + 102, 3n) = \\gcd(102, 3n)$\nThe maximum value of $\\gcd(102, 3n)$ is $102$ when $3n$ is a multiple of $102$.\n$3n = 102k \\implies n = 34k$.\nSince $n$ must be a positive integer, $k=1$ gives $n=34$, which is valid.\n\n\\boxed{102}\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\BOXED{102}$, AND THE STUDENT'S FINAL ANSWER IS ALSO $\\BOXED{102}$. THESE TWO ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY REPRESENT THE SAME NUMERICAL VALUE. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 206.29,
+    "zuzycie_tokenow": {
+        "wejsciowe": 120,
+        "wyjsciowe": 1040,
+        "suma": 1160
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

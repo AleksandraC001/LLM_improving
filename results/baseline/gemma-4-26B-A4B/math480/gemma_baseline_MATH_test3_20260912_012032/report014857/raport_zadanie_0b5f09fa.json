@@ -1,0 +1,23 @@
+{
+    "task_file": "raport_zadanie_0b5f09fa",
+    "zadanie": "Before taking his last test in a class, the arithmetic mean of Brian's  test scores is 91. He has determined that if he scores 98 on his last test, the arithmetic mean of all his test scores will be exactly 92. How many tests, including the last test, does Brian take for this class?",
+    "oczekiwana_odpowiedz": "Let $S$ be the sum of all of Brian's test scores up to this point, and let $n$ be the number of tests Brian has taken up to this point. Thus the arithmetic mean of his scores now is $\\frac{S}{n}$ and the arithmetic mean of his scores after getting a 98 on the last test will be $\\frac{S+98}{n+1}$. This gives the system of equations: \\begin{align*}\n\\frac{S}{n} &= 91 & \\frac{S+98}{n+1} & = 92\n\\end{align*} From the first equation we have $S = 91n$. Substituting this into the second equation gives: \\begin{align*}\n\\frac{S+98}{n+1} &= 92\\\\\nS+98 &= 92(n+1)\\\\\n91n+98 &= 92n+92\\\\\n92n-91n&= 98-92\\\\\nn&= 6\n\\end{align*} So Brian has to take $n+1 = \\boxed{7}$ tests.",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nBefore taking his last test in a class, the arithmetic mean of Brian's  test scores is 91. He has determined that if he scores 98 on his last test, the arithmetic mean of all his test scores will be exactly 92. How many tests, including the last test, does Brian take for this class?\n",
+        "[AI]:\nTo find the number of tests Brian takes, we can set up an algebraic equation based on the definition of the arithmetic mean.\n\n**1. Define the variables:**\nLet $n$ be the number of tests Brian has taken *before* the last test.\nLet $S$ be the sum of the scores of these $n$ tests.\n\n**2. Set up the first equation:**\nThe problem states that the arithmetic mean of his first $n$ tests is 91.\nThe formula for the mean is $\\text{Mean} = \\frac{\\text{Sum}}{\\text{Number of items}}$.\nSo, $\\frac{S}{n} = 91$.\nFrom this, we can express the sum of the first $n$ tests as:\n$S = 91n$\n\n**3. Set up the second equation:**\nThe problem states that if he scores 98 on his last test, the new mean of all his tests will be 92.\nThe total number of tests will then be $n + 1$.\nThe new sum of all tests will be $S + 98$.\nThe new mean is:\n$\\frac{S + 98}{n + 1} = 92$\n\n**4. Solve for $n$:**\nSubstitute $S = 91n$ into the second equation:\n$\\frac{91n + 98}{n + 1} = 92$\n\nMultiply both sides by $(n + 1)$ to clear the fraction:\n$91n + 98 = 92(n + 1)$\n\nExpand the right side:\n$91n + 98 = 92n + 92$\n\nRearrange the equation to solve for $n$:\n$98 - 92 = 92n - 91n$\n$6 = n$\n\n**5. Determine the total number of tests:**\nThe variable $n$ represents the number of tests taken *before* the last test. The question asks for the total number of tests, *including* the last test.\nTotal tests $= n + 1$\nTotal tests $= 6 + 1 = 7$\n\n**Verification:**\nIf $n=6$, the sum is $6 \\times 91 = 546$.\nIf he scores 98 on the 7th test, the new sum is $546 + 98 = 644$.\nThe new mean is $644 / 7 = 92$.\nThe calculation is correct.\n\n\\boxed{7}\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\BOXED{7}$, AND THE STUDENT'S FINAL ANSWER IS ALSO $\\BOXED{7}$. THESE TWO ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY BOTH REPRESENT THE TOTAL NUMBER OF TESTS BRIAN NEEDS TO TAKE. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 67.17,
+    "zuzycie_tokenow": {
+        "wejsciowe": 144,
+        "wyjsciowe": 566,
+        "suma": 710
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

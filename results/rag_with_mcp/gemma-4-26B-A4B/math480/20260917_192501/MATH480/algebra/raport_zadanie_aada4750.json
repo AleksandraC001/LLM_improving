@@ -1,0 +1,19 @@
+{
+    "task_file": "raport_zadanie_aada4750",
+    "zadanie": "If $f(c)=\\frac{3}{2c-3}$, find $\\frac{kn^2}{lm}$ when $f^{-1}(c)\\times c \\times f(c)$ equals the simplified fraction$\\frac{kc+l}{mc+n}$, where $k,l,m,\\text{ and }n$ are integers.",
+    "oczekiwana_odpowiedz": "API Connection Error: OpenAIConnectionError('Connection error.'); cause=APIConnectionError('Connection error.')",
+    "pelny_przebieg_rozumowania": [],
+    "decyzja_sedziego": "EMPTY",
+    "wynik_ewaluacji": "ERROR",
+    "czas_wykonania": 475.86,
+    "zuzycie_tokenow": {
+        "wejsciowe": 0,
+        "wyjsciowe": 0,
+        "suma": 0
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

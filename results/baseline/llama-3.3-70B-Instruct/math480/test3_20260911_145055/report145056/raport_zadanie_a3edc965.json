@@ -1,0 +1,23 @@
+{
+    "task_file": "raport_zadanie_a3edc965",
+    "zadanie": "An audience of $450$ people is seated in an auditorium. Each row contains the same number of seats and each seat in the auditorium is occupied. With three fewer seats per row, and five extra rows, the same audience could still be seated, occupying all seats. How many rows does the auditorium have?",
+    "oczekiwana_odpowiedz": "Let $r$ be the number of rows, and $s$ be the number of seats per row. It follows that $rs = 450$ and $(r + 5)(s - 3) = 450$. Expanding the second equation, it follows that $rs - 3r + 5s - 15 = 450$, and substituting the value of $rs$, it follows that $3r - 5s + 15 = 0$. Substituting $s = \\frac{450}{r}$ into this new equation, we obtain that $$3r - 5 \\cdot \\frac{450}{r}+ 15 = 0 \\Longrightarrow r +5 -\\frac{750}{r} = 0.$$ Multiplying both sides of the equation by $r$ yields the quadratic equation $r^2 + 5r - 750 = 0$, which factors as $(r + 30)(r - 25) = 0$. Thus, $r = \\boxed{25}$.",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nAn audience of $450$ people is seated in an auditorium. Each row contains the same number of seats and each seat in the auditorium is occupied. With three fewer seats per row, and five extra rows, the same audience could still be seated, occupying all seats. How many rows does the auditorium have?\n",
+        "[AI]:\n## Step 1: Define the variables\nLet's denote the number of rows in the auditorium as $r$ and the number of seats per row as $s$. We are given that the total number of people (which is also the total number of seats) is $450$, so we have the equation $r \\cdot s = 450$.\n\n## Step 2: Formulate the relationship with fewer seats per row and extra rows\nWith three fewer seats per row and five extra rows, the total number of seats (and thus the total number of people) remains the same. This gives us another equation: $(r + 5)(s - 3) = 450$.\n\n## Step 3: Expand the second equation\nExpanding the equation $(r + 5)(s - 3) = 450$, we get $rs - 3r + 5s - 15 = 450$.\n\n## Step 4: Substitute $rs$ from the first equation into the expanded second equation\nSince we know $rs = 450$ from the first equation, we can substitute it into the expanded form of the second equation to get $450 - 3r + 5s - 15 = 450$. This simplifies to $-3r + 5s - 15 = 0$.\n\n## Step 5: Rearrange the equation to solve for one variable in terms of the other\nRearranging the equation $-3r + 5s - 15 = 0$ gives us $5s = 3r + 15$.\n\n## Step 6: Express $s$ in terms of $r$\nFrom $5s = 3r + 15$, we find $s = \\frac{3r + 15}{5}$.\n\n## Step 7: Substitute $s$ back into the first equation to solve for $r$\nSubstituting $s = \\frac{3r + 15}{5}$ into $r \\cdot s = 450$, we get $r \\cdot \\frac{3r + 15}{5} = 450$. This simplifies to $3r^2 + 15r = 2250$.\n\n## Step 8: Rearrange and solve the quadratic equation\nRearranging gives us $3r^2 + 15r - 2250 = 0$. Dividing the entire equation by $3$ to simplify, we get $r^2 + 5r - 750 = 0$.\n\n## Step 9: Solve the quadratic equation for $r$\nTo solve $r^2 + 5r - 750 = 0$, we can use the quadratic formula, $r = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$, where $a = 1$, $b = 5$, and $c = -750$. Substituting these values in gives $r = \\frac{-5 \\pm \\sqrt{5^2 - 4 \\cdot 1 \\cdot (-750)}}{2 \\cdot 1}$.\n\n## Step 10: Calculate the discriminant and solve for $r$\nThe discriminant is $5^2 - 4 \\cdot 1 \\cdot (-750) = 25 + 3000 = 3025$. So, $r = \\frac{-5 \\pm \\sqrt{3025}}{2}$. Since $\\sqrt{3025} = 55$, we have $r = \\frac{-5 \\pm 55}{2}$. This gives two possible values for $r$: $r = \\frac{-5 + 55}{2} = 25$ or $r = \\frac{-5 - 55}{2} = -30$. Since the number of rows cannot be negative, $r = 25$.\n\nThe final answer is: $\\boxed{25}$\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $R = \\BOXED{25}$, AND THE STUDENT'S FINAL ANSWER IS ALSO $R = \\BOXED{25}$. THESE TWO ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY REPRESENT THE SAME NUMERICAL VALUE.\n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 296.2,
+    "zuzycie_tokenow": {
+        "wejsciowe": 153,
+        "wyjsciowe": 818,
+        "suma": 971
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

@@ -1,0 +1,19 @@
+{
+    "task_file": "raport_zadanie_3601b556",
+    "zadanie": "Let  \\[f(x) =\n\\begin{cases}\nk(x) &\\text{if }x>3, \\\\\nx^2-6x+12&\\text{if }x\\leq3.\n\\end{cases}\n\\] Find the function $k(x)$ such that $f$ is its own inverse.",
+    "oczekiwana_odpowiedz": "Timeout - Endpoint API nie odpowiedzia\u0142 w wyznaczonym czasie",
+    "pelny_przebieg_rozumowania": [],
+    "decyzja_sedziego": "EMPTY",
+    "wynik_ewaluacji": "ERROR",
+    "czas_wykonania": 972.36,
+    "zuzycie_tokenow": {
+        "wejsciowe": 0,
+        "wyjsciowe": 0,
+        "suma": 0
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

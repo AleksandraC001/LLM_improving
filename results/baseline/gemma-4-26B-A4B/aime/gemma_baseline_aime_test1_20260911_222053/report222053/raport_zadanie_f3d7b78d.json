@@ -1,0 +1,23 @@
+{
+    "task_file": "raport_zadanie_f3d7b78d",
+    "zadanie": "Find the sum of all real numbers $r$ such that there is at least one point where the circle with radius $r$ centered at $(4, 39)$ is tangent to the parabola with equation $2y = x^2 - 8x + 12.$",
+    "oczekiwana_odpowiedz": "\\boxed{50}",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nFind the sum of all real numbers $r$ such that there is at least one point where the circle with radius $r$ centered at $(4, 39)$ is tangent to the parabola with equation $2y = x^2 - 8x + 12.$\n",
+        "[AI]:\nTo find the sum of all real numbers $r$ such that a circle with radius $r$ centered at $C(4, 39)$ is tangent to the parabola $2y = x^2 - 8x + 12$, we first rewrite the parabola equation in a more convenient form.\n\nThe parabola equation is:\n$2y = (x^2 - 8x + 16) - 16 + 12$\n$2y = (x-4)^2 - 4$\n$y = \\frac{1}{2}(x-4)^2 - 2$\n\nLet a point on the parabola be $P(x, y)$. Since the circle is centered at $C(4, 39)$, the distance squared from $C$ to any point $P$ on the parabola is:\n$d^2 = (x-4)^2 + (y-39)^2$\n\nFrom the parabola equation, we have $(x-4)^2 = 2y + 4$. Substituting this into the distance formula:\n$d^2 = (2y + 4) + (y - 39)^2$\n$d^2 = 2y + 4 + y^2 - 78y + 1521$\n$d^2 = y^2 - 76y + 1525$\n\nFor the circle to be tangent to the parabola, the radius $r$ must be a value such that $r^2$ is a local extremum (specifically a minimum or a point where the distance function changes behavior) of the distance function $f(y) = y^2 - 76y + 1525$. However, we must respect the domain of $y$.\nSince $y = \\frac{1}{2}(x-4)^2 - 2$, the minimum value of $y$ is $-2$. Thus, $y \\in [-2, \\infty)$.\n\nWe analyze the function $f(y) = y^2 - 76y + 1525$ for $y \\ge -2$.\nThe vertex of this parabola in $y$ occurs at:\n$y_{vertex} = -\\frac{-76}{2(1)} = 38$\n\nSince $38 \\in [-2, \\infty)$, we check the value of $d^2$ at the vertex and at the boundary $y = -2$.\n\n1. **At the vertex $y = 38$:**\n$d^2 = (38)^2 - 76(38) + 1525$\n$d^2 = 38^2 - 2(38^2) + 1525$\n$d^2 = 1525 - 38^2$\n$d^2 = 1525 - 1444 = 81$\n$r^2 = 81 \\implies r = 9$ (since $r > 0$)\nAt $y=38$, $(x-4)^2 = 2(38)+4 = 80$, so $x = 4 \\pm \\sqrt{80}$. This gives two points of tangency.\n\n2. **At the boundary $y = -2$:**\n$d^2 = (-2)^2 - 76(-2) + 1525$\n$d^2 = 4 + 152 + 1525 = 1681$\n$r^2 = 1681 \\implies r = \\sqrt{1681} = 41$\nAt $y=-2$, $(x-4)^2 = 2(-2)+4 = 0$, so $x=4$. This is the vertex of the parabola. A circle tangent at the vertex of the parabola is a valid case of tangency.\n\nAre there any other cases? Tangency occurs when the circle and parabola share a common tangent line at a point. This happens when the normal to the parabola at $P$ passes through the center $C$.\nThe slope of the tangent to the parabola is $\\frac{dy}{dx} = x-4$.\nThe slope of the normal is $m_{norm} = -\\frac{1}{x-4}$.\nThe slope of the line $CP$ is $\\frac{y-39}{x-4}$.\nSetting them equal: $\\frac{y-39}{x-4} = -\\frac{1}{x-4} \\implies y-39 = -1 \\implies y = 38$.\nThis confirms our vertex calculation $y=38$ for the case where the circle is tangent at two points.\n\nThe case $y=-2$ is the point where the circle is tangent to the parabola at its vertex. In this case, the normal to the parabola at $(4, -2)$ is the vertical line $x=4$, which passes through $C(4, 39)$.\n\nThe possible values for $r$ are $9$ and $41$.\nThe sum is $9 + 41 = 50$.\n\n$\\boxed{50}$\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\BOXED{50}$, AND THE STUDENT'S FINAL ANSWER IS ALSO $50$. THESE TWO ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY REPRESENT THE SAME NUMERICAL VALUE. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 205.04,
+    "zuzycie_tokenow": {
+        "wejsciowe": 132,
+        "wyjsciowe": 1138,
+        "suma": 1270
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

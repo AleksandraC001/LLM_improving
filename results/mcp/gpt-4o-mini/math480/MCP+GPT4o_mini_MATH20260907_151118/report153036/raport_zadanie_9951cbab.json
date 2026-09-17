@@ -1,0 +1,20 @@
+{
+    "task_file": "raport_zadanie_9951cbab",
+    "zadanie": "What is the sum of all integer values of $x$ such that $\\frac{67}{2x - 23}$ is an integer?",
+    "oczekiwana_odpowiedz": "Checking the primes less than $\\sqrt{67}$, namely 2, 3, 5, and 7, as potential divisors, we find that 67 is prime. Thus, $\\frac{67}{2x-23}$ is an integer if and only if $2x-23=\\pm1$ or $2x-23=\\pm67$. The first equation yields $x=12$ or $x=11$ and the second gives $x=45$ or $x=-22$. The sum is $12+11+45-22=\\boxed{46}$.",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Always in each step, formulate a thought, perform an action (you must call the tool), and draw conclusions from observing that action.\n\n    TOOL USE INSTRUCTION:\n    - You have access to tools, but you decide whether to use them. PREFER delegating calculations to tools over doing \"mental math\" in plain text.\n    - Python Interpreter ('python_interpreter'): Your primary tool. Use it for most numerical and symbolic calculations.\n    - Wolfram Alpha ('ask_wolfram'): Use this for complex symbolic mathematics, difficult integrals, or if Python returns an error.\n    - Brave Search ('brave_search'): Use to find general mathematical definitions, theorems, or formulas.\n\n    ERROR HANDLING:\n    If any tool returns an error, DO NOT repeat the exact same tool call. You must analyze the error, fix the syntax/parameters, switch to an alternative tool, or solve the step manually.    \n    \n    FINAL OUTPUT:\n    When you reach the final answer return it in enclosed in a LaTeX box: \\boxed{answer}\n",
+        "[HUMAN]:\nWhat is the sum of all integer values of $x$ such that $\\frac{67}{2x - 23}$ is an integer?\n",
+        "[AI]:\nTo determine the integer values of \\( x \\) such that \\( \\frac{67}{2x - 23} \\) is an integer, we start by recognizing that for \\( \\frac{67}{2x - 23} \\) to be an integer, \\( 2x - 23 \\) must be a divisor of \\( 67 \\).\n\nThe integer \\( 67 \\) is a prime number, so its divisors are \\( 1, -1, 67, \\) and \\( -67 \\). We will set \\( 2x - 23 \\) equal to each of these divisors and solve for \\( x \\).\n\n1. **Case 1:** \\( 2x - 23 = 1 \\)\n   \\[\n   2x = 1 + 23 = 24 \\implies x = \\frac{24}{2} = 12\n   \\]\n\n2. **Case 2:** \\( 2x - 23 = -1 \\)\n   \\[\n   2x = -1 + 23 = 22 \\implies x = \\frac{22}{2} = 11\n   \\]\n\n3. **Case 3:** \\( 2x - 23 = 67 \\)\n   \\[\n   2x = 67 + 23 = 90 \\implies x = \\frac{90}{2} = 45\n   \\]\n\n4. **Case 4:** \\( 2x - 23 = -67 \\)\n   \\[\n   2x = -67 + 23 = -44 \\implies x = \\frac{-44}{2} = -22\n   \\]\n\nNow we have found the integer values of \\( x \\):\n- From Case 1: \\( x = 12 \\)\n- From Case 2: \\( x = 11 \\)\n- From Case 3: \\( x = 45 \\)\n- From Case 4: \\( x = -22 \\)\n\nNext, we will sum these integer values:\n\\[\n12 + 11 + 45 - 22\n\\]\n\nCalculating this step-by-step:\n\\[\n12 + 11 = 23\n\\]\n\\[\n23 + 45 = 68\n\\]\n\\[\n68 - 22 = 46\n\\]\n\nThus, the sum of all integer values of \\( x \\) such that \\( \\frac{67}{2x - 23} \\) is an integer is:\n\\[\n\\boxed{46}\n\\]\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\BOXED{46}$, AND THE STUDENT'S FINAL ANSWER IS ALSO $\\BOXED{46}$. THESE TWO ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY REPRESENT THE SAME NUMERICAL VALUE. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 4.99,
+    "zuzycie_tokenow": {
+        "wejsciowe": 559,
+        "wyjsciowe": 526,
+        "suma": 1085
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_rag": 0
+}

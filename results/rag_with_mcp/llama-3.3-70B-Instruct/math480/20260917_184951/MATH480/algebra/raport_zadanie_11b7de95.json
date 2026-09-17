@@ -1,0 +1,19 @@
+{
+    "task_file": "raport_zadanie_11b7de95",
+    "zadanie": "Define the function $g(x)=3x+2$. If $g(x)=2f^{-1}(x)$ and $f^{-1}(x)$ is the inverse of the function $f(x)=ax+b$, find $\\dfrac{a+b}{2}$.",
+    "oczekiwana_odpowiedz": "Timeout - Endpoint API nie odpowiedzia\u0142 w wyznaczonym czasie",
+    "pelny_przebieg_rozumowania": [],
+    "decyzja_sedziego": "EMPTY",
+    "wynik_ewaluacji": "ERROR",
+    "czas_wykonania": 721.46,
+    "zuzycie_tokenow": {
+        "wejsciowe": 0,
+        "wyjsciowe": 0,
+        "suma": 0
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

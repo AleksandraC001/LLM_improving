@@ -1,0 +1,19 @@
+{
+    "task_file": "raport_zadanie_22cc4293",
+    "zadanie": "Let $\\mathbf{u}$ and $\\mathbf{v}$ be vectors such that $\\|\\mathbf{u}\\| = \\|\\mathbf{v}\\| = 2$ and $\\mathbf{u} \\cdot \\mathbf{v} = -1.$  If $\\theta$ is the angle between the vectors $\\mathbf{u} + \\mathbf{v}$ and $2 \\mathbf{u} - \\mathbf{v},$ then find $\\cos \\theta.$",
+    "oczekiwana_odpowiedz": "Inny b\u0142\u0105d: Object of type coroutine is not JSON serializable",
+    "pelny_przebieg_rozumowania": [],
+    "decyzja_sedziego": "EMPTY",
+    "wynik_ewaluacji": "ERROR",
+    "czas_wykonania": 0.0,
+    "zuzycie_tokenow": {
+        "wejsciowe": 0,
+        "wyjsciowe": 0,
+        "suma": 0
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

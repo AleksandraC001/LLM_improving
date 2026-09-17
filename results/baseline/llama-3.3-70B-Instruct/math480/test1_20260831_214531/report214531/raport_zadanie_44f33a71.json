@@ -1,0 +1,20 @@
+{
+    "task_file": "raport_zadanie_44f33a71",
+    "zadanie": "A 10-by-12-inch page has margins of 1.5 inches on all sides. What fraction of the area of the page is taken up by the margins? Express your answer as a common fraction.",
+    "oczekiwana_odpowiedz": "A 10-by-12-inch paper will have an area of $10 \\cdot 12 = 120$ square inches. If that paper has 1.5 inch margins on all sides, then the portion of the paper that is not covered by margins will be a rectangular section with length $12 - 2(1.5) = 9$ inches and width $10 - 2(1.5) = 7$ inches. Thus, $9 \\cdot 7 = 63$ square inches of the paper will not be taken up by the margins. Since the paper has a total area of $120$ square in, this means that $120-63=57$ square inches of the page is taken up by margins. Thus, margins take up $\\dfrac{57}{120}=\\boxed{\\dfrac{19}{40}}$ of the page.",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nA 10-by-12-inch page has margins of 1.5 inches on all sides. What fraction of the area of the page is taken up by the margins? Express your answer as a common fraction.\n",
+        "[AI]:\n## Step 1: Calculate the total area of the page\nThe total area of the page can be calculated by multiplying the length and width of the page. The length of the page is 12 inches, and the width is 10 inches. So, the total area of the page is $12 \\times 10 = 120$ square inches.\n\n## Step 2: Calculate the area of the inner page (without margins)\nTo find the area of the inner page, we need to subtract the margins from the length and width of the page. The margins are 1.5 inches on all sides. So, the length of the inner page is $12 - 2 \\times 1.5 = 12 - 3 = 9$ inches, and the width is $10 - 2 \\times 1.5 = 10 - 3 = 7$ inches. The area of the inner page is $9 \\times 7 = 63$ square inches.\n\n## Step 3: Calculate the area taken up by the margins\nThe area taken up by the margins can be found by subtracting the area of the inner page from the total area of the page. So, the area taken up by the margins is $120 - 63 = 57$ square inches.\n\n## Step 4: Calculate the fraction of the area taken up by the margins\nTo find the fraction of the area taken up by the margins, we need to divide the area taken up by the margins by the total area of the page. So, the fraction is $\\frac{57}{120}$.\n\n## Step 5: Simplify the fraction\nTo simplify the fraction, we need to find the greatest common divisor (GCD) of 57 and 120. The GCD of 57 and 120 is 3. So, the simplified fraction is $\\frac{57 \\div 3}{120 \\div 3} = \\frac{19}{40}$.\n\nThe final answer is: $\\boxed{\\frac{19}{40}}$\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\BOXED{\\DFRAC{19}{40}}$, AND THE STUDENT'S FINAL ANSWER IS $\\FRAC{19}{40}$. THESE TWO ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY REPRESENT THE SAME FRACTION. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 147.88,
+    "zuzycie_tokenow": {
+        "wejsciowe": 131,
+        "wyjsciowe": 421,
+        "suma": 552
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_rag": 0
+}

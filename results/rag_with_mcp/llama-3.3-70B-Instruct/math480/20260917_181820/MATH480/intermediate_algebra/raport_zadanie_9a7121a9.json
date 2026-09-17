@@ -1,0 +1,19 @@
+{
+    "task_file": "raport_zadanie_9a7121a9",
+    "zadanie": "Determine $w^2+x^2+y^2+z^2$ if\n\\[\\begin{aligned} \\frac{x^2}{2^2-1}+\\frac{y^2}{2^2-3^2}+\\frac{z^2}{2^2-5^2}+\\frac{w^2}{2^2-7^2}&= 1 \\\\\n\\frac{x^2}{4^2-1}+\\frac{y^2}{4^2-3^2}+\\frac{z^2}{4^2-5^2}+\\frac{w^2}{4^2-7^2} &= 1 \\\\\n\\frac{x^2}{6^2-1}+\\frac{y^2}{6^2-3^2}+\\frac{z^2}{6^2-5^2}+\\frac{w^2}{6^2-7^2} &= 1 \\\\\n\\frac{x^2}{8^2-1}+\\frac{y^2}{8^2-3^2}+\\frac{z^2}{8^2-5^2}+\\frac{w^2}{8^2-7^2} &= 1. \\end{aligned}\\]",
+    "oczekiwana_odpowiedz": "Timeout - Endpoint API nie odpowiedzia\u0142 w wyznaczonym czasie",
+    "pelny_przebieg_rozumowania": [],
+    "decyzja_sedziego": "EMPTY",
+    "wynik_ewaluacji": "ERROR",
+    "czas_wykonania": 754.99,
+    "zuzycie_tokenow": {
+        "wejsciowe": 0,
+        "wyjsciowe": 0,
+        "suma": 0
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

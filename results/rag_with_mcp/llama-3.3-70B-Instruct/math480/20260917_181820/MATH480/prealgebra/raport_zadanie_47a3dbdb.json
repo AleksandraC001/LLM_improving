@@ -1,0 +1,19 @@
+{
+    "task_file": "raport_zadanie_47a3dbdb",
+    "zadanie": "A group of people have the number 12345.6789 written on a piece of paper. Then the group decides to play a game. The winner of the game is the person who can round the given number and get a number higher than any other person. Alice rounds to the nearest ten-thousand, Bob to the nearest thousand, Carol to the nearest hundred, Devon to the nearest ten, and Eugene to the nearest whole number. In addition, Felicity rounds the number to the nearest tenth, Gerald to the nearest hundredth, Harry to the nearest thousandth, and Irene rounds to the nearest ten-thousandth. Who wins the game?",
+    "oczekiwana_odpowiedz": "API Connection Error: OpenAIConnectionError('Connection error.'); cause=APIConnectionError('Connection error.')",
+    "pelny_przebieg_rozumowania": [],
+    "decyzja_sedziego": "EMPTY",
+    "wynik_ewaluacji": "ERROR",
+    "czas_wykonania": 14.76,
+    "zuzycie_tokenow": {
+        "wejsciowe": 0,
+        "wyjsciowe": 0,
+        "suma": 0
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

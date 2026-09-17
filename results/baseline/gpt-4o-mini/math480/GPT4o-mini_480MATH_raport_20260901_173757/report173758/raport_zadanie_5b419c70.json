@@ -1,0 +1,20 @@
+{
+    "task_file": "raport_zadanie_5b419c70",
+    "zadanie": "A rectangular garden has a length that is twice its width. The dimensions are increased so that the perimeter is doubled and the new shape is a square with an area of 3600 square feet. What was the area of the original garden, in square feet?",
+    "oczekiwana_odpowiedz": "Let $w$ be the width of the original rectangular garden.  The perimeter of the rectangle is $2(w+2w)=6w$, so the perimeter of the square is $12w$.  The dimensions of the square are $3w\\times 3w$ and its area is $(3w)(3w)=9w^2$, so set $9w^2=3600\\text{ ft.}^2$ to find $w^2=400$ square feet.  The area of the original rectangle is $(2w)(w)=2w^2=2\\cdot400\\text{ ft.}^2=\\boxed{800}$ square feet.",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nA rectangular garden has a length that is twice its width. The dimensions are increased so that the perimeter is doubled and the new shape is a square with an area of 3600 square feet. What was the area of the original garden, in square feet?\n",
+        "[AI]:\nLet the width of the original rectangular garden be \\( w \\). Then, the length of the garden is \\( 2w \\).\n\nThe perimeter \\( P \\) of the original rectangular garden can be calculated using the formula for the perimeter of a rectangle:\n\n\\[\nP = 2(\\text{length} + \\text{width}) = 2(2w + w) = 2(3w) = 6w\n\\]\n\nAccording to the problem, the dimensions of the garden are increased such that the perimeter is doubled. Therefore, the new perimeter \\( P' \\) is:\n\n\\[\nP' = 2P = 2(6w) = 12w\n\\]\n\nThe new shape is a square, and the perimeter of a square is given by \\( 4s \\), where \\( s \\) is the side length of the square. Setting the new perimeter equal to the perimeter of the square, we have:\n\n\\[\n4s = 12w\n\\]\n\nFrom this, we can solve for \\( s \\):\n\n\\[\ns = \\frac{12w}{4} = 3w\n\\]\n\nNext, we know that the area of the square is given as 3600 square feet. The area \\( A \\) of a square is calculated as:\n\n\\[\nA = s^2\n\\]\n\nSubstituting \\( s = 3w \\) into the area formula gives:\n\n\\[\n(3w)^2 = 3600\n\\]\n\nThis simplifies to:\n\n\\[\n9w^2 = 3600\n\\]\n\nTo find \\( w^2 \\), we divide both sides by 9:\n\n\\[\nw^2 = \\frac{3600}{9} = 400\n\\]\n\nTaking the square root of both sides, we find:\n\n\\[\nw = \\sqrt{400} = 20\n\\]\n\nNow that we have the width \\( w \\), we can find the length of the original garden:\n\n\\[\n\\text{length} = 2w = 2 \\times 20 = 40\n\\]\n\nNow, we can calculate the area \\( A \\) of the original rectangular garden:\n\n\\[\nA = \\text{length} \\times \\text{width} = 40 \\times 20 = 800\n\\]\n\nThus, the area of the original garden is:\n\n\\[\n\\boxed{800}\n\\]\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\BOXED{800}$, AND THE FINAL ANSWER IN THE STUDENT'S TEXT IS ALSO $\\BOXED{800}$. THESE TWO FINAL ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY REPRESENT THE SAME NUMERICAL VALUE. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 6.88,
+    "zuzycie_tokenow": {
+        "wejsciowe": 119,
+        "wyjsciowe": 496,
+        "suma": 615
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_rag": 0
+}

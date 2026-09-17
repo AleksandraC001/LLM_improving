@@ -1,0 +1,23 @@
+{
+    "task_file": "raport_zadanie_bb8c3f49",
+    "zadanie": "Let $0 \\le a, b, c \\le 5$ be integers. For how many ordered triples $(a,b,c)$ is $a^2b+b^2c+c^2a-ab^2-bc^2-ca^2 = 0$?",
+    "oczekiwana_odpowiedz": "Let $P(a,b,c) = a^2b+b^2c+c^2a-ab^2-bc^2-ca^2$. Notice that if $a=b$, $P(a,b,c) = a^3+a^2c+ac^2-a^3-ac^2-a^2c = 0$. By symmetry, $P(a,b,c)=0$ when $b=c, c=a$ as well. Since $P(a,b,c)$ has degree 3 and is divisible by three linear terms, $P(a,b,c)$ must factor as $k(a-b)(b-c)(c-a)$ where $k$ is a constant. Hence, $P(a,b,c) = 0$ if and only if at least two of $a,b,c$ are equal.\n\nTo count how many triples $(a,b,c)$ satisfy this, we count the complement. There are $6\\cdot5\\cdot4 = 120$ triples where $a,b,c$ are all distinct, and $6\\cdot6\\cdot6=216$ triples total, so there are $216-120 = \\boxed{96}$ triples such that $P(a,b,c) = 0$.",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nLet $0 \\le a, b, c \\le 5$ be integers. For how many ordered triples $(a,b,c)$ is $a^2b+b^2c+c^2a-ab^2-bc^2-ca^2 = 0$?\n",
+        "[AI]:\nTo solve the equation $a^2b + b^2c + c^2a - ab^2 - bc^2 - ca^2 = 0$, we first factor the expression.\n\nThe expression is a cyclic polynomial. Let's group the terms:\n$a^2b - ab^2 + b^2c - bc^2 + c^2a - ca^2 = 0$\n$ab(a - b) + bc(b - c) + ca(c - a) = 0$\n\nAlternatively, we can recognize this as the expansion of a specific product. Let's test the case where $a=b$:\n$a^2(a) + a^2c + c^2a - a(a^2) - ac^2 - ca^2 = a^3 + a^2c + ac^2 - a^3 - ac^2 - a^2c = 0$.\nSince the expression is zero when $a=b$, $(a-b)$ must be a factor. Due to the cyclic nature, $(b-c)$ and $(c-a)$ must also be factors.\nThe expression is a cubic polynomial. Let's check the product $(a-b)(b-c)(c-a)$:\n$(a-b)(b-c)(c-a) = (ab - ac - b^2 + bc)(c-a)$\n$= abc - a^2b - ac^2 + a^2c - b^2c + ab^2 + bc^2 - abc$\n$= -a^2b + a^2c - ac^2 - b^2c + ab^2 + bc^2$\n$= -(a^2b + b^2c + c^2a - ab^2 - bc^2 - ca^2)$\n\nThus, the equation is equivalent to:\n$-(a-b)(b-c)(c-a) = 0$\nwhich simplifies to:\n$(a-b)(b-c)(c-a) = 0$\n\nFor this product to be zero, at least one of the factors must be zero. This means:\n$a = b$ OR $b = c$ OR $c = a$.\n\nThe integers $a, b, c$ are chosen from the set $S = \\{0, 1, 2, 3, 4, 5\\}$. The size of the set is $|S| = 6$.\nThe total number of possible ordered triples $(a, b, c)$ is $6^3 = 216$.\n\nWe want to find the number of triples where $a=b$ or $b=c$ or $c=a$. We can use the Principle of Inclusion-Exclusion or simply count the complement.\nThe complement is the case where $a \\neq b$ AND $b \\neq c$ AND $c \\neq a$. This means $a, b, c$ are all distinct.\n\nThe number of ways to choose 3 distinct integers from a set of 6 and arrange them in an ordered triple is the number of permutations of 6 elements taken 3 at a time:\n$P(6, 3) = 6 \\times 5 \\times 4 = 120$.\n\nThe number of triples satisfying the condition is:\nTotal triples - Triples where $a, b, c$ are all distinct\n$= 216 - 120 = 96$.\n\nAlternatively, using Inclusion-Exclusion:\nLet $A$ be the set where $a=b$, $B$ where $b=c$, and $C$ where $c=a$.\n$|A| = 6 \\times 1 \\times 6 = 36$ (choose $a$, then $b=a$, then $c$ can be anything)\n$|B| = 6 \\times 6 \\times 1 = 36$\n$|C| = 6 \\times 6 \\times 1 = 36$\n$|A \\cap B| = 6 \\times 1 \\times 1 = 6$ (where $a=b=c$)\n$|B \\cap C| = 6 \\times 1 \\times 1 = 6$\n$|C \\cap A| = 6 \\times 1 \\times 1 = 6$\n$|A \\cap B \\cap C| = 6$\n\n$|A \\cup B \\cup C| = (|A| + |B| + |C|) - (|A \\cap B| + |B \\cap C| + |C \\cap A|) + |A \\cap B \\cap C|$\n$|A \\cup B \\cup C| = (36 + 36 + 36) - (6 + 6 + 6) + 6$\n$|A \\cup B \\cup C| = 108 - 18 + 6 = 96$.\n\nFinal check:\nThe condition $a=b$ or $b=c$ or $c=a$ covers all cases where the product is zero.\nTotal = 216.\nDistinct = $6 \\times 5 \\times 4 = 120$.\n$216 - 120 = 96$.\n\n\\boxed{96}\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\BOXED{96}$, AND THE STUDENT'S FINAL ANSWER IS ALSO $\\BOXED{96}$. THESE TWO ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY REPRESENT THE SAME NUMERICAL VALUE. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 283.35,
+    "zuzycie_tokenow": {
+        "wejsciowe": 136,
+        "wyjsciowe": 1174,
+        "suma": 1310
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

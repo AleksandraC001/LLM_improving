@@ -1,0 +1,19 @@
+{
+    "task_file": "raport_zadanie_0b7d27e7",
+    "zadanie": "Let $a$ and $b$ be real constants such that\n\\[x^4 + ax^3 + 3x^2 + bx + 1 \\ge 0\\]for all real numbers $x.$  Find the largest possible value of $a^2 + b^2.$",
+    "oczekiwana_odpowiedz": "Timeout - Endpoint API nie odpowiedzia\u0142 w wyznaczonym czasie",
+    "pelny_przebieg_rozumowania": [],
+    "decyzja_sedziego": "EMPTY",
+    "wynik_ewaluacji": "ERROR",
+    "czas_wykonania": 805.2,
+    "zuzycie_tokenow": {
+        "wejsciowe": 0,
+        "wyjsciowe": 0,
+        "suma": 0
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

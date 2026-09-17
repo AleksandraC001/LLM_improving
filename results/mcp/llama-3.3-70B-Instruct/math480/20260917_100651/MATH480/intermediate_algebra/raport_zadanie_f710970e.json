@@ -1,0 +1,23 @@
+{
+    "task_file": "raport_zadanie_f710970e",
+    "zadanie": "Let $a,$ $b,$ $c$ be positive real numbers such that $a + b + c = 4abc.$  Find the maximum value of\n\\[\\frac{4 \\sqrt{a} + 6 \\sqrt{b} + 12 \\sqrt{c}}{\\sqrt{abc}}.\\]",
+    "oczekiwana_odpowiedz": "By Cauchy-Schwarz,\n\\[(4 \\sqrt{a} + 6 \\sqrt{b} + 12 \\sqrt{c})^2 \\le (4^2 + 6^2 + 12^2)(a + b + c) = (196)(4abc) = 784abc,\\]so\n\\[4 \\sqrt{a} + 6 \\sqrt{b} + 12 \\sqrt{c} \\le 28 \\sqrt{abc},\\]and\n\\[\\frac{4 \\sqrt{a} + 6 \\sqrt{b} + 12 \\sqrt{c}}{\\sqrt{abc}} \\le 28.\\]Equality occurs when\n\\[\\frac{a}{16} = \\frac{b}{36} = \\frac{c}{144}.\\]Along with the condition $a + b + c = 4abc,$ we can solve to get $a = \\frac{7}{18},$ $b = \\frac{7}{8},$ $c = \\frac{7}{2}.$  Therefore, the maximum value is $\\boxed{28}.$",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Always in each step, formulate a thought, perform an action (you must call the tool), and draw conclusions from observing that action.\n\n    TOOL USE INSTRUCTION:\n    - You have access to tools, but you decide whether to use them. PREFER delegating calculations to tools over doing \"mental math\" in plain text.\n    - Python Interpreter ('python_interpreter'): Your primary tool. Use it for most numerical and symbolic calculations.\n    - Wolfram Alpha ('ask_wolfram'): Use this for complex symbolic mathematics, difficult integrals, or if Python returns an error.\n    - Brave Search ('brave_search'): Use to find general mathematical definitions, theorems, or formulas.\n\n    ERROR HANDLING:\n    If any tool returns an error, DO NOT repeat the exact same tool call. You must analyze the error, fix the syntax/parameters, switch to an alternative tool, or solve the step manually.    \n    \n    FINAL OUTPUT:\n    When you reach the final answer return it in enclosed in a LaTeX box: \\boxed{answer}\n",
+        "[HUMAN]:\nLet $a,$ $b,$ $c$ be positive real numbers such that $a + b + c = 4abc.$  Find the maximum value of\n\\[\\frac{4 \\sqrt{a} + 6 \\sqrt{b} + 12 \\sqrt{c}}{\\sqrt{abc}}.\\]\n",
+        "[AI]:\nTo find the maximum value of the expression, we can use the AM-GM inequality. We will first apply the AM-GM inequality to the expression and then use the given condition $a + b + c = 4abc$ to simplify and find the maximum value.\n\nWe will use the python interpreter to perform the calculations and find the maximum value.\n\n```python\nimport math\n\ndef calculate_max_value():\n# Define the variables\na = 1  # assume some positive real number\nb = 1  # assume some positive real number\nc = 1  # assume some positive real number\n\n# Apply the AM-GM inequality\nam_gm_inequality = (4 * math.sqrt(a) + 6 * math.sqrt(b) + 12 * math.sqrt(c)) / math.sqrt(a * b * c)\n\n# Use the given condition to simplify\nsimplified_expression = (4 * math.sqrt(a) + 6 * math.sqrt(b) + 12 * math.sqrt(c)) / math.sqrt((a + b + c) / 4)\n\n# Calculate the maximum value\nmax_value = 4 * math.sqrt(4) + 6 * math.sqrt(4) + 12 * math.sqrt(4)\nmax_value /= math.sqrt(4)\n\nreturn max_value\n\nmax_value = calculate_max_value()\nprint(\"The maximum value is:\", max_value)\n```\n\nNow, let's execute the function using the python interpreter.\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\BOXED{28}$, AND THE STUDENT'S FINAL ANSWER IS $28$ AS CALCULATED BY THEIR PYTHON CODE. THESE TWO ANSWERS ARE MATHEMATICALLY EQUIVALENT, INDICATING THAT THE STUDENT ARRIVED AT THE CORRECT MAXIMUM VALUE.\n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 121.78,
+    "zuzycie_tokenow": {
+        "wejsciowe": 856,
+        "wyjsciowe": 298,
+        "suma": 1154
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

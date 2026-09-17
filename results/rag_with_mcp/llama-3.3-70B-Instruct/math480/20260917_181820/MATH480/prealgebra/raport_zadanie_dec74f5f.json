@@ -1,0 +1,19 @@
+{
+    "task_file": "raport_zadanie_dec74f5f",
+    "zadanie": "Trey receives a $5\\%$ commission on every sale he makes. On the sale of a $\\$60$ coat (before any discounts), how many more cents will he receive if his commission is based on the original price of the coat rather than the price of the coat after a $20\\%$ discount?",
+    "oczekiwana_odpowiedz": "API Connection Error: OpenAIConnectionError('Connection error.'); cause=APIConnectionError('Connection error.')",
+    "pelny_przebieg_rozumowania": [],
+    "decyzja_sedziego": "EMPTY",
+    "wynik_ewaluacji": "ERROR",
+    "czas_wykonania": 14.81,
+    "zuzycie_tokenow": {
+        "wejsciowe": 0,
+        "wyjsciowe": 0,
+        "suma": 0
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

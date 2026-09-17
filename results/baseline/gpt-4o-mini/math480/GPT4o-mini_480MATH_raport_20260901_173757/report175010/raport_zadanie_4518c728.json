@@ -1,0 +1,20 @@
+{
+    "task_file": "raport_zadanie_4518c728",
+    "zadanie": "Let $m$ and $n$ be positive integers such that $m = 24n + 51$. What is the largest possible value of the greatest common divisor of $2m$ and $3n$?",
+    "oczekiwana_odpowiedz": "Using the Euclidean Algorithm, we obtain \\begin{align*}\n\\text{gcd}(2m, 3n) &= \\text{gcd}(2m-3n\\cdot16, 3n) \\\\\n&= \\text{gcd}(2\\cdot(24n+51)-48n, 3n) \\\\\n&= \\text{gcd}(102, 3n) \\\\\n&\\leq 102.\n\\end{align*}Therefore, the largest possible value of $\\text{gcd}(2m, 3n)$ is $\\boxed{102}$. For example, this is possible when $n=34 \\Rightarrow m=867$, as $3n=102$ and $2m=1734=102\\cdot17$.",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nLet $m$ and $n$ be positive integers such that $m = 24n + 51$. What is the largest possible value of the greatest common divisor of $2m$ and $3n$?\n",
+        "[AI]:\nTo find the largest possible value of the greatest common divisor \\( d = \\gcd(2m, 3n) \\), we start by substituting \\( m \\) in terms of \\( n \\):\n\n\\[\nm = 24n + 51\n\\]\n\nNow, we can express \\( 2m \\) and \\( 3n \\):\n\n\\[\n2m = 2(24n + 51) = 48n + 102\n\\]\n\\[\n3n = 3n\n\\]\n\nNext, we need to find \\( d = \\gcd(48n + 102, 3n) \\). We can use the property of the gcd that states \\( \\gcd(a, b) = \\gcd(a - k \\cdot b, b) \\) for any integer \\( k \\). We will choose \\( k = 16 \\) to simplify \\( 48n + 102 \\):\n\n\\[\nd = \\gcd(48n + 102 - 16 \\cdot 3n, 3n) = \\gcd(48n + 102 - 48n, 3n) = \\gcd(102, 3n)\n\\]\n\nNow, we need to find \\( \\gcd(102, 3n) \\). We can factor \\( 102 \\):\n\n\\[\n102 = 2 \\cdot 3 \\cdot 17\n\\]\n\nThus, we can express \\( \\gcd(102, 3n) \\) in terms of \\( n \\):\n\n\\[\n\\gcd(102, 3n) = 3 \\cdot \\gcd\\left(\\frac{102}{3}, n\\right) = 3 \\cdot \\gcd(34, n)\n\\]\n\nTo maximize \\( d \\), we need to maximize \\( \\gcd(34, n) \\). The divisors of \\( 34 \\) are \\( 1, 2, 17, 34 \\). Therefore, the possible values of \\( \\gcd(34, n) \\) are \\( 1, 2, 17, 34 \\).\n\nThe maximum value of \\( \\gcd(34, n) \\) is \\( 34 \\). If \\( \\gcd(34, n) = 34 \\), then \\( n \\) must be a multiple of \\( 34 \\). Thus, we can set \\( n = 34k \\) for some positive integer \\( k \\).\n\nSubstituting \\( n = 34k \\) back into our expression for \\( d \\):\n\n\\[\nd = 3 \\cdot \\gcd(34, 34k) = 3 \\cdot 34 = 102\n\\]\n\nThus, the largest possible value of \\( d \\) is:\n\n\\[\n\\boxed{102}\n\\]\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\BOXED{102}$, AND THE STUDENT'S FINAL ANSWER IS ALSO $\\BOXED{102}$. THESE TWO FINAL ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY REPRESENT THE SAME NUMERICAL VALUE. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 7.58,
+    "zuzycie_tokenow": {
+        "wejsciowe": 112,
+        "wyjsciowe": 600,
+        "suma": 712
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_rag": 0
+}

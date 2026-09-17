@@ -1,0 +1,23 @@
+{
+    "task_file": "raport_zadanie_ff8bf2b7",
+    "zadanie": "Suppose that $*(n) = \\left\\{ n-2, n+2, 2n, \\frac{n}{2} \\right\\}$. For example, $*(6) = \\{4, 8, 12, 3\\}$. For how many distinct integers $n$ does $*(n)$ have exactly three distinct elements?",
+    "oczekiwana_odpowiedz": "To have three distinct elements, two of $n-2$, $n+2$, $2n$, and $\\frac{n}{2}$ must be equal. It is clear that $n-2$ can never equal $n+2$. However, any other equality pairing among the four is possible, so we simply check for distinctness. If $2n = \\frac{n}{2}$, the solution is $n= 0$. If $n+ 2 = 2n$, $n = 2$. If $n - 2 = 2n$, $n = -2$. If $\\frac{n}{2} = n - 2$, $n = 4$. Finally, if $\\frac{n}{2} = n+ 2$, $n = -4$. Thus, there are $\\boxed{5}$ such $n$.",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nSuppose that $*(n) = \\left\\{ n-2, n+2, 2n, \\frac{n}{2} \\right\\}$. For example, $*(6) = \\{4, 8, 12, 3\\}$. For how many distinct integers $n$ does $*(n)$ have exactly three distinct elements?\n",
+        "[AI]:\n## Step 1: Understand the function $*(n)$\nThe function $*(n)$ returns a set of four values: $n-2, n+2, 2n, \\frac{n}{2}$. We need to find the number of distinct integers $n$ for which this set has exactly three distinct elements.\n\n## Step 2: Determine the conditions for having exactly three distinct elements\nFor $*(n)$ to have exactly three distinct elements, two of the values in the set must be equal, and the other two must be distinct. There are several cases to consider:\n- $n-2 = n+2$\n- $n-2 = 2n$\n- $n-2 = \\frac{n}{2}$\n- $n+2 = 2n$\n- $n+2 = \\frac{n}{2}$\n- $2n = \\frac{n}{2}$\n\n## Step 3: Analyze each case\n- $n-2 = n+2$ implies $-2 = 2$, which is impossible.\n- $n-2 = 2n$ implies $n = -2$.\n- $n-2 = \\frac{n}{2}$ implies $2n - 4 = n$, so $n = 4$.\n- $n+2 = 2n$ implies $n = 2$.\n- $n+2 = \\frac{n}{2}$ implies $2n + 4 = n$, so $n = -4$.\n- $2n = \\frac{n}{2}$ implies $4n = n$, so $3n = 0$ and $n = 0$.\n\n## Step 4: Check for validity and distinctness\nWe need to verify that each of these $n$ values results in exactly three distinct elements in the set $*(n)$ and that they are distinct from each other.\n\n## Step 5: Enumerate and count valid $n$ values\n- For $n = -2$, $*(n) = \\{-4, 0, -4, -1\\}$, which has three distinct elements.\n- For $n = 4$, $*(n) = \\{2, 6, 8, 2\\}$, which has three distinct elements.\n- For $n = 2$, $*(n) = \\{0, 4, 4, 1\\}$, which has three distinct elements.\n- For $n = -4$, $*(n) = \\{-6, -2, -8, -2\\}$, which has three distinct elements.\n- For $n = 0$, $*(n) = \\{-2, 2, 0, 0\\}$, which has three distinct elements.\n\nThe final answer is: $\\boxed{5}$\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\BOXED{5}$, AND THE STUDENT'S FINAL ANSWER IS ALSO $\\BOXED{5}$. THESE TWO ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY BOTH REPRESENT THE SAME NUMERICAL VALUE. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 211.29,
+    "zuzycie_tokenow": {
+        "wejsciowe": 165,
+        "wyjsciowe": 593,
+        "suma": 758
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

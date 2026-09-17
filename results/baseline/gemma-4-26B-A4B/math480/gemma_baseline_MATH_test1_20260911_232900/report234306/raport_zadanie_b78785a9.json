@@ -1,0 +1,23 @@
+{
+    "task_file": "raport_zadanie_b78785a9",
+    "zadanie": "Let $a,$ $b,$ $c,$ $d$ be real numbers such that $a + b + c + d = 17$ and $ab + bc + cd + da = 46.$  Find the minimum possible value of $a^2 + b^2 + c^2 + d^2.$",
+    "oczekiwana_odpowiedz": "Note that $ab + bc + cd + da = 46$ factors as $(a + c)(b + d).$  So, let $r = a + c$ and $s = b + d.$  Then $r + s = 17$ and $rs = 46,$ so by Vieta's formulas, $r$ and $s$ are the roots of $x^2 - 17x + 46 = 0.$  Thus, $r$ and $s$ are equal to\n\\[\\frac{17 \\pm \\sqrt{105}}{2},\\]in some order.\n\nWe can let $a = \\frac{r}{2} + t,$ $c = \\frac{r}{2} - t,$ $b = \\frac{s}{2} + u,$ and $d = \\frac{s}{2} - u.$  Then\n\\[a^2 + b^2 + c^2 + d^2 = \\frac{r^2}{2} + 2t^2  +\\frac{s^2}{2} + 2u^2 \\ge \\frac{r^2 + s^2}{2} = \\frac{197}{2}.\\]Equality occurs when $a = c = \\frac{r}{2}$ and $b = d = \\frac{s}{2},$ so the minimum value is $\\boxed{\\frac{197}{2}}.$",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nLet $a,$ $b,$ $c,$ $d$ be real numbers such that $a + b + c + d = 17$ and $ab + bc + cd + da = 46.$  Find the minimum possible value of $a^2 + b^2 + c^2 + d^2.$\n",
+        "[AI]:\nTo find the minimum value of $a^2 + b^2 + c^2 + d^2$ subject to the given constraints, we first analyze the equations.\n\nThe given equations are:\n1) $a + b + c + d = 17$\n2) $ab + bc + cd + da = 46$\n\nWe can factor the second equation:\n$ab + bc + cd + da = b(a+c) + d(c+a) = (a+c)(b+d) = 46$\n\nLet $x = a+c$ and $y = b+d$.\nFrom equation (1), we have $x + y = 17$.\nFrom the factored equation (2), we have $xy = 46$.\n\nWe can find $x$ and $y$ by solving the quadratic equation $t^2 - (x+y)t + xy = 0$:\n$t^2 - 17t + 46 = 0$\nUsing the quadratic formula:\n$t = \\frac{17 \\pm \\sqrt{17^2 - 4(46)}}{2} = \\frac{17 \\pm \\sqrt{289 - 184}}{2} = \\frac{17 \\pm \\sqrt{105}}{2}$\n\nSo, $\\{x, y\\} = \\left\\{ \\frac{17 + \\sqrt{105}}{2}, \\frac{17 - \\sqrt{105}}{2} \\right\\}$.\n\nWe want to minimize $S = a^2 + b^2 + c^2 + d^2$.\nWe can rewrite $S$ as:\n$S = (a^2 + c^2) + (b^2 + d^2)$\n\nBy the Cauchy-Schwarz inequality (or the Power Mean inequality), for any real numbers $u, v$:\n$u^2 + v^2 \\ge \\frac{1}{2}(u+v)^2$\nThe minimum occurs when $u = v$.\n\nApplying this to our variables:\n$a^2 + c^2 \\ge \\frac{1}{2}(a+c)^2 = \\frac{1}{2}x^2$\n$b^2 + d^2 \\ge \\frac{1}{2}(b+d)^2 = \\frac{1}{2}y^2$\n\nThus, $S \\ge \\frac{1}{2}x^2 + \\frac{1}{2}y^2 = \\frac{1}{2}(x^2 + y^2)$.\nWe know that $x^2 + y^2 = (x+y)^2 - 2xy$.\nSubstituting the known values:\n$x^2 + y^2 = 17^2 - 2(46) = 289 - 92 = 197$.\n\nTherefore, $S \\ge \\frac{1}{2}(197) = 98.5$.\n\nTo ensure this minimum is achievable, we check if there exist real numbers $a, b, c, d$ such that $a=c=x/2$ and $b=d=y/2$.\nSince $x$ and $y$ are real, $a, b, c, d$ will be real.\n$a = c = \\frac{17 + \\sqrt{105}}{4}$\n$b = d = \\frac{17 - \\sqrt{105}}{4}$\nThese satisfy $a+c=x$ and $b+d=y$, and $a^2+c^2 = 2(x/2)^2 = x^2/2$, etc.\n\nThe minimum value is $98.5$.\n\n\\boxed{98.5}\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\BOXED{\\FRAC{197}{2}}$, AND THE STUDENT'S FINAL ANSWER IS $\\BOXED{98.5}$. SINCE $\\FRAC{197}{2} = 98.5$, THESE TWO ANSWERS ARE MATHEMATICALLY EQUIVALENT. THE STUDENT'S ANSWER IS A DECIMAL REPRESENTATION OF THE CORRECT SOLUTION'S FRACTIONAL ANSWER.\n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 278.66,
+    "zuzycie_tokenow": {
+        "wejsciowe": 143,
+        "wyjsciowe": 842,
+        "suma": 985
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

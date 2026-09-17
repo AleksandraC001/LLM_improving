@@ -1,0 +1,23 @@
+{
+    "task_file": "raport_zadanie_96ef1986",
+    "zadanie": "Completely simplify and rationalize the denominator: $$\\frac{\\sqrt{160}}{\\sqrt{252}}\\times\\frac{\\sqrt{245}}{\\sqrt{108}}$$",
+    "oczekiwana_odpowiedz": "To begin, we can combine all of these square roots into a single square root: $$\\frac{\\sqrt{160}}{\\sqrt{252}}\\times\\frac{\\sqrt{245}}{\\sqrt{108}}=\\sqrt{\\frac{160}{252}}\\times\\sqrt{\\frac{245}{108}}=\\sqrt{\\frac{160\\cdot245}{252\\cdot108}}$$Now, simplify under the square root by canceling common factors.  To start, 160 and 108 are both divisible by 4.  252 and 160 also share a factor of 4.  This leaves us with: $$\\sqrt{\\frac{10\\cdot245}{63\\cdot27}}$$Looking carefully, we can see that 63 and 245 both share a factor of 7.  Cancel this, and simplify: $$\\sqrt{\\frac{10\\cdot35}{9\\cdot27}}=\\frac{5}{9}\\sqrt{\\frac{14}{3}}=\\boxed{\\frac{5\\sqrt{42}}{27}}$$",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nCompletely simplify and rationalize the denominator: $$\\frac{\\sqrt{160}}{\\sqrt{252}}\\times\\frac{\\sqrt{245}}{\\sqrt{108}}$$\n",
+        "[AI]:\nTo simplify the expression $\\frac{\\sqrt{160}}{\\sqrt{252}} \\times \\frac{\\sqrt{245}}{\\sqrt{108}}$, we can follow these steps:\n\n### Step 1: Combine the square roots\nUsing the property $\\frac{\\sqrt{a}}{\\sqrt{b}} \\times \\frac{\\sqrt{c}}{\\sqrt{d}} = \\sqrt{\\frac{a \\cdot c}{b \\cdot d}}$, we can write the expression as a single square root:\n$$\\sqrt{\\frac{160 \\times 245}{252 \\times 108}}$$\n\n### Step 2: Prime Factorization\nTo simplify the fraction inside the square root, let's find the prime factorization of each number:\n- $160 = 16 \\times 10 = 2^4 \\times 2 \\times 5 = 2^5 \\times 5$\n- $245 = 5 \\times 49 = 5 \\times 7^2$\n- $252 = 2 \\times 126 = 2^2 \\times 63 = 2^2 \\times 3^2 \\times 7$\n- $108 = 2 \\times 54 = 2^2 \\times 27 = 2^2 \\times 3^3$\n\n### Step 3: Substitute factorizations into the fraction\n$$\\frac{(2^5 \\times 5) \\times (5 \\times 7^2)}{(2^2 \\times 3^2 \\times 7) \\times (2^2 \\times 3^3)}$$\n\nCombine the terms in the numerator and denominator:\n- Numerator: $2^5 \\times 5^2 \\times 7^2$\n- Denominator: $2^{2+2} \\times 3^{2+3} \\times 7 = 2^4 \\times 3^5 \\times 7$\n\n### Step 4: Simplify the fraction\n$$\\frac{2^5 \\times 5^2 \\times 7^2}{2^4 \\times 3^5 \\times 7} = \\frac{2^{5-4} \\times 5^2 \\times 7^{2-1}}{3^5} = \\frac{2^1 \\times 5^2 \\times 7^1}{3^5}$$\n$$\\frac{2 \\times 25 \\times 7}{243} = \\frac{350}{243}$$\n\n### Step 5: Take the square root\nThe expression is now $\\sqrt{\\frac{350}{243}}$.\n$$\\sqrt{\\frac{350}{243}} = \\frac{\\sqrt{350}}{\\sqrt{243}}$$\n\nSimplify the individual square roots:\n- $\\sqrt{350} = \\sqrt{25 \\times 14} = 5\\sqrt{14}$\n- $\\sqrt{243} = \\sqrt{81 \\times 3} = 9\\sqrt{3}$\n\nSo, the expression is:\n$$\\frac{5\\sqrt{14}}{9\\sqrt{3}}$$\n\n### Step 6: Rationalize the denominator\nTo rationalize, multiply the numerator and the denominator by $\\sqrt{3}$:\n$$\\frac{5\\sqrt{14} \\times \\sqrt{3}}{9\\sqrt{3} \\times \\sqrt{3}} = \\frac{5\\sqrt{42}}{9 \\times 3} = \\frac{5\\sqrt{42}}{27}$$\n\nFinal check of the calculation:\n$\\frac{\\sqrt{160}}{\\sqrt{252}} = \\sqrt{\\frac{160}{252}} = \\sqrt{\\frac{40}{63}} = \\frac{2\\sqrt{10}}{3\\sqrt{7}}$\n$\\frac{\\sqrt{245}}{\\sqrt{108}} = \\sqrt{\\frac{245}{108}} = \\frac{7\\sqrt{5}}{6\\sqrt{3}}$\n$\\frac{2\\sqrt{10}}{3\\sqrt{7}} \\times \\frac{7\\sqrt{5}}{6\\sqrt{3}} = \\frac{14\\sqrt{50}}{18\\sqrt{21}} = \\frac{14 \\cdot 5\\sqrt{2}}{18\\sqrt{21}} = \\frac{70\\sqrt{2}}{18\\sqrt{21}} = \\frac{35\\sqrt{2}}{9\\sqrt{21}}$\n$\\frac{35\\sqrt{2}}{9\\sqrt{21}} \\cdot \\frac{\\sqrt{21}}{\\sqrt{21}} = \\frac{35\\sqrt{42}}{9 \\cdot 21} = \\frac{35\\sqrt{42}}{189}$\nDivide numerator and denominator by 7: $\\frac{5\\sqrt{42}}{27}$.\n\nThe result is consistent.\n\n\\boxed{\\frac{5\\sqrt{42}}{27}}\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\FRAC{5\\SQRT{42}}{27}$, AND THE STUDENT'S FINAL ANSWER IS ALSO $\\FRAC{5\\SQRT{42}}{27}$. THESE TWO ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY REPRESENT THE SAME VALUE WITH THE SAME NUMERATOR AND DENOMINATOR. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 156.12,
+    "zuzycie_tokenow": {
+        "wejsciowe": 113,
+        "wyjsciowe": 1139,
+        "suma": 1252
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

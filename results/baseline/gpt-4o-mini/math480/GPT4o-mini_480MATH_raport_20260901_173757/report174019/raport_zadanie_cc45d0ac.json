@@ -1,0 +1,20 @@
+{
+    "task_file": "raport_zadanie_cc45d0ac",
+    "zadanie": "The equation $y = -16t^2 + 26t + 105$ describes the height (in feet) of a ball tossed up in the air at 26 feet per second from a height of 105 feet above the ground. In how many seconds will the ball hit the ground? Express your answer as a decimal rounded to the nearest tenth.",
+    "oczekiwana_odpowiedz": "Setting $y$ to zero, we find the following: \\begin{align*}\n0& = -16t^2 + 26t + 105\\\\\n& = 16t^2 - 26t - 105\\\\\n& = (8t + 15)(2t - 7)\n\\end{align*}As $t$ must be positive, we can see that $t = \\frac{7}{2} = \\boxed{3.5}.$",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nThe equation $y = -16t^2 + 26t + 105$ describes the height (in feet) of a ball tossed up in the air at 26 feet per second from a height of 105 feet above the ground. In how many seconds will the ball hit the ground? Express your answer as a decimal rounded to the nearest tenth.\n",
+        "[AI]:\nTo find out when the ball hits the ground, we need to determine when the height \\( y \\) is equal to 0. The equation given is:\n\n\\[\ny = -16t^2 + 26t + 105\n\\]\n\nSetting \\( y \\) to 0 gives us the equation:\n\n\\[\n-16t^2 + 26t + 105 = 0\n\\]\n\nThis is a quadratic equation in the standard form \\( at^2 + bt + c = 0 \\), where \\( a = -16 \\), \\( b = 26 \\), and \\( c = 105 \\).\n\nTo solve for \\( t \\), we can use the quadratic formula:\n\n\\[\nt = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}\n\\]\n\nFirst, we calculate the discriminant \\( b^2 - 4ac \\):\n\n\\[\nb^2 = 26^2 = 676\n\\]\n\\[\n4ac = 4 \\cdot (-16) \\cdot 105 = -6720\n\\]\n\nNow, substituting these values into the discriminant:\n\n\\[\nb^2 - 4ac = 676 - (-6720) = 676 + 6720 = 7396\n\\]\n\nNext, we take the square root of the discriminant:\n\n\\[\n\\sqrt{7396} = 86\n\\]\n\nNow we can substitute back into the quadratic formula:\n\n\\[\nt = \\frac{-26 \\pm 86}{2 \\cdot -16}\n\\]\n\nCalculating the two possible values for \\( t \\):\n\n1. Using the positive root:\n\n\\[\nt = \\frac{-26 + 86}{-32} = \\frac{60}{-32} = -1.875\n\\]\n\n2. Using the negative root:\n\n\\[\nt = \\frac{-26 - 86}{-32} = \\frac{-112}{-32} = 3.5\n\\]\n\nSince time cannot be negative, we discard \\( t = -1.875 \\) and keep \\( t = 3.5 \\).\n\nThus, the ball will hit the ground after \\( 3.5 \\) seconds. \n\nFinally, rounding to the nearest tenth, we have:\n\n\\[\n\\boxed{3.5}\n\\]\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $T = \\FRAC{7}{2} = \\BOXED{3.5}$, AND THE STUDENT'S FINAL ANSWER IS ALSO $T = \\BOXED{3.5}$. THESE TWO FINAL ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY REPRESENT THE SAME NUMERICAL VALUE. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 7.46,
+    "zuzycie_tokenow": {
+        "wejsciowe": 140,
+        "wyjsciowe": 486,
+        "suma": 626
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_rag": 0
+}

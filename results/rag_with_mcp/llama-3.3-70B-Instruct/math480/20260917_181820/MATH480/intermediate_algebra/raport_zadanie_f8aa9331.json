@@ -1,0 +1,19 @@
+{
+    "task_file": "raport_zadanie_f8aa9331",
+    "zadanie": "Let $x,$ $y,$ and $z$ be positive real numbers such that $xy + xz + yz = 1.$  Find the minimum value of $10x^2 + 10y^2 + z^2.$",
+    "oczekiwana_odpowiedz": "Timeout - Endpoint API nie odpowiedzia\u0142 w wyznaczonym czasie",
+    "pelny_przebieg_rozumowania": [],
+    "decyzja_sedziego": "EMPTY",
+    "wynik_ewaluacji": "ERROR",
+    "czas_wykonania": 765.17,
+    "zuzycie_tokenow": {
+        "wejsciowe": 0,
+        "wyjsciowe": 0,
+        "suma": 0
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

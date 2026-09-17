@@ -1,0 +1,23 @@
+{
+    "task_file": "raport_zadanie_d4e3519f",
+    "zadanie": "If $0 < \\theta < \\frac{\\pi}{2}$ and $\\sqrt{3} \\cos \\theta - \\sin \\theta = \\frac{1}{3},$ then find $\\sqrt{3} \\sin \\theta + \\cos \\theta.$",
+    "oczekiwana_odpowiedz": "From $\\sqrt{3} \\cos \\theta - \\sin \\theta = \\frac{1}{3},$\n\\[\\sin \\theta = \\sqrt{3} \\cos \\theta - \\frac{1}{3}.\\]Substituting into $\\sin^2 \\theta + \\cos^2 \\theta = 1,$ we get\n\\[3 \\cos^2 \\theta - \\frac{2 \\sqrt{3}}{3} \\cos \\theta + \\frac{1}{9} + \\cos^2 \\theta = 1.\\]This simplifies to $18 \\cos^2 \\theta - 3 \\sqrt{3} \\cos \\theta - 4 = 0.$  By the quadratic formula,\n\\[\\cos \\theta = \\frac{\\sqrt{3} \\pm \\sqrt{35}}{12}.\\]Since $0 < \\theta < \\frac{\\pi}{2},$ $\\cos \\theta$ is positive, so $\\cos \\theta = \\frac{\\sqrt{3} + \\sqrt{35}}{12}.$\n\nHence,\n\\begin{align*}\n\\sqrt{3} \\sin \\theta + \\cos \\theta &= \\sqrt{3} \\left( \\sqrt{3} \\cos \\theta - \\frac{1}{3} \\right) + \\cos \\theta \\\\\n&= 3 \\cos \\theta - \\frac{\\sqrt{3}}{3} + \\cos \\theta \\\\\n&= 4 \\cos \\theta - \\frac{\\sqrt{3}}{3} \\\\\n&= \\frac{\\sqrt{3} + \\sqrt{35}}{3} - \\frac{\\sqrt{3}}{3} \\\\\n&= \\boxed{\\frac{\\sqrt{35}}{3}}.\n\\end{align*}",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nIf $0 < \\theta < \\frac{\\pi}{2}$ and $\\sqrt{3} \\cos \\theta - \\sin \\theta = \\frac{1}{3},$ then find $\\sqrt{3} \\sin \\theta + \\cos \\theta.$\n",
+        "[AI]:\nTo solve the given problem, we are provided with the equation:\n$$\\sqrt{3} \\cos \\theta - \\sin \\theta = \\frac{1}{3}$$\nwhere $0 < \\theta < \\frac{\\pi}{2}$. We need to find the value of:\n$$X = \\sqrt{3} \\sin \\theta + \\cos \\theta$$\n\n**Step 1: Use the trigonometric identity for the sum of squares.**\nLet $A = \\sqrt{3} \\cos \\theta - \\sin \\theta$ and $B = \\sqrt{3} \\sin \\theta + \\cos \\theta$.\nWe are given $A = \\frac{1}{3}$. We want to find $B$.\n\nLet's calculate $A^2 + B^2$:\n$$A^2 = (\\sqrt{3} \\cos \\theta - \\sin \\theta)^2 = 3 \\cos^2 \\theta - 2\\sqrt{3} \\sin \\theta \\cos \\theta + \\sin^2 \\theta$$\n$$B^2 = (\\sqrt{3} \\sin \\theta + \\cos \\theta)^2 = 3 \\sin^2 \\theta + 2\\sqrt{3} \\sin \\theta \\cos \\theta + \\cos^2 \\theta$$\n\nAdding these two expressions:\n$$A^2 + B^2 = (3 \\cos^2 \\theta + \\cos^2 \\theta) + (\\sin^2 \\theta + 3 \\sin^2 \\theta) + (-2\\sqrt{3} \\sin \\theta \\cos \\theta + 2\\sqrt{3} \\sin \\theta \\cos \\theta)$$\n$$A^2 + B^2 = 4 \\cos^2 \\theta + 4 \\sin^2 \\theta$$\n$$A^2 + B^2 = 4(\\cos^2 \\theta + \\sin^2 \\theta)$$\nSince $\\cos^2 \\theta + \\sin^2 \\theta = 1$:\n$$A^2 + B^2 = 4$$\n\n**Step 2: Solve for $B$.**\nSubstitute the known value $A = \\frac{1}{3}$ into the equation:\n$$\\left(\\frac{1}{3}\\right)^2 + B^2 = 4$$\n$$\\frac{1}{9} + B^2 = 4$$\n$$B^2 = 4 - \\frac{1}{9}$$\n$$B^2 = \\frac{36 - 1}{9} = \\frac{35}{9}$$\n\nTaking the square root of both sides:\n$$B = \\pm \\sqrt{\\frac{35}{9}} = \\pm \\frac{\\sqrt{35}}{3}$$\n\n**Step 3: Determine the sign of $B$.**\nWe are given $0 < \\theta < \\frac{\\pi}{2}$. In the first quadrant, both $\\sin \\theta$ and $\\cos \\theta$ are positive.\nSince $B = \\sqrt{3} \\sin \\theta + \\cos \\theta$ and both $\\sin \\theta > 0$ and $\\cos \\theta > 0$, $B$ must be positive.\n\nTherefore:\n$$B = \\frac{\\sqrt{35}}{3}$$\n\nFinal check:\nIf $A = \\frac{1}{3}$ and $B = \\frac{\\sqrt{35}}{3}$, then $A^2 + B^2 = \\frac{1}{9} + \\frac{35}{9} = \\frac{36}{9} = 4$. This matches our derivation.\n\nThe value of $\\sqrt{3} \\sin \\theta + \\cos \\theta$ is $\\frac{\\sqrt{35}}{3}$.\n\n\\boxed{\\frac{\\sqrt{35}}{3}}\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\FRAC{\\SQRT{35}}{3}$, AND THE STUDENT'S FINAL ANSWER IS ALSO $\\FRAC{\\SQRT{35}}{3}$. THESE TWO ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY REPRESENT THE SAME VALUE. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 94.05,
+    "zuzycie_tokenow": {
+        "wejsciowe": 128,
+        "wyjsciowe": 826,
+        "suma": 954
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

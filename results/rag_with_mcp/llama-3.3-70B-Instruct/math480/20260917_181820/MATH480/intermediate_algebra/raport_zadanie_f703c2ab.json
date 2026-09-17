@@ -1,0 +1,19 @@
+{
+    "task_file": "raport_zadanie_f703c2ab",
+    "zadanie": "The Fibonacci sequence is defined by $F_1 = F_2 = 1$ and $F_n = F_{n - 1} + F_{n - 2}$ for $n \\ge 3.$\n\nCompute\n\\[\\sum_{j = 1}^{2004} i^{2004 - F_j}.\\]",
+    "oczekiwana_odpowiedz": "Timeout - Endpoint API nie odpowiedzia\u0142 w wyznaczonym czasie",
+    "pelny_przebieg_rozumowania": [],
+    "decyzja_sedziego": "EMPTY",
+    "wynik_ewaluacji": "ERROR",
+    "czas_wykonania": 766.95,
+    "zuzycie_tokenow": {
+        "wejsciowe": 0,
+        "wyjsciowe": 0,
+        "suma": 0
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

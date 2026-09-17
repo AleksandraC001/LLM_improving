@@ -1,0 +1,19 @@
+{
+    "task_file": "raport_zadanie_f4e01d9f",
+    "zadanie": "John counts up from 1 to 13, and then immediately counts down again to 1, and then back up to 13, and so on, alternately counting up and down: \\begin{align*}\n&(1, 2, 3,4,5,6,7,8,9,10,11,12,13,\\\\\n&\\qquad\\qquad12,11,10,9,8,7,6,5,4,3,2,1,2,3,4,\\ldots ).\n\\end{align*} What is the $5000^{\\text{th}}$ integer in his list?",
+    "oczekiwana_odpowiedz": "API Connection Error: OpenAIConnectionError('Connection error.'); cause=APIConnectionError('Connection error.')",
+    "pelny_przebieg_rozumowania": [],
+    "decyzja_sedziego": "EMPTY",
+    "wynik_ewaluacji": "ERROR",
+    "czas_wykonania": 14.9,
+    "zuzycie_tokenow": {
+        "wejsciowe": 0,
+        "wyjsciowe": 0,
+        "suma": 0
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

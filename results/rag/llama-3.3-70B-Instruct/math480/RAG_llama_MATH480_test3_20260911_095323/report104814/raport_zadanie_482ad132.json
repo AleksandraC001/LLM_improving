@@ -1,0 +1,23 @@
+{
+    "task_file": "raport_zadanie_482ad132",
+    "zadanie": "I am going to buy exotic fruits.  Dragonfruit costs $x-4$ dollars.  Starfruit is five dollars less expensive than rambutan.  Rambutan costs $2x$ dollars more than dragonfruit.  How much does it cost to buy one rambutan, two starfruit, and three dragonfruit? Your answer will be an expression that depends on $x$.",
+    "oczekiwana_odpowiedz": "We know that one dragonfruit is $x-4$ dollars.  This means that one rambutan is $(x-4) + 2x = 3x-4$ dollars.  Then, one starfruit is $(3x-4) -5 = 3x-9$ dollars. We want to find $1 \\cdot (3x-4) + 2 \\cdot (3x-9) + 3 \\cdot (x-4)$.  Distributing these three smaller expressions gives us $(3x-4) + (6x-18) + (3x-12)$. Finally, we combine like terms, yielding $(3x + 6x + 3x) + (-4 + -18 + -12) = (12x) + (-34)$.  We obtain $\\boxed{12x -34}$, or $\\boxed{-34 + 12x}$.",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n\n\n    CONTEXT INSTRUCTIONS:\n    Below you will find a [HELPFUL CONTEXT FROM RAG] block. It contains a solved mathematical problems that shares similar logic of the solution to your current problem.\n    - Analize given examples and use their context to understand the required methodology, the solution concept, theorems, or algebraic tricks BEFORE proceeding with your solving process.\n\n    [HELPFUL CONTEXT FROM RAG]\n    \n    --- USEFUL EXAMPLE ---\nProblem: George purchases a sack of apples, a bunch of bananas, a cantaloupe, and a carton of dates for $ \\$ 20$. If a carton of dates costs twice as much as a sack of apples and the price of a cantaloupe is equal to the price of a sack of apples minus a bunch of bananas, how much would it cost George to purchase a bunch of bananas and a cantaloupe?\nSolution: Let $a$ denote the price of a sack of apples, $b$ the price of a bunch of bananas, $c$ the price of a cantaloupe, and $d$ the price of a carton of dates. We can express the information given in the problem by the following system of linear equations:  \\begin{align*}\na+b+c+d &= 20\\\\\n2a &= d\\\\\na-b &= c\n\\end{align*}\n\nSubstituting into the first equation for $c$ and $d$ gives $a + b + a - b + 2a = 20$, which simplifies to $4a = 20$, so $a = 5$. From here, we use $a$ to find $d = 2 \\cdot 5 = 10$. We put these values into the first equation to get $5 + b + c + 10 = 20$, so $b + c = \\boxed{ \\$ 5}$.\n\n\n    \n    [/HELPFUL CONTEXT FROM RAG]\n",
+        "[HUMAN]:\nI am going to buy exotic fruits.  Dragonfruit costs $x-4$ dollars.  Starfruit is five dollars less expensive than rambutan.  Rambutan costs $2x$ dollars more than dragonfruit.  How much does it cost to buy one rambutan, two starfruit, and three dragonfruit? Your answer will be an expression that depends on $x$.\n",
+        "[AI]:\nTo find the total cost of buying one rambutan, two starfruit, and three dragonfruit, we need to first express the prices of each fruit in terms of $x$.\n\n1. The price of dragonfruit is given as $x - 4$ dollars.\n2. Rambutan costs $2x$ dollars more than dragonfruit. So, the price of rambutan is $(x - 4) + 2x = 3x - 4$ dollars.\n3. Starfruit is five dollars less expensive than rambutan. Therefore, the price of starfruit is $(3x - 4) - 5 = 3x - 9$ dollars.\n\nNow, we calculate the total cost of buying one rambutan, two starfruit, and three dragonfruit:\n\n- The cost of one rambutan is $3x - 4$ dollars.\n- The cost of two starfruit is $2(3x - 9) = 6x - 18$ dollars.\n- The cost of three dragonfruit is $3(x - 4) = 3x - 12$ dollars.\n\nAdding these costs together gives the total cost:\n\\[ (3x - 4) + (6x - 18) + (3x - 12) \\]\n\\[ = 3x + 6x + 3x - 4 - 18 - 12 \\]\n\\[ = 12x - 34 \\]\n\nTherefore, the total cost to buy one rambutan, two starfruit, and three dragonfruit is $12x - 34$ dollars.\n\nThe final answer is: $\\boxed{12x - 34}$\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\BOXED{12X -34}$, AND THE STUDENT'S FINAL ANSWER IS $\\BOXED{12X - 34}$. THESE TWO EXPRESSIONS ARE MATHEMATICALLY EQUIVALENT, AS THEY REPRESENT THE SAME LINEAR EXPRESSION IN THE SAME VARIABLE $X$. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 204.19,
+    "zuzycie_tokenow": {
+        "wejsciowe": 571,
+        "wyjsciowe": 350,
+        "suma": 921
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 1
+}

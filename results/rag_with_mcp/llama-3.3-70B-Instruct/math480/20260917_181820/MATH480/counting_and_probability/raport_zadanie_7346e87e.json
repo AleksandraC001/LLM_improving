@@ -1,0 +1,19 @@
+{
+    "task_file": "raport_zadanie_7346e87e",
+    "zadanie": "Max has a spinner that lands on 1 with a probability of $\\frac{1}{2}$, lands on 2 with a probability of $\\frac{1}{4}$, lands on 3 with a probability of $\\frac{1}{6}$, and lands on 4 with a probability of $\\frac{1}{12}$. If Max spins the spinner, and then Zack spins the spinner, then what is the probability that Max gets a larger number than Zack does?",
+    "oczekiwana_odpowiedz": "Timeout - Endpoint API nie odpowiedzia\u0142 w wyznaczonym czasie",
+    "pelny_przebieg_rozumowania": [],
+    "decyzja_sedziego": "EMPTY",
+    "wynik_ewaluacji": "ERROR",
+    "czas_wykonania": 773.93,
+    "zuzycie_tokenow": {
+        "wejsciowe": 0,
+        "wyjsciowe": 0,
+        "suma": 0
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

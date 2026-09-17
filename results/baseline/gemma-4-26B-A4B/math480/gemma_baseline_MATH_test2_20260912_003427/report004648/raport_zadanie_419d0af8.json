@@ -1,0 +1,23 @@
+{
+    "task_file": "raport_zadanie_419d0af8",
+    "zadanie": "Let $(x,y)$ be a pair of real numbers satisfying \\[\n56x + 33y = \\frac{-y}{x^2+y^2}, \\qquad \\text{and} \\qquad 33x-56y = \\frac{x}{x^2+y^2}.\n\\]Determine the value of $|x| + |y|$.",
+    "oczekiwana_odpowiedz": "Observe that \\[\n\\frac{1}{x+yi} = \\frac{x - yi}{x^2 + y^2} = 33x - 56 y + (56x + 33y)i = (33 + 56i)(x + yi).\n\\]So \\[\n(x+yi)^2 = \\frac{1}{33+56i} = \\frac{1}{(7 +4i)^2} = \\left( \\frac{7 - 4i}{65} \\right)^2.\n\\]It follows that $(x,y) = \\pm \\left( \\frac{7}{65}, -\\frac{4}{65} \\right)$, so $|x| + |y| = \\boxed{\\frac{11}{65}}$.",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nLet $(x,y)$ be a pair of real numbers satisfying \\[\n56x + 33y = \\frac{-y}{x^2+y^2}, \\qquad \\text{and} \\qquad 33x-56y = \\frac{x}{x^2+y^2}.\n\\]Determine the value of $|x| + |y|$.\n",
+        "[AI]:\nTo solve the given system of equations:\n1) $56x + 33y = \\frac{-y}{x^2+y^2}$\n2) $33x - 56y = \\frac{x}{x^2+y^2}$\n\nLet $r^2 = x^2 + y^2$. Note that $r \\neq 0$ because if $x=y=0$, the right-hand sides are undefined.\nThe equations can be rewritten as:\n1) $56x + 33y = -\\frac{y}{r^2}$\n2) $33x - 56y = \\frac{x}{r^2}$\n\nWe can treat this as a system of linear equations in terms of $x$ and $y$ by multiplying both sides by $r^2$:\n1) $56r^2x + 33r^2y + y = 0 \\implies 56r^2x + (33r^2 + 1)y = 0$\n2) $33r^2x - 56r^2y - x = 0 \\implies (33r^2 - 1)x - 56r^2y = 0$\n\nFor a non-trivial solution $(x, y) \\neq (0, 0)$ to exist in a homogeneous system of the form:\n$Ax + By = 0$\n$Cx + Dy = 0$\nthe determinant of the coefficient matrix must be zero: $AD - BC = 0$.\n\nThe coefficient matrix is:\n$\\begin{pmatrix} 56r^2 & 33r^2 + 1 \\\\ 33r^2 - 1 & -56r^2 \\end{pmatrix}$\n\nSetting the determinant to zero:\n$(56r^2)(-56r^2) - (33r^2 + 1)(33r^2 - 1) = 0$\n$-3136r^4 - (33^2r^4 - 1) = 0$\n$-3136r^4 - 1089r^4 + 1 = 0$\n$-4225r^4 + 1 = 0$\n$4225r^4 = 1$\n$r^4 = \\frac{1}{4225}$\n\nSince $4225 = 65^2$, we have:\n$r^4 = \\frac{1}{65^2} \\implies r^2 = \\frac{1}{65}$\n\nNow we substitute $r^2 = \\frac{1}{65}$ back into one of the original equations to find the relationship between $x$ and $y$.\nFrom equation (1):\n$56x + 33y = \\frac{-y}{1/65} = -65y$\n$56x + 33y + 65y = 0$\n$56x + 98y = 0$\nDivide by 14:\n$4x + 7y = 0 \\implies x = -\\frac{7}{4}y$\n\nNow substitute $x = -\\frac{7}{4}y$ into the expression for $r^2$:\n$x^2 + y^2 = \\frac{1}{65}$\n$(-\\frac{7}{4}y)^2 + y^2 = \\frac{1}{65}$\n$\\frac{49}{16}y^2 + y^2 = \\frac{1}{65}$\n$\\frac{65}{16}y^2 = \\frac{1}{65}$\n$y^2 = \\frac{16}{65^2}$\n$|y| = \\sqrt{\\frac{16}{65^2}} = \\frac{4}{65}$\n\nSince $x = -\\frac{7}{4}y$, we have:\n$|x| = |-\\frac{7}{4}y| = \\frac{7}{4}|y| = \\frac{7}{4} \\cdot \\frac{4}{65} = \\frac{7}{65}$\n\nFinally, calculate $|x| + |y|$:\n$|x| + |y| = \\frac{7}{65} + \\frac{4}{65} = \\frac{11}{65}$\n\nVerification with equation (2):\n$33x - 56y = \\frac{x}{r^2}$\n$33(-\\frac{7}{4}y) - 56y = \\frac{-7/4y}{1/65} = -65(\\frac{7}{4}y) = -\\frac{455}{4}y$\n$-\\frac{231}{4}y - \\frac{224}{4}y = -\\frac{455}{4}y$\n$-\\frac{455}{4}y = -\\frac{455}{4}y$ (Correct)\n\nThe value is $\\frac{11}{65}$.\n\n\\boxed{\\frac{11}{65}}\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\FRAC{11}{65}$, AND THE STUDENT'S FINAL ANSWER IS ALSO $\\FRAC{11}{65}$. THESE TWO ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY REPRESENT THE SAME FRACTION. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 398.57,
+    "zuzycie_tokenow": {
+        "wejsciowe": 155,
+        "wyjsciowe": 1167,
+        "suma": 1322
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

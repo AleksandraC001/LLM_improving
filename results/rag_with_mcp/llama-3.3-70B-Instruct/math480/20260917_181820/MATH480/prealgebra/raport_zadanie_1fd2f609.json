@@ -1,0 +1,19 @@
+{
+    "task_file": "raport_zadanie_1fd2f609",
+    "zadanie": "A standard six-sided die was rolled 50 times, and the outcomes are shown in the table. What is the average of the 50 outcomes? Express your answer as a decimal to the nearest hundredth. \\begin{tabular}{|c|c|}\n\\hline\nOutcome&$\\#$ of Occurrences\\\\\\hline\n1&14\\\\\\hline\n2&5\\\\\\hline\n3&9\\\\\\hline\n4&7\\\\\\hline\n5&7\\\\\\hline\n6&8\\\\\\hline\n\\end{tabular}",
+    "oczekiwana_odpowiedz": "API Connection Error: OpenAIConnectionError('Connection error.'); cause=APIConnectionError('Connection error.')",
+    "pelny_przebieg_rozumowania": [],
+    "decyzja_sedziego": "EMPTY",
+    "wynik_ewaluacji": "ERROR",
+    "czas_wykonania": 14.84,
+    "zuzycie_tokenow": {
+        "wejsciowe": 0,
+        "wyjsciowe": 0,
+        "suma": 0
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

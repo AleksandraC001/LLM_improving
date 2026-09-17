@@ -1,0 +1,19 @@
+{
+    "task_file": "raport_zadanie_33ce809f",
+    "zadanie": "There exist constants $p$ and $q$ so that for any vectors $\\mathbf{a},$ $\\mathbf{b},$ and $\\mathbf{c},$ the vectors $\\mathbf{a} - 2 \\mathbf{b} + 3 \\mathbf{c},$ $2 \\mathbf{a} + 3 \\mathbf{b} - 4 \\mathbf{c},$ and $p \\mathbf{b} + q \\mathbf{c}$ are always collinear.  Enter the ordered pair $(p,q).$",
+    "oczekiwana_odpowiedz": "API Connection Error: OpenAIConnectionError('Connection error.'); cause=APIConnectionError('Connection error.')",
+    "pelny_przebieg_rozumowania": [],
+    "decyzja_sedziego": "EMPTY",
+    "wynik_ewaluacji": "ERROR",
+    "czas_wykonania": 554.09,
+    "zuzycie_tokenow": {
+        "wejsciowe": 0,
+        "wyjsciowe": 0,
+        "suma": 0
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

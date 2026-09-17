@@ -1,0 +1,23 @@
+{
+    "task_file": "raport_zadanie_226bf540",
+    "zadanie": "A 5-inch by 7-inch picture is placed on a rectangular piece of red paper such that a 0.5-inch wide red border is seen along each side of the picture. What is the area of the visible red border, in square inches?",
+    "oczekiwana_odpowiedz": "The piece of red paper must have dimensions of 6 inches by 8 inches in order to have a 0.5 inch border on each side. The area of the paper is 48 square inches, of which $5\\cdot 7 = 35$ square inches are obscured by the picture. Therefore, the area of the visible red border is $48 - 35 = \\boxed{13}$ square inches.",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n\n",
+        "[HUMAN]:\nA 5-inch by 7-inch picture is placed on a rectangular piece of red paper such that a 0.5-inch wide red border is seen along each side of the picture. What is the area of the visible red border, in square inches?\n",
+        "[AI]:\nTo find the area of the visible red border, we first need to calculate the total area of the picture with the red border and then subtract the area of the picture itself.\n\n1. **Calculate the dimensions of the picture with the red border:**\n   - The picture is 5 inches by 7 inches.\n   - A 0.5-inch wide red border is added to each side.\n   - Therefore, the new dimensions are:\n     - Length: 7 inches + 0.5 inches + 0.5 inches = 8 inches\n     - Width: 5 inches + 0.5 inches + 0.5 inches = 6 inches\n\n2. **Calculate the area of the picture with the red border:**\n   - Area = Length \u00d7 Width\n   - Area = 8 inches \u00d7 6 inches = 48 square inches\n\n3. **Calculate the area of the picture itself:**\n   - Area = Length \u00d7 Width\n   - Area = 7 inches \u00d7 5 inches = 35 square inches\n\n4. **Calculate the area of the visible red border:**\n   - Area of red border = Total area - Area of picture\n   - Area of red border = 48 square inches - 35 square inches = 13 square inches\n\nTherefore, the area of the visible red border is 13 square inches.\n\nThe final answer is: $\\boxed{13}$\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\BOXED{13}$ SQUARE INCHES, AND THE STUDENT'S FINAL ANSWER IS ALSO $\\BOXED{13}$ SQUARE INCHES. THESE TWO FINAL ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY REPRESENT THE SAME NUMERICAL VALUE.\n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 173.79,
+    "zuzycie_tokenow": {
+        "wejsciowe": 140,
+        "wyjsciowe": 289,
+        "suma": 429
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

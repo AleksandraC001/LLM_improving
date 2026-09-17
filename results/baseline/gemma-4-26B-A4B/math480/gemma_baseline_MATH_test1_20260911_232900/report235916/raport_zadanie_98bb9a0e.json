@@ -1,0 +1,23 @@
+{
+    "task_file": "raport_zadanie_98bb9a0e",
+    "zadanie": "Tom got a Mr. Potato Head for his birthday. It came with 3 hairstyles, 2 sets of eyebrows, 1 pair of googly eyes, 2 sets of ears, and 2 sets of lips, a pair of regular shoes, and a bonus pair of clown shoes. If a complete Mr. Potato Head personality includes eyebrows, eyes, ears, lips, shoes and optionally hair, how many different wacky personalities can Tom come up with? Note that Mr. Potato Head can be bald.\n\nNote: You cannot \"mix and match\".  For example, you cannot take the left eyebrow from one pair and the right eyebrow from the other pair.",
+    "oczekiwana_odpowiedz": "There are 2 choices of eyebrows, 1 choice for eyes, 2 choices for ears, 2 choices for lips, 2 choices for shoes, and 4 choices for hair (3 choices of hairstyles, or bald), and each can be picked independent of the others, so the number of combinations is the product of those, $2\\cdot 1\\cdot 2\\cdot 2\\cdot 2\\cdot 4 = \\boxed{64}$.",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nTom got a Mr. Potato Head for his birthday. It came with 3 hairstyles, 2 sets of eyebrows, 1 pair of googly eyes, 2 sets of ears, and 2 sets of lips, a pair of regular shoes, and a bonus pair of clown shoes. If a complete Mr. Potato Head personality includes eyebrows, eyes, ears, lips, shoes and optionally hair, how many different wacky personalities can Tom come up with? Note that Mr. Potato Head can be bald.\n\nNote: You cannot \"mix and match\".  For example, you cannot take the left eyebrow from one pair and the right eyebrow from the other pair.\n",
+        "[AI]:\nTo find the total number of different wacky personalities Tom can create, we need to identify the number of choices for each component of the Mr. Potato Head and then multiply them together using the fundamental counting principle.\n\nFirst, let's list the components required for a \"complete personality\" and the number of options for each:\n\n1.  **Eyebrows:** There are 2 sets of eyebrows.\n    *   Number of choices = $2$\n\n2.  **Eyes:** There is 1 pair of googly eyes.\n    *   Number of choices = $1$\n\n3.  **Ears:** There are 2 sets of ears.\n    *   Number of choices = $2$\n\n4.  **Lips:** There are 2 sets of lips.\n    *   Number of choices = $2$\n\n5.  **Shoes:** There is a pair of regular shoes and a bonus pair of clown shoes.\n    *   Number of choices = $2$ (Regular or Clown)\n\n6.  **Hair (Optional):** There are 3 hairstyles, but the problem states the Mr. Potato Head can be bald. This means \"no hair\" is an additional option.\n    *   Number of choices = $3 \\text{ (hairstyles)} + 1 \\text{ (bald)} = 4$\n\nAccording to the fundamental counting principle, if there are $n_1$ ways to make the first choice, $n_2$ ways to make the second, and so on, the total number of combinations is the product of these choices:\n\n$$\\text{Total Personalities} = (\\text{Eyebrows}) \\times (\\text{Eyes}) \\times (\\text{Ears}) \\times (\\text{Lips}) \\times (\\text{Shoes}) \\times (\\text{Hair})$$\n\nSubstituting the values we found:\n$$\\text{Total Personalities} = 2 \\times 1 \\times 2 \\times 2 \\times 2 \\times 4$$\n\nNow, perform the multiplication step by step:\n$2 \\times 1 = 2$\n$2 \\times 2 = 4$\n$4 \\times 2 = 8$\n$8 \\times 2 = 16$\n$16 \\times 4 = 64$\n\nThus, Tom can come up with 64 different wacky personalities.\n\n\\boxed{64}\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\BOXED{64}$, AND THE STUDENT'S FINAL ANSWER IS $\\BOXED{64}$. THESE TWO ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY REPRESENT THE SAME NUMERICAL VALUE. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 55.82,
+    "zuzycie_tokenow": {
+        "wejsciowe": 208,
+        "wyjsciowe": 516,
+        "suma": 724
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

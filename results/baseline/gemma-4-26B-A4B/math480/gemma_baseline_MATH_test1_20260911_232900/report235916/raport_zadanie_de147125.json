@@ -1,0 +1,23 @@
+{
+    "task_file": "raport_zadanie_de147125",
+    "zadanie": "Quadrilateral $ABCD$ is a parallelogram. If the measure of angle $A$ is 62 degrees and the measure of angle $ADB$ is 75 degrees, what is the measure of angle $ADC$, in degrees?",
+    "oczekiwana_odpowiedz": "Since adjacent angles of a parallelogram add up to $180^{\\circ}$, $ADC=180^{\\circ}-A=180^{\\circ}-62^{\\circ}=\\boxed{118^{\\circ}}$.",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nQuadrilateral $ABCD$ is a parallelogram. If the measure of angle $A$ is 62 degrees and the measure of angle $ADB$ is 75 degrees, what is the measure of angle $ADC$, in degrees?\n",
+        "[AI]:\nTo find the measure of angle $ADC$ in the parallelogram $ABCD$, we follow these steps:\n\n1.  **Identify the properties of a parallelogram:**\n    In a parallelogram $ABCD$:\n    *   Opposite angles are equal: $\\angle A = \\angle C$ and $\\angle B = \\angle D$.\n    *   Consecutive angles are supplementary (they add up to $180^\\circ$): $\\angle A + \\angle B = 180^\\circ$, $\\angle B + \\angle C = 180^\\circ$, $\\angle C + \\angle D = 180^\\circ$, and $\\angle D + \\angle A = 180^\\circ$.\n    *   Opposite sides are parallel: $AB \\parallel CD$ and $AD \\parallel BC$.\n\n2.  **Use the given information:**\n    *   The measure of angle $A$ is $62^\\circ$.\n    *   The measure of angle $ADB$ is $75^\\circ$.\n\n3.  **Calculate the measure of angle $D$ (which is $\\angle ADC$):**\n    Since $ABCD$ is a parallelogram, consecutive angles $\\angle A$ and $\\angle D$ must be supplementary.\n    Therefore:\n    $$\\angle A + \\angle D = 180^\\circ$$\n    Substituting the given value of $\\angle A$:\n    $$62^\\circ + \\angle D = 180^\\circ$$\n    $$\\angle D = 180^\\circ - 62^\\circ$$\n    $$\\angle D = 118^\\circ$$\n\n4.  **Verify the consistency of the information:**\n    The problem states that $\\angle ADB = 75^\\circ$. Since $D$ is the vertex of the angle $\\angle ADC$, the angle $\\angle ADC$ is composed of two parts if $B$ lies within the angle, or it is simply the whole angle. In a parallelogram, the diagonal $BD$ splits angle $D$ into $\\angle ADB$ and $\\angle BDC$.\n    We found $\\angle ADC = 118^\\circ$.\n    If $\\angle ADB = 75^\\circ$, then $\\angle BDC = \\angle ADC - \\angle ADB = 118^\\circ - 75^\\circ = 43^\\circ$.\n    This is a geometrically possible configuration. The measure of $\\angle ADC$ is determined solely by the fact that it is consecutive to $\\angle A$ in a parallelogram.\n\nConclusion:\nThe measure of angle $ADC$ is $118^\\circ$.\n\n\\boxed{118}\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\BOXED{118^{\\CIRC}}$, AND THE STUDENT'S FINAL ANSWER IS $\\BOXED{118}$. THESE TWO ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY REPRESENT THE SAME NUMERICAL VALUE. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 65.67,
+    "zuzycie_tokenow": {
+        "wejsciowe": 122,
+        "wyjsciowe": 568,
+        "suma": 690
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

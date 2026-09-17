@@ -1,0 +1,23 @@
+{
+    "task_file": "raport_zadanie_15ac5f6c",
+    "zadanie": "3 cards are chosen at random from a standard 52-card deck.  What is the probability that they can be arranged into a group of three consecutive cards, all of the same suit? For this problem, an Ace can either come before a 2 or after a King, but not both (so A23 and QKA both count, but KA2 doesn't).",
+    "oczekiwana_odpowiedz": "There are $\\binom{52}{3} = 22,\\!100$ ways to choose 3 cards out of 52, without regard to order. For any suit, there are 12 possible triples of consecutive cards (since the three consecutive cards can start on an A, 2, 3, ..., or Q, but not on a K). Since there are 4 suits, there are $4\\cdot12=48$ valid triples. The chance that three cards chosen randomly are three consecutive cards of the same suit is therefore $\\frac{48}{22,\\!100}=\\boxed{\\frac{12}{5,\\!525}}$",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\n3 cards are chosen at random from a standard 52-card deck.  What is the probability that they can be arranged into a group of three consecutive cards, all of the same suit? For this problem, an Ace can either come before a 2 or after a King, but not both (so A23 and QKA both count, but KA2 doesn't).\n",
+        "[AI]:\nTo find the probability that 3 cards chosen at random from a 52-card deck can be arranged into a group of three consecutive cards of the same suit, we follow these steps:\n\n### 1. Determine the total number of ways to choose 3 cards\nThe total number of ways to choose 3 cards from a deck of 52 is given by the combination formula $\\binom{n}{k}$:\n$$\\binom{52}{3} = \\frac{52 \\times 51 \\times 50}{3 \\times 2 \\times 1} = 52 \\times 17 \\times 25 = 22,100$$\n\n### 2. Determine the number of successful outcomes\nA successful outcome is a set of 3 cards that are consecutive and of the same suit. \n\n**Step A: Identify consecutive sequences in one suit.**\nIn a single suit, the ranks are: A, 2, 3, 4, 5, 6, 7, 8, 9, 10, J, Q, K.\nThe problem states that Ace can be at the beginning (A, 2, 3) or at the end (Q, K, A).\nLet's list the possible sequences of 3 consecutive ranks:\n1. (A, 2, 3)\n2. (2, 3, 4)\n3. (3, 4, 5)\n4. (4, 5, 6)\n5. (5, 6, 7)\n6. (6, 7, 8)\n7. (7, 8, 9)\n8. (8, 9, 10)\n9. (9, 10, J)\n10. (10, J, Q)\n11. (J, Q, K)\n12. (Q, K, A)\n\nCounting these, there are 12 possible sequences of 3 consecutive ranks per suit.\n\n**Step B: Account for all suits.**\nThere are 4 suits in a standard deck (Hearts, Diamonds, Clubs, Spades).\nTotal successful outcomes = (Number of sequences per suit) $\\times$ (Number of suits)\n$$\\text{Total successful outcomes} = 12 \\times 4 = 48$$\n\n### 3. Calculate the probability\nThe probability $P$ is the ratio of the number of successful outcomes to the total number of possible outcomes:\n$$P = \\frac{48}{22,100}$$\n\nTo simplify the fraction, we can divide both the numerator and the denominator by their greatest common divisor.\nDivide by 4:\n$$P = \\frac{12}{5,525}$$\n\nChecking if 5,525 is divisible by 3: $5+5+2+5 = 17$ (not divisible by 3).\nChecking if 5,525 is divisible by 2 or 4: No (it is odd).\nThe fraction $\\frac{12}{5525}$ is in its simplest form.\n\nFinal calculation check:\n$52 \\times 17 \\times 25 = 22100$.\n$48 / 4 = 12$.\n$22100 / 4 = 5525$.\n\nThe probability is $\\frac{12}{5525}$.\n\n\\boxed{\\frac{12}{5525}}\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\FRAC{12}{5,\\!525}$, AND THE STUDENT'S FINAL ANSWER IS $\\FRAC{12}{5525}$. THESE TWO ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY REPRESENT THE SAME FRACTION. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 130.7,
+    "zuzycie_tokenow": {
+        "wejsciowe": 153,
+        "wyjsciowe": 769,
+        "suma": 922
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

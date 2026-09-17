@@ -1,0 +1,26 @@
+{
+    "task_file": "raport_zadanie_ea1397aa",
+    "zadanie": "Find the maximum value of\n\\[\\frac{x - y}{x^4 + y^4 + 6}\\]over all real numbers $x$ and $y.$",
+    "oczekiwana_odpowiedz": "Clearly, the maximum occurs when $x$ is positive and $y$ is negative.  Let $z = -y,$ so $z$ is positive, and $y = -z.$  Then\n\\[\\frac{x - y}{x^4 + y^4 + 6} = \\frac{x + z}{x^4 + z^4 + 6}.\\]By AM-GM,\n\\[x^4 + 1 + 1 + 1 \\ge 4 \\sqrt[4]{x^4} = 4x,\\]and\n\\[z^4 + 1 + 1 + 1 \\ge 4 \\sqrt[4]{z^4} = 4z.\\]Then $x^4 + z^4 + 6 \\ge 4(x + z),$ which implies\n\\[\\frac{x + z}{x^4 + z^4 + 6} \\le \\frac{1}{4}.\\]Equality occurs when $x = z = 1,$ so the maximum value is $\\boxed{\\frac{1}{4}}.$",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Always in each step, formulate a thought, perform an action (you must call the tool), and draw conclusions from observing that action.\n\n    TOOL USE INSTRUCTION:\n    - You have access to tools, but you decide whether to use them. PREFER delegating calculations to tools over doing \"mental math\" in plain text.\n    - Python Interpreter ('python_interpreter'): Your primary tool. Use it for most numerical and symbolic calculations.\n    - Wolfram Alpha ('ask_wolfram'): Use this for complex symbolic mathematics, difficult integrals, or if Python returns an error.\n    - Brave Search ('brave_search'): Use to find general mathematical definitions, theorems, or formulas.\n\n    ERROR HANDLING:\n    If any tool returns an error, DO NOT repeat the exact same tool call. You must analyze the error, fix the syntax/parameters, switch to an alternative tool, or solve the step manually.    \n    \n    FINAL OUTPUT:\n    When you reach the final answer return it in enclosed in a LaTeX box: \\boxed{answer}\n",
+        "[HUMAN]:\nFind the maximum value of\n\\[\\frac{x - y}{x^4 + y^4 + 6}\\]over all real numbers $x$ and $y.$\n",
+        "[AI]:\n\n",
+        "[AI_TOOL_CALLS]:\n[{'name': 'ask_wolfram', 'args': {'query': 'maximize (x - y) / (x^4 + y^4 + 6)'}, 'id': 'chatcmpl-tool-a81e89f669e55f76', 'type': 'tool_call'}]\n",
+        "[TOOL]:\nmeta=None content=[TextContent(type='text', text='maximize | (x - y)/(x^4 + y^4 + 6)', annotations=None, meta=None), TextContent(type='text', text='max{(x - y)/(x^4 + y^4 + 6)} = 1/4 at (x, y) = (1, -1)', annotations=None, meta=None)] structured_content=None is_error=False result_type='complete'\n",
+        "[AI]:\nThe maximum value of the given expression is $\\frac{1}{4}$, which occurs when $x = 1$ and $y = -1$. \n\nThe final answer is $\\boxed{\\frac{1}{4}}$.\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\FRAC{1}{4}$, AND THE STUDENT'S FINAL ANSWER IS ALSO $\\FRAC{1}{4}$. THESE TWO ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY REPRESENT THE SAME FRACTION. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 312.55,
+    "zuzycie_tokenow": {
+        "wejsciowe": 1796,
+        "wyjsciowe": 245,
+        "suma": 2041
+    },
+    "uzycie_narzedzi": 1,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 1,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

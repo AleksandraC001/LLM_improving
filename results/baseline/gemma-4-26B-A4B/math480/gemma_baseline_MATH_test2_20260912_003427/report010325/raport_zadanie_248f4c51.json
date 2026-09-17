@@ -1,0 +1,23 @@
+{
+    "task_file": "raport_zadanie_248f4c51",
+    "zadanie": "Let $p$ be a prime number between 40 and 60. What is the probability that $p + 12$ is also a prime number? Express your answer as a common fraction.",
+    "oczekiwana_odpowiedz": "There are 5 prime numbers between 40 and 60: 41, 43, 47, 53, and 59. Adding 12 to each and checking whether the sum is prime, we find that only $41+12=53$, $47+12=59$, and $59+12=71$ are prime. Thus, the probability that $p+12$ is prime is $\\boxed{\\frac{3}{5}}$.",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nLet $p$ be a prime number between 40 and 60. What is the probability that $p + 12$ is also a prime number? Express your answer as a common fraction.\n",
+        "[AI]:\nTo find the probability that $p + 12$ is a prime number, where $p$ is a prime number between 40 and 60, we follow these steps:\n\n**Step 1: Identify all prime numbers $p$ such that $40 < p < 60$.**\nWe check the odd numbers in this range:\n- 41: Prime (not divisible by 3, 5, 7)\n- 43: Prime (not divisible by 3, 5, 7)\n- 45: Not prime ($5 \\times 9$)\n- 47: Prime (not divisible by 3, 5, 7)\n- 49: Not prime ($7 \\times 7$)\n- 51: Not prime ($3 \\times 17$)\n- 53: Prime (not divisible by 3, 5, 7)\n- 55: Not prime ($5 \\times 11$)\n- 57: Not prime ($3 \\times 19$)\n- 59: Prime (not divisible by 3, 5, 7)\n\nThe set of prime numbers $p$ between 40 and 60 is $\\{41, 43, 47, 53, 59\\}$.\nThe total number of such primes is $n(S) = 5$.\n\n**Step 2: For each $p$, calculate $p + 12$ and determine if it is prime.**\n- For $p = 41$: $41 + 12 = 53$. Is 53 prime? Yes.\n- For $p = 43$: $43 + 12 = 55$. Is 55 prime? No ($5 \\times 11$).\n- For $p = 47$: $47 + 12 = 59$. Is 59 prime? Yes.\n- For $p = 53$: $53 + 12 = 65$. Is 65 prime? No ($5 \\times 13$).\n- For $p = 59$: $59 + 12 = 71$. Is 71 prime? Yes (not divisible by 2, 3, 5, 7).\n\n**Step 3: Count the number of successful outcomes.**\nThe values of $p$ for which $p + 12$ is prime are $\\{41, 47, 59\\}$.\nThe number of successful outcomes is $n(E) = 3$.\n\n**Step 4: Calculate the probability.**\nThe probability is the ratio of the number of successful outcomes to the total number of possible outcomes:\n$$P = \\frac{n(E)}{n(S)} = \\frac{3}{5}$$\n\nThe probability that $p + 12$ is also a prime number is $\\frac{3}{5}$.\n\n\\boxed{\\frac{3}{5}}\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\FRAC{3}{5}$, AND THE STUDENT'S FINAL ANSWER IS ALSO $\\FRAC{3}{5}$. THESE TWO ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY REPRESENT THE SAME FRACTION. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 86.67,
+    "zuzycie_tokenow": {
+        "wejsciowe": 117,
+        "wyjsciowe": 661,
+        "suma": 778
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

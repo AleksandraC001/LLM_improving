@@ -1,0 +1,19 @@
+{
+    "task_file": "raport_zadanie_91f2f9d3",
+    "zadanie": "For $135^\\circ < x < 180^\\circ$, points $P=(\\cos x, \\cos^2 x), Q=(\\cot x, \\cot^2 x), R=(\\sin x, \\sin^2 x)$ and $S =(\\tan x, \\tan^2 x)$ are the vertices of a trapezoid. What is $\\sin 2x$?",
+    "oczekiwana_odpowiedz": "Timeout - Endpoint API nie odpowiedzia\u0142 w wyznaczonym czasie",
+    "pelny_przebieg_rozumowania": [],
+    "decyzja_sedziego": "EMPTY",
+    "wynik_ewaluacji": "ERROR",
+    "czas_wykonania": 771.89,
+    "zuzycie_tokenow": {
+        "wejsciowe": 0,
+        "wyjsciowe": 0,
+        "suma": 0
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

@@ -1,0 +1,19 @@
+{
+    "task_file": "raport_zadanie_e9147924",
+    "zadanie": "Let $a$ and $b$ be real numbers such that $a > 2b > 0.$  Find the minimum value of\n\\[3a^3 \\sqrt{3} + \\frac{2}{ab - 2b^2}.\\]",
+    "oczekiwana_odpowiedz": "Timeout - Endpoint API nie odpowiedzia\u0142 w wyznaczonym czasie",
+    "pelny_przebieg_rozumowania": [],
+    "decyzja_sedziego": "EMPTY",
+    "wynik_ewaluacji": "ERROR",
+    "czas_wykonania": 721.52,
+    "zuzycie_tokenow": {
+        "wejsciowe": 0,
+        "wyjsciowe": 0,
+        "suma": 0
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

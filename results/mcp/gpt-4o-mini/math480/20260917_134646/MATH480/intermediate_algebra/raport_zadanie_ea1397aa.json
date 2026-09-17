@@ -1,0 +1,23 @@
+{
+    "task_file": "raport_zadanie_ea1397aa",
+    "zadanie": "Find the maximum value of\n\\[\\frac{x - y}{x^4 + y^4 + 6}\\]over all real numbers $x$ and $y.$",
+    "oczekiwana_odpowiedz": "Clearly, the maximum occurs when $x$ is positive and $y$ is negative.  Let $z = -y,$ so $z$ is positive, and $y = -z.$  Then\n\\[\\frac{x - y}{x^4 + y^4 + 6} = \\frac{x + z}{x^4 + z^4 + 6}.\\]By AM-GM,\n\\[x^4 + 1 + 1 + 1 \\ge 4 \\sqrt[4]{x^4} = 4x,\\]and\n\\[z^4 + 1 + 1 + 1 \\ge 4 \\sqrt[4]{z^4} = 4z.\\]Then $x^4 + z^4 + 6 \\ge 4(x + z),$ which implies\n\\[\\frac{x + z}{x^4 + z^4 + 6} \\le \\frac{1}{4}.\\]Equality occurs when $x = z = 1,$ so the maximum value is $\\boxed{\\frac{1}{4}}.$",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Always in each step, formulate a thought, perform an action (you must call the tool), and draw conclusions from observing that action.\n\n    TOOL USE INSTRUCTION:\n    - You have access to tools, but you decide whether to use them. PREFER delegating calculations to tools over doing \"mental math\" in plain text.\n    - Python Interpreter ('python_interpreter'): Your primary tool. Use it for most numerical and symbolic calculations.\n    - Wolfram Alpha ('ask_wolfram'): Use this for complex symbolic mathematics, difficult integrals, or if Python returns an error.\n    - Brave Search ('brave_search'): Use to find general mathematical definitions, theorems, or formulas.\n\n    ERROR HANDLING:\n    If any tool returns an error, DO NOT repeat the exact same tool call. You must analyze the error, fix the syntax/parameters, switch to an alternative tool, or solve the step manually.    \n    \n    FINAL OUTPUT:\n    When you reach the final answer return it in enclosed in a LaTeX box: \\boxed{answer}\n",
+        "[HUMAN]:\nFind the maximum value of\n\\[\\frac{x - y}{x^4 + y^4 + 6}\\]over all real numbers $x$ and $y.$\n",
+        "[AI]:\nTo find the maximum value of the expression \n\n\\[\nf(x, y) = \\frac{x - y}{x^4 + y^4 + 6},\n\\]\n\nwe can start by analyzing the numerator and the denominator separately. The numerator \\(x - y\\) can take any real value, while the denominator \\(x^4 + y^4 + 6\\) is always positive since \\(x^4\\) and \\(y^4\\) are non-negative.\n\nTo maximize \\(f(x, y)\\), we can use the method of Lagrange multipliers or analyze the critical points by taking partial derivatives. However, a more straightforward approach is to consider specific cases for \\(x\\) and \\(y\\).\n\nLet's set \\(y = 0\\) to simplify our analysis:\n\n\\[\nf(x, 0) = \\frac{x}{x^4 + 6}.\n\\]\n\nNext, we will find the maximum of this function with respect to \\(x\\). We can differentiate \\(f(x, 0)\\) with respect to \\(x\\) and set the derivative to zero to find critical points.\n\nCalculating the derivative using the quotient rule:\n\n\\[\nf'(x) = \\frac{(x^4 + 6)(1) - x(4x^3)}{(x^4 + 6)^2} = \\frac{x^4 + 6 - 4x^4}{(x^4 + 6)^2} = \\frac{-3x^4 + 6}{(x^4 + 6)^2}.\n\\]\n\nSetting the numerator equal to zero to find critical points:\n\n\\[\n-3x^4 + 6 = 0 \\implies 3x^4 = 6 \\implies x^4 = 2 \\implies x = \\sqrt[4]{2} \\text{ or } x = -\\sqrt[4]{2}.\n\\]\n\nNow we will evaluate \\(f(x, 0)\\) at these critical points:\n\n1. For \\(x = \\sqrt[4]{2}\\):\n\n\\[\nf(\\sqrt[4]{2}, 0) = \\frac{\\sqrt[4]{2}}{(\\sqrt[4]{2})^4 + 6} = \\frac{\\sqrt[4]{2}}{2 + 6} = \\frac{\\sqrt[4]{2}}{8}.\n\\]\n\n2. For \\(x = -\\sqrt[4]{2}\\):\n\n\\[\nf(-\\sqrt[4]{2}, 0) = \\frac{-\\sqrt[4]{2}}{(-\\sqrt[4]{2})^4 + 6} = \\frac{-\\sqrt[4]{2}}{2 + 6} = \\frac{-\\sqrt[4]{2}}{8}.\n\\]\n\nThe maximum value occurs at \\(x = \\sqrt[4]{2}\\):\n\n\\[\nf(\\sqrt[4]{2}, 0) = \\frac{\\sqrt[4]{2}}{8}.\n\\]\n\nNext, we can also check the case when \\(y = x\\):\n\n\\[\nf(x, x) = \\frac{x - x}{x^4 + x^4 + 6} = 0.\n\\]\n\nThus, the maximum value of \\(f(x, y)\\) occurs when \\(y = 0\\) and \\(x = \\sqrt[4]{2}\\).\n\nFinally, we can conclude that the maximum value of the original expression is:\n\n\\[\n\\frac{\\sqrt[4]{2}}{8}.\n\\]\n\nTo express this in a boxed format:\n\n\\[\n\\boxed{\\frac{\\sqrt[4]{2}}{8}}.\n\\]\n"
+    ],
+    "decyzja_sedziego": "THE CORRECT SOLUTION CONCLUDES WITH THE FINAL ANSWER $\\BOXED{\\FRAC{1}{4}}$, WHILE THE STUDENT'S SOLUTION CONCLUDES WITH THE FINAL ANSWER $\\BOXED{\\FRAC{\\SQRT[4]{2}}{8}}$. THESE TWO ANSWERS ARE NOT MATHEMATICALLY EQUIVALENT. \n\nVERDICT: NO",
+    "wynik_ewaluacji": "WRONG",
+    "czas_wykonania": 9.7,
+    "zuzycie_tokenow": {
+        "wejsciowe": 566,
+        "wyjsciowe": 773,
+        "suma": 1339
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

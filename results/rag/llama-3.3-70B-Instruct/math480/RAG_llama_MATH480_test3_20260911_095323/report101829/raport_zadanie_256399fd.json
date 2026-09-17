@@ -1,0 +1,23 @@
+{
+    "task_file": "raport_zadanie_256399fd",
+    "zadanie": "Let $a,$ $b,$ $c$ be real numbers such that\n\\[a + 3b + 4c = a^2 + b^2 + c^2 = 25.\\]Find the largest possible value of $a.$",
+    "oczekiwana_odpowiedz": "By Cauchy-Schwarz,\n\\[(3^2 + 4^2)(b^2 + c^2) \\ge (3b + 4c)^2.\\]Since $a + 3b + 4c = a^2 + b^2 + c^2 = 25,$ we can write this as\n\\[25(25 - a^2) \\ge (25 - a)^2.\\]Expanding, we get\n\\[625 - 25a^2 \\ge 625 - 50a + a^2,\\]so $26a^2 - 50a \\le 0.$  This factors as $2a(13a - 25) \\le 0.$  This implies $a \\le \\frac{25}{13}.$\n\nFor $a = \\frac{25}{13},$ since we have equality above, we want $\\frac{b^2}{9} = \\frac{c^2}{16}.$  We also want $a + 3b + 4c = 25.$  We can solve to get $b = \\frac{36}{13}$ and $c = \\frac{48}{13},$ so the largest possible value of $a$ is $\\boxed{\\frac{25}{13}}.$",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n\n\n    CONTEXT INSTRUCTIONS:\n    Below you will find a [HELPFUL CONTEXT FROM RAG] block. It contains a solved mathematical problems that shares similar logic of the solution to your current problem.\n    - Analize given examples and use their context to understand the required methodology, the solution concept, theorems, or algebraic tricks BEFORE proceeding with your solving process.\n\n    [HELPFUL CONTEXT FROM RAG]\n    \n    --- USEFUL EXAMPLE ---\nProblem: If $a,$ $b,$ $c,$ $x,$ $y,$ and $z$ are positive and $a^2 + b^2 + c^2 = 25,$ $x^2 + y^2 + z^2 = 36,$ and $ax + by + cz = 30,$ compute\n\\[\\frac{a + b + c}{x + y + z}.\\]\nSolution: By the Cauchy-Schwarz inequality,\n\\[(a^2 + b^2 + c^2)(x^2 + y^2 + z^2) \\ge (ax + by + cz)^2.\\]This becomes $25 \\cdot 36 \\ge 30^2.$  Since $25 \\cdot 36 = 900 = 30^2,$ we get equality.\n\nFrom the equality condition in Cauchy-Schwarz,\n\\[\\frac{a}{x} = \\frac{b}{y} = \\frac{c}{z}.\\]Let\n\\[k = \\frac{a}{x} = \\frac{b}{y} = \\frac{c}{z}.\\]Then $a = kx,$ $b = ky$ and $c = kz,$ so\n\\[a^2 + b^2 + c^2 = k^2 x^2 + k^2 y^2 + k^2 z^2 = k^2 (x^2 + y^2 + z^2).\\]Then $36k^2 = 25,$ so $k^2 = \\frac{25}{36},$ which means $k = \\frac{5}{6}.$  Therefore,\n\\[\\frac{a + b + c}{x + y + z} = \\boxed{\\frac{5}{6}}.\\]\n\n\n    \n    [/HELPFUL CONTEXT FROM RAG]\n",
+        "[HUMAN]:\nLet $a,$ $b,$ $c$ be real numbers such that\n\\[a + 3b + 4c = a^2 + b^2 + c^2 = 25.\\]Find the largest possible value of $a.$\n",
+        "[AI]:\n## Step 1: Understand the given conditions\nWe are given that $a + 3b + 4c = 25$ and $a^2 + b^2 + c^2 = 25$. We need to find the largest possible value of $a$.\n\n## Step 2: Apply the Cauchy-Schwarz inequality\nBy the Cauchy-Schwarz inequality, we have\n\\[(1^2 + 3^2 + 4^2)(a^2 + b^2 + c^2) \\ge (a + 3b + 4c)^2.\\]\nThis simplifies to\n\\[(26)(25) \\ge 625,\\]\nwhich holds true since $26 \\cdot 25 = 650$ is indeed greater than $625$.\n\n## Step 3: Use the equality condition of Cauchy-Schwarz\nFor equality to occur in the Cauchy-Schwarz inequality, we must have\n\\[\\frac{a}{1} = \\frac{b}{3} = \\frac{c}{4}.\\]\nLet $k$ be the common ratio, so $a = k$, $b = 3k$, and $c = 4k$.\n\n## Step 4: Substitute $a = k$, $b = 3k$, and $c = 4k$ into the given equations\nSubstituting into $a + 3b + 4c = 25$, we get\n\\[k + 3(3k) + 4(4k) = 25,\\]\nwhich simplifies to\n\\[k + 9k + 16k = 25,\\]\nor\n\\[26k = 25.\\]\nThis gives $k = \\frac{25}{26}$.\n\n## Step 5: Find the value of $a$\nSince $a = k$, we have\n\\[a = \\frac{25}{26}.\\]\n\nThe final answer is: $\\boxed{\\frac{25}{26}}$\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\FRAC{25}{13}$, AND THE STUDENT'S FINAL ANSWER IS $\\FRAC{25}{26}$. THESE TWO ANSWERS ARE NOT MATHEMATICALLY EQUIVALENT, AS THEY REPRESENT DIFFERENT VALUES. \n\nVERDICT: NO",
+    "wynik_ewaluacji": "WRONG",
+    "czas_wykonania": 651.32,
+    "zuzycie_tokenow": {
+        "wejsciowe": 621,
+        "wyjsciowe": 426,
+        "suma": 1047
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 1
+}

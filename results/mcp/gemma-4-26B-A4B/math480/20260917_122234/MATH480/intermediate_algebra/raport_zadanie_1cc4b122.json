@@ -1,0 +1,23 @@
+{
+    "task_file": "raport_zadanie_1cc4b122",
+    "zadanie": "Let $(a_1, a_2, \\dots, a_n)$ be a sequence of positive real numbers, such that\n\\[\\sum_{i = 1}^n a_i = 96, \\quad \\sum_{i = 1}^n a_i^2 = 144, \\quad \\sum_{i = 1}^n a_i^3 = 216.\\]Find the sum of all possible values of $n.$",
+    "oczekiwana_odpowiedz": "By Cauchy-Schwarz,\n\\[(a_1 + a_2 + \\dots + a_n)(a_1^3 + a_2^3 + \\dots + a_n^3) \\ge (a_1^2 + a_2^2 + \\dots + a_n^2)^2.\\]Since $96 \\cdot 216 = 144^2,$ we have equality in the Cauchy-Schwarz Inequality, which means\n\\[\\frac{a_1^3}{a_1} = \\frac{a_2^3}{a_2} = \\dots = \\frac{a_n^3}{a_n}.\\]Then $a_1^2 = a_2^2 = \\dots = a_n^2,$ so $a_1 = a_2 = \\dots = a_n.$\n\nFrom the given, $na_1 = 96$ and $na_1^2 = 144.$  Dividing these equations, we get $a_1 = \\frac{3}{2},$ so $n = \\boxed{64}.$",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Always in each step, formulate a thought, perform an action (you must call the tool), and draw conclusions from observing that action.\n\n    TOOL USE INSTRUCTION:\n    - You have access to tools, but you decide whether to use them. PREFER delegating calculations to tools over doing \"mental math\" in plain text.\n    - Python Interpreter ('python_interpreter'): Your primary tool. Use it for most numerical and symbolic calculations.\n    - Wolfram Alpha ('ask_wolfram'): Use this for complex symbolic mathematics, difficult integrals, or if Python returns an error.\n    - Brave Search ('brave_search'): Use to find general mathematical definitions, theorems, or formulas.\n\n    ERROR HANDLING:\n    If any tool returns an error, DO NOT repeat the exact same tool call. You must analyze the error, fix the syntax/parameters, switch to an alternative tool, or solve the step manually.    \n    \n    FINAL OUTPUT:\n    When you reach the final answer return it in enclosed in a LaTeX box: \\boxed{answer}\n",
+        "[HUMAN]:\nLet $(a_1, a_2, \\dots, a_n)$ be a sequence of positive real numbers, such that\n\\[\\sum_{i = 1}^n a_i = 96, \\quad \\sum_{i = 1}^n a_i^2 = 144, \\quad \\sum_{i = 1}^n a_i^3 = 216.\\]Find the sum of all possible values of $n.$\n",
+        "[AI]:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $N = \\BOXED{64}$, BUT THE STUDENT'S SOLUTION CONTAINS NO ACTUAL ANSWER, ONLY A LARGE AMOUNT OF WHITESPACE. THE STUDENT DOES NOT PROVIDE A FINAL NUMERICAL ANSWER TO THE PROBLEM.\n\nVERDICT: NO",
+    "wynik_ewaluacji": "WRONG",
+    "czas_wykonania": 282.38,
+    "zuzycie_tokenow": {
+        "wejsciowe": 709,
+        "wyjsciowe": 2000,
+        "suma": 2709
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

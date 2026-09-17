@@ -1,0 +1,23 @@
+{
+    "task_file": "raport_zadanie_a8c5c18d",
+    "zadanie": "One line is parameterized by\n\\[\\begin{pmatrix} 2 - 3t \\\\ -5 - 2t \\\\ 1 - 6t \\end{pmatrix}.\\]Another line is parameterized by\n\\[\\begin{pmatrix} -\\frac{3}{2} + s \\\\ 2s \\\\ -6 + 2s \\end{pmatrix}.\\]The two lines intersect at $P.$  If $\\theta$ is the acute angle formed by the two lines at $P,$ then find $\\cos \\theta.$",
+    "oczekiwana_odpowiedz": "The direction vectors of the lines are $\\begin{pmatrix} -3 \\\\ -2  \\\\ -6 \\end{pmatrix}$ and $\\begin{pmatrix} 1 \\\\ 2 \\\\ 2 \\end{pmatrix}.$  The cosine of the angle between them is then\n\\[\\frac{\\begin{pmatrix} -3 \\\\ -2 \\\\ -6 \\end{pmatrix} \\cdot \\begin{pmatrix} 1 \\\\ 2 \\\\ 2 \\end{pmatrix}}{\\left\\| \\begin{pmatrix} -3 \\\\ -2 \\\\ -6 \\end{pmatrix} \\right\\| \\left\\| \\begin{pmatrix} 1 \\\\ 2 \\\\ 2 \\end{pmatrix} \\right\\|} = \\frac{-19}{7 \\cdot 3} = -\\frac{19}{21}.\\]Since $\\theta$ is acute, $\\cos \\theta = \\boxed{\\frac{19}{21}}.$",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nOne line is parameterized by\n\\[\\begin{pmatrix} 2 - 3t \\\\ -5 - 2t \\\\ 1 - 6t \\end{pmatrix}.\\]Another line is parameterized by\n\\[\\begin{pmatrix} -\\frac{3}{2} + s \\\\ 2s \\\\ -6 + 2s \\end{pmatrix}.\\]The two lines intersect at $P.$  If $\\theta$ is the acute angle formed by the two lines at $P,$ then find $\\cos \\theta.$\n",
+        "[AI]:\nTo find the angle between two lines, we first identify their direction vectors.\n\nThe first line is parameterized by:\n\\[ \\mathbf{r}_1(t) = \\begin{pmatrix} 2 \\\\ -5 \\\\ 1 \\end{pmatrix} + t \\begin{pmatrix} -3 \\\\ -2 \\\\ -6 \\end{pmatrix} \\]\nThe direction vector of the first line is $\\mathbf{v}_1 = \\begin{pmatrix} -3 \\\\ -2 \\\\ -6 \\end{pmatrix}$.\n\nThe second line is parameterized by:\n\\[ \\mathbf{r}_2(s) = \\begin{pmatrix} -3/2 \\\\ 0 \\\\ -6 \\end{pmatrix} + s \\begin{pmatrix} 1 \\\\ 2 \\\\ 2 \\end{pmatrix} \\]\nThe direction vector of the second line is $\\mathbf{v}_2 = \\begin{pmatrix} 1 \\\\ 2 \\\\ 2 \\end{pmatrix}$.\n\nThe angle $\\theta$ between two lines with direction vectors $\\mathbf{v}_1$ and $\\mathbf{v}_2$ is given by the formula:\n\\[ \\cos \\theta = \\frac{|\\mathbf{v}_1 \\cdot \\mathbf{v}_2|}{\\|\\mathbf{v}_1\\| \\|\\mathbf{v}_2\\|} \\]\nwhere $\\theta$ is the acute angle.\n\nFirst, we calculate the dot product $\\mathbf{v}_1 \\cdot \\mathbf{v}_2$:\n\\[ \\mathbf{v}_1 \\cdot \\mathbf{v}_2 = (-3)(1) + (-2)(2) + (-6)(2) = -3 - 4 - 12 = -19 \\]\n\nNext, we calculate the magnitude of $\\mathbf{v}_1$:\n\\[ \\|\\mathbf{v}_1\\| = \\sqrt{(-3)^2 + (-2)^2 + (-6)^2} = \\sqrt{9 + 4 + 36} = \\sqrt{49} = 7 \\]\n\nThen, we calculate the magnitude of $\\mathbf{v}_2$:\n\\[ \\|\\mathbf{v}_2\\| = \\sqrt{1^2 + 2^2 + 2^2} = \\sqrt{1 + 4 + 4} = \\sqrt{9} = 3 \\]\n\nNow, we substitute these values into the cosine formula:\n\\[ \\cos \\theta = \\frac{|-19|}{7 \\cdot 3} = \\frac{19}{21} \\]\n\nSince $19/21$ is positive, $\\theta$ is indeed an acute angle.\n\nTo ensure the lines actually intersect, we can check for values of $t$ and $s$ such that $\\mathbf{r}_1(t) = \\mathbf{r}_2(s)$:\n1) $2 - 3t = -3/2 + s \\implies s + 3t = 7/2 \\implies 2s + 6t = 7$\n2) $-5 - 2t = 2s \\implies 2s + 2t = -5$\n3) $1 - 6t = -6 + 2s \\implies 2s + 6t = 7$\n\nSubtracting (2) from (1):\n$(2s + 6t) - (2s + 2t) = 7 - (-5)$\n$4t = 12 \\implies t = 3$\n\nSubstitute $t=3$ into (2):\n$2s + 2(3) = -5 \\implies 2s = -11 \\implies s = -11/2$\n\nCheck in (1): $2(-11/2) + 6(3) = -11 + 18 = 7$. This is consistent.\nThe lines intersect at $P = \\mathbf{r}_1(3) = \\begin{pmatrix} 2-9 \\\\ -5-6 \\\\ 1-18 \\end{pmatrix} = \\begin{pmatrix} -7 \\\\ -11 \\\\ -17 \\end{pmatrix}$.\n\nThe cosine of the acute angle is $\\frac{19}{21}$.\n\n\\boxed{\\frac{19}{21}}\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\COS \\THETA = \\FRAC{19}{21}$, AND THE STUDENT'S FINAL ANSWER IS ALSO $\\FRAC{19}{21}$. THESE TWO ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY REPRESENT THE SAME FRACTION. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 273.92,
+    "zuzycie_tokenow": {
+        "wejsciowe": 183,
+        "wyjsciowe": 913,
+        "suma": 1096
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

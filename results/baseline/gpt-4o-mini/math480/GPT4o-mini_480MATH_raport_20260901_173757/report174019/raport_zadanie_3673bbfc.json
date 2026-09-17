@@ -1,0 +1,20 @@
+{
+    "task_file": "raport_zadanie_3673bbfc",
+    "zadanie": "The graph of $y=ax^2 + bx + c$ is a parabola with vertical axis of symmetry.  The vertex of this parabola is $(2,3)$ and the parabola contains the point $(4,4)$.  Find the value of $y$ when $x=6$.",
+    "oczekiwana_odpowiedz": "Because the parabola has vertex $(2,3)$, it is the graph of  \\[y=a(x-2)^2+3\\] for some number $a$.  In order for the graph to contain the point $(4,4)$, we must also have  \\[4=a(4-2)^2+3=4a+3,\\] so $a=\\frac14$, and our parabola is the graph of \\[y=\\frac14(x-2)^2 + 3.\\] Setting $x=6$ in this gives us  \\[y = \\frac14(6-2)^2 + 3 = 4+3=\\boxed{7}.\\]",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nThe graph of $y=ax^2 + bx + c$ is a parabola with vertical axis of symmetry.  The vertex of this parabola is $(2,3)$ and the parabola contains the point $(4,4)$.  Find the value of $y$ when $x=6$.\n",
+        "[AI]:\nTo find the value of \\( y \\) when \\( x = 6 \\) for the parabola given by the equation \\( y = ax^2 + bx + c \\), we start by using the information provided about the vertex and a point on the parabola.\n\n1. **Vertex Form of the Parabola**: Since the vertex of the parabola is given as \\( (2, 3) \\), we can express the equation of the parabola in vertex form:\n   \\[\n   y = a(x - 2)^2 + 3\n   \\]\n   Here, \\( a \\) is a constant that we need to determine.\n\n2. **Using the Point on the Parabola**: We know that the parabola passes through the point \\( (4, 4) \\). We can substitute \\( x = 4 \\) and \\( y = 4 \\) into the vertex form equation to find \\( a \\):\n   \\[\n   4 = a(4 - 2)^2 + 3\n   \\]\n   Simplifying this:\n   \\[\n   4 = a(2)^2 + 3\n   \\]\n   \\[\n   4 = 4a + 3\n   \\]\n   Subtracting 3 from both sides:\n   \\[\n   1 = 4a\n   \\]\n   Dividing both sides by 4:\n   \\[\n   a = \\frac{1}{4}\n   \\]\n\n3. **Substituting \\( a \\) Back into the Equation**: Now that we have \\( a \\), we can write the complete equation of the parabola:\n   \\[\n   y = \\frac{1}{4}(x - 2)^2 + 3\n   \\]\n\n4. **Finding \\( y \\) when \\( x = 6 \\)**: We now substitute \\( x = 6 \\) into the equation to find \\( y \\):\n   \\[\n   y = \\frac{1}{4}(6 - 2)^2 + 3\n   \\]\n   Simplifying this:\n   \\[\n   y = \\frac{1}{4}(4)^2 + 3\n   \\]\n   \\[\n   y = \\frac{1}{4}(16) + 3\n   \\]\n   \\[\n   y = 4 + 3\n   \\]\n   \\[\n   y = 7\n   \\]\n\nThus, the value of \\( y \\) when \\( x = 6 \\) is \\(\\boxed{7}\\).\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\BOXED{7}$, AND THE FINAL ANSWER IN THE STUDENT'S TEXT IS ALSO $Y = 7$. THESE TWO FINAL ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY BOTH REPRESENT THE SAME NUMERICAL VALUE. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 5.51,
+    "zuzycie_tokenow": {
+        "wejsciowe": 130,
+        "wyjsciowe": 533,
+        "suma": 663
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_rag": 0
+}

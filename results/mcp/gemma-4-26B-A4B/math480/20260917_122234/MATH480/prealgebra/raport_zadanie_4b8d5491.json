@@ -1,0 +1,19 @@
+{
+    "task_file": "raport_zadanie_4b8d5491",
+    "zadanie": "Between what two consecutive integers on the number line is the graph of the sum $\\sqrt{30} + \\sqrt{50}$ located? Enter your answer in the form \"$m$ and $n$\", where $m$ and $n$ are replaced by appropriate numbers.",
+    "oczekiwana_odpowiedz": "API Connection Error: OpenAIConnectionError('Connection error.'); cause=APIConnectionError('Connection error.')",
+    "pelny_przebieg_rozumowania": [],
+    "decyzja_sedziego": "EMPTY",
+    "wynik_ewaluacji": "ERROR",
+    "czas_wykonania": 11.45,
+    "zuzycie_tokenow": {
+        "wejsciowe": 0,
+        "wyjsciowe": 0,
+        "suma": 0
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

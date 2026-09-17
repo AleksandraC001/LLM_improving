@@ -1,0 +1,23 @@
+{
+    "task_file": "raport_zadanie_22886347",
+    "zadanie": "There are ten meerkats in a colony. Every night, two meerkats stand guard while the others sleep. During a certain period of nights, every meerkat stands guard with every other meerkat exactly once. During that period, how many nights of sleep does each meerkat get?",
+    "oczekiwana_odpowiedz": "First, we figure out how many nights it takes for every meerkat to stand guard with every other meerkat exactly once. There are $10$ possibilities for the first guard and $9$ possibilities for the second guard, making $10\\cdot 9$ pairs; but this actually counts each pair twice (since it doesn't matter which guard is \"first\" and which is \"second\"). So, the number of nights in one complete period is $(10\\cdot 9)/2$, which is $45$.\n\nDuring that period, each meerkat has to stand guard for $9$ nights. So, each meerkat gets $\\boxed{36}$ nights of sleep.\n\nAlternative solution: Let's say we want to know how many nights of sleep a particular meerkat (let's call him Max) gets. This is equal to the number of pairs of meerkats that don't include Max. To form such a pair, we can choose the first (non-Max) meerkat in $9$ ways and the second in $8$ ways, but again, this overcounts by a factor of $2$. The number of pairs without Max is thus $(9\\cdot 8)/2$, which is $\\boxed{36}$.",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nThere are ten meerkats in a colony. Every night, two meerkats stand guard while the others sleep. During a certain period of nights, every meerkat stands guard with every other meerkat exactly once. During that period, how many nights of sleep does each meerkat get?\n",
+        "[AI]:\nTo solve this problem, we need to determine the total number of nights in the period and then calculate how many nights each individual meerkat was on guard duty.\n\n**1. Understand the condition for the guard duty:**\nThere are $n = 10$ meerkats. Every night, a pair of meerkats stands guard. The problem states that during this period, every possible pair of meerkats stands guard exactly once.\n\n**2. Calculate the total number of nights:**\nThe number of ways to choose a pair of meerkats from a group of 10 is given by the combination formula $\\binom{n}{k}$, where $n=10$ and $k=2$:\n$$\\text{Total nights} = \\binom{10}{2} = \\frac{10 \\times 9}{2} = 45 \\text{ nights.}$$\nSince every pair stands guard exactly once, the total number of nights in this period is 45.\n\n**3. Calculate how many nights each meerkat stands guard:**\nLet's pick an arbitrary meerkat, say Meerkat A. We want to find how many pairs include Meerkat A. \nIn a group of 10 meerkats, if Meerkat A is one of the guards, the other guard must be one of the remaining $10 - 1 = 9$ meerkats.\nSince every pair occurs exactly once, Meerkat A will be paired with Meerkat B once, Meerkat C once, ..., and Meerkat J once.\nTherefore, Meerkat A stands guard exactly 9 times.\n\n**4. Calculate the number of nights each meerkat sleeps:**\nThe total number of nights in the period is 45.\nIf a meerkat stands guard for 9 nights, the number of nights they spend sleeping is the total number of nights minus the number of nights they are on guard.\n$$\\text{Nights of sleep} = \\text{Total nights} - \\text{Nights on guard}$$\n$$\\text{Nights of sleep} = 45 - 9 = 36$$\n\n**Conclusion:**\nEach meerkat stands guard 9 times and sleeps for the remaining 36 nights.\n\n\\boxed{36}\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\BOXED{36}$, AND THE FINAL ANSWER IN THE STUDENT'S TEXT IS ALSO $\\BOXED{36}$. THESE TWO ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY REPRESENT THE SAME NUMERICAL VALUE. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 50.29,
+    "zuzycie_tokenow": {
+        "wejsciowe": 133,
+        "wyjsciowe": 480,
+        "suma": 613
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

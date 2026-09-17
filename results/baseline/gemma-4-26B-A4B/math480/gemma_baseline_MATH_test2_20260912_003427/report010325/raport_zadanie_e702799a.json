@@ -1,0 +1,23 @@
+{
+    "task_file": "raport_zadanie_e702799a",
+    "zadanie": "In Heidi's history class, the only grades that count toward the semester average are the $6$ tests she has already taken and the upcoming final exam. The final exam counts as two tests. Heidi has determined that if she earns $99$ points on the final she will have exactly a $90$-point average for the semester. On average, how many points has Heidi scored on each test prior to the final exam?",
+    "oczekiwana_odpowiedz": "Set the average for her previous exams to be $x$. The total amount of points including the final will be $6x+2 \\cdot 99$. The average is $\\frac{6x+2 \\cdot 99}{8}=90$. Then we solve for $x$. $$\\frac{6x+2 \\cdot 99}{8}=90 \\rightarrow 6x+198=720 \\rightarrow 6x=522 \\rightarrow x=\\boxed{87}.$$",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nIn Heidi's history class, the only grades that count toward the semester average are the $6$ tests she has already taken and the upcoming final exam. The final exam counts as two tests. Heidi has determined that if she earns $99$ points on the final she will have exactly a $90$-point average for the semester. On average, how many points has Heidi scored on each test prior to the final exam?\n",
+        "[AI]:\nTo find the average score Heidi has achieved on her previous tests, we can set up an algebraic equation based on the information provided.\n\n**1. Identify the components of the average:**\nHeidi has taken 6 tests so far.\nThe final exam counts as 2 tests.\nTherefore, the total number of \"test units\" used to calculate the semester average is:\n$$6 \\text{ (previous tests)} + 2 \\text{ (final exam)} = 8 \\text{ test units}$$\n\n**2. Define the variables:**\nLet $x$ be the average score Heidi has earned on each of the 6 tests taken so far.\nThe total points earned from the 6 tests is $6x$.\n\n**3. Set up the equation for the semester average:**\nThe problem states that if she earns 99 points on the final exam, her average for the semester will be 90.\nThe formula for the average is:\n$$\\frac{\\text{Total Points}}{\\text{Total Test Units}} = \\text{Average}$$\n\nSubstituting the known values into the formula:\n$$\\frac{6x + 99}{8} = 90$$\n\n**4. Solve for $x$:**\nFirst, multiply both sides of the equation by 8 to eliminate the denominator:\n$$6x + 99 = 90 \\times 8$$\n$$6x + 99 = 720$$\n\nNext, subtract 99 from both sides to isolate the term with $x$:\n$$6x = 720 - 99$$\n$$6x = 621$$\n\nFinally, divide by 6 to find the value of $x$:\n$$x = \\frac{621}{6}$$\n$$x = 103.5$$\n\n**5. Verification:**\nIf Heidi's average on the 6 tests is 103.5, her total points from those tests is $6 \\times 103.5 = 621$.\nAdding the final exam score: $621 + 99 = 720$.\nDividing by the total test units: $720 / 8 = 90$.\nThe calculation is correct.\n\nThe average number of points Heidi has scored on each test prior to the final exam is 103.5.\n\n\\boxed{103.5}\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $X = 87$. THE STUDENT'S FINAL ANSWER IS $X = 103.5$. THESE TWO ANSWERS ARE NOT MATHEMATICALLY EQUIVALENT. THE STUDENT'S SOLUTION CONTAINS AN ERROR, RESULTING IN A DIFFERENT VALUE FOR $X$.\n\nVERDICT: NO",
+    "wynik_ewaluacji": "WRONG",
+    "czas_wykonania": 58.94,
+    "zuzycie_tokenow": {
+        "wejsciowe": 162,
+        "wyjsciowe": 520,
+        "suma": 682
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

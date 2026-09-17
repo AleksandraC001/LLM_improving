@@ -1,0 +1,19 @@
+{
+    "task_file": "raport_zadanie_9bb7f898",
+    "zadanie": "In triangle $ABC,$\n\\[\\tan \\left( \\frac{B - C}{2} \\right) \\tan \\frac{A}{2} = \\frac{1}{29} \\quad \\text{and} \\quad \\tan \\left( \\frac{C - A}{2} \\right) \\tan \\frac{B}{2} = \\frac{1}{27}.\\]Find $\\tan \\left( \\frac{A - B}{2} \\right) \\tan \\frac{C}{2}.$",
+    "oczekiwana_odpowiedz": "Recursion limit exceeded (Model si\u0119 zap\u0119tli\u0142)",
+    "pelny_przebieg_rozumowania": [],
+    "decyzja_sedziego": "EMPTY",
+    "wynik_ewaluacji": "ERROR",
+    "czas_wykonania": 223.22,
+    "zuzycie_tokenow": {
+        "wejsciowe": 0,
+        "wyjsciowe": 0,
+        "suma": 0
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

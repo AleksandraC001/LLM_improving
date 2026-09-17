@@ -1,0 +1,19 @@
+{
+    "task_file": "raport_zadanie_72dd380a",
+    "zadanie": "Two numbers between $0$ and $1$ on a number line are to be chosen at random. What is the probability that the second number chosen will exceed the first number chosen by a distance greater than $\\frac 14$ unit on the number line? Express your answer as a common fraction.",
+    "oczekiwana_odpowiedz": "API Connection Error: OpenAIConnectionError('Connection error.'); cause=APIConnectionError('Connection error.')",
+    "pelny_przebieg_rozumowania": [],
+    "decyzja_sedziego": "EMPTY",
+    "wynik_ewaluacji": "ERROR",
+    "czas_wykonania": 86.7,
+    "zuzycie_tokenow": {
+        "wejsciowe": 0,
+        "wyjsciowe": 0,
+        "suma": 0
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

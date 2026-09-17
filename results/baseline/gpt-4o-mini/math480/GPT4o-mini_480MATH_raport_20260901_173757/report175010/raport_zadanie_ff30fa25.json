@@ -1,0 +1,20 @@
+{
+    "task_file": "raport_zadanie_ff30fa25",
+    "zadanie": "What is the largest negative integer $x$ satisfying $$24x \\equiv 15 \\pmod{1199}~?$$",
+    "oczekiwana_odpowiedz": "To start, notice that $24\\cdot 50 = 1200\\equiv 1\\pmod{1199}$ (in other words, $24$ and $50$ are inverses modulo $1199$).\n\nTo solve the congruence $24x\\equiv 15\\pmod{1199}$, we multiply both sides by $50$ and simplify: \\begin{align*}\n50\\cdot 24x &\\equiv 50\\cdot 15 \\pmod{1199} \\\\\nx &\\equiv 750 \\pmod{1199}\n\\end{align*}This process can also be reversed (by multiplying both sides by $50^{-1}=24$), so the solutions to the original congruence are precisely the same as the solutions to $x\\equiv 750\\pmod{1199}$. The largest negative solution is $750-1199 = \\boxed{-449}$.",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nWhat is the largest negative integer $x$ satisfying $$24x \\equiv 15 \\pmod{1199}~?$$\n",
+        "[AI]:\nTo solve the congruence \\( 24x \\equiv 15 \\pmod{1199} \\), we first need to simplify this equation. We can start by finding the multiplicative inverse of \\( 24 \\) modulo \\( 1199 \\).\n\n1. **Finding the GCD**: We first check if \\( 24 \\) and \\( 1199 \\) are coprime by calculating their greatest common divisor (gcd). We can use the Euclidean algorithm for this:\n\n   \\[\n   1199 = 24 \\times 49 + 23\n   \\]\n   \\[\n   24 = 23 \\times 1 + 1\n   \\]\n   \\[\n   23 = 1 \\times 23 + 0\n   \\]\n\n   The gcd is \\( 1 \\), which means \\( 24 \\) and \\( 1199 \\) are coprime, and thus \\( 24 \\) has an inverse modulo \\( 1199 \\).\n\n2. **Finding the Inverse**: We can use the Extended Euclidean Algorithm to find the inverse of \\( 24 \\) modulo \\( 1199 \\). From the steps above, we can backtrack:\n\n   \\[\n   1 = 24 - 1 \\times 23\n   \\]\n   Substituting \\( 23 \\) from the first equation:\n   \\[\n   23 = 1199 - 24 \\times 49\n   \\]\n   Thus,\n   \\[\n   1 = 24 - 1 \\times (1199 - 24 \\times 49) = 24 \\times 50 - 1199\n   \\]\n\n   This shows that \\( 24 \\times 50 \\equiv 1 \\pmod{1199} \\). Therefore, the multiplicative inverse of \\( 24 \\) modulo \\( 1199 \\) is \\( 50 \\).\n\n3. **Solving for \\( x \\)**: Now we can multiply both sides of the original congruence by \\( 50 \\):\n\n   \\[\n   50 \\cdot (24x) \\equiv 50 \\cdot 15 \\pmod{1199}\n   \\]\n   Simplifying this gives:\n   \\[\n   x \\equiv 750 \\pmod{1199}\n   \\]\n\n4. **Finding the Largest Negative Integer**: The general solution for \\( x \\) can be expressed as:\n   \\[\n   x = 750 + 1199k\n   \\]\n   for any integer \\( k \\). To find the largest negative integer, we need to choose \\( k \\) such that \\( x < 0 \\).\n\n   Setting \\( x < 0 \\):\n   \\[\n   750 + 1199k < 0\n   \\]\n   \\[\n   1199k < -750\n   \\]\n   \\[\n   k < -\\frac{750}{1199} \\approx -0.625\n   \\]\n\n   The largest integer \\( k \\) satisfying this inequality is \\( k = -1 \\).\n\n5. **Calculating \\( x \\)**: Substituting \\( k = -1 \\) back into the equation for \\( x \\):\n   \\[\n   x = 750 + 1199 \\cdot (-1) = 750 - 1199 = -449\n   \\]\n\nThus, the largest negative integer \\( x \\) satisfying the original congruence is \n\n\\[\n\\boxed{-449}\n\\]\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\BOXED{-449}$, AND THE STUDENT'S FINAL ANSWER IS ALSO $-449$. THESE TWO ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY REPRESENT THE SAME INTEGER VALUE. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 8.31,
+    "zuzycie_tokenow": {
+        "wejsciowe": 95,
+        "wyjsciowe": 735,
+        "suma": 830
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_rag": 0
+}

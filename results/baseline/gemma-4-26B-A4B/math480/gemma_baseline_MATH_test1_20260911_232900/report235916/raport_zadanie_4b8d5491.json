@@ -1,0 +1,23 @@
+{
+    "task_file": "raport_zadanie_4b8d5491",
+    "zadanie": "Between what two consecutive integers on the number line is the graph of the sum $\\sqrt{30} + \\sqrt{50}$ located? Enter your answer in the form \"$m$ and $n$\", where $m$ and $n$ are replaced by appropriate numbers.",
+    "oczekiwana_odpowiedz": "Since $25<30<36$, we have $5<\\sqrt{30}<6$. We also know that $7^2=49$, so $\\sqrt{50}\\approx7$. As a result, $(5+7)<\\sqrt{30}+\\sqrt{50}<(6+7)$, so the sum is located between $\\boxed{12\\text{ and }13}$.\n\nTo be more precise, $\\sqrt{50}>7$, but we're still able to say that $\\sqrt{30}+\\sqrt{50}<(6+7)$ when we add a slightly greater quantity to the left side since the difference between $6$ and $\\sqrt{30}$ is much greater than the difference between $\\sqrt{50}$ and $7$.",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nBetween what two consecutive integers on the number line is the graph of the sum $\\sqrt{30} + \\sqrt{50}$ located? Enter your answer in the form \"$m$ and $n$\", where $m$ and $n$ are replaced by appropriate numbers.\n",
+        "[AI]:\nTo find the two consecutive integers between which the sum $\\sqrt{30} + \\sqrt{50}$ lies, we need to estimate the value of each square root.\n\n**Step 1: Estimate $\\sqrt{30}$**\nWe look for the perfect squares closest to 30.\n$5^2 = 25$\n$6^2 = 36$\nSince $25 < 30 < 36$, we know that $5 < \\sqrt{30} < 6$.\nTo get a more precise estimate, we can use the linear approximation or test values:\n$5.4^2 = 29.16$\n$5.5^2 = 30.25$\nSo, $\\sqrt{30} \\approx 5.47$ or $5.48$.\n\n**Step 2: Estimate $\\sqrt{50}$**\nWe look for the perfect squares closest to 50.\n$7^2 = 49$\n$8^2 = 64$\nSince $49 < 50 < 64$, we know that $7 < \\sqrt{50} < 8$.\nSince 50 is very close to 49, $\\sqrt{50}$ is just slightly larger than 7.\n$7.07^2 \\approx 49.98$\nSo, $\\sqrt{50} \\approx 7.07$.\n\n**Step 3: Sum the estimates**\nLet $S = \\sqrt{30} + \\sqrt{50}$.\nUsing our approximations:\n$S \\approx 5.477 + 7.071 = 12.548$\n\n**Step 4: Verify with bounds**\nTo be certain, let's establish lower and upper bounds for the sum.\nLower bound:\n$\\sqrt{30} > \\sqrt{25} = 5$\n$\\sqrt{50} > \\sqrt{49} = 7$\n$S > 5 + 7 = 12$\n\nUpper bound:\n$\\sqrt{30} < \\sqrt{36} = 6$\n$\\sqrt{50} < \\sqrt{64} = 8$\n$S < 6 + 8 = 14$\n\nThis tells us $12 < S < 14$. We need to check if it is between 12 and 13, or 13 and 14.\nLet's refine the sum:\n$\\sqrt{30} \\approx 5.477$\n$\\sqrt{50} = \\sqrt{25 \\times 2} = 5\\sqrt{2} \\approx 5 \\times 1.414 = 7.07$\n$S \\approx 5.477 + 7.07 = 12.547$\n\nLet's check if $S$ could be $\\ge 13$.\nIs $\\sqrt{30} + \\sqrt{50} \\ge 13$?\n$\\sqrt{30} \\ge 13 - \\sqrt{50}$\nSquare both sides:\n$30 \\ge 169 + 50 - 26\\sqrt{50}$\n$30 \\ge 219 - 26(5\\sqrt{2})$\n$30 \\ge 219 - 130\\sqrt{2}$\n$130\\sqrt{2} \\ge 189$\nSquare both sides again:\n$16900 \\times 2 \\ge 189^2$\n$33800 \\ge 35721$\nThis is false. Therefore, $\\sqrt{30} + \\sqrt{50} < 13$.\n\nSince $12 < \\sqrt{30} + \\sqrt{50} < 13$, the sum lies between the consecutive integers 12 and 13.\n\n\\boxed{12 and 13}\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS THAT THE SUM $\\SQRT{30}+\\SQRT{50}$ LIES BETWEEN $\\BOXED{12\\TEXT{ AND }13}$. THE STUDENT'S FINAL ANSWER IS ALSO THAT THE SUM LIES BETWEEN $12$ AND $13$. THESE TWO ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY BOTH INDICATE THE SAME RANGE FOR THE SUM. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 123.05,
+    "zuzycie_tokenow": {
+        "wejsciowe": 131,
+        "wyjsciowe": 914,
+        "suma": 1045
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

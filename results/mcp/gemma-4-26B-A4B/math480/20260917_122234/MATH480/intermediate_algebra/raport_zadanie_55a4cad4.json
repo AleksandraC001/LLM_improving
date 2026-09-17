@@ -1,0 +1,23 @@
+{
+    "task_file": "raport_zadanie_55a4cad4",
+    "zadanie": "Let $0 \\le x,$ $y,$ $z \\le 1.$  Find the maximum value of\n\\[f(x,y,z) = x^2 y + y^2 z + z^2 x - xy^2 - yz^2 - zx^2.\\]",
+    "oczekiwana_odpowiedz": "We can factor as follows:\n\\begin{align*}\nf(x,y,z) &= x^2 y + y^2 z + z^2 x - xy^2 - yz^2 - zx^2 \\\\\n&= x^2 y - xy^2 + y^2 z - zx^2 + z^2 x - yz^2 \\\\\n&= xy(x - y) + z (y^2 - x^2) + z^2 (x - y) \\\\\n&= xy(x - y) - z(x - y)(x + y) + z^2 (x - y) \\\\\n&= (x - y)(xy - xz - yz + z^2) \\\\\n&= (x - y)(x - z)(y - z).\n\\end{align*}The expression has cyclic symmetry (meaning that if we replace $(x,y,z)$ with $(y,z,x)$, then it remains the same), so we can assume that $x \\ge y$ and $x \\ge z.$  Thus, $x - y \\ge $ and $x - z \\ge 0.$\n\nIf $y < z,$ then $f(x,y,z) \\le 0,$ so assume that $y \\ge z.$  Then by AM-GM,\n\\[(x - y)(y - z) \\le \\left( \\frac{(x - y) + (y - z)}{2} \\right)^2 = \\frac{(x - z)^2}{4},\\]so\n\\[(x - y)(x - z)(y - z) \\le \\frac{(x - z)^3}{4} \\le \\frac{1}{4}.\\]Equality occurs when $x = 1,$ $y = \\frac{1}{2},$ and $z = 0,$ so the maximum value is $\\boxed{\\frac{1}{4}}.$",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Always in each step, formulate a thought, perform an action (you must call the tool), and draw conclusions from observing that action.\n\n    TOOL USE INSTRUCTION:\n    - You have access to tools, but you decide whether to use them. PREFER delegating calculations to tools over doing \"mental math\" in plain text.\n    - Python Interpreter ('python_interpreter'): Your primary tool. Use it for most numerical and symbolic calculations.\n    - Wolfram Alpha ('ask_wolfram'): Use this for complex symbolic mathematics, difficult integrals, or if Python returns an error.\n    - Brave Search ('brave_search'): Use to find general mathematical definitions, theorems, or formulas.\n\n    ERROR HANDLING:\n    If any tool returns an error, DO NOT repeat the exact same tool call. You must analyze the error, fix the syntax/parameters, switch to an alternative tool, or solve the step manually.    \n    \n    FINAL OUTPUT:\n    When you reach the final answer return it in enclosed in a LaTeX box: \\boxed{answer}\n",
+        "[HUMAN]:\nLet $0 \\le x,$ $y,$ $z \\le 1.$  Find the maximum value of\n\\[f(x,y,z) = x^2 y + y^2 z + z^2 x - xy^2 - yz^2 - zx^2.\\]\n",
+        "[AI]:\n\n\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\BOXED{\\FRAC{1}{4}}$. THE STUDENT'S SOLUTION DOES NOT PROVIDE A FINAL ANSWER. \n\nVERDICT: NO",
+    "wynik_ewaluacji": "WRONG",
+    "czas_wykonania": 281.49,
+    "zuzycie_tokenow": {
+        "wejsciowe": 671,
+        "wyjsciowe": 2000,
+        "suma": 2671
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

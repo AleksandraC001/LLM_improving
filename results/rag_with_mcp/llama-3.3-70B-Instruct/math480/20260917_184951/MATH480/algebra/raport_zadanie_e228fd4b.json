@@ -1,0 +1,19 @@
+{
+    "task_file": "raport_zadanie_e228fd4b",
+    "zadanie": "Photons of red light have a wavelength of approximately $7\\times 10^{-7}$ meters. The energy of a photon is inversely proportional to its wavelength. A photon with 2000 times the energy as a photon of red light will have a wavelength that can be written as $a\\cdot 10^b$ meters, where $1\\le a < 10$. (In other words, in scientific notation.)  What is $a+b$ written as a decimal?",
+    "oczekiwana_odpowiedz": "Timeout - Endpoint API nie odpowiedzia\u0142 w wyznaczonym czasie",
+    "pelny_przebieg_rozumowania": [],
+    "decyzja_sedziego": "EMPTY",
+    "wynik_ewaluacji": "ERROR",
+    "czas_wykonania": 721.41,
+    "zuzycie_tokenow": {
+        "wejsciowe": 0,
+        "wyjsciowe": 0,
+        "suma": 0
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

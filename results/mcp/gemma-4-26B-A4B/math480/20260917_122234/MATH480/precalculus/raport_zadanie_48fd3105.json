@@ -1,0 +1,19 @@
+{
+    "task_file": "raport_zadanie_48fd3105",
+    "zadanie": "A sequence $\\{a_n\\}_{n \\ge 0}$ of real numbers satisfies the recursion $a_{n+1} = a_n^3 - 3a_n^2+3$ for all positive integers $n$. For how many values of $a_0$ does $a_{2007}=a_0$?",
+    "oczekiwana_odpowiedz": "API Connection Error: OpenAIConnectionError('Connection error.'); cause=APIConnectionError('Connection error.')",
+    "pelny_przebieg_rozumowania": [],
+    "decyzja_sedziego": "EMPTY",
+    "wynik_ewaluacji": "ERROR",
+    "czas_wykonania": 963.82,
+    "zuzycie_tokenow": {
+        "wejsciowe": 0,
+        "wyjsciowe": 0,
+        "suma": 0
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

@@ -1,0 +1,23 @@
+{
+    "task_file": "raport_zadanie_96b49a8d",
+    "zadanie": "Suppose that $a$ is a positive integer for which the least common multiple of $a+1$ and $a-5$ is $10508$. What is $a^2 - 4a + 1$?",
+    "oczekiwana_odpowiedz": "Notice that $(a+1)(a-5) = a^2 - 4a - 5$, so $a^2 - 4a + 1 = (a+1)(a-5) + 6$.\n\nAlso, we know that by the Euclidean algorithm, the greatest common divisor of $a+1$ and $a-5$ divides $6$: \\begin{align*}\n\\text{gcd}\\,(a+1, a-5) &= \\text{gcd}\\,(a+1-(a-5),a-5)\\\\\n&= \\text{gcd}\\,(6,a-5).\n\\end{align*}As $10508$ is even but not divisible by $3$, for the sum of the digits of $10508$ is $1 + 5 + 8 = 14$, it follows that the greatest common divisor of $a+1$ and $a-5$ must be $2$.\n\nFrom the identity $xy = \\text{lcm}\\,(x,y) \\cdot \\text{gcd}\\,(x,y)$ (consider the exponents of the prime numbers in the prime factorization of $x$ and $y$), it follows that \\begin{align*}\n(a+1)(a-5) &= \\text{lcm}\\,(a+1,a-5) \\cdot \\text{gcd}\\,(a+1, a-5) \\\\\n&= 2 \\cdot 10508.\n\\end{align*}Thus, the desired answer is $2 \\cdot 10508 + 6 = \\boxed{21022}.$\n\nWith a bit more work, we can find that $a = 147$.",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nSuppose that $a$ is a positive integer for which the least common multiple of $a+1$ and $a-5$ is $10508$. What is $a^2 - 4a + 1$?\n",
+        "[AI]:\nTo find the value of $a^2 - 4a + 1$, we start with the given information about the least common multiple (LCM) of $a+1$ and $a-5$.\n\nLet $x = a+1$ and $y = a-5$.\nThe difference between these two numbers is $x - y = (a+1) - (a-5) = 6$.\nWe are given that $\\text{lcm}(x, y) = 10508$.\n\nWe know the relationship between the LCM and the greatest common divisor (GCD):\n$\\text{lcm}(x, y) \\cdot \\gcd(x, y) = x \\cdot y$\nLet $g = \\gcd(x, y)$. Since $g$ must divide the difference $x - y = 6$, the possible values for $g$ are $1, 2, 3, 6$.\n\nFrom the formula, we have:\n$x \\cdot y = 10508 \\cdot g$\nSubstituting $x = a+1$ and $y = a-5$:\n$(a+1)(a-5) = 10508g$\n$a^2 - 4a - 5 = 10508g$\n$a^2 - 4a + 1 = 10508g + 6$\n\nNow we test the possible values of $g \\in \\{1, 2, 3, 6\\}$ to see which one yields an integer $a$.\nThe equation is $a^2 - 4a - (5 + 10508g) = 0$.\nUsing the quadratic formula for $a$:\n$a = \\frac{4 \\pm \\sqrt{16 + 4(5 + 10508g)}}{2} = 2 \\pm \\sqrt{4 + 5 + 10508g} = 2 \\pm \\sqrt{9 + 10508g}$\nFor $a$ to be an integer, $9 + 10508g$ must be a perfect square.\n\n1. If $g = 1$: $9 + 10508(1) = 10517$.\n   $\\sqrt{10517} \\approx 102.55$ (Not a perfect square).\n2. If $g = 2$: $9 + 10508(2) = 9 + 21016 = 21025$.\n   $\\sqrt{21025} = 145$.\n   This gives $a = 2 + 145 = 147$ (since $a$ is a positive integer).\n3. If $g = 3$: $9 + 10508(3) = 9 + 31524 = 31533$.\n   $\\sqrt{31533} \\approx 177.57$ (Not a perfect square).\n4. If $g = 6$: $9 + 10508(6) = 9 + 63048 = 63057$.\n   $\\sqrt{63057} \\approx 251.11$ (Not a perfect square).\n\nLet's verify $a = 147$ with $g = 2$:\n$x = a+1 = 148$\n$y = a-5 = 142$\n$\\gcd(148, 142)$:\n$148 = 2 \\times 74 = 2^2 \\times 37$\n$142 = 2 \\times 71$\n$\\gcd(148, 142) = 2$. This matches our assumption $g=2$.\n$\\text{lcm}(148, 142) = \\frac{148 \\times 142}{2} = 148 \\times 71 = 10508$. This matches the given value.\n\nWe need to find the value of $a^2 - 4a + 1$.\nFrom our previous derivation:\n$a^2 - 4a + 1 = 10508g + 6$\nSubstituting $g = 2$:\n$a^2 - 4a + 1 = 10508(2) + 6 = 21016 + 6 = 21022$.\n\nAlternatively, using $a = 147$:\n$a^2 - 4a + 1 = (a-2)^2 - 3 = (147-2)^2 - 3 = 145^2 - 3$\n$145^2 = 21025$\n$21025 - 3 = 21022$.\n\nFinal check:\n$a^2 - 4a + 1 = 147^2 - 4(147) + 1 = 21609 - 588 + 1 = 21022$.\n\n\\boxed{21022}\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\BOXED{21022}$, AND THE STUDENT'S FINAL ANSWER IS ALSO $21022$. THESE TWO ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY REPRESENT THE SAME NUMERICAL VALUE. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 155.65,
+    "zuzycie_tokenow": {
+        "wejsciowe": 123,
+        "wyjsciowe": 1191,
+        "suma": 1314
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

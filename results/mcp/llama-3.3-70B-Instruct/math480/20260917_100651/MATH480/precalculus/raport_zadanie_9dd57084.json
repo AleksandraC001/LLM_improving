@@ -1,0 +1,19 @@
+{
+    "task_file": "raport_zadanie_9dd57084",
+    "zadanie": "Given constants $C$ and $D,$ suppose that $\\tan A$ and $\\tan B$ are the solutions to\n\\[x^2 + Cx + D = 0,\\]where $\\tan (A + B)$ is defined.\n\nSimplify\n\\[\\sin^2 (A + B) + C \\sin (A + B) \\cos (A + B) + D \\cos^2 (A + B).\\]Your expression should contain only one of the variables $A,$ $B,$ $C,$ and $D.$",
+    "oczekiwana_odpowiedz": "Timeout - Endpoint API nie odpowiedzia\u0142 w wyznaczonym czasie",
+    "pelny_przebieg_rozumowania": [],
+    "decyzja_sedziego": "EMPTY",
+    "wynik_ewaluacji": "ERROR",
+    "czas_wykonania": 721.75,
+    "zuzycie_tokenow": {
+        "wejsciowe": 0,
+        "wyjsciowe": 0,
+        "suma": 0
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

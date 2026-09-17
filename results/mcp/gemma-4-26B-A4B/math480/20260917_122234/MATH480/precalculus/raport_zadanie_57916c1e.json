@@ -1,0 +1,19 @@
+{
+    "task_file": "raport_zadanie_57916c1e",
+    "zadanie": "A plane $P$ is parmeterized by\n\\[\\mathbf{v} = \\begin{pmatrix} 1 \\\\ 6 \\\\ 7 \\end{pmatrix} + t \\begin{pmatrix} 2 \\\\ -1 \\\\ -1 \\end{pmatrix} + s \\begin{pmatrix} 2 \\\\ -3 \\\\ -5 \\end{pmatrix},\\]and line $L$ is parameterized by\n\\[\\mathbf{w} = \\begin{pmatrix} 7 \\\\ 4 \\\\ 1 \\end{pmatrix} + u \\begin{pmatrix} 3 \\\\ 0 \\\\ -1 \\end{pmatrix}.\\]Find the intersection of plane $P$ and line $L.$",
+    "oczekiwana_odpowiedz": "API Connection Error: OpenAIConnectionError('Connection error.'); cause=APIConnectionError('Connection error.')",
+    "pelny_przebieg_rozumowania": [],
+    "decyzja_sedziego": "EMPTY",
+    "wynik_ewaluacji": "ERROR",
+    "czas_wykonania": 272.25,
+    "zuzycie_tokenow": {
+        "wejsciowe": 0,
+        "wyjsciowe": 0,
+        "suma": 0
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

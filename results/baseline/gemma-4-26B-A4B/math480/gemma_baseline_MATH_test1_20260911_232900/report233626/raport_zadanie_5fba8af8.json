@@ -1,0 +1,23 @@
+{
+    "task_file": "raport_zadanie_5fba8af8",
+    "zadanie": "3 cards are chosen at random from a standard 52-card deck.  What is the probability that they form a pair?  (A 3-card hand is a 'pair' if two of the cards match in rank but the third card is different.  For example, 668 is a pair, but 999 is not.)",
+    "oczekiwana_odpowiedz": "There are $\\binom{52}{3} = 22,\\!100$ ways to choose 3 cards out of 52, without regard to order.  To choose two cards of matching rank, there are 13 different ranks and $\\binom{4}{2} = 6$ combinations of suits to choose from, for a total of $13 \\times 6 = 78$ different possibilities.  There are 48 remaining cards not in the same rank as the first two.  This means there are $78 \\times 48 = 3,\\!744$ ways to choose a hand that is a pair.  So the probability that a randomly drawn hand is a pair is $\\dfrac{3744}{22100} = \\boxed{\\dfrac{72}{425}}$.",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\n3 cards are chosen at random from a standard 52-card deck.  What is the probability that they form a pair?  (A 3-card hand is a 'pair' if two of the cards match in rank but the third card is different.  For example, 668 is a pair, but 999 is not.)\n",
+        "[AI]:\nTo find the probability that 3 cards chosen at random from a standard 52-card deck form a pair, we need to determine the total number of possible 3-card hands and the number of hands that satisfy the definition of a \"pair.\"\n\n**Step 1: Calculate the total number of possible 3-card hands.**\nThe total number of ways to choose 3 cards from a deck of 52 is given by the combination formula $\\binom{n}{k} = \\frac{n!}{k!(n-k)!}$:\n$$\\text{Total hands} = \\binom{52}{3} = \\frac{52 \\times 51 \\times 50}{3 \\times 2 \\times 1} = 52 \\times 17 \\times 25 = 22,100$$\n\n**Step 2: Calculate the number of hands that form a \"pair\".**\nAccording to the problem, a \"pair\" means exactly two cards have the same rank, and the third card has a different rank.\n1.  **Choose the rank for the pair:** There are 13 possible ranks (Ace, 2, 3, ..., King).\n    $$\\text{Ways to choose the rank} = \\binom{13}{1} = 13$$\n2.  **Choose the two cards of that rank:** Each rank has 4 suits. We need to choose 2 cards out of those 4.\n    $$\\text{Ways to choose the suits for the pair} = \\binom{4}{2} = \\frac{4 \\times 3}{2} = 6$$\n3.  **Choose the third card:** The third card must have a different rank than the pair. There are $52 - 4 = 48$ cards remaining in the deck that do not belong to the chosen rank.\n    $$\\text{Ways to choose the third card} = \\binom{48}{1} = 48$$\n\nMultiplying these together gives the total number of \"pair\" hands:\n$$\\text{Number of pairs} = 13 \\times 6 \\times 48$$\n$$13 \\times 6 = 78$$\n$$78 \\times 48 = 3744$$\n\n**Step 3: Calculate the probability.**\nThe probability $P$ is the number of successful outcomes divided by the total number of outcomes:\n$$P = \\frac{3744}{22100}$$\n\nTo simplify the fraction, we can divide both the numerator and the denominator by their greatest common divisor.\nDivide by 4:\n$$P = \\frac{936}{5525}$$\nDivide by 13 (since $13 \\times 72 = 936$ and $5525 = 13 \\times 425$):\n$$P = \\frac{72}{425}$$\n\nAlternatively, using the product of probabilities:\n$P = \\frac{13 \\times \\binom{4}{2} \\times 48}{\\binom{52}{3}} = \\frac{13 \\times 6 \\times 48}{\\frac{52 \\times 51 \\times 50}{6}} = \\frac{13 \\times 6 \\times 48 \\times 6}{52 \\times 51 \\times 50} = \\frac{1 \\times 6 \\times 48 \\times 6}{4 \\times 51 \\times 50} = \\frac{6 \\times 12 \\times 6}{51 \\times 50} = \\frac{432}{2550} = \\frac{216}{1275} = \\frac{72}{425}$\n\nFinal calculation check:\n$72 \\times 13 = 936$\n$425 \\times 13 = 5525$\n$936 \\times 4 = 3744$\n$5525 \\times 4 = 22100$\n\nThe probability is $\\frac{72}{425}$.\n\n\\boxed{\\frac{72}{425}}\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\BOXED{\\DFRAC{72}{425}}$, AND THE STUDENT'S FINAL ANSWER IS $\\BOXED{\\DFRAC{72}{425}}$. THESE TWO ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY REPRESENT THE SAME FRACTION. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 187.96,
+    "zuzycie_tokenow": {
+        "wejsciowe": 149,
+        "wyjsciowe": 935,
+        "suma": 1084
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

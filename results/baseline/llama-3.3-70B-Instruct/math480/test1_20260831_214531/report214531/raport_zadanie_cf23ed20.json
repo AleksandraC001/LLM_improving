@@ -1,0 +1,20 @@
+{
+    "task_file": "raport_zadanie_cf23ed20",
+    "zadanie": "The length of a rectangle is twice its width. Given the length of the diagonal is $5\\sqrt{5}$, find the area of the rectangle.",
+    "oczekiwana_odpowiedz": "Let the width of the rectangle be $w$. Then the length of the rectangle is $2w$. We can apply the Pythagorean Theorem to two sides of this rectangle and get that the length of the diagonal is $5\\sqrt{5}=\\sqrt{w^2+(2w)^2}=\\sqrt{5 w^2}$. We therefore have $5\\sqrt{5} = w\\sqrt{5}$, which means that $w=5$. This means that the length of the rectangle is 10, so its area is $5\\cdot10=\\boxed{50}$.",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nThe length of a rectangle is twice its width. Given the length of the diagonal is $5\\sqrt{5}$, find the area of the rectangle.\n",
+        "[AI]:\n## Step 1: Define the relationship between the length and width of the rectangle\nLet's denote the width of the rectangle as $w$. Given that the length of the rectangle is twice its width, the length can be denoted as $2w$.\n\n## Step 2: Apply the Pythagorean theorem to find the relationship between the width, length, and diagonal\nThe Pythagorean theorem states that in a right-angled triangle, the square of the length of the hypotenuse (the side opposite the right angle) is equal to the sum of the squares of the lengths of the other two sides. For our rectangle, the diagonal is the hypotenuse. Therefore, we have:\n\\[ \\text{diagonal}^2 = \\text{length}^2 + \\text{width}^2 \\]\nSubstituting the given values and the relationship between length and width:\n\\[ (5\\sqrt{5})^2 = (2w)^2 + w^2 \\]\n\\[ 125 = 4w^2 + w^2 \\]\n\\[ 125 = 5w^2 \\]\n\n## Step 3: Solve for the width of the rectangle\nFrom the equation $125 = 5w^2$, we can solve for $w$:\n\\[ 5w^2 = 125 \\]\n\\[ w^2 = 25 \\]\n\\[ w = 5 \\]\nSince the width cannot be negative, $w = 5$.\n\n## Step 4: Find the length of the rectangle\nGiven that the length is twice the width:\n\\[ \\text{length} = 2w = 2 \\times 5 = 10 \\]\n\n## Step 5: Calculate the area of the rectangle\nThe area of a rectangle is given by the formula $\\text{area} = \\text{length} \\times \\text{width}$:\n\\[ \\text{area} = 10 \\times 5 = 50 \\]\n\nThe final answer is: $\\boxed{50}$\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\BOXED{50}$, AND THE STUDENT'S FINAL ANSWER IS ALSO $\\BOXED{50}$. THESE TWO ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY REPRESENT THE SAME NUMERICAL VALUE. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 146.59,
+    "zuzycie_tokenow": {
+        "wejsciowe": 120,
+        "wyjsciowe": 419,
+        "suma": 539
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_rag": 0
+}

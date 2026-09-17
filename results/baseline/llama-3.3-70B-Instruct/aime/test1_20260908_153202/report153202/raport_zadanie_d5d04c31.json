@@ -1,0 +1,20 @@
+{
+    "task_file": "raport_zadanie_d5d04c31",
+    "zadanie": "Find the greatest integer $n$ such that the cubic polynomial\n\\[\nx^{3} - \\displaystyle\\frac{n}{6}x^{2} + (n - 11)x - 400\n\\]\nhas roots $\\alpha^{2}$, $\\beta^{2}$, and $\\gamma^{2}$, where $\\alpha$, $\\beta$, and $\\gamma$ are complex numbers, and there are exactly seven different possible values for $\\alpha + \\beta + \\gamma$.",
+    "oczekiwana_odpowiedz": "\\boxed{132}",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nFind the greatest integer $n$ such that the cubic polynomial\n\\[\nx^{3} - \\displaystyle\\frac{n}{6}x^{2} + (n - 11)x - 400\n\\]\nhas roots $\\alpha^{2}$, $\\beta^{2}$, and $\\gamma^{2}$, where $\\alpha$, $\\beta$, and $\\gamma$ are complex numbers, and there are exactly seven different possible values for $\\alpha + \\beta + \\gamma$.\n",
+        "[AI]:\n## Step 1: Apply Vieta's formulas to find the sum of the roots\nAccording to Vieta's formulas, for a cubic polynomial $ax^3 + bx^2 + cx + d$, the sum of the roots is given by $-b/a$. In this case, the sum of the roots $\\alpha^2 + \\beta^2 + \\gamma^2$ is $\\frac{n}{6}$.\n\n## Step 2: Apply Vieta's formulas to find the sum of the products of the roots\nVieta's formulas also state that the sum of the products of the roots taken two at a time is given by $c/a$. Here, this value is $n - 11$.\n\n## Step 3: Apply Vieta's formulas to find the product of the roots\nThe product of the roots is given by $-d/a$. For the given polynomial, the product of the roots $\\alpha^2 \\beta^2 \\gamma^2$ is $400$.\n\n## Step 4: Express the sum of the roots in terms of $\\alpha + \\beta + \\gamma$\nWe know that $(\\alpha + \\beta + \\gamma)^2 = \\alpha^2 + \\beta^2 + \\gamma^2 + 2(\\alpha\\beta + \\beta\\gamma + \\gamma\\alpha)$. Since $\\alpha^2 + \\beta^2 + \\gamma^2 = \\frac{n}{6}$ and $\\alpha\\beta + \\beta\\gamma + \\gamma\\alpha = n - 11$, we can express $(\\alpha + \\beta + \\gamma)^2$ in terms of $n$.\n\n## Step 5: Find the possible values of $\\alpha + \\beta + \\gamma$\nGiven that $\\alpha^2 \\beta^2 \\gamma^2 = 400$, we can find the possible values of $\\alpha\\beta\\gamma$ by taking the square root of $400$. This gives us $\\alpha\\beta\\gamma = \\pm 20$. We also know that $(\\alpha + \\beta + \\gamma)^2 = \\frac{n}{6} + 2(n - 11)$.\n\n## Step 6: Determine the range of $n$ for which there are exactly seven different possible values for $\\alpha + \\beta + \\gamma$\nTo have exactly seven different possible values for $\\alpha + \\beta + \\gamma$, we need to consider the possible combinations of $\\alpha$, $\\beta$, and $\\gamma$ that satisfy the given conditions. This involves finding the values of $n$ that allow for these seven possibilities.\n\n## Step 7: Calculate the greatest integer $n$ that satisfies the conditions\nAfter determining the range of $n$ and considering the possible combinations of $\\alpha$, $\\beta$, and $\\gamma$, we can calculate the greatest integer $n$ that satisfies the given conditions.\n\nThe final answer is: $\\boxed{35}$\n"
+    ],
+    "decyzja_sedziego": "THE CORRECT SOLUTION CONCLUDES WITH THE ANSWER \\BOXED{132}, WHILE THE STUDENT'S SOLUTION CONCLUDES WITH THE ANSWER \\BOXED{35}. THESE TWO ANSWERS ARE NOT MATHEMATICALLY EQUIVALENT. \n\nVERDICT: NO",
+    "wynik_ewaluacji": "WRONG",
+    "czas_wykonania": 177.71,
+    "zuzycie_tokenow": {
+        "wejsciowe": 188,
+        "wyjsciowe": 603,
+        "suma": 791
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_rag": 0
+}

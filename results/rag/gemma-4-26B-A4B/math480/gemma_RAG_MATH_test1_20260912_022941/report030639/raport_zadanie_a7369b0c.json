@@ -1,0 +1,23 @@
+{
+    "task_file": "raport_zadanie_a7369b0c",
+    "zadanie": "In Mathopolis, an adult is a person 21 years of age or older and a child is a person under 21 years of age.  Exactly half of the  adults in Mathopolis are female, and exactly half of the female  adults have exactly one biological child.  Nobody else has a  child, and there are no other children.  What percent of the  people of Mathopolis are children?",
+    "oczekiwana_odpowiedz": "Let the percentage of people in Mathopolis who are children be $x$. The percentage of adults is then $1-x$. Half the adults are female, and half the females have exactly one child, so the percentage of people who are females with a child is $\\frac{1}{4}(1-x)$. This percentage is equal to the percentage of children, since there is a correspondence between a mother and a child. So we have the equation $x=\\frac{1}{4}(1-x)$. Solving for $x$ yields $x=1/5$, or $\\boxed{20}$ percent.",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n\n",
+        "[HUMAN]:\nIn Mathopolis, an adult is a person 21 years of age or older and a child is a person under 21 years of age.  Exactly half of the  adults in Mathopolis are female, and exactly half of the female  adults have exactly one biological child.  Nobody else has a  child, and there are no other children.  What percent of the  people of Mathopolis are children?\n",
+        "[AI]:\nTo find the percentage of people in Mathopolis who are children, we need to define the population based on the given information and then calculate the ratio of children to the total population.\n\n**Step 1: Define the variables for adults.**\nLet $A$ be the total number of adults in Mathopolis.\nAccording to the problem:\n- The number of female adults is $\\frac{1}{2}A$.\n- The number of male adults is $A - \\frac{1}{2}A = \\frac{1}{2}A$.\n\n**Step 2: Determine the number of children.**\nThe problem states that exactly half of the female adults have exactly one biological child.\n- Number of female adults with one child = $\\frac{1}{2} \\times (\\text{number of female adults}) = \\frac{1}{2} \\times \\frac{1}{2}A = \\frac{1}{4}A$.\n- Since each of these women has exactly one child, and \"nobody else has a child, and there are no other children,\" the total number of children $C$ is equal to the number of these women.\n- Therefore, $C = \\frac{1}{4}A$.\n\n**Step 3: Calculate the total population.**\nThe total population $P$ is the sum of the adults and the children.\n- $P = A + C$\n- $P = A + \\frac{1}{4}A = \\frac{5}{4}A$.\n\n**Step 4: Calculate the percentage of children.**\nThe percentage of the population that are children is given by the ratio of children to the total population, multiplied by 100.\n- $\\text{Percent of children} = \\left( \\frac{C}{P} \\right) \\times 100\\%$\n- $\\text{Percent of children} = \\left( \\frac{\\frac{1}{4}A}{\\frac{5}{4}A} \\right) \\times 100\\%$\n- $\\text{Percent of children} = \\left( \\frac{1}{4} \\cdot \\frac{4}{5} \\right) \\times 100\\%$\n- $\\text{Percent of children} = \\frac{1}{5} \\times 100\\%$\n- $\\text{Percent of children} = 20\\%$\n\n**Conclusion:**\nThe number of children is $1/4$ of the number of adults. If we assume there are 100 adults, there are 25 female adults, 12.5 of whom have a child (to keep the math clean, let's say 400 adults: 200 females, 100 females with a child, so 100 children. Total population = 400 + 100 = 500. $100/500 = 20\\%$).\n\n\\boxed{20\\%}\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\BOXED{20}$ PERCENT, AND THE STUDENT'S FINAL ANSWER IS $\\BOXED{20\\\\%}$. THESE TWO ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY BOTH REPRESENT THE SAME PERCENTAGE VALUE. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 151.78,
+    "zuzycie_tokenow": {
+        "wejsciowe": 162,
+        "wyjsciowe": 640,
+        "suma": 802
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

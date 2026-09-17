@@ -1,0 +1,19 @@
+{
+    "task_file": "raport_zadanie_aa2d3b37",
+    "zadanie": "Let $P(x),$ $Q_1(x),$ $Q_2(x),$ $Q_3(x),$ $R(x)$ be polynomials such that\n\\begin{align*}\nP(x) &= Q_1(x) (x + 2) - 13 \\\\\n&= Q_2(x) (x^2 - 3x - 4) - 5x - 11 \\\\\n&= Q_3(x) (x + 2) (x^2 - 3x - 4) + R(x),\n\\end{align*}and $\\deg R(x) = 2.$  Find $R(x).$",
+    "oczekiwana_odpowiedz": "Timeout - Endpoint API nie odpowiedzia\u0142 w wyznaczonym czasie",
+    "pelny_przebieg_rozumowania": [],
+    "decyzja_sedziego": "EMPTY",
+    "wynik_ewaluacji": "ERROR",
+    "czas_wykonania": 760.67,
+    "zuzycie_tokenow": {
+        "wejsciowe": 0,
+        "wyjsciowe": 0,
+        "suma": 0
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

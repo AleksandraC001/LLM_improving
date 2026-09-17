@@ -1,0 +1,23 @@
+{
+    "task_file": "raport_zadanie_34bee18a",
+    "zadanie": "Find the number of pairs $(z_1,z_2)$ of complex numbers such that:\n\n$z_1 z_2$ is pure imaginary\n$\\frac{z_1}{z_2}$ is real\n$|z_1| = |z_2| = 1.$",
+    "oczekiwana_odpowiedz": "Since $|z_1| = |z_2| = 1,$ $|z_1 z_2| = 1.$  Let\n\\[z_1 z_2 = si,\\]where $s \\in \\{-1, 1\\}.$\n\nSimilarly, $\\left| \\frac{z_1}{z_2} \\right| = 1.$  Let\n\\[\\frac{z_1}{z_2} = t,\\]where $t \\in \\{-1, 1\\}.$\n\nMultiplying these equations, we get $z_1^2 = sti.$  This equation has two solutions.\n\nThus, there are two choices of $s,$ two choices of $t,$ and two choices of $z_1,$ giving us $\\boxed{8}$ possible pairs $(z_1,z_2).$",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nFind the number of pairs $(z_1,z_2)$ of complex numbers such that:\n\n$z_1 z_2$ is pure imaginary\n$\\frac{z_1}{z_2}$ is real\n$|z_1| = |z_2| = 1.$\n",
+        "[AI]:\n## Step 1: Express $z_1$ and $z_2$ in polar form\nWe can express $z_1$ and $z_2$ in polar form as $z_1 = e^{i\\theta_1}$ and $z_2 = e^{i\\theta_2}$, since $|z_1| = |z_2| = 1$. This representation allows us to easily manipulate the complex numbers using their angular properties.\n\n## Step 2: Apply the condition that $z_1 z_2$ is pure imaginary\nThe product $z_1 z_2 = e^{i(\\theta_1 + \\theta_2)}$ being pure imaginary implies that $\\theta_1 + \\theta_2 = \\frac{\\pi}{2} + k\\pi$, where $k$ is an integer. This is because a complex number is pure imaginary if and only if its real part is zero, which happens when the argument is an odd multiple of $\\frac{\\pi}{2}$.\n\n## Step 3: Apply the condition that $\\frac{z_1}{z_2}$ is real\nThe quotient $\\frac{z_1}{z_2} = e^{i(\\theta_1 - \\theta_2)}$ being real implies that $\\theta_1 - \\theta_2 = 0 + 2m\\pi$ or $\\theta_1 - \\theta_2 = \\pi + 2m\\pi$, where $m$ is an integer. However, for the quotient to be real and positive (or negative), the difference in angles must be a multiple of $2\\pi$ (or an odd multiple of $\\pi$), but since $z_1$ and $z_2$ have the same magnitude, the quotient being real actually restricts the difference to be $0$ or $\\pi$ modulo $2\\pi$.\n\n## Step 4: Combine the conditions to find possible pairs\nCombining the conditions from steps 2 and 3, we need to solve the system:\n1. $\\theta_1 + \\theta_2 = \\frac{\\pi}{2} + k\\pi$\n2. $\\theta_1 - \\theta_2 = 0$ or $\\theta_1 - \\theta_2 = \\pi$ modulo $2\\pi$.\nFor $\\theta_1 - \\theta_2 = 0$, we get $\\theta_1 = \\theta_2$, which when substituted into the first equation gives $2\\theta_1 = \\frac{\\pi}{2} + k\\pi$, or $\\theta_1 = \\frac{\\pi}{4} + \\frac{k\\pi}{2}$. For $\\theta_1 - \\theta_2 = \\pi$, we get $\\theta_1 = \\theta_2 + \\pi$, which when substituted into the first equation gives $2\\theta_2 + \\pi = \\frac{\\pi}{2} + k\\pi$, or $\\theta_2 = -\\frac{\\pi}{4} + \\frac{k\\pi}{2}$.\n\n## Step 5: Determine the distinct pairs\nConsidering the restrictions and the periodic nature of $\\theta$, we can find distinct pairs within one period (i.e., $0 \\leq \\theta < 2\\pi$) that satisfy both conditions. Given the symmetry and periodicity, we can enumerate these solutions to find how many distinct pairs $(z_1, z_2)$ exist.\n\nThe final answer is: $\\boxed{4}$\n"
+    ],
+    "decyzja_sedziego": "THE CORRECT SOLUTION CONCLUDES WITH $\\BOXED{8}$ POSSIBLE PAIRS, WHILE THE STUDENT'S SOLUTION CONCLUDES WITH $\\BOXED{4}$ DISTINCT PAIRS. THESE TWO FINAL ANSWERS ARE NOT MATHEMATICALLY EQUIVALENT, AS 8 AND 4 ARE DIFFERENT NUMBERS.\n\nVERDICT: NO",
+    "wynik_ewaluacji": "WRONG",
+    "czas_wykonania": 259.27,
+    "zuzycie_tokenow": {
+        "wejsciowe": 149,
+        "wyjsciowe": 742,
+        "suma": 891
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

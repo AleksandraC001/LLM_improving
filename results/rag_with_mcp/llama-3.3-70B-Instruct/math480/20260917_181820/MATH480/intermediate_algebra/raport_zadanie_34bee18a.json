@@ -1,0 +1,19 @@
+{
+    "task_file": "raport_zadanie_34bee18a",
+    "zadanie": "Find the number of pairs $(z_1,z_2)$ of complex numbers such that:\n\n$z_1 z_2$ is pure imaginary\n$\\frac{z_1}{z_2}$ is real\n$|z_1| = |z_2| = 1.$",
+    "oczekiwana_odpowiedz": "Timeout - Endpoint API nie odpowiedzia\u0142 w wyznaczonym czasie",
+    "pelny_przebieg_rozumowania": [],
+    "decyzja_sedziego": "EMPTY",
+    "wynik_ewaluacji": "ERROR",
+    "czas_wykonania": 785.35,
+    "zuzycie_tokenow": {
+        "wejsciowe": 0,
+        "wyjsciowe": 0,
+        "suma": 0
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

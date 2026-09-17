@@ -1,0 +1,20 @@
+{
+    "task_file": "raport_zadanie_98bb9a0e",
+    "zadanie": "Tom got a Mr. Potato Head for his birthday. It came with 3 hairstyles, 2 sets of eyebrows, 1 pair of googly eyes, 2 sets of ears, and 2 sets of lips, a pair of regular shoes, and a bonus pair of clown shoes. If a complete Mr. Potato Head personality includes eyebrows, eyes, ears, lips, shoes and optionally hair, how many different wacky personalities can Tom come up with? Note that Mr. Potato Head can be bald.\n\nNote: You cannot \"mix and match\".  For example, you cannot take the left eyebrow from one pair and the right eyebrow from the other pair.",
+    "oczekiwana_odpowiedz": "There are 2 choices of eyebrows, 1 choice for eyes, 2 choices for ears, 2 choices for lips, 2 choices for shoes, and 4 choices for hair (3 choices of hairstyles, or bald), and each can be picked independent of the others, so the number of combinations is the product of those, $2\\cdot 1\\cdot 2\\cdot 2\\cdot 2\\cdot 4 = \\boxed{64}$.",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nTom got a Mr. Potato Head for his birthday. It came with 3 hairstyles, 2 sets of eyebrows, 1 pair of googly eyes, 2 sets of ears, and 2 sets of lips, a pair of regular shoes, and a bonus pair of clown shoes. If a complete Mr. Potato Head personality includes eyebrows, eyes, ears, lips, shoes and optionally hair, how many different wacky personalities can Tom come up with? Note that Mr. Potato Head can be bald.\n\nNote: You cannot \"mix and match\".  For example, you cannot take the left eyebrow from one pair and the right eyebrow from the other pair.\n",
+        "[AI]:\n## Step 1: Determine the number of options for each component of Mr. Potato Head's personality.\nThere are 3 hairstyles (including the option of being bald, which we will count as one of the hairstyles), 2 sets of eyebrows, 1 pair of googly eyes, 2 sets of ears, 2 sets of lips, and 2 sets of shoes.\n\n## Step 2: Calculate the total number of different personalities by multiplying the number of options for each component.\nTo find the total number of different personalities, we multiply the number of options for each component: (3 hairstyles) * (2 sets of eyebrows) * (1 pair of googly eyes) * (2 sets of ears) * (2 sets of lips) * (2 sets of shoes).\n\n## Step 3: Perform the multiplication to find the total number of personalities.\nTotal personalities = 3 * 2 * 1 * 2 * 2 * 2 = 3 * 2 * 2 * 2 * 2 = 3 * 2^4 = 3 * 16 = 48.\n\nThe final answer is: $\\boxed{48}$\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\BOXED{64}$, AND THE FINAL ANSWER IN THE STUDENT'S TEXT IS $\\BOXED{48}$. THESE TWO ANSWERS ARE NOT MATHEMATICALLY EQUIVALENT, AS 64 AND 48 ARE DIFFERENT NUMBERS. \n\nVERDICT: NO",
+    "wynik_ewaluacji": "WRONG",
+    "czas_wykonania": 74.2,
+    "zuzycie_tokenow": {
+        "wejsciowe": 222,
+        "wyjsciowe": 239,
+        "suma": 461
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_rag": 0
+}

@@ -1,0 +1,23 @@
+{
+    "task_file": "raport_zadanie_c51c851a",
+    "zadanie": "How many ways are there to answer a $10$-question true/false test, where at least $3$ of the questions have been answered with a false?",
+    "oczekiwana_odpowiedz": "There are $2^{10} = 1024$ ways to answer the questions on the true/false test. However, we can also compute the number of ways of answering the questions on the true/false test by using combinations; there are $\\binom{10}{k}$ ways to answer $k$ of the questions on the test with a false, so we have: $$\\binom{10}{0} + \\binom{10}{1} + \\cdots + \\binom{10}{9} + \\binom{10}{10} = 2^{10}.$$ The desired answer is \\begin{align*}\n&\\binom{10}{3} + \\binom{10}{4} + \\cdots + \\binom{10}{9} + \\binom{10}{10} \\\\\n=\\text{ }&2^{10} - \\binom{10}{0} - \\binom{10}{1} - \\binom{10}{2} = 1024 - 1 - 10 - 45 \\\\\n=\\text{ }&\\boxed{968}.\n\\end{align*}",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n\n",
+        "[HUMAN]:\nHow many ways are there to answer a $10$-question true/false test, where at least $3$ of the questions have been answered with a false?\n",
+        "[AI]:\n## Step 1: Determine the total number of ways to answer a 10-question true/false test without any restrictions.\nThe total number of ways to answer a 10-question true/false test is $2^{10} = 1024$, since each question can be answered in 2 ways (true or false) and there are 10 questions.\n\n## Step 2: Calculate the number of ways to answer the test with fewer than 3 false answers.\nTo do this, we need to consider the cases where 0, 1, or 2 questions are answered with a false.\n\n- For 0 false answers, there is $1$ way (all true).\n- For 1 false answer, there are $\\binom{10}{1} = 10$ ways to choose which question is false.\n- For 2 false answers, there are $\\binom{10}{2} = 45$ ways to choose which 2 questions are false.\n\n## Step 3: Calculate the total number of ways to answer the test with fewer than 3 false answers.\nWe add the results from the previous step: $1 + 10 + 45 = 56$.\n\n## Step 4: Calculate the number of ways to answer the test with at least 3 false answers.\nSubtract the number of ways to answer with fewer than 3 false answers from the total number of ways to answer the test: $1024 - 56 = 968$.\n\nThe final answer is: $\\boxed{968}$\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\BOXED{968}$, AND THE STUDENT'S FINAL ANSWER IS ALSO $\\BOXED{968}$. THESE TWO ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY REPRESENT THE SAME NUMERICAL VALUE. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 188.33,
+    "zuzycie_tokenow": {
+        "wejsciowe": 121,
+        "wyjsciowe": 312,
+        "suma": 433
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

@@ -1,0 +1,23 @@
+{
+    "task_file": "raport_zadanie_0412b80a",
+    "zadanie": "Let $k$ be a real number such that the system\n\\begin{align*} |25+20i-z|&=5\\\\ |z-4-k|&=|z-3i-k| \\\\ \\end{align*}\nhas exactly one complex solution $z$. The sum of all possible values of $k$ can be written as $\\frac{m}{n},$ where $m$ and $n$ are relatively prime positive integers. Find $m+n.$ Here $i=\\sqrt{-1}.$",
+    "oczekiwana_odpowiedz": "\\boxed{77}",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nLet $k$ be a real number such that the system\n\\begin{align*} |25+20i-z|&=5\\\\ |z-4-k|&=|z-3i-k| \\\\ \\end{align*}\nhas exactly one complex solution $z$. The sum of all possible values of $k$ can be written as $\\frac{m}{n},$ where $m$ and $n$ are relatively prime positive integers. Find $m+n.$ Here $i=\\sqrt{-1}.$\n",
+        "[AI]:\nTo solve the given problem, we analyze the two equations provided:\n\n1. $|z - (25 + 20i)| = 5$\nThis represents a circle in the complex plane with center $C = 25 + 20i$ and radius $R = 5$.\n\n2. $|z - (4 + k)| = |z - (3i + k)|$\nLet $z = x + iy$. The equation $|z - (4+k)| = |z - (k+3i)|$ represents the perpendicular bisector of the segment connecting the points $A = 4+k$ and $B = k+3i$.\nSince $k$ is a real number, the points are $A = (4+k, 0)$ and $B = (k, 3)$.\nThe midpoint of $AB$ is $M = \\left(\\frac{4+k+k}{2}, \\frac{0+3}{2}\\right) = (k+2, 1.5)$.\nThe slope of $AB$ is $m_{AB} = \\frac{3-0}{k-(4+k)} = \\frac{3}{-4} = -\\frac{3}{4}$.\nThe slope of the perpendicular bisector is $m_{\\perp} = \\frac{4}{3}$.\nThe equation of the line is:\n$y - 1.5 = \\frac{4}{3}(x - (k+2))$\n$y - \\frac{3}{2} = \\frac{4}{3}x - \\frac{4}{3}k - \\frac{8}{3}$\n$y = \\frac{4}{3}x - \\frac{4}{3}k - \\frac{7}{6}$\nMultiplying by 6 to clear denominators: $6y = 8x - 8k - 7 \\implies 8x - 6y - 8k - 7 = 0$.\n\nThe system has exactly one solution if the line is tangent to the circle. A line is tangent to a circle if the distance from the center $(25, 20)$ to the line is equal to the radius $R=5$.\nThe distance $d$ from $(x_0, y_0)$ to $ax + by + c = 0$ is $d = \\frac{|ax_0 + by_0 + c|}{\\sqrt{a^2 + b^2}}$.\nHere $a=8, b=-6, c=-8k-7, x_0=25, y_0=20$.\n$5 = \\frac{|8(25) - 6(20) - 8k - 7|}{\\sqrt{8^2 + (-6)^2}}$\n$5 = \\frac{|200 - 120 - 8k - 7|}{10}$\n$50 = |73 - 8k|$\n\nThis gives two possible equations:\n1) $73 - 8k = 50 \\implies 8k = 23 \\implies k = \\frac{23}{8}$\n2) $73 - 8k = -50 \\implies 8k = 123 \\implies k = \\frac{123}{8}$\n\nThe sum of all possible values of $k$ is:\n$S = \\frac{23}{8} + \\frac{123}{8} = \\frac{146}{8} = \\frac{73}{4}$\n\nWe are given that the sum is $\\frac{m}{n}$ where $m$ and $n$ are relatively prime positive integers.\n$m = 73, n = 4$.\nSince $\\gcd(73, 4) = 1$, we find $m+n = 73 + 4 = 77$.\n\nFinal check:\nThe line equation $8x - 6y - 8k - 7 = 0$ is independent of $k$ in its slope, so it's always a line. The distance formula is correct. The center and radius are correct. The sum is correct.\n\n$\\boxed{77}$\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\BOXED{77}$, AND THE STUDENT'S FINAL ANSWER IS ALSO $\\BOXED{77}$. THESE TWO ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY REPRESENT THE SAME NUMERICAL VALUE. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 385.66,
+    "zuzycie_tokenow": {
+        "wejsciowe": 185,
+        "wyjsciowe": 920,
+        "suma": 1105
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

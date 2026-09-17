@@ -1,0 +1,20 @@
+{
+    "task_file": "raport_zadanie_cbe5b6b4",
+    "zadanie": "The value of $y$ varies inversely as $\\sqrt x$ and when $x=24$, $y=15$. What is $x$ when $y=3$?",
+    "oczekiwana_odpowiedz": "Since $y$ and $\\sqrt{x}$ are inversely proportional, this means that $y\\sqrt{x}=k$ for some constant $k$.  Substituting the given values, when $x=24$ and $y=15$, we find that $15\\sqrt{24}=30\\sqrt{6}=k$.  Therefore, when $y=3$, we can solve for $x$: \\begin{align*}\n3\\cdot\\sqrt{x}&=30\\sqrt{6}\\\\\n\\Rightarrow\\qquad (\\sqrt{x})^2&=(10\\sqrt{6})^2\\\\\n\\Rightarrow\\qquad x&=100\\cdot6\\\\\n&=\\boxed{600}\n\\end{align*}",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nThe value of $y$ varies inversely as $\\sqrt x$ and when $x=24$, $y=15$. What is $x$ when $y=3$?\n",
+        "[AI]:\nTo solve the problem, we start by understanding the relationship given: \\( y \\) varies inversely as \\( \\sqrt{x} \\). This can be expressed mathematically as:\n\n\\[\ny = \\frac{k}{\\sqrt{x}}\n\\]\n\nwhere \\( k \\) is a constant.\n\nWe are given that when \\( x = 24 \\), \\( y = 15 \\). We can use this information to find the value of \\( k \\).\n\nSubstituting the known values into the equation:\n\n\\[\n15 = \\frac{k}{\\sqrt{24}}\n\\]\n\nTo isolate \\( k \\), we multiply both sides by \\( \\sqrt{24} \\):\n\n\\[\nk = 15 \\cdot \\sqrt{24}\n\\]\n\nNext, we simplify \\( \\sqrt{24} \\):\n\n\\[\n\\sqrt{24} = \\sqrt{4 \\cdot 6} = \\sqrt{4} \\cdot \\sqrt{6} = 2\\sqrt{6}\n\\]\n\nNow substituting back to find \\( k \\):\n\n\\[\nk = 15 \\cdot 2\\sqrt{6} = 30\\sqrt{6}\n\\]\n\nNow we have the constant \\( k \\). The relationship between \\( y \\) and \\( x \\) can now be expressed as:\n\n\\[\ny = \\frac{30\\sqrt{6}}{\\sqrt{x}}\n\\]\n\nNext, we need to find \\( x \\) when \\( y = 3 \\). We substitute \\( y = 3 \\) into the equation:\n\n\\[\n3 = \\frac{30\\sqrt{6}}{\\sqrt{x}}\n\\]\n\nTo solve for \\( \\sqrt{x} \\), we first multiply both sides by \\( \\sqrt{x} \\):\n\n\\[\n3\\sqrt{x} = 30\\sqrt{6}\n\\]\n\nNext, we divide both sides by 3:\n\n\\[\n\\sqrt{x} = 10\\sqrt{6}\n\\]\n\nNow, we square both sides to solve for \\( x \\):\n\n\\[\nx = (10\\sqrt{6})^2 = 100 \\cdot 6 = 600\n\\]\n\nThus, the value of \\( x \\) when \\( y = 3 \\) is:\n\n\\[\n\\boxed{600}\n\\]\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\BOXED{600}$, AND THE STUDENT'S FINAL ANSWER IS ALSO $\\BOXED{600}$. THESE TWO FINAL ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY REPRESENT THE SAME NUMERICAL VALUE. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 5.84,
+    "zuzycie_tokenow": {
+        "wejsciowe": 105,
+        "wyjsciowe": 472,
+        "suma": 577
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_rag": 0
+}

@@ -1,0 +1,20 @@
+{
+    "task_file": "raport_zadanie_1de257f9",
+    "zadanie": "Steve has three quarters, three nickels and three pennies. If Steve selects three coins at random and without replacement, what is the probability that the total value is exactly 35 cents? Express your answer as a common fraction.",
+    "oczekiwana_odpowiedz": "There are a total of ${9 \\choose 3} = \\frac{9\\cdot 8 \\cdot 7}{3 \\cdot 2} = 84$ sets of 3 coins in total. The only way to get 35 cents is to have a quarter and two nickels, which can be done in ${3 \\choose 1} \\cdot {3 \\choose 2} = 9$ ways. So, the probability is $\\frac{9}{84} = \\boxed{\\frac{3}{28}}$.",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nSteve has three quarters, three nickels and three pennies. If Steve selects three coins at random and without replacement, what is the probability that the total value is exactly 35 cents? Express your answer as a common fraction.\n",
+        "[AI]:\n## Step 1: Determine the total number of ways to select 3 coins from the 9 available coins.\nTo find the total number of ways to select 3 coins from 9, we use the combination formula: $C(n, k) = \\frac{n!}{k!(n-k)!}$, where n is the total number of items, k is the number of items to choose, and \"!\" denotes factorial. So, the total number of ways to choose 3 coins from 9 is $C(9, 3) = \\frac{9!}{3!(9-3)!} = \\frac{9!}{3!6!} = \\frac{9 \\times 8 \\times 7}{3 \\times 2 \\times 1} = 84$.\n\n## Step 2: Calculate the number of ways to get exactly 35 cents with the given coins.\nTo get exactly 35 cents, Steve must select one quarter (25 cents), one nickel (5 cents), and one penny (5 cents) because other combinations either exceed 35 cents or cannot reach 35 cents exactly with the available denominations. There are 3 quarters, 3 nickels, and 3 pennies, so the number of ways to choose one of each is $3 \\times 3 \\times 3 = 27$.\n\n## Step 3: Calculate the probability of selecting exactly 35 cents.\nThe probability is the number of favorable outcomes (selecting one quarter, one nickel, and one penny) divided by the total number of outcomes (selecting any 3 coins). So, the probability is $\\frac{27}{84}$.\n\n## Step 4: Simplify the fraction if necessary.\nThe fraction $\\frac{27}{84}$ can be simplified by dividing both the numerator and the denominator by their greatest common divisor, which is 3. So, $\\frac{27}{84} = \\frac{9}{28}$.\n\nThe final answer is: $\\boxed{\\frac{9}{28}}$\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\FRAC{3}{28}$, AND THE STUDENT'S FINAL ANSWER IS $\\FRAC{9}{28}$. THESE TWO ANSWERS ARE NOT MATHEMATICALLY EQUIVALENT, AS $\\FRAC{9}{28}$ IS THREE TIMES LARGER THAN $\\FRAC{3}{28}$, INDICATING A DISCREPANCY IN THE STUDENT'S CALCULATION OF FAVORABLE OUTCOMES. \n\nVERDICT: NO",
+    "wynik_ewaluacji": "WRONG",
+    "czas_wykonania": 137.66,
+    "zuzycie_tokenow": {
+        "wejsciowe": 134,
+        "wyjsciowe": 422,
+        "suma": 556
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_rag": 0
+}

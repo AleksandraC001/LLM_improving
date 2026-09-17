@@ -1,0 +1,23 @@
+{
+    "task_file": "raport_zadanie_ea1397aa",
+    "zadanie": "Find the maximum value of\n\\[\\frac{x - y}{x^4 + y^4 + 6}\\]over all real numbers $x$ and $y.$",
+    "oczekiwana_odpowiedz": "Clearly, the maximum occurs when $x$ is positive and $y$ is negative.  Let $z = -y,$ so $z$ is positive, and $y = -z.$  Then\n\\[\\frac{x - y}{x^4 + y^4 + 6} = \\frac{x + z}{x^4 + z^4 + 6}.\\]By AM-GM,\n\\[x^4 + 1 + 1 + 1 \\ge 4 \\sqrt[4]{x^4} = 4x,\\]and\n\\[z^4 + 1 + 1 + 1 \\ge 4 \\sqrt[4]{z^4} = 4z.\\]Then $x^4 + z^4 + 6 \\ge 4(x + z),$ which implies\n\\[\\frac{x + z}{x^4 + z^4 + 6} \\le \\frac{1}{4}.\\]Equality occurs when $x = z = 1,$ so the maximum value is $\\boxed{\\frac{1}{4}}.$",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nFind the maximum value of\n\\[\\frac{x - y}{x^4 + y^4 + 6}\\]over all real numbers $x$ and $y.$\n",
+        "[AI]:\nTo find the maximum value of the expression $f(x, y) = \\frac{x - y}{x^4 + y^4 + 6}$, let $k$ be a possible value of the expression. We want to find the maximum $k$ such that there exist real numbers $x, y$ satisfying:\n\\[k = \\frac{x - y}{x^4 + y^4 + 6} \\implies k(x^4 + y^4 + 6) = x - y\\]\nRearranging the terms, we get:\n\\[kx^4 - x + ky^4 + y + 6k = 0\\]\nFor a fixed $k > 0$, we want to find if there exist $x, y$ that satisfy this equation. To maximize $k$, we can look at the minimum value of the function $g(x, y) = \\frac{x^4 + y^4 + 6}{x - y}$ for $x > y$.\nLet $u = x - y$ and $v = x + y$. Then $x = \\frac{u+v}{2}$ and $y = \\frac{v-u}{2}$.\nSubstituting these into the expression:\n\\[x^4 + y^4 = \\left(\\frac{u+v}{2}\\right)^4 + \\left(\\frac{v-u}{2}\\right)^4 = \\frac{1}{16} [(u+v)^4 + (v-u)^4]\\]\nUsing the expansion $(a+b)^4 + (a-b)^4 = 2a^4 + 12a^2b^2 + 2b^4$:\n\\[x^4 + y^4 = \\frac{1}{16} [2v^4 + 12v^2u^2 + 2u^4] = \\frac{1}{8}v^4 + \\frac{3}{4}v^2u^2 + \\frac{1}{8}u^4\\]\nThe expression becomes:\n\\[f(u, v) = \\frac{u}{\\frac{1}{8}v^4 + \\frac{3}{4}v^2u^2 + \\frac{1}{8}u^4 + 6}\\]\nTo maximize this, we need to minimize the denominator for a fixed $u$. Since $u$ must be positive for $k$ to be positive, we minimize $h(v) = \\frac{1}{8}v^4 + \\frac{3}{4}v^2u^2 + \\frac{1}{8}u^4 + 6$ with respect to $v$.\nThe minimum occurs when $v = 0$ (since $v^4$ and $v^2$ are minimized at $v=0$).\nSubstituting $v=0$ into the expression:\n\\[f(u, 0) = \\frac{u}{\\frac{1}{8}u^4 + 6}\\]\nTo find the maximum of $h(u) = \\frac{u}{\\frac{1}{8}u^4 + 6}$, we take the derivative with respect to $u$ and set it to zero:\n\\[h'(u) = \\frac{(\\frac{1}{8}u^4 + 6) - u(\\frac{4}{8}u^3)}{(\\frac{1}{8}u^4 + 6)^2} = \\frac{\\frac{1}{8}u^4 + 6 - \\frac{1}{2}u^4}{(\\dots)^2} = \\frac{6 - \\frac{3}{8}u^4}{(\\dots)^2}\\]\nSetting the numerator to zero:\n\\[\\frac{3}{8}u^4 = 6 \\implies u^4 = \\frac{6 \\times 8}{3} = 16 \\implies u^2 = 4 \\implies u = 2 \\text{ (since } u > 0)\\]\nNow, substitute $u=2$ back into $h(u)$:\n\\[h(2) = \\frac{2}{\\frac{1}{8}(2^4) + 6} = \\frac{2}{\\frac{16}{8} + 6} = \\frac{2}{2 + 6} = \\frac{2}{8} = \\frac{1}{4}\\]\nWe check if $v=0$ corresponds to real $x, y$. $v=0 \\implies x+y=0 \\implies y=-x$.\nThen $u = x - (-x) = 2x$. For $u=2$, $x=1$ and $y=-1$.\nPlugging $x=1, y=-1$ into the original expression:\n\\[\\frac{1 - (-1)}{1^4 + (-1)^4 + 6} = \\frac{2}{1 + 1 + 6} = \\frac{2}{8} = \\frac{1}{4}\\]\n\nFinal check: $x=1, y=-1 \\implies \\frac{2}{8} = 0.25$.\nIf $x=2, y=0 \\implies \\frac{2}{16+0+6} = \\frac{2}{22} \\approx 0.09$.\nIf $x=1, y=0 \\implies \\frac{1}{1+0+6} = \\frac{1}{7} \\approx 0.14$.\n\nThe maximum value is $\\frac{1}{4}$.\n\n\\boxed{1/4}\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\BOXED{\\FRAC{1}{4}}$, AND THE STUDENT'S FINAL ANSWER IS ALSO $\\FRAC{1}{4}$. THESE TWO ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY REPRESENT THE SAME FRACTION. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 354.23,
+    "zuzycie_tokenow": {
+        "wejsciowe": 111,
+        "wyjsciowe": 1232,
+        "suma": 1343
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

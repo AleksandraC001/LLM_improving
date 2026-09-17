@@ -1,0 +1,19 @@
+{
+    "task_file": "raport_zadanie_1cf05e56",
+    "zadanie": "Two complementary angles, A and B, have measures in the ratio of 7 to 23, respectively. What is the ratio of the measure of the complement of angle A to the measure of the complement of angle B? Express your answer as a common fraction.",
+    "oczekiwana_odpowiedz": "API Connection Error: OpenAIConnectionError('Connection error.'); cause=APIConnectionError('Connection error.')",
+    "pelny_przebieg_rozumowania": [],
+    "decyzja_sedziego": "EMPTY",
+    "wynik_ewaluacji": "ERROR",
+    "czas_wykonania": 14.71,
+    "zuzycie_tokenow": {
+        "wejsciowe": 0,
+        "wyjsciowe": 0,
+        "suma": 0
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

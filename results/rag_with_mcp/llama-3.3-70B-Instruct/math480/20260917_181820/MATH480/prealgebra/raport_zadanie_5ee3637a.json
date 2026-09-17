@@ -1,0 +1,19 @@
+{
+    "task_file": "raport_zadanie_5ee3637a",
+    "zadanie": "A consumer report revealed the following information about three tubes of toothpaste. Bright is $60 \\%$ more expensive than Fresh and has $25\\%$ less volume than Glow. Glow is $25\\%$ less expensive than Bright and has $33\\frac{1}{3} \\%$ more volume than Fresh. Fresh costs $\\$1.00$ per unit of volume. What is the number of cents per unit of volume of Glow?",
+    "oczekiwana_odpowiedz": "API Connection Error: OpenAIConnectionError('Connection error.'); cause=APIConnectionError('Connection error.')",
+    "pelny_przebieg_rozumowania": [],
+    "decyzja_sedziego": "EMPTY",
+    "wynik_ewaluacji": "ERROR",
+    "czas_wykonania": 14.61,
+    "zuzycie_tokenow": {
+        "wejsciowe": 0,
+        "wyjsciowe": 0,
+        "suma": 0
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

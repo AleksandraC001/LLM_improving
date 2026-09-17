@@ -1,0 +1,23 @@
+{
+    "task_file": "raport_zadanie_066a7a69",
+    "zadanie": "A point $(2, n)$ is 5 units away from the point $(-1, 1)$. What is the product of all possible integer values for $n$?",
+    "oczekiwana_odpowiedz": "By the Pythagorean theorem, the distance from $(2,n)$ to $(-1,1)$ is $\\sqrt{(2-(-1))^2+(n-1)^2}$.  Setting this equal to $5$, we find \\begin{align*}\n9+(n-1)^2 &= 25 \\implies \\\\\n(n-1)^2 &= 16 \\implies \\\\\nn-1 = 4 \\quad&\\text{or}\\quad n-1=-4 \\implies \\\\\nn = 5 \\quad&\\text{or}\\quad n=-3.\n\\end{align*} Both of these solutions are integers, and their product is $\\boxed{-15}$.",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nA point $(2, n)$ is 5 units away from the point $(-1, 1)$. What is the product of all possible integer values for $n$?\n",
+        "[AI]:\nTo find the possible values for $n$, we use the distance formula between two points $(x_1, y_1)$ and $(x_2, y_2)$, which is given by:\n$$d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$$\n\nIn this problem, the two points are $(2, n)$ and $(-1, 1)$, and the distance $d$ is 5.\n\n**Step 1: Set up the equation using the distance formula.**\nSubstituting the given coordinates into the formula:\n$$5 = \\sqrt{(2 - (-1))^2 + (n - 1)^2}$$\n$$5 = \\sqrt{(2 + 1)^2 + (n - 1)^2}$$\n$$5 = \\sqrt{3^2 + (n - 1)^2}$$\n$$5 = \\sqrt{9 + (n - 1)^2}$$\n\n**Step 2: Solve for $n$.**\nSquare both sides of the equation to remove the square root:\n$$5^2 = 9 + (n - 1)^2$$\n$$25 = 9 + (n - 1)^2$$\n\nSubtract 9 from both sides:\n$$16 = (n - 1)^2$$\n\nTake the square root of both sides:\n$$n - 1 = \\pm \\sqrt{16}$$\n$$n - 1 = \\pm 4$$\n\nThis gives us two possible equations for $n$:\n1) $n - 1 = 4 \\implies n = 5$\n2) $n - 1 = -4 \\implies n = -3$\n\n**Step 3: Identify the integer values and calculate their product.**\nThe problem asks for the product of all possible integer values for $n$. Both values we found, $5$ and $-3$, are integers.\n\nThe product is:\n$$5 \\times (-3) = -15$$\n\nFinal conclusion: The possible integer values for $n$ are $5$ and $-3$, and their product is $-15$.\n\n\\boxed{-15}\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\BOXED{-15}$, AND THE STUDENT'S FINAL ANSWER IS ALSO $\\BOXED{-15}$. THESE TWO ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY REPRESENT THE SAME INTEGER VALUE. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 48.08,
+    "zuzycie_tokenow": {
+        "wejsciowe": 108,
+        "wyjsciowe": 466,
+        "suma": 574
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

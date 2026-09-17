@@ -1,0 +1,20 @@
+{
+    "task_file": "raport_zadanie_5e78eae5",
+    "zadanie": "If $a$, $b$, and $c$ are integers satisfying $a + \\frac 1b = \\frac{22}{7}$, $b + \\frac 1c = 8$, and $abc = 21$, then find $c + \\frac 1a$. Express your answer as a common fraction.",
+    "oczekiwana_odpowiedz": "Let $x = c + \\frac 1a$. Multiplying to take advantage of the symmetry, \\begin{align*}\\frac {22}7 \\cdot 8 \\cdot x &= \\left(a + \\frac 1b\\right)\\left(b + \\frac 1c\\right)\\left(c + \\frac 1a\\right) \\\\\n&= abc + a + b + c + \\frac 1a + \\frac 1b + \\frac 1c + \\frac{1}{abc} \\\\\n&= 21 + \\left(a + \\frac 1b\\right) + \\left(b + \\frac 1c \\right) + \\left(c + \\frac 1a\\right) + \\frac{1}{21} \\\\\n&= 21 + \\frac{22}{7} + 8 + x + \\frac 1{21} \\\\\n&= \\frac{29 \\cdot 21 + 22 \\cdot 3 + 1}{21} + x\n\\end{align*} Thus, $\\frac{22 \\cdot 8 \\cdot 3}{21} x = \\frac{29 \\cdot 21 + 22 \\cdot 3 + 1}{21} + x \\Longrightarrow x = \\frac{29 \\cdot 21 + 22 \\cdot 3 + 1}{22 \\cdot 8 \\cdot 3 - 21} = \\frac{676}{507} = \\boxed{\\frac 43}.$",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nIf $a$, $b$, and $c$ are integers satisfying $a + \\frac 1b = \\frac{22}{7}$, $b + \\frac 1c = 8$, and $abc = 21$, then find $c + \\frac 1a$. Express your answer as a common fraction.\n",
+        "[AI]:\nWe start with the equations given in the problem:\n\n1. \\( a + \\frac{1}{b} = \\frac{22}{7} \\)\n2. \\( b + \\frac{1}{c} = 8 \\)\n3. \\( abc = 21 \\)\n\n### Step 1: Solve for \\( b \\) in terms of \\( a \\)\n\nFrom the first equation, we can isolate \\( \\frac{1}{b} \\):\n\n\\[\n\\frac{1}{b} = \\frac{22}{7} - a\n\\]\n\nTaking the reciprocal gives:\n\n\\[\nb = \\frac{1}{\\frac{22}{7} - a} = \\frac{7}{22 - 7a}\n\\]\n\n### Step 2: Solve for \\( c \\) in terms of \\( b \\)\n\nFrom the second equation, we isolate \\( \\frac{1}{c} \\):\n\n\\[\n\\frac{1}{c} = 8 - b\n\\]\n\nTaking the reciprocal gives:\n\n\\[\nc = \\frac{1}{8 - b}\n\\]\n\n### Step 3: Substitute \\( b \\) into the equation for \\( c \\)\n\nSubstituting \\( b = \\frac{7}{22 - 7a} \\) into \\( c \\):\n\n\\[\nc = \\frac{1}{8 - \\frac{7}{22 - 7a}} = \\frac{1}{\\frac{(8(22 - 7a) - 7)}{22 - 7a}} = \\frac{22 - 7a}{176 - 56a - 7} = \\frac{22 - 7a}{169 - 56a}\n\\]\n\n### Step 4: Substitute \\( b \\) and \\( c \\) into the product equation\n\nNow we substitute \\( b \\) and \\( c \\) into the equation \\( abc = 21 \\):\n\n\\[\na \\cdot \\frac{7}{22 - 7a} \\cdot \\frac{22 - 7a}{169 - 56a} = 21\n\\]\n\nThis simplifies to:\n\n\\[\n\\frac{7a}{169 - 56a} = 21\n\\]\n\n### Step 5: Solve for \\( a \\)\n\nCross-multiplying gives:\n\n\\[\n7a = 21(169 - 56a)\n\\]\n\nExpanding the right side:\n\n\\[\n7a = 3549 - 1176a\n\\]\n\nCombining like terms:\n\n\\[\n7a + 1176a = 3549\n\\]\n\n\\[\n1183a = 3549\n\\]\n\nDividing both sides by 1183:\n\n\\[\na = \\frac{3549}{1183} = 3\n\\]\n\n### Step 6: Find \\( b \\) and \\( c \\)\n\nSubstituting \\( a = 3 \\) back into the equation for \\( b \\):\n\n\\[\nb = \\frac{7}{22 - 7 \\cdot 3} = \\frac{7}{22 - 21} = 7\n\\]\n\nNow substituting \\( b = 7 \\) into the equation for \\( c \\):\n\n\\[\nc = \\frac{1}{8 - 7} = 1\n\\]\n\n### Step 7: Calculate \\( c + \\frac{1}{a} \\)\n\nNow we need to find \\( c + \\frac{1}{a} \\):\n\n\\[\nc + \\frac{1}{a} = 1 + \\frac{1}{3} = 1 + \\frac{1}{3} = \\frac{3}{3} + \\frac{1}{3} = \\frac{4}{3}\n\\]\n\n### Final Answer\n\nThus, the final answer is:\n\n\\[\n\\boxed{\\frac{4}{3}}\n\\]\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\FRAC{4}{3}$, AND THE STUDENT'S FINAL ANSWER IS ALSO $\\FRAC{4}{3}$. THESE TWO ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY REPRESENT THE SAME FRACTION. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 10.26,
+    "zuzycie_tokenow": {
+        "wejsciowe": 136,
+        "wyjsciowe": 805,
+        "suma": 941
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_rag": 0
+}

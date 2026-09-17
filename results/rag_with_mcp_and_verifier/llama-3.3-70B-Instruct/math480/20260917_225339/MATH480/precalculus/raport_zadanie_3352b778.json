@@ -1,0 +1,19 @@
+{
+    "task_file": "raport_zadanie_3352b778",
+    "zadanie": "Let $\\mathbf{a} = \\begin{pmatrix} 1 \\\\ 3 \\\\ 0 \\end{pmatrix},$ $\\mathbf{b} = \\begin{pmatrix} -11 \\\\ 5 \\\\ 2 \\end{pmatrix},$ and $\\mathbf{c} = \\begin{pmatrix} 1 + \\sqrt{5} \\\\ 4 \\\\ -5 \\end{pmatrix}.$  Find $k$ if the vectors $\\mathbf{a} + \\mathbf{b} + \\mathbf{c}$ and\n\\[3 (\\mathbf{b} \\times \\mathbf{c}) - 8 (\\mathbf{c} \\times \\mathbf{a}) + k (\\mathbf{a} \\times \\mathbf{b})\\]are orthogonal.",
+    "oczekiwana_odpowiedz": "Timeout - Endpoint API nie odpowiedzia\u0142 w wyznaczonym czasie",
+    "pelny_przebieg_rozumowania": [],
+    "decyzja_sedziego": "EMPTY",
+    "wynik_ewaluacji": "ERROR",
+    "czas_wykonania": 721.46,
+    "zuzycie_tokenow": {
+        "wejsciowe": 0,
+        "wyjsciowe": 0,
+        "suma": 0
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

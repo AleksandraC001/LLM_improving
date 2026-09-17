@@ -1,0 +1,23 @@
+{
+    "task_file": "raport_zadanie_8fdaec89",
+    "zadanie": "Suppose that the minimum value of $f(x) = \\cos 2x - 2a (1 + \\cos x)$ is $-\\frac{1}{2}.$  Find $a.$",
+    "oczekiwana_odpowiedz": "We can write\n\\begin{align*}\nf(x) &= 2 \\cos^2 x - 1 - 2a (1 + \\cos x) \\\\\n&= 2 \\cos^2 x - 2a \\cos x - 1 - 2a \\\\\n&= 2 \\left( \\cos x - \\frac{a}{2} \\right)^2 - \\frac{1}{2} a^2 - 2a - 1.\n\\end{align*}If $a > 2,$ then $f(x)$ attains its minimum value when $\\cos x = 1,$ in which case\n\\[f(x) = 2 - 2a - 1 - 2a = 1 - 4a.\\]If $1 - 4a = -\\frac{1}{2},$ then $a = \\frac{3}{8},$ contradiction.\n\nIf $a < -2,$ then $f(x)$ attains its minimum value when $\\cos x = -1,$ in which case\n\\[f(x) = 2 + 2a - 1 - 2a = 1,\\]so this case is not possible either.\n\nOtherwise, $-2 \\le a \\le 2,$ and $f(x)$ attains its minimum when $\\cos x = \\frac{a}{2},$ in which case\n\\[f(x) = -\\frac{1}{2} a^2 - 2a - 1.\\]Thus, $-\\frac{1}{2} a^2 - 2a - 1 = -\\frac{1}{2},$ so $a^2 + 4a + 1 = 0.$  By the quadratic formula,\n\\[a = -2 \\pm \\sqrt{3}.\\]Since $-2 \\le a \\le 2,$ $a = \\boxed{-2 + \\sqrt{3}}.$",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nSuppose that the minimum value of $f(x) = \\cos 2x - 2a (1 + \\cos x)$ is $-\\frac{1}{2}.$  Find $a.$\n",
+        "[AI]:\n## Step 1: Recall the trigonometric identity for $\\cos 2x$\nWe know that $\\cos 2x = 2\\cos^2 x - 1$. This identity will help us simplify the given function $f(x)$.\n\n## Step 2: Substitute the trigonometric identity into the function $f(x)$\nUsing the identity from step 1, we rewrite $f(x)$ as $f(x) = 2\\cos^2 x - 1 - 2a(1 + \\cos x)$.\n\n## Step 3: Simplify the expression for $f(x)$\nSimplifying, we get $f(x) = 2\\cos^2 x - 2a - 2a\\cos x - 1$.\n\n## Step 4: Rearrange the terms for clarity\nRearranging the terms gives $f(x) = 2\\cos^2 x - 2a\\cos x - (2a + 1)$.\n\n## Step 5: Complete the square for the cosine terms\nTo complete the square, we note that $2\\cos^2 x - 2a\\cos x$ can be written as $2(\\cos x - \\frac{a}{2})^2 - \\frac{a^2}{2}$.\n\n## Step 6: Rewrite $f(x)$ with the completed square\nThus, $f(x) = 2(\\cos x - \\frac{a}{2})^2 - \\frac{a^2}{2} - (2a + 1)$.\n\n## Step 7: Simplify the constant terms\nCombining the constant terms gives $f(x) = 2(\\cos x - \\frac{a}{2})^2 - \\frac{a^2}{2} - 2a - 1$.\n\n## Step 8: Further simplify the constant terms\nSimplifying further yields $f(x) = 2(\\cos x - \\frac{a}{2})^2 - \\frac{a^2 + 4a + 2}{2}$.\n\n## Step 9: Recognize the minimum value condition\nThe minimum value of $f(x)$ occurs when the squared term is zero, i.e., when $\\cos x = \\frac{a}{2}$. At this point, the minimum value of $f(x)$ is $-\\frac{a^2 + 4a + 2}{2}$.\n\n## Step 10: Set the minimum value of $f(x)$ equal to $-\\frac{1}{2}$\nWe are given that the minimum value of $f(x)$ is $-\\frac{1}{2}$. So, we set $-\\frac{a^2 + 4a + 2}{2} = -\\frac{1}{2}$.\n\n## Step 11: Solve the equation for $a$\nMultiplying both sides by $-2$ gives $a^2 + 4a + 2 = 1$. Simplifying, we get $a^2 + 4a + 1 = 0$.\n\n## Step 12: Solve the quadratic equation for $a$\nUsing the quadratic formula $a = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$, where $a=1$, $b=4$, and $c=1$, we find $a = \\frac{-4 \\pm \\sqrt{16 - 4}}{2}$.\n\n## Step 13: Simplify the expression under the square root\nThis simplifies to $a = \\frac{-4 \\pm \\sqrt{12}}{2}$.\n\n## Step 14: Further simplify the square root\nSince $\\sqrt{12} = \\sqrt{4 \\cdot 3} = 2\\sqrt{3}$, we have $a = \\frac{-4 \\pm 2\\sqrt{3}}{2}$.\n\n## Step 15: Simplify the expression for $a$\nThis gives $a = -2 \\pm \\sqrt{3}$.\n\nThe final answer is: $\\boxed{-2 + \\sqrt{3}}$\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $A = \\BOXED{-2 + \\SQRT{3}}$. THE STUDENT'S FINAL ANSWER IS $A = -2 \\PM \\SQRT{3}$, AND THEY SPECIFICALLY BOX THE ANSWER AS $-2 + \\SQRT{3}$. THESE TWO ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY BOTH REPRESENT THE SAME VALUE.\n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 311.48,
+    "zuzycie_tokenow": {
+        "wejsciowe": 131,
+        "wyjsciowe": 873,
+        "suma": 1004
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

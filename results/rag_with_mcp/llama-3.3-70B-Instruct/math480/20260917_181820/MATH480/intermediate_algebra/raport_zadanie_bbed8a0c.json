@@ -1,0 +1,19 @@
+{
+    "task_file": "raport_zadanie_bbed8a0c",
+    "zadanie": "Let $a_1, a_2, \\ldots, a_{2005}$ be real numbers such that $$\\begin{array}{ccccccccccc}\na_1\\cdot 1 &+ &a_2 \\cdot 2 &+& a_3 \\cdot 3 &+ &\\cdots& + &a_{2005} \\cdot 2005 &=& 0 \\\\\na_1\\cdot 1^2 &+& a_2\\cdot 2^2 &+& a_3 \\cdot 3^2 &+ &\\cdots& + & a_{2005} \\cdot 2005^2 &=& 0 \\\\\na_1 \\cdot 1^3 &+& a_2 \\cdot 2^3 &+& a_3 \\cdot 3^3 &+ &\\cdots& + & a_{2005} \\cdot 2005^3 &=& 0 \\\\ \\vdots&&\\vdots&&\\vdots&&&&\\vdots&&\\vdots \\\\\na_1\\cdot 1^{2004} &+& a_2\\cdot 2^{2004} &+& a_3\\cdot 3^{2004} &+ &\\cdots& + &a_{2005} \\cdot 2005^{2004} &=& 0\n\\end{array}$$and $$\\begin{array}{ccccccccccc}\na_1 \\cdot 1^{2005}& +& a_2\\cdot 2^{2005} &+& a_3\\cdot 3^{2005} &+ &\\cdots& + &a_{2005} \\cdot 2005^{2005} &=& 1.\n\\end{array}$$What is the value of $a_1$?",
+    "oczekiwana_odpowiedz": "Timeout - Endpoint API nie odpowiedzia\u0142 w wyznaczonym czasie",
+    "pelny_przebieg_rozumowania": [],
+    "decyzja_sedziego": "EMPTY",
+    "wynik_ewaluacji": "ERROR",
+    "czas_wykonania": 894.81,
+    "zuzycie_tokenow": {
+        "wejsciowe": 0,
+        "wyjsciowe": 0,
+        "suma": 0
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

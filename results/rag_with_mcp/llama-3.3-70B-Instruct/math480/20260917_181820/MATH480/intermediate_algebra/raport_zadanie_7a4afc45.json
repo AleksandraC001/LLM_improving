@@ -1,0 +1,19 @@
+{
+    "task_file": "raport_zadanie_7a4afc45",
+    "zadanie": "Given that $x,$ $y,$ $z > 0$ and $xyz = 1,$ find the range of all possible values of\n\\[\\frac{x^3 + y^3 + z^3 - x^{-3} - y^{-3} - z^{-3}}{x + y + z - x^{-1} - y^{-1} - z^{-1}}.\\]",
+    "oczekiwana_odpowiedz": "Timeout - Endpoint API nie odpowiedzia\u0142 w wyznaczonym czasie",
+    "pelny_przebieg_rozumowania": [],
+    "decyzja_sedziego": "EMPTY",
+    "wynik_ewaluacji": "ERROR",
+    "czas_wykonania": 763.28,
+    "zuzycie_tokenow": {
+        "wejsciowe": 0,
+        "wyjsciowe": 0,
+        "suma": 0
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

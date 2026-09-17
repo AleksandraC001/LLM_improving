@@ -1,0 +1,19 @@
+{
+    "task_file": "raport_zadanie_c37a168f",
+    "zadanie": "Let  \\[f(x) =\n\\begin{cases}\nk(x) &\\text{if }x>0, \\\\\n-\\frac1{2x}&\\text{if }x< 0\\\\\n0&\\text{if }x=0.\n\\end{cases}\n\\]Find the function $k(x)$ such that $f(x)$ is its own inverse function.",
+    "oczekiwana_odpowiedz": "Timeout - Endpoint API nie odpowiedzia\u0142 w wyznaczonym czasie",
+    "pelny_przebieg_rozumowania": [],
+    "decyzja_sedziego": "EMPTY",
+    "wynik_ewaluacji": "ERROR",
+    "czas_wykonania": 721.48,
+    "zuzycie_tokenow": {
+        "wejsciowe": 0,
+        "wyjsciowe": 0,
+        "suma": 0
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

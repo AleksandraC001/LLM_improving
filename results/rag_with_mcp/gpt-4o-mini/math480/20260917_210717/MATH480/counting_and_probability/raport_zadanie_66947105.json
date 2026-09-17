@@ -1,0 +1,19 @@
+{
+    "task_file": "raport_zadanie_66947105",
+    "zadanie": "How many ways are there for 8 people to sit around a circular table if none of Alice, Bob, and Eve (three of the 8 people) want to sit next to each other? Two seatings are considered the same if one is a rotation of the other.",
+    "oczekiwana_odpowiedz": "Recursion limit exceeded (Model si\u0119 zap\u0119tli\u0142)",
+    "pelny_przebieg_rozumowania": [],
+    "decyzja_sedziego": "EMPTY",
+    "wynik_ewaluacji": "ERROR",
+    "czas_wykonania": 218.9,
+    "zuzycie_tokenow": {
+        "wejsciowe": 0,
+        "wyjsciowe": 0,
+        "suma": 0
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

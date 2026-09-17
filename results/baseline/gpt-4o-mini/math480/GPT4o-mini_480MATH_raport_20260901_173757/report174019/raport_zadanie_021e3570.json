@@ -1,0 +1,20 @@
+{
+    "task_file": "raport_zadanie_021e3570",
+    "zadanie": "A square is drawn such that one of its sides coincides with the line $y = 7$, and so that the endpoints of this side lie on the parabola $y = 2x^2 + 8x + 4$. What is the area of the square?",
+    "oczekiwana_odpowiedz": "The points of intersection of the line $y = 7$ and $y = 2x^2 + 8x + 4$, by substitution, are found when $2x^2 + 8x + 4 = 7 \\Longrightarrow 2x^2 + 8x - 3 = 0$. By the quadratic formula, $$x = \\frac{-8 \\pm \\sqrt{8^2 - 4 \\cdot 2 \\cdot (-3)}}{2 \\cdot 2}.$$We want to find the difference of these roots to find the difference of the x-coordinates of the point of intersection, which will give a side length of the square. The difference is given by $\\frac{\\sqrt{8^2 - 4 \\cdot 2 \\cdot (-3)}}2 = \\frac{\\sqrt{88}}{2} = \\sqrt{22}$. Thus, the area of the square is $\\boxed{22}$.",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nA square is drawn such that one of its sides coincides with the line $y = 7$, and so that the endpoints of this side lie on the parabola $y = 2x^2 + 8x + 4$. What is the area of the square?\n",
+        "[AI]:\nTo find the area of the square, we first need to determine the points where the line \\( y = 7 \\) intersects the parabola given by the equation \\( y = 2x^2 + 8x + 4 \\).\n\n1. **Set the equations equal to find the intersection points:**\n   \\[\n   7 = 2x^2 + 8x + 4\n   \\]\n   Rearranging this gives:\n   \\[\n   2x^2 + 8x + 4 - 7 = 0 \\implies 2x^2 + 8x - 3 = 0\n   \\]\n\n2. **Solve the quadratic equation using the quadratic formula:**\n   The quadratic formula is given by:\n   \\[\n   x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}\n   \\]\n   Here, \\( a = 2 \\), \\( b = 8 \\), and \\( c = -3 \\). We first calculate the discriminant:\n   \\[\n   b^2 - 4ac = 8^2 - 4 \\cdot 2 \\cdot (-3) = 64 + 24 = 88\n   \\]\n   Now, substituting into the quadratic formula:\n   \\[\n   x = \\frac{-8 \\pm \\sqrt{88}}{2 \\cdot 2} = \\frac{-8 \\pm 2\\sqrt{22}}{4} = \\frac{-4 \\pm \\sqrt{22}}{2}\n   \\]\n   Thus, the \\( x \\)-coordinates of the intersection points are:\n   \\[\n   x_1 = \\frac{-4 + \\sqrt{22}}{2}, \\quad x_2 = \\frac{-4 - \\sqrt{22}}{2}\n   \\]\n\n3. **Calculate the length of the side of the square:**\n   The length of the side of the square is the distance between the two intersection points on the line \\( y = 7 \\). The distance \\( d \\) between \\( x_1 \\) and \\( x_2 \\) is given by:\n   \\[\n   d = x_1 - x_2 = \\left( \\frac{-4 + \\sqrt{22}}{2} \\right) - \\left( \\frac{-4 - \\sqrt{22}}{2} \\right)\n   \\]\n   Simplifying this:\n   \\[\n   d = \\frac{-4 + \\sqrt{22} + 4 + \\sqrt{22}}{2} = \\frac{2\\sqrt{22}}{2} = \\sqrt{22}\n   \\]\n\n4. **Calculate the area of the square:**\n   The area \\( A \\) of the square is given by the square of the side length:\n   \\[\n   A = (\\text{side length})^2 = (\\sqrt{22})^2 = 22\n   \\]\n\nThus, the area of the square is \\(\\boxed{22}\\).\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\BOXED{22}$, WHICH REPRESENTS THE AREA OF THE SQUARE. THE STUDENT'S FINAL ANSWER IS ALSO $22$, WHICH IS THE RESULT OF CALCULATING THE AREA OF THE SQUARE USING THE SIDE LENGTH FOUND FROM THE INTERSECTION POINTS. THESE TWO FINAL ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY BOTH REPRESENT THE SAME VALUE. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 8.17,
+    "zuzycie_tokenow": {
+        "wejsciowe": 125,
+        "wyjsciowe": 643,
+        "suma": 768
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_rag": 0
+}

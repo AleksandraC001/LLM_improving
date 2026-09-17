@@ -1,0 +1,23 @@
+{
+    "task_file": "raport_zadanie_0412b80a",
+    "zadanie": "Let $k$ be a real number such that the system\n\\begin{align*} |25+20i-z|&=5\\\\ |z-4-k|&=|z-3i-k| \\\\ \\end{align*}\nhas exactly one complex solution $z$. The sum of all possible values of $k$ can be written as $\\frac{m}{n},$ where $m$ and $n$ are relatively prime positive integers. Find $m+n.$ Here $i=\\sqrt{-1}.$",
+    "oczekiwana_odpowiedz": "\\boxed{77}",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nLet $k$ be a real number such that the system\n\\begin{align*} |25+20i-z|&=5\\\\ |z-4-k|&=|z-3i-k| \\\\ \\end{align*}\nhas exactly one complex solution $z$. The sum of all possible values of $k$ can be written as $\\frac{m}{n},$ where $m$ and $n$ are relatively prime positive integers. Find $m+n.$ Here $i=\\sqrt{-1}.$\n",
+        "[AI]:\nTo solve the system of equations:\n1. $|z - (25+20i)| = 5$\n2. $|z - (4+k)| = |z - (k+3i)|$\n\n**Step 1: Interpret the equations geometrically.**\nThe first equation represents a circle $C$ in the complex plane with center $c = 25+20i$ and radius $r = 5$.\nThe second equation represents the perpendicular bisector $L$ of the line segment connecting the points $A = 4+k$ and $B = k+3i$.\n\nLet $z = x+iy$.\nThe points are $A = (4+k, 0)$ and $B = (k, 3)$.\nThe midpoint of $AB$ is $M = \\left(\\frac{4+k+k}{2}, \\frac{0+3}{2}\\right) = \\left(k+2, \\frac{3}{2}\\right)$.\nThe slope of the line $AB$ is $m_{AB} = \\frac{3-0}{k-(4+k)} = \\frac{3}{-4} = -\\frac{3}{4}$.\nThe slope of the perpendicular bisector $L$ is $m_L = -\\frac{1}{m_{AB}} = \\frac{4}{3}$.\nThe equation of line $L$ is:\n$y - \\frac{3}{2} = \\frac{4}{3}(x - (k+2))$\n$3y - \\frac{9}{2} = 4x - 4k - 8$\n$4x - 3y - 4k - \\frac{7}{2} = 0$\nMultiplying by 2: $8x - 6y - 8k - 7 = 0$.\n\n**Step 2: Condition for exactly one solution.**\nA line and a circle have exactly one intersection point if and only if the line is tangent to the circle. This occurs when the distance from the center of the circle $(25, 20)$ to the line $L$ is equal to the radius $r=5$.\nThe distance $d$ from $(x_0, y_0)$ to $ax+by+c=0$ is $d = \\frac{|ax_0 + by_0 + c|}{\\sqrt{a^2+b^2}}$.\nHere $a=8, b=-6, c=-8k-7, x_0=25, y_0=20$.\n$d = \\frac{|8(25) - 6(20) - 8k - 7|}{\\sqrt{8^2 + (-6)^2}} = \\frac{|200 - 120 - 8k - 7|}{10} = \\frac{|73 - 8k|}{10}$.\n\nSetting $d = 5$:\n$\\frac{|73 - 8k|}{10} = 5 \\implies |73 - 8k| = 50$.\n\n**Step 3: Solve for $k$.**\nCase 1: $73 - 8k = 50$\n$8k = 23 \\implies k = \\frac{23}{8}$.\n\nCase 2: $73 - 8k = -50$\n$8k = 123 \\implies k = \\frac{123}{8}$.\n\n**Step 4: Find the sum of $k$ and the final answer.**\nThe sum of all possible values of $k$ is:\n$S = \\frac{23}{8} + \\frac{123}{8} = \\frac{146}{8} = \\frac{73}{4}$.\nHere $m = 73$ and $n = 4$.\nSince 73 and 4 are relatively prime positive integers, we find $m+n$:\n$m+n = 73 + 4 = 77$.\n\nFinal check: The line $L$ is $8x - 6y - 8k - 7 = 0$. The center is $(25, 20)$.\n$d = \\frac{|200 - 120 - 8k - 7|}{10} = \\frac{|73-8k|}{10} = 5 \\implies |73-8k|=50$.\n$73-8k = 50 \\implies 8k=23 \\implies k=23/8$.\n$73-8k = -50 \\implies 8k=123 \\implies k=123/8$.\nSum $= 146/8 = 73/4$.\n$m=73, n=4$. $m+n=77$.\n\n$\\boxed{77}$\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\BOXED{77}$, AND THE STUDENT'S FINAL ANSWER IS ALSO $\\BOXED{77}$. THESE TWO ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY REPRESENT THE SAME NUMERICAL VALUE. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 95.48,
+    "zuzycie_tokenow": {
+        "wejsciowe": 185,
+        "wyjsciowe": 1081,
+        "suma": 1266
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

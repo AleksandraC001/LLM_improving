@@ -1,0 +1,20 @@
+{
+    "task_file": "raport_zadanie_bda8187a",
+    "zadanie": "Given that $x$ is an integer such that $x\\sqrt{x}-5x-9\\sqrt{x}=35$, find $x$.",
+    "oczekiwana_odpowiedz": "We let $\\sqrt{x}=y$. Then we have  \\begin{align*}\nxy-5x-9y&=35\\quad\\Rightarrow\\\\\nxy-5x-9y+45&=35+45\\quad\\Rightarrow\\\\\nx(y-5)-9(y-5)&=80\\quad\\Rightarrow\\\\\n(x-9)(y-5)&=80.\n\\end{align*} We know $y=\\sqrt{x}$, so we resubstitute to find $(x-9)(\\sqrt{x}-5)=80$. We construct a table of all factor pairs which multiply to $80$, and proceed to solve for $x$ and $\\sqrt{x}$:\n\n\\begin{tabular}{c|c|c|c}\n$x-9$&$\\sqrt{x}-5$&$x$&$\\sqrt{x}$\\\\ \\hline\n$1$&$80$&$10$&$85$\\\\\n$2$&$40$&$11$&$45$\\\\\n$4$&$20$&$13$&$25$\\\\\n$5$&$16$&$14$&$21$\\\\\n$8$&$10$&$17$&$15$\\\\\n$10$&$8$&$19$&$13$\\\\\n$16$&$5$&$25$&$10$\\\\\n$20$&$4$&$29$&$9$\\\\\n$40$&$2$&$49$&$7$\\\\\n$80$&$1$&$89$&$6$\n\\end{tabular}\n\nOf all solutions, only one satisfies the relationship $\\sqrt{x}^2=x$, and that is $\\sqrt{x}=7$ and $x=\\boxed{49}$.",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nGiven that $x$ is an integer such that $x\\sqrt{x}-5x-9\\sqrt{x}=35$, find $x$.\n",
+        "[AI]:\nTo solve the equation \\( x\\sqrt{x} - 5x - 9\\sqrt{x} = 35 \\), we start by rearranging the equation:\n\n\\[\nx\\sqrt{x} - 5x - 9\\sqrt{x} - 35 = 0\n\\]\n\nNext, we can substitute \\( \\sqrt{x} \\) with a new variable \\( y \\). Thus, we have \\( x = y^2 \\). Substituting this into the equation gives:\n\n\\[\ny^2y - 5y^2 - 9y - 35 = 0\n\\]\n\nThis simplifies to:\n\n\\[\ny^3 - 5y^2 - 9y - 35 = 0\n\\]\n\nNow, we need to find the integer roots of this cubic equation. We can use the Rational Root Theorem, which suggests that any rational root, in this case, must be a factor of \\(-35\\). The factors of \\(-35\\) are:\n\n\\[\n\\pm 1, \\pm 5, \\pm 7, \\pm 35\n\\]\n\nWe will test these values to find a root.\n\n1. Testing \\( y = 7 \\):\n\n\\[\n7^3 - 5(7^2) - 9(7) - 35 = 343 - 245 - 63 - 35 = 0\n\\]\n\nSince this equals zero, \\( y = 7 \\) is a root. \n\nNext, we can factor the cubic polynomial \\( y^3 - 5y^2 - 9y - 35 \\) using synthetic division by \\( y - 7 \\):\n\n\\[\n\\begin{array}{r|rrrr}\n7 & 1 & -5 & -9 & -35 \\\\\n  &   & 7 & 14 & 35 \\\\\n\\hline\n  & 1 & 2 & 5 & 0 \\\\\n\\end{array}\n\\]\n\nThis gives us:\n\n\\[\ny^3 - 5y^2 - 9y - 35 = (y - 7)(y^2 + 2y + 5)\n\\]\n\nNext, we need to solve \\( y^2 + 2y + 5 = 0 \\) using the quadratic formula:\n\n\\[\ny = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a} = \\frac{-2 \\pm \\sqrt{2^2 - 4 \\cdot 1 \\cdot 5}}{2 \\cdot 1} = \\frac{-2 \\pm \\sqrt{4 - 20}}{2} = \\frac{-2 \\pm \\sqrt{-16}}{2} = \\frac{-2 \\pm 4i}{2} = -1 \\pm 2i\n\\]\n\nThe roots \\( -1 \\pm 2i \\) are not real, so the only real solution for \\( y \\) is \\( y = 7 \\).\n\nNow, recalling that \\( y = \\sqrt{x} \\), we have:\n\n\\[\n\\sqrt{x} = 7 \\implies x = 7^2 = 49\n\\]\n\nFinally, we conclude that the integer \\( x \\) that satisfies the original equation is:\n\n\\[\n\\boxed{49}\n\\]\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $X = \\BOXED{49}$, AND THE STUDENT'S FINAL ANSWER IS ALSO $X = \\BOXED{49}$. THESE TWO FINAL ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY BOTH REPRESENT THE SAME NUMERICAL VALUE. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 8.04,
+    "zuzycie_tokenow": {
+        "wejsciowe": 97,
+        "wyjsciowe": 701,
+        "suma": 798
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_rag": 0
+}

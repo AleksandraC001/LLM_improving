@@ -1,0 +1,20 @@
+{
+    "task_file": "raport_zadanie_ea65851f",
+    "zadanie": "Two numbers are said to be 'relatively prime' if their greatest common factor is 1. How many integers greater than 10 and less than 30 are relatively prime with 28?",
+    "oczekiwana_odpowiedz": "Since $28=2^2\\cdot 7$, a positive integer is relatively prime with $28$ if and only if it contains neither $2$ nor $7$ in its prime factorization. In other words, we want to count the number of integers between $11$ and $29$ inclusive which are divisible by neither $2$ nor $7$.\n\nAll of the odd numbers are not divisible by 2; there are 10 such numbers.  The only one of these that is divisible by 7 is 21, so there are $10- 1 =\\boxed{9}$ numbers between 10 and 30 that are relatively prime with 28.",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nTwo numbers are said to be 'relatively prime' if their greatest common factor is 1. How many integers greater than 10 and less than 30 are relatively prime with 28?\n",
+        "[AI]:\nTo determine how many integers greater than 10 and less than 30 are relatively prime to 28, we first need to find the prime factorization of 28.\n\nThe prime factorization of 28 is:\n\\[\n28 = 2^2 \\times 7\n\\]\nThis means that the prime factors of 28 are 2 and 7. A number is relatively prime to 28 if it does not share any of these prime factors.\n\nNext, we will identify the integers in the range from 11 to 29 (inclusive) and check which of these integers are not divisible by either 2 or 7.\n\nThe integers greater than 10 and less than 30 are:\n\\[\n11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29\n\\]\n\nNow, we will check each integer to see if it is relatively prime to 28:\n\n- **11**: Not divisible by 2 or 7 (relatively prime)\n- **12**: Divisible by 2 (not relatively prime)\n- **13**: Not divisible by 2 or 7 (relatively prime)\n- **14**: Divisible by 2 and 7 (not relatively prime)\n- **15**: Not divisible by 2 or 7 (relatively prime)\n- **16**: Divisible by 2 (not relatively prime)\n- **17**: Not divisible by 2 or 7 (relatively prime)\n- **18**: Divisible by 2 (not relatively prime)\n- **19**: Not divisible by 2 or 7 (relatively prime)\n- **20**: Divisible by 2 (not relatively prime)\n- **21**: Divisible by 7 (not relatively prime)\n- **22**: Divisible by 2 (not relatively prime)\n- **23**: Not divisible by 2 or 7 (relatively prime)\n- **24**: Divisible by 2 (not relatively prime)\n- **25**: Not divisible by 2 or 7 (relatively prime)\n- **26**: Divisible by 2 (not relatively prime)\n- **27**: Not divisible by 2 or 7 (relatively prime)\n- **28**: Divisible by 2 and 7 (not relatively prime)\n- **29**: Not divisible by 2 or 7 (relatively prime)\n\nNow, we can summarize the integers that are relatively prime to 28:\n- 11\n- 13\n- 15\n- 17\n- 19\n- 23\n- 25\n- 27\n- 29\n\nCounting these, we find there are 9 integers that are relatively prime to 28.\n\nThus, the final answer is:\n\\[\n\\boxed{9}\n\\]\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\BOXED{9}$, WHICH REPRESENTS THE NUMBER OF INTEGERS BETWEEN 11 AND 29 THAT ARE RELATIVELY PRIME TO 28. THE STUDENT'S FINAL ANSWER IS ALSO $\\BOXED{9}$, INDICATING THAT THEY HAVE CORRECTLY IDENTIFIED THE SAME NUMBER OF INTEGERS. SINCE BOTH ANSWERS ARE IDENTICAL, THEY ARE MATHEMATICALLY EQUIVALENT. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 8.19,
+    "zuzycie_tokenow": {
+        "wejsciowe": 106,
+        "wyjsciowe": 623,
+        "suma": 729
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_rag": 0
+}

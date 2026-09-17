@@ -1,0 +1,16 @@
+{
+    "task_file": "raport_zadanie_812f9eae",
+    "zadanie": "The expression\n\\[2 \\sqrt[3]{3 \\sec^2 20^\\circ \\sin^2 10^\\circ}\\]can be expressed in the form $a + b \\sec 20^\\circ,$ where $a$ and $b$ are integers.  Find the ordered pair $(a,b).$",
+    "oczekiwana_odpowiedz": "Recursion limit exceeded (Model si\u0119 zap\u0119tli\u0142)",
+    "pelny_przebieg_rozumowania": [],
+    "decyzja_sedziego": "EMPTY",
+    "wynik_ewaluacji": "ERROR",
+    "czas_wykonania": 139.8,
+    "zuzycie_tokenow": {
+        "wejsciowe": 0,
+        "wyjsciowe": 0,
+        "suma": 0
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_rag": 0
+}

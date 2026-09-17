@@ -1,0 +1,23 @@
+{
+    "task_file": "raport_zadanie_9dc87cd9",
+    "zadanie": "Two jokers are added to a $52$ card deck and the entire stack of $54$ cards is shuffled randomly.  What is the expected number of cards that will be strictly between the two jokers?",
+    "oczekiwana_odpowiedz": "Each card has an equal likelihood of being either on top of the jokers, in between them, or below the jokers.  Thus, on average, $1/3$ of them will land between the two jokers. Multiplying this by the 52 yields our answer of $\\boxed{\\frac{52}{3}}$.",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Always in each step, formulate a thought, perform an action (you must call the tool), and draw conclusions from observing that action.\n\n    TOOL USE INSTRUCTION:\n    - You have access to tools, but you decide whether to use them. PREFER delegating calculations to tools over doing \"mental math\" in plain text.\n    - Python Interpreter ('python_interpreter'): Your primary tool. Use it for most numerical and symbolic calculations.\n    - Wolfram Alpha ('ask_wolfram'): Use this for complex symbolic mathematics, difficult integrals, or if Python returns an error.\n    - Brave Search ('brave_search'): Use to find general mathematical definitions, theorems, or formulas.\n\n    ERROR HANDLING:\n    If any tool returns an error, DO NOT repeat the exact same tool call. You must analyze the error, fix the syntax/parameters, switch to an alternative tool, or solve the step manually.    \n    \n    FINAL OUTPUT:\n    When you reach the final answer return it in enclosed in a LaTeX box: \\boxed{answer}\n",
+        "[HUMAN]:\nTwo jokers are added to a $52$ card deck and the entire stack of $54$ cards is shuffled randomly.  What is the expected number of cards that will be strictly between the two jokers?\n",
+        "[AI]:\nTo find the expected number of cards strictly between the two jokers in a deck of 54 cards, we can use the properties of linearity of expectation and symmetry.\n\n### Step 1: Define the problem\nWe have a total of $n = 54$ cards. Two of these cards are jokers, and the remaining $52$ cards are non-jokers. When the cards are shuffled, the two jokers will occupy two distinct positions in the sequence of 54 cards.\n\nLet the positions of the two jokers be $J_1$ and $J_2$, where $1 \\le J_1, J_2 \\le 54$ and $J_1 \\neq J_2$.\nThe number of cards strictly between the two jokers is given by $|J_1 - J_2| - 1$.\n\n### Step 2: Use Symmetry/Indicator Variables\nA more elegant way to solve this is to consider the \"gaps\" created by the two jokers.\nWhen we place 2 jokers in a sequence of 54 cards, they divide the remaining 52 cards into 3 distinct regions (or gaps):\n1. The cards before the first joker.\n2. The cards between the two jokers.\n3. The cards after the second joker.\n\nLet $X_1$ be the number of cards in the first region, $X_2$ be the number of cards in the second region (the cards between the jokers), and $X_3$ be the number of cards in the third region.\n\nThe total number of non-joker cards is 52. Therefore:\n$$X_1 + X_2 + X_3 = 52$$\n\nBy the principle of symmetry in a random permutation, every arrangement of the 52 non-joker cards relative to the 2 jokers is equally likely. This implies that the expected number of cards in each of the three regions is the same:\n$$E[X_1] = E[X_2] = E[X_3]$$\n\n### Step 3: Calculate the Expectation\nUsing the linearity of expectation on the equation $X_1 + X_2 + X_3 = 52$:\n$$E[X_1 + X_2 + X_3] = E[52]$$\n$$E[X_1] + E[X_2] + E[X_3] = 52$$\n\nSince $E[X_1] = E[X_2] = E[X_3]$, we can substitute:\n$$3 \\cdot E[X_2] = 52$$\n$$E[X_2] = \\frac{52}{3}$$\n\n### Step 4: Final Calculation\nThe expected number of cards strictly between the two jokers is $E[X_2]$.\n$$E[X_2] = \\frac{52}{3} = 17\\frac{1}{3}$$\n\nTo verify, let's check the general formula for $k$ items of a certain type in a deck of $n$ total items. The number of gaps created is $k+1$. The expected number of items in each gap is $\\frac{n-k}{k+1}$.\nHere, $n=54$ and $k=2$.\n$$E = \\frac{54 - 2}{2 + 1} = \\frac{52}{3}$$\n\nThe result is $17.333...$\n\n\\boxed{\\frac{52}{3}}\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\FRAC{52}{3}$, AND THE STUDENT'S FINAL ANSWER IS ALSO $\\FRAC{52}{3}$. THESE TWO ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY REPRESENT THE SAME FRACTION. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 118.71,
+    "zuzycie_tokenow": {
+        "wejsciowe": 652,
+        "wyjsciowe": 776,
+        "suma": 1428
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

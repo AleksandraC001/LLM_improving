@@ -1,0 +1,19 @@
+{
+    "task_file": "raport_zadanie_7f95228a",
+    "zadanie": "A PE class has 12 students, 6 girls and 6 boys. The coach has 4 jerseys in each of 3 colors to mark 3 teams for a soccer tournament. If the coach wants at least one girl and at least one boy on each team, how many ways can he give out the jerseys? (Jerseys of the same color are indistinguishable.)",
+    "oczekiwana_odpowiedz": "Timeout - Endpoint API nie odpowiedzia\u0142 w wyznaczonym czasie",
+    "pelny_przebieg_rozumowania": [],
+    "decyzja_sedziego": "EMPTY",
+    "wynik_ewaluacji": "ERROR",
+    "czas_wykonania": 782.76,
+    "zuzycie_tokenow": {
+        "wejsciowe": 0,
+        "wyjsciowe": 0,
+        "suma": 0
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

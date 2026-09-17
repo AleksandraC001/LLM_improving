@@ -1,0 +1,20 @@
+{
+    "task_file": "raport_zadanie_cf23ed20",
+    "zadanie": "The length of a rectangle is twice its width. Given the length of the diagonal is $5\\sqrt{5}$, find the area of the rectangle.",
+    "oczekiwana_odpowiedz": "Let the width of the rectangle be $w$. Then the length of the rectangle is $2w$. We can apply the Pythagorean Theorem to two sides of this rectangle and get that the length of the diagonal is $5\\sqrt{5}=\\sqrt{w^2+(2w)^2}=\\sqrt{5 w^2}$. We therefore have $5\\sqrt{5} = w\\sqrt{5}$, which means that $w=5$. This means that the length of the rectangle is 10, so its area is $5\\cdot10=\\boxed{50}$.",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nThe length of a rectangle is twice its width. Given the length of the diagonal is $5\\sqrt{5}$, find the area of the rectangle.\n",
+        "[AI]:\nLet the width of the rectangle be denoted as \\( w \\). According to the problem, the length \\( l \\) of the rectangle is twice its width, so we can express the length as:\n\n\\[\nl = 2w\n\\]\n\nThe diagonal \\( d \\) of the rectangle can be calculated using the Pythagorean theorem, which states that for a rectangle, the diagonal is given by:\n\n\\[\nd = \\sqrt{l^2 + w^2}\n\\]\n\nSubstituting the expression for the length into the equation for the diagonal, we have:\n\n\\[\nd = \\sqrt{(2w)^2 + w^2}\n\\]\n\nThis simplifies to:\n\n\\[\nd = \\sqrt{4w^2 + w^2} = \\sqrt{5w^2} = w\\sqrt{5}\n\\]\n\nWe are given that the length of the diagonal is \\( 5\\sqrt{5} \\). Therefore, we can set up the equation:\n\n\\[\nw\\sqrt{5} = 5\\sqrt{5}\n\\]\n\nTo solve for \\( w \\), we can divide both sides by \\( \\sqrt{5} \\):\n\n\\[\nw = 5\n\\]\n\nNow that we have the width, we can find the length:\n\n\\[\nl = 2w = 2 \\times 5 = 10\n\\]\n\nNext, we can calculate the area \\( A \\) of the rectangle using the formula for the area of a rectangle, which is:\n\n\\[\nA = l \\times w\n\\]\n\nSubstituting the values we found for \\( l \\) and \\( w \\):\n\n\\[\nA = 10 \\times 5 = 50\n\\]\n\nThus, the area of the rectangle is:\n\n\\[\n\\boxed{50}\n\\]\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\BOXED{50}$, AND THE STUDENT'S FINAL ANSWER IS ALSO $\\BOXED{50}$. THESE TWO FINAL ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY REPRESENT THE SAME NUMERICAL VALUE. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 6.06,
+    "zuzycie_tokenow": {
+        "wejsciowe": 99,
+        "wyjsciowe": 375,
+        "suma": 474
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_rag": 0
+}

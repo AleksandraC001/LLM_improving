@@ -1,0 +1,20 @@
+{
+    "task_file": "raport_zadanie_a7369b0c",
+    "zadanie": "In Mathopolis, an adult is a person 21 years of age or older and a child is a person under 21 years of age.  Exactly half of the  adults in Mathopolis are female, and exactly half of the female  adults have exactly one biological child.  Nobody else has a  child, and there are no other children.  What percent of the  people of Mathopolis are children?",
+    "oczekiwana_odpowiedz": "Let the percentage of people in Mathopolis who are children be $x$. The percentage of adults is then $1-x$. Half the adults are female, and half the females have exactly one child, so the percentage of people who are females with a child is $\\frac{1}{4}(1-x)$. This percentage is equal to the percentage of children, since there is a correspondence between a mother and a child. So we have the equation $x=\\frac{1}{4}(1-x)$. Solving for $x$ yields $x=1/5$, or $\\boxed{20}$ percent.",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n\n",
+        "[HUMAN]:\nIn Mathopolis, an adult is a person 21 years of age or older and a child is a person under 21 years of age.  Exactly half of the  adults in Mathopolis are female, and exactly half of the female  adults have exactly one biological child.  Nobody else has a  child, and there are no other children.  What percent of the  people of Mathopolis are children?\n",
+        "[AI]:\nLet's denote the total number of adults in Mathopolis as \\( A \\). According to the problem, exactly half of the adults are female, so the number of female adults is:\n\n\\[\n\\text{Number of female adults} = \\frac{A}{2}\n\\]\n\nNext, we know that exactly half of the female adults have exactly one biological child. Therefore, the number of female adults with children is:\n\n\\[\n\\text{Number of female adults with children} = \\frac{1}{2} \\times \\frac{A}{2} = \\frac{A}{4}\n\\]\n\nSince each of these female adults has exactly one biological child, the total number of children in Mathopolis is equal to the number of female adults with children:\n\n\\[\n\\text{Number of children} = \\frac{A}{4}\n\\]\n\nNow, we can find the total population of Mathopolis, which is the sum of the number of adults and the number of children:\n\n\\[\n\\text{Total population} = A + \\frac{A}{4}\n\\]\n\nTo combine these terms, we can express \\( A \\) as \\( \\frac{4A}{4} \\):\n\n\\[\n\\text{Total population} = \\frac{4A}{4} + \\frac{A}{4} = \\frac{5A}{4}\n\\]\n\nNext, we want to find the percentage of the total population that are children. The percentage of children is given by the formula:\n\n\\[\n\\text{Percentage of children} = \\left( \\frac{\\text{Number of children}}{\\text{Total population}} \\right) \\times 100\n\\]\n\nSubstituting the values we have:\n\n\\[\n\\text{Percentage of children} = \\left( \\frac{\\frac{A}{4}}{\\frac{5A}{4}} \\right) \\times 100\n\\]\n\nThe \\( \\frac{A}{4} \\) in the numerator and the \\( \\frac{5A}{4} \\) in the denominator can be simplified:\n\n\\[\n\\text{Percentage of children} = \\left( \\frac{1}{5} \\right) \\times 100 = 20\n\\]\n\nThus, the percentage of the people of Mathopolis that are children is:\n\n\\[\n\\boxed{20}\n\\]\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\BOXED{20}$ PERCENT, AND THE STUDENT'S FINAL ANSWER IS ALSO $\\BOXED{20}$. THESE TWO ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY REPRESENT THE SAME NUMERICAL VALUE. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 52.82,
+    "zuzycie_tokenow": {
+        "wejsciowe": 150,
+        "wyjsciowe": 483,
+        "suma": 633
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_rag": 0
+}

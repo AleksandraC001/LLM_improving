@@ -1,0 +1,19 @@
+{
+    "task_file": "raport_zadanie_e34dc188",
+    "zadanie": "Carlos has chosen twelve different compact discs (CDs) he would like to buy. Four are rap music, five are country music, and three are heavy metal music. Carlos then randomly selects five of the 12 CDs to purchase. What is the probability that his purchase includes at least one CD from each of the three categories? Express your answer as a common fraction.",
+    "oczekiwana_odpowiedz": "Recursion limit exceeded (Model si\u0119 zap\u0119tli\u0142)",
+    "pelny_przebieg_rozumowania": [],
+    "decyzja_sedziego": "EMPTY",
+    "wynik_ewaluacji": "ERROR",
+    "czas_wykonania": 187.1,
+    "zuzycie_tokenow": {
+        "wejsciowe": 0,
+        "wyjsciowe": 0,
+        "suma": 0
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

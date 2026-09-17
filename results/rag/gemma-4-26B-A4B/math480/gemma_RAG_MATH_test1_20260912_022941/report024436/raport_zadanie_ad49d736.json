@@ -1,0 +1,23 @@
+{
+    "task_file": "raport_zadanie_ad49d736",
+    "zadanie": "The real numbers $a,$ $b,$ $c,$ and $d$ satisfy\n\\[a^2 + b^2 + c^2 + 519 = d + 36 \\sqrt{10a + 14b + 22c - d}.\\]Find $a + b + c + d.$",
+    "oczekiwana_odpowiedz": "Let $x = \\sqrt{10a + 14b + 22c - d}.$  Then $x^2 = 10a + 14b + 22c - d,$ so $d = 10a + 14b + 22c - x^2.$  Then we can write the given equation as\n\\[a^2 + b^2 + c^2 + 519 = 10a + 14b + 22c - x^2 + 36x.\\]Hence,\n\\[a^2 + b^2 + c^2 + x^2 - 10a - 14b - 22c - 36x + 519 = 0.\\]Completing the square in $a,$ $b,$ $c,$ and $x,$ we get\n\\[(a - 5)^2 + (b - 7)^2 + (c - 11)^2 + (x - 18)^2 = 0.\\]Therefore, $a = 5,$ $b = 7,$ $c = 11,$ and $x = 18.$  Then\n\\[d = 10a + 14b + 22c - x^2 = 66,\\]so $a + b + c + d = 5 + 7 + 11 + 66 = \\boxed{89}.$",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n\n\n    CONTEXT INSTRUCTIONS:\n    Below you will find a [HELPFUL CONTEXT FROM RAG] block. It contains a solved mathematical problems that shares similar logic of the solution to your current problem.\n    - Analize given examples and use their context to understand the required methodology, the solution concept, theorems, or algebraic tricks BEFORE proceeding with your solving process.\n\n    [HELPFUL CONTEXT FROM RAG]\n    \n    --- USEFUL EXAMPLE ---\nProblem: The real numbers $a,$ $b,$ $c,$ and $d$ satisfy\n\\[a^2 + b^2 + c^2 + 1 = d + \\sqrt{a + b + c - d}.\\]Find $d.$\nSolution: Let $x = \\sqrt{a + b + c - d}.$  Then $x^2 = a + b + c - d,$ so $d = a + b + c - x^2,$ and we can write\n\\[a^2 + b^2 + c^2 + 1 = a + b + c - x^2 + x.\\]Then\n\\[a^2 - a + b^2 - b + c^2 - c + x^2 - x + 1 = 0.\\]Completing the square in $a,$ $b,$ $c,$ and $x,$ we get\n\\[\\left( a - \\frac{1}{2} \\right)^2 + \\left( b - \\frac{1}{2} \\right)^2 + \\left( c - \\frac{1}{2} \\right)^2 + \\left( x - \\frac{1}{2} \\right)^2 = 0.\\]Hence, $a = b = c = x = \\frac{1}{2},$ so\n\\[d = a + b + c - x^2 = \\frac{1}{2} + \\frac{1}{2} + \\frac{1}{2} - \\frac{1}{4} = \\boxed{\\frac{5}{4}}.\\]\n\n\n    \n    [/HELPFUL CONTEXT FROM RAG]\n",
+        "[HUMAN]:\nThe real numbers $a,$ $b,$ $c,$ and $d$ satisfy\n\\[a^2 + b^2 + c^2 + 519 = d + 36 \\sqrt{10a + 14b + 22c - d}.\\]Find $a + b + c + d.$\n",
+        "[AI]:\nTo solve the given equation:\n\\[a^2 + b^2 + c^2 + 519 = d + 36 \\sqrt{10a + 14b + 22c - d}\\]\nLet $x = \\sqrt{10a + 14b + 22c - d}$. Then $x^2 = 10a + 14b + 22c - d$, which implies $d = 10a + 14b + 22c - x^2$.\nSubstituting this expression for $d$ into the original equation:\n\\[a^2 + b^2 + c^2 + 519 = (10a + 14b + 22c - x^2) + 36x\\]\nRearrange all terms to one side to form a sum of squares:\n\\[a^2 - 10a + b^2 - 14b + c^2 - 22c + x^2 - 36x + 519 = 0\\]\nTo complete the square for each variable, we use the formula $(v - k)^2 = v^2 - 2kv + k^2$.\n1. For $a$: $a^2 - 10a \\implies (a - 5)^2 = a^2 - 10a + 25$.\n2. For $b$: $b^2 - 14b \\implies (b - 7)^2 = b^2 - 14b + 49$.\n3. For $c$: $c^2 - 22c \\implies (c - 11)^2 = c^2 - 22c + 121$.\n4. For $x$: $x^2 - 36x \\implies (x - 18)^2 = x^2 - 36x + 324$.\n\nNow, let's sum the constants required for these squares:\n$25 + 49 + 121 + 324 = 519$.\nSince the constant in our equation is exactly $519$, we can rewrite the equation as:\n\\[(a - 5)^2 + (b - 7)^2 + (c - 11)^2 + (x - 18)^2 = 0\\]\nFor the sum of squares of real numbers to be zero, each individual term must be zero:\n$a - 5 = 0 \\implies a = 5$\n$b - 7 = 0 \\implies b = 7$\n$c - 11 = 0 \\implies c = 11$\n$x - 18 = 0 \\implies x = 18$\n\nNow we find $d$ using the relation $d = 10a + 14b + 22c - x^2$:\n$d = 10(5) + 14(7) + 22(11) - (18)^2$\n$d = 50 + 98 + 242 - 324$\n$d = 390 - 324$\n$d = 66$\n\nFinally, we calculate $a + b + c + d$:\n$a + b + c + d = 5 + 7 + 11 + 66 = 89$\n\n\\boxed{89}\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\BOXED{89}$, AND THE STUDENT'S FINAL ANSWER IS ALSO $89$. THESE TWO ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY REPRESENT THE SAME NUMERICAL VALUE. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 541.21,
+    "zuzycie_tokenow": {
+        "wejsciowe": 592,
+        "wyjsciowe": 775,
+        "suma": 1367
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 1
+}

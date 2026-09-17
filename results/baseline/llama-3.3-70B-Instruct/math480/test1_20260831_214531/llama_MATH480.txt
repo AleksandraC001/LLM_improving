@@ -1,0 +1,126 @@
+Evaluating /home/olacz/Downloads/MATH480/prealgebra on Level 5
+Znaleziono 80 zadań do przetworzenia.
+
+--- Zakończono ewaluację ---
+Końcowe statystyki: RIGHT: 63, WRONG: 16, ERROR: 1
+
+--- PODSUMOWANIE WYDAJNOŚCI ---
+Ilość rozwiązanych zadań: 80
+Ilość zadań z poprawnym wynikiem: 63
+Ilość zadań z niepoprawnym wynikiem: 16
+Ilość przebiegów zakończonych błędem wykonania: 1
+Errors %: 1.25
+Dokładność:  78.75
+Mediana czasu na zadanie: 147.38 s
+Średni czas na zadanie:   165.07 s
+Średnio tokenów IN:       145
+Średnio tokenów OUT:      490
+Średnio tokenów ALL:      636
+Ilość wywołań narzędzi: 0
+Ile razy rag dodał kontekst: 0
+
+Evaluating /home/olacz/Downloads/MATH480/algebra on Level 5
+Znaleziono 80 zadań do przetworzenia.
+
+--- Zakończono ewaluację ---
+Końcowe statystyki: RIGHT: 70, WRONG: 10
+
+--- PODSUMOWANIE WYDAJNOŚCI ---
+Ilość rozwiązanych zadań: 80
+Ilość zadań z poprawnym wynikiem: 70
+Ilość zadań z niepoprawnym wynikiem: 10
+Ilość przebiegów zakończonych błędem wykonania: 0
+Errors %: 0.0
+Dokładność:  87.50
+Mediana czasu na zadanie: 192.02 s
+Średni czas na zadanie:   214.27 s
+Średnio tokenów IN:       149
+Średnio tokenów OUT:      621
+Średnio tokenów ALL:      769
+Ilość wywołań narzędzi: 0
+Ile razy rag dodał kontekst: 0
+
+Evaluating /home/olacz/Downloads/MATH480/precalculus on Level 5
+Znaleziono 80 zadań do przetworzenia.
+
+--- Zakończono ewaluację ---
+Końcowe statystyki: RIGHT: 29, WRONG: 50, ERROR: 1
+
+--- PODSUMOWANIE WYDAJNOŚCI ---
+Ilość rozwiązanych zadań: 80
+Ilość zadań z poprawnym wynikiem: 29
+Ilość zadań z niepoprawnym wynikiem: 50
+Ilość przebiegów zakończonych błędem wykonania: 1
+Errors %: 1.25
+Dokładność:  36.25
+Mediana czasu na zadanie: 412.31 s
+Średni czas na zadanie:   421.98 s
+Średnio tokenów IN:       183
+Średnio tokenów OUT:      1105
+Średnio tokenów ALL:      1288
+Ilość wywołań narzędzi: 0
+Ile razy rag dodał kontekst: 0
+
+Evaluating /home/olacz/Downloads/MATH480/counting_and_probability on Level 5
+Znaleziono 80 zadań do przetworzenia.
+
+--- Zakończono ewaluację ---
+Końcowe statystyki: WRONG: 37, RIGHT: 41, ERROR: 2
+
+--- PODSUMOWANIE WYDAJNOŚCI ---
+Ilość rozwiązanych zadań: 80
+Ilość zadań z poprawnym wynikiem: 41
+Ilość zadań z niepoprawnym wynikiem: 37
+Ilość przebiegów zakończonych błędem wykonania: 2
+Errors %: 2.5
+Dokładność:  51.25
+Mediana czasu na zadanie: 229.29 s
+Średni czas na zadanie:   248.41 s
+Średnio tokenów IN:       150
+Średnio tokenów OUT:      717
+Średnio tokenów ALL:      867
+Ilość wywołań narzędzi: 0
+Ile razy rag dodał kontekst: 0
+
+Evaluating /home/olacz/Downloads/MATH480/number_theory on Level 5
+Znaleziono 80 zadań do przetworzenia.
+
+--- Zakończono ewaluację ---
+Końcowe statystyki: RIGHT: 41, WRONG: 39
+
+--- PODSUMOWANIE WYDAJNOŚCI ---
+Ilość rozwiązanych zadań: 80
+Ilość zadań z poprawnym wynikiem: 41
+Ilość zadań z niepoprawnym wynikiem: 39
+Ilość przebiegów zakończonych błędem wykonania: 0
+Errors %: 0.0
+Dokładność:  51.25
+Mediana czasu na zadanie: 248.38 s
+Średni czas na zadanie:   282.99 s
+Średnio tokenów IN:       138
+Średnio tokenów OUT:      819
+Średnio tokenów ALL:      957
+Ilość wywołań narzędzi: 0
+Ile razy rag dodał kontekst: 0
+
+Evaluating /home/olacz/Downloads/MATH480/intermediate_algebra on Level 5
+Znaleziono 80 zadań do przetworzenia.
+
+--- Zakończono ewaluację ---
+Końcowe statystyki: WRONG: 62, RIGHT: 18
+
+--- PODSUMOWANIE WYDAJNOŚCI ---
+Ilość rozwiązanych zadań: 80
+Ilość zadań z poprawnym wynikiem: 18
+Ilość zadań z niepoprawnym wynikiem: 62
+Ilość przebiegów zakończonych błędem wykonania: 0
+Errors %: 0.0
+Dokładność:  22.50
+Mediana czasu na zadanie: 370.05 s
+Średni czas na zadanie:   399.65 s
+Średnio tokenów IN:       171
+Średnio tokenów OUT:      1060
+Średnio tokenów ALL:      1231
+Ilość wywołań narzędzi: 0
+Ile razy rag dodał kontekst: 0
+

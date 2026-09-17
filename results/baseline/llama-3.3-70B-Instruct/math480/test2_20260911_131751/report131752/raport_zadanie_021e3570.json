@@ -1,0 +1,23 @@
+{
+    "task_file": "raport_zadanie_021e3570",
+    "zadanie": "A square is drawn such that one of its sides coincides with the line $y = 7$, and so that the endpoints of this side lie on the parabola $y = 2x^2 + 8x + 4$. What is the area of the square?",
+    "oczekiwana_odpowiedz": "The points of intersection of the line $y = 7$ and $y = 2x^2 + 8x + 4$, by substitution, are found when $2x^2 + 8x + 4 = 7 \\Longrightarrow 2x^2 + 8x - 3 = 0$. By the quadratic formula, $$x = \\frac{-8 \\pm \\sqrt{8^2 - 4 \\cdot 2 \\cdot (-3)}}{2 \\cdot 2}.$$We want to find the difference of these roots to find the difference of the x-coordinates of the point of intersection, which will give a side length of the square. The difference is given by $\\frac{\\sqrt{8^2 - 4 \\cdot 2 \\cdot (-3)}}2 = \\frac{\\sqrt{88}}{2} = \\sqrt{22}$. Thus, the area of the square is $\\boxed{22}$.",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nA square is drawn such that one of its sides coincides with the line $y = 7$, and so that the endpoints of this side lie on the parabola $y = 2x^2 + 8x + 4$. What is the area of the square?\n",
+        "[AI]:\n## Step 1: Find the equation of the parabola\nThe equation of the parabola is given as $y = 2x^2 + 8x + 4$.\n\n## Step 2: Find the intersection points of the parabola and the line\nTo find the intersection points, we need to set the equation of the parabola equal to the equation of the line, which is $y = 7$. So, we have $2x^2 + 8x + 4 = 7$. Simplifying this equation gives $2x^2 + 8x - 3 = 0$.\n\n## Step 3: Solve the quadratic equation\nWe can solve the quadratic equation $2x^2 + 8x - 3 = 0$ using the quadratic formula: $x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$. In this case, $a = 2$, $b = 8$, and $c = -3$. Plugging these values into the formula gives $x = \\frac{-8 \\pm \\sqrt{8^2 - 4(2)(-3)}}{2(2)} = \\frac{-8 \\pm \\sqrt{64 + 24}}{4} = \\frac{-8 \\pm \\sqrt{88}}{4} = \\frac{-8 \\pm 2\\sqrt{22}}{4} = \\frac{-4 \\pm \\sqrt{22}}{2}$.\n\n## Step 4: Find the side length of the square\nThe side length of the square is the difference between the two intersection points, which is $\\left|\\frac{-4 + \\sqrt{22}}{2} - \\frac{-4 - \\sqrt{22}}{2}\\right| = \\left|\\frac{-4 + \\sqrt{22} + 4 + \\sqrt{22}}{2}\\right| = \\left|\\frac{2\\sqrt{22}}{2}\\right| = \\sqrt{22}$.\n\n## Step 5: Find the area of the square\nThe area of the square is the square of its side length, which is $(\\sqrt{22})^2 = 22$.\n\nThe final answer is: $\\boxed{22}$\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\BOXED{22}$, AND THE STUDENT'S FINAL ANSWER IS ALSO $\\BOXED{22}$. THESE TWO ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY REPRESENT THE SAME NUMERICAL VALUE. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 168.88,
+    "zuzycie_tokenow": {
+        "wejsciowe": 147,
+        "wyjsciowe": 485,
+        "suma": 632
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

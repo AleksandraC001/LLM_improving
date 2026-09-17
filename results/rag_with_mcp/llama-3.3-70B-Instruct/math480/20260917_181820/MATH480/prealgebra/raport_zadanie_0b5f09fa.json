@@ -1,0 +1,19 @@
+{
+    "task_file": "raport_zadanie_0b5f09fa",
+    "zadanie": "Before taking his last test in a class, the arithmetic mean of Brian's  test scores is 91. He has determined that if he scores 98 on his last test, the arithmetic mean of all his test scores will be exactly 92. How many tests, including the last test, does Brian take for this class?",
+    "oczekiwana_odpowiedz": "API Connection Error: OpenAIConnectionError('Connection error.'); cause=APIConnectionError('Connection error.')",
+    "pelny_przebieg_rozumowania": [],
+    "decyzja_sedziego": "EMPTY",
+    "wynik_ewaluacji": "ERROR",
+    "czas_wykonania": 14.68,
+    "zuzycie_tokenow": {
+        "wejsciowe": 0,
+        "wyjsciowe": 0,
+        "suma": 0
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

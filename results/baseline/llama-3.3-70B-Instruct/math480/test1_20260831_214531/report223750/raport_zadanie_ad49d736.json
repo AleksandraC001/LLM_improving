@@ -1,0 +1,20 @@
+{
+    "task_file": "raport_zadanie_ad49d736",
+    "zadanie": "The real numbers $a,$ $b,$ $c,$ and $d$ satisfy\n\\[a^2 + b^2 + c^2 + 519 = d + 36 \\sqrt{10a + 14b + 22c - d}.\\]Find $a + b + c + d.$",
+    "oczekiwana_odpowiedz": "Let $x = \\sqrt{10a + 14b + 22c - d}.$  Then $x^2 = 10a + 14b + 22c - d,$ so $d = 10a + 14b + 22c - x^2.$  Then we can write the given equation as\n\\[a^2 + b^2 + c^2 + 519 = 10a + 14b + 22c - x^2 + 36x.\\]Hence,\n\\[a^2 + b^2 + c^2 + x^2 - 10a - 14b - 22c - 36x + 519 = 0.\\]Completing the square in $a,$ $b,$ $c,$ and $x,$ we get\n\\[(a - 5)^2 + (b - 7)^2 + (c - 11)^2 + (x - 18)^2 = 0.\\]Therefore, $a = 5,$ $b = 7,$ $c = 11,$ and $x = 18.$  Then\n\\[d = 10a + 14b + 22c - x^2 = 66,\\]so $a + b + c + d = 5 + 7 + 11 + 66 = \\boxed{89}.$",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nThe real numbers $a,$ $b,$ $c,$ and $d$ satisfy\n\\[a^2 + b^2 + c^2 + 519 = d + 36 \\sqrt{10a + 14b + 22c - d}.\\]Find $a + b + c + d.$\n",
+        "[AI]:\n## Step 1: Understand the given equation and the task\nWe are given the equation $a^2 + b^2 + c^2 + 519 = d + 36 \\sqrt{10a + 14b + 22c - d}$ and we need to find the value of $a + b + c + d$.\n\n## Step 2: Denote $\\sqrt{10a + 14b + 22c - d}$ as $x$ for simplification\nLet $x = \\sqrt{10a + 14b + 22c - d}$. This allows us to rewrite the given equation in terms of $x$.\n\n## Step 3: Express $d$ in terms of $x$\nFrom the definition of $x$, we have $x^2 = 10a + 14b + 22c - d$, which implies $d = 10a + 14b + 22c - x^2$.\n\n## Step 4: Substitute $d$ in the original equation\nSubstituting $d = 10a + 14b + 22c - x^2$ into the original equation gives $a^2 + b^2 + c^2 + 519 = (10a + 14b + 22c - x^2) + 36x$.\n\n## Step 5: Rearrange the equation to set the stage for completing the square\nRearranging, we get $a^2 - 10a + b^2 - 14b + c^2 - 22c + x^2 - 36x = -519$.\n\n## Step 6: Complete the square for $a$, $b$, $c$, and $x$\nCompleting the square for each variable, we add and subtract the necessary constants to make each group a perfect square: $(a^2 - 10a + 25) + (b^2 - 14b + 49) + (c^2 - 22c + 121) + (x^2 - 36x + 324) = -519 + 25 + 49 + 121 + 324$.\n\n## Step 7: Simplify the completed square equation\nThis simplifies to $(a - 5)^2 + (b - 7)^2 + (c - 11)^2 + (x - 18)^2 = 0$.\n\n## Step 8: Analyze the implications of the simplified equation\nSince the sum of squares equals zero, each individual term must be zero. Thus, $a - 5 = 0$, $b - 7 = 0$, $c - 11 = 0$, and $x - 18 = 0$.\n\n## Step 9: Solve for $a$, $b$, $c$, and $x$\nSolving these equations gives $a = 5$, $b = 7$, $c = 11$, and $x = 18$.\n\n## Step 10: Find $d$ using the value of $x$\nSubstituting $x = 18$ into $x = \\sqrt{10a + 14b + 22c - d}$ gives $18 = \\sqrt{10(5) + 14(7) + 22(11) - d}$. Solving for $d$ yields $d = 10(5) + 14(7) + 22(11) - 18^2 = 50 + 98 + 242 - 324 = 66$.\n\n## Step 11: Calculate $a + b + c + d$\nFinally, $a + b + c + d = 5 + 7 + 11 + 66 = 89$.\n\nThe final answer is: $\\boxed{89}$\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\BOXED{89}$, AND THE STUDENT'S FINAL ANSWER IS ALSO $89$. THESE TWO FINAL ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY REPRESENT THE SAME NUMERICAL VALUE. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 284.66,
+    "zuzycie_tokenow": {
+        "wejsciowe": 154,
+        "wyjsciowe": 804,
+        "suma": 958
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_rag": 0
+}

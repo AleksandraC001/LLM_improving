@@ -1,0 +1,23 @@
+{
+    "task_file": "raport_zadanie_fe1d0d07",
+    "zadanie": "Let $a$ and $b$ be the solutions of the equation $2x^2-10x+5=0$. What is the value of $(2a-3)(4b-6)$?",
+    "oczekiwana_odpowiedz": "Expanding the desired expression, we get $(2a-3)(4b-6)=8ab-12a-12b+18=8ab-12(a+b)+18$. This implies that we need the sum and product of the roots of the given equation, which are $10/2=5$ and $5/2$, respectively. Thus, the desired expression equals $\\left(8\\cdot \\frac{5}{2}\\right) - (12 \\cdot 5) + 18 = \\boxed{-22}$.",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nLet $a$ and $b$ be the solutions of the equation $2x^2-10x+5=0$. What is the value of $(2a-3)(4b-6)$?\n",
+        "[AI]:\n## Step 1: Identify the given equation and the relation between its roots and coefficients.\nThe given equation is $2x^2 - 10x + 5 = 0$. For a quadratic equation of the form $ax^2 + bx + c = 0$, the sum of the roots $a$ and $b$ is given by $-b/a$ and the product of the roots is given by $c/a$.\n\n## Step 2: Calculate the sum and product of the roots of the given equation.\nFor the equation $2x^2 - 10x + 5 = 0$, the sum of the roots $a + b = -(-10)/2 = 10/2 = 5$ and the product of the roots $ab = 5/2$.\n\n## Step 3: Express the given expression in terms of the sum and product of the roots.\nWe need to find $(2a - 3)(4b - 6)$. Expanding this gives $8ab - 12a - 12b + 18$. We know $ab = 5/2$ and $a + b = 5$.\n\n## Step 4: Substitute the values of the sum and product of the roots into the expression.\nSubstituting $ab = 5/2$ and $a + b = 5$ into the expression $8ab - 12(a + b) + 18$ gives $8(5/2) - 12(5) + 18$.\n\n## Step 5: Simplify the expression.\n$8(5/2) = 20$, $-12(5) = -60$, and then we add $18$. So, $20 - 60 + 18 = -22$.\n\nThe final answer is: $\\boxed{-22}$\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\BOXED{-22}$, AND THE STUDENT'S FINAL ANSWER IS ALSO $\\BOXED{-22}$. THESE TWO ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY REPRESENT THE SAME NUMERICAL VALUE. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 127.01,
+    "zuzycie_tokenow": {
+        "wejsciowe": 132,
+        "wyjsciowe": 384,
+        "suma": 516
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

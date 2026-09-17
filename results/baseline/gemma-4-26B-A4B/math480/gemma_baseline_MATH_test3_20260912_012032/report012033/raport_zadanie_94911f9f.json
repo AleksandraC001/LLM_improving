@@ -1,0 +1,23 @@
+{
+    "task_file": "raport_zadanie_94911f9f",
+    "zadanie": "There are thirty-five red, yellow, orange, and white marbles in a bag. If half the number of red marbles equals two less than the number of yellow marbles, equals a third the number of orange marbles, and equals a third of three more than the number of white marbles, how many red marbles are there?",
+    "oczekiwana_odpowiedz": "Call the number of red marbles $a$, the number of yellow marbles $b$, the number of orange marbles $c$, and the number of white marbles $d$. We can express the information given in the problem by the following system of linear equations:  \\begin{align*}\na+b+c+d &= 35\\\\\n\\frac{a}{2} = b - 2 = \\frac{c}{3} &= \\frac{d+3}{3}\n\\end{align*} Using the second expression, we can solve for $a$, $c$, and $d$ in terms of $b$:\n\\begin{align*}\na &= 2b - 4,\\\\\nc &= 3b - 6, \\\\\nd &= 3b - 9\n\\end{align*} Putting these values into the first equation gives $2b - 4 + b + 3b - 6 + 3b - 9 = 35$, so $b = 6$. Because $a = 2b - 4$, $a = 12 - 4 = \\boxed{8}$.",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nThere are thirty-five red, yellow, orange, and white marbles in a bag. If half the number of red marbles equals two less than the number of yellow marbles, equals a third the number of orange marbles, and equals a third of three more than the number of white marbles, how many red marbles are there?\n",
+        "[AI]:\nTo find the number of red marbles, we first define variables for each color:\nLet $R$ be the number of red marbles.\nLet $Y$ be the number of yellow marbles.\nLet $O$ be the number of orange marbles.\nLet $W$ be the number of white marbles.\n\nWe are given that the total number of marbles is 35:\n$R + Y + O + W = 35$\n\nThe problem provides several relationships based on \"half the number of red marbles\" ($\\frac{1}{2}R$):\n\n1. **Relationship with Yellow marbles:**\n   $\\frac{1}{2}R = Y - 2$\n   Solving for $Y$: $Y = \\frac{1}{2}R + 2$\n\n2. **Relationship with Orange marbles:**\n   $\\frac{1}{2}R = \\frac{1}{3}O$\n   Solving for $O$: $O = 3 \\times (\\frac{1}{2}R) = \\frac{3}{2}R$\n\n3. **Relationship with White marbles:**\n   $\\frac{1}{2}R = \\frac{1}{3}(W + 3)$\n   Multiply both sides by 3: $\\frac{3}{2}R = W + 3$\n   Solving for $W$: $W = \\frac{3}{2}R - 3$\n\nNow, we substitute the expressions for $Y$, $O$, and $W$ (all in terms of $R$) into the total sum equation:\n$R + (\\frac{1}{2}R + 2) + (\\frac{3}{2}R) + (\\frac{3}{2}R - 3) = 35$\n\nCombine the $R$ terms:\n$R + \\frac{1}{2}R + \\frac{3}{2}R + \\frac{3}{2}R = R + \\frac{7}{2}R = \\frac{9}{2}R$\n\nCombine the constant terms:\n$2 - 3 = -1$\n\nSo the equation becomes:\n$\\frac{9}{2}R - 1 = 35$\n\nAdd 1 to both sides:\n$\\frac{9}{2}R = 36$\n\nMultiply both sides by 2:\n$9R = 72$\n\nDivide by 9:\n$R = 8$\n\n**Verification:**\nIf $R = 8$:\n$Y = \\frac{1}{2}(8) + 2 = 4 + 2 = 6$\n$O = \\frac{3}{2}(8) = 12$\n$W = \\frac{3}{2}(8) - 3 = 12 - 3 = 9$\n\nCheck the sum: $8 + 6 + 12 + 9 = 35$. The values are consistent with the problem.\n\nThe number of red marbles is 8.\n\n\\boxed{8}\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\BOXED{8}$, AND THE STUDENT'S FINAL ANSWER IS ALSO $\\BOXED{8}$. THESE TWO ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY REPRESENT THE SAME NUMERICAL VALUE. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 89.63,
+    "zuzycie_tokenow": {
+        "wejsciowe": 139,
+        "wyjsciowe": 661,
+        "suma": 800
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

@@ -1,0 +1,23 @@
+{
+    "task_file": "raport_zadanie_bcce2267",
+    "zadanie": "Find the smallest positive integer $x$ (measured in degrees) such that\n\\[\\tan (x - 160^{\\circ}) = \\frac{\\cos50^{\\circ}}{1 - \\sin50^{\\circ}}.\\]",
+    "oczekiwana_odpowiedz": "We can write $\\frac{\\cos 50^\\circ}{1 - \\sin 50^\\circ} = \\frac{\\sin 40^\\circ}{1 - \\cos 40^\\circ}.$  By the half-angle formula,\n\\[\\frac{\\sin 40^\\circ}{1 - \\cos 40^\\circ} = \\frac{1}{\\tan 20^\\circ} = \\tan 70^\\circ.\\]We want\n\\[\\tan (x - 160^\\circ) = \\tan 70^\\circ,\\]so $x - 160^\\circ - 70^\\circ = 180^\\circ n$ for some integer $n,$ or\n\\[x = 180^\\circ n + 230^\\circ.\\]Taking $n = -1$ to get the smallest positive value, we get $x = \\boxed{50^\\circ}.$",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nFind the smallest positive integer $x$ (measured in degrees) such that\n\\[\\tan (x - 160^{\\circ}) = \\frac{\\cos50^{\\circ}}{1 - \\sin50^{\\circ}}.\\]\n",
+        "[AI]:\nTo find the smallest positive integer $x$ such that $\\tan(x - 160^\\circ) = \\frac{\\cos 50^\\circ}{1 - \\sin 50^\\circ}$, we first simplify the expression on the right side.\n\nLet $\\theta = 50^\\circ$. The expression is $\\frac{\\cos \\theta}{1 - \\sin \\theta}$.\nWe can use trigonometric identities to simplify this. Recall that:\n$\\cos \\theta = \\sin(90^\\circ - \\theta)$\n$\\sin \\theta = \\cos(90^\\circ - \\theta)$\n\nHowever, a more direct approach is to use the half-angle formulas or the tangent identity.\nRecall the identity: $\\tan\\left(\\frac{90^\\circ - \\theta}{2}\\right) = \\frac{\\sin(90^\\circ - \\theta)}{1 + \\cos(90^\\circ - \\theta)}$ is not quite right. Let's use:\n$\\cos \\theta = \\sin(90^\\circ - \\theta)$\n$1 - \\sin \\theta = 1 - \\cos(90^\\circ - \\theta)$\n\nUsing the identities $\\sin A = 2 \\sin \\frac{A}{2} \\cos \\frac{A}{2}$ and $1 - \\cos A = 2 \\sin^2 \\frac{A}{2}$:\n$\\frac{\\cos \\theta}{1 - \\sin \\theta} = \\frac{\\sin(90^\\circ - \\theta)}{1 - \\cos(90^\\circ - \\theta)} = \\frac{2 \\sin(\\frac{90^\\circ - \\theta}{2}) \\cos(\\frac{90^\\circ - \\theta}{2})}{2 \\sin^2(\\frac{90^\\circ - \\theta}{2})} = \\frac{\\cos(\\frac{90^\\circ - \\theta}{2})}{\\sin(\\frac{90^\\circ - \\theta}{2})} = \\cot\\left(\\frac{90^\\circ - \\theta}{2}\\right)$\n\nSubstituting $\\theta = 50^\\circ$:\n$\\frac{\\cos 50^\\circ}{1 - \\sin 50^\\circ} = \\cot\\left(\\frac{90^\\circ - 50^\\circ}{2}\\right) = \\cot(20^\\circ)$\n\nWe know that $\\cot(20^\\circ) = \\tan(90^\\circ - 20^\\circ) = \\tan(70^\\circ)$.\nSo the equation becomes:\n$\\tan(x - 160^\\circ) = \\tan(70^\\circ)$\n\nThe general solution for $\\tan A = \\tan B$ is $A = B + 180^\\circ k$ for any integer $k$.\n$x - 160^\\circ = 70^\\circ + 180^\\circ k$\n$x = 230^\\circ + 180^\\circ k$\n\nWe are looking for the smallest positive integer $x$.\nIf $k = 0$, $x = 230^\\circ$.\nIf $k = -1$, $x = 230^\\circ - 180^\\circ = 50^\\circ$.\nIf $k = -2$, $x = 230^\\circ - 360^\\circ = -130^\\circ$ (not positive).\n\nLet's check $x = 50^\\circ$:\n$\\tan(50^\\circ - 160^\\circ) = \\tan(-110^\\circ)$\n$\\tan(-110^\\circ) = \\tan(-110^\\circ + 180^\\circ) = \\tan(70^\\circ)$\nThis matches our simplified expression $\\tan(70^\\circ)$.\n\nIs there any smaller positive integer?\nThe values of $x$ are $\\dots, -130^\\circ, 50^\\circ, 230^\\circ, 410^\\circ, \\dots$\nThe smallest positive integer is $50$.\n\nFinal check of the simplification:\n$\\frac{\\cos 50^\\circ}{1 - \\sin 50^\\circ} = \\frac{\\sin 40^\\circ}{1 - \\cos 40^\\circ} = \\frac{2 \\sin 20^\\circ \\cos 20^\\circ}{2 \\sin^2 20^\\circ} = \\cot 20^\\circ = \\tan 70^\\circ$.\n$\\tan(x - 160^\\circ) = \\tan 70^\\circ \\implies x - 160^\\circ = 70^\\circ + 180^\\circ k \\implies x = 230^\\circ + 180^\\circ k$.\nFor $k = -1$, $x = 50^\\circ$.\n\n\\boxed{50}\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\BOXED{50^\\CIRC}$, AND THE STUDENT'S FINAL ANSWER IS ALSO $\\BOXED{50}$. THESE TWO ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY REPRESENT THE SAME VALUE IN DEGREES. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 138.71,
+    "zuzycie_tokenow": {
+        "wejsciowe": 123,
+        "wyjsciowe": 1083,
+        "suma": 1206
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

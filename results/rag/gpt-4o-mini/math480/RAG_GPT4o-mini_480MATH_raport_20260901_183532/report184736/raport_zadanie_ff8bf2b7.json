@@ -1,0 +1,20 @@
+{
+    "task_file": "raport_zadanie_ff8bf2b7",
+    "zadanie": "Suppose that $*(n) = \\left\\{ n-2, n+2, 2n, \\frac{n}{2} \\right\\}$. For example, $*(6) = \\{4, 8, 12, 3\\}$. For how many distinct integers $n$ does $*(n)$ have exactly three distinct elements?",
+    "oczekiwana_odpowiedz": "To have three distinct elements, two of $n-2$, $n+2$, $2n$, and $\\frac{n}{2}$ must be equal. It is clear that $n-2$ can never equal $n+2$. However, any other equality pairing among the four is possible, so we simply check for distinctness. If $2n = \\frac{n}{2}$, the solution is $n= 0$. If $n+ 2 = 2n$, $n = 2$. If $n - 2 = 2n$, $n = -2$. If $\\frac{n}{2} = n - 2$, $n = 4$. Finally, if $\\frac{n}{2} = n+ 2$, $n = -4$. Thus, there are $\\boxed{5}$ such $n$.",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n\n",
+        "[HUMAN]:\nSuppose that $*(n) = \\left\\{ n-2, n+2, 2n, \\frac{n}{2} \\right\\}$. For example, $*(6) = \\{4, 8, 12, 3\\}$. For how many distinct integers $n$ does $*(n)$ have exactly three distinct elements?\n",
+        "[AI]:\nTo solve the problem, we need to analyze the set \\( *(n) = \\{ n-2, n+2, 2n, \\frac{n}{2} \\} \\) and determine under what conditions it contains exactly three distinct elements.\n\nWe start by identifying the four expressions in the set:\n\n1. \\( n - 2 \\)\n2. \\( n + 2 \\)\n3. \\( 2n \\)\n4. \\( \\frac{n}{2} \\)\n\nFor the set to have exactly three distinct elements, at least one of the four expressions must be equal to another. We will consider the possible equalities between the elements.\n\n### Case 1: \\( n - 2 = n + 2 \\)\nThis case leads to a contradiction since \\( n - 2 \\) cannot equal \\( n + 2 \\).\n\n### Case 2: \\( n - 2 = 2n \\)\nSolving this gives:\n\\[\nn - 2 = 2n \\implies -2 = n \\implies n = -2\n\\]\nSubstituting \\( n = -2 \\) into \\( *(n) \\):\n\\[\n*(n) = \\{ -4, 0, -4, -1 \\} = \\{ -4, 0, -1 \\}\n\\]\nThis set has three distinct elements.\n\n### Case 3: \\( n - 2 = \\frac{n}{2} \\)\nSolving this gives:\n\\[\nn - 2 = \\frac{n}{2} \\implies 2n - 4 = n \\implies n = 4\n\\]\nSubstituting \\( n = 4 \\) into \\( *(n) \\):\n\\[\n*(n) = \\{ 2, 6, 8, 2 \\} = \\{ 2, 6, 8 \\}\n\\]\nThis set has three distinct elements.\n\n### Case 4: \\( n + 2 = 2n \\)\nSolving this gives:\n\\[\nn + 2 = 2n \\implies 2 = n\n\\]\nSubstituting \\( n = 2 \\) into \\( *(n) \\):\n\\[\n*(n) = \\{ 0, 4, 4, 1 \\} = \\{ 0, 4, 1 \\}\n\\]\nThis set has three distinct elements.\n\n### Case 5: \\( n + 2 = \\frac{n}{2} \\)\nSolving this gives:\n\\[\nn + 2 = \\frac{n}{2} \\implies 2n + 4 = n \\implies n = -4\n\\]\nSubstituting \\( n = -4 \\) into \\( *(n) \\):\n\\[\n*(n) = \\{ -6, -2, -8, -2 \\} = \\{ -6, -2, -8 \\}\n\\]\nThis set has three distinct elements.\n\n### Case 6: \\( 2n = \\frac{n}{2} \\)\nThis case leads to a contradiction since \\( 2n \\) cannot equal \\( \\frac{n}{2} \\) for any non-zero \\( n \\).\n\n### Summary of Solutions\nThe values of \\( n \\) that yield exactly three distinct elements in \\( *(n) \\) are:\n- \\( n = -2 \\)\n- \\( n = 4 \\)\n- \\( n = 2 \\)\n- \\( n = -4 \\)\n\nThus, we have found four distinct integers \\( n \\) that satisfy the condition.\n\nThe final answer is:\n\\[\n\\boxed{4}\n\\]\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\BOXED{5}$, INDICATING THAT THERE ARE 5 VALUES OF $N$ THAT SATISFY THE CONDITION. THE STUDENT'S FINAL ANSWER IS $\\BOXED{4}$, WHICH IS THE NUMBER OF DISTINCT INTEGERS $N$ THAT THEY FOUND TO SATISFY THE CONDITION. THESE TWO FINAL ANSWERS ARE NOT MATHEMATICALLY EQUIVALENT, AS THE CORRECT SOLUTION STATES THERE ARE 5 SUCH VALUES, WHILE THE STUDENT'S SOLUTION CLAIMS THERE ARE ONLY 4. \n\nVERDICT: NO",
+    "wynik_ewaluacji": "WRONG",
+    "czas_wykonania": 58.69,
+    "zuzycie_tokenow": {
+        "wejsciowe": 144,
+        "wyjsciowe": 767,
+        "suma": 911
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_rag": 0
+}

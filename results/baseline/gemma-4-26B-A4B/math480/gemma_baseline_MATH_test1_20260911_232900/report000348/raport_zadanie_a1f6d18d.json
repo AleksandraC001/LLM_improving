@@ -1,0 +1,23 @@
+{
+    "task_file": "raport_zadanie_a1f6d18d",
+    "zadanie": "Find the equation of the plane which bisects the angle between the planes $3x - 6y + 2z + 5 = 0$ and $4x - 12y + 3z - 3 = 0,$ and which contains the point $(-5,-1,-5).$  Enter your answer in the form\n\\[Ax + By + Cz + D = 0,\\]where $A,$ $B,$ $C,$ $D$ are integers such that $A > 0$ and $\\gcd(|A|,|B|,|C|,|D|) = 1.$",
+    "oczekiwana_odpowiedz": "Suppose $P = (x,y,z)$ is a point that lies on a plane that bisects the angle between the planes $3x - 6y + 2z + 5 = 0$ and $4x - 12y + 3z - 3 = 0.$  (Note that there are two such bisecting planes.)  Then the distance from $P$ to both planes must be equal, so\n\\[\\frac{|3x - 6y + 2z + 5|}{\\sqrt{3^2 + (-6)^2 + 2^2}} = \\frac{|4x - 12y + 3z - 3|}{\\sqrt{4^2 + (-12)^2 + 3^2}}.\\]Then\n\\[\\frac{|3x - 6y + 2z + 5|}{7} = \\frac{|4x - 12y + 3z - 3|}{13}.\\]We want to remove the absolute value signs, in order to obtain the equation of a plane.  Checking the sign of both sides when $(x,y,z) = (-5,-1,-5)$ leads us to\n\\[\\frac{3x - 6y + 2z + 5}{7} = \\frac{4x - 12y + 3z - 3}{13}.\\]This simplifies to $\\boxed{11x + 6y + 5z + 86 = 0}.$",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nFind the equation of the plane which bisects the angle between the planes $3x - 6y + 2z + 5 = 0$ and $4x - 12y + 3z - 3 = 0,$ and which contains the point $(-5,-1,-5).$  Enter your answer in the form\n\\[Ax + By + Cz + D = 0,\\]where $A,$ $B,$ $C,$ $D$ are integers such that $A > 0$ and $\\gcd(|A|,|B|,|C|,|D|) = 1.$\n",
+        "[AI]:\nTo find the equation of the plane that bisects the angle between two given planes, we first find the equations of the two angle bisector planes.\n\nThe given planes are:\n$P_1: 3x - 6y + 2z + 5 = 0$\n$P_2: 4x - 12y + 3z - 3 = 0$\n\nThe equation of the angle bisector planes is given by:\n\\[ \\frac{3x - 6y + 2z + 5}{\\sqrt{3^2 + (-6)^2 + 2^2}} = \\pm \\frac{4x - 12y + 3z - 3}{\\sqrt{4^2 + (-12)^2 + 3^2}} \\]\n\nCalculate the denominators:\n$\\sqrt{3^2 + (-6)^2 + 2^2} = \\sqrt{9 + 36 + 4} = \\sqrt{49} = 7$\n$\\sqrt{4^2 + (-12)^2 + 3^2} = \\sqrt{16 + 144 + 9} = \\sqrt{169} = 13$\n\nSo the equations are:\n\\[ \\frac{3x - 6y + 2z + 5}{7} = \\pm \\frac{4x - 12y + 3z - 3}{13} \\]\n\nThis gives two possible planes:\n1) $13(3x - 6y + 2z + 5) = 7(4x - 12y + 3z - 3)$\n$39x - 78y + 26z + 65 = 28x - 84y + 21z - 21$\n$11x + 6y + 5z + 86 = 0$\n\n2) $13(3x - 6y + 2z + 5) = -7(4x - 12y + 3z - 3)$\n$39x - 78y + 26z + 65 = -28x + 84y - 21z + 21$\n$67x - 162y + 47z + 44 = 0$\n\nWe are given that the required plane contains the point $(-5, -1, -5)$. We test this point in both equations.\n\nFor Plane 1:\n$11(-5) + 6(-1) + 5(-5) + 86 = -55 - 6 - 25 + 86 = -86 + 86 = 0$\nThis plane contains the point.\n\nFor Plane 2:\n$67(-5) - 162(-1) + 47(-5) + 44 = -335 + 162 - 235 + 44 = -364 \\neq 0$\nThis plane does not contain the point.\n\nThus, the equation of the plane is $11x + 6y + 5z + 86 = 0$.\nWe check the conditions:\n$A = 11 > 0$.\n$\\gcd(|11|, |6|, |5|, |86|) = \\gcd(11, 6, 5, 86)$.\nSince 11 and 5 are prime and do not divide the others, the $\\gcd$ is 1.\n\nThe equation is in the form $Ax + By + Cz + D = 0$.\n\n\\boxed{11x + 6y + 5z + 86 = 0}\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\BOXED{11X + 6Y + 5Z + 86 = 0}$. THE STUDENT'S FINAL ANSWER IS ALSO $\\BOXED{11X + 6Y + 5Z + 86 = 0}$. THESE TWO ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY REPRESENT THE SAME PLANE EQUATION. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 281.0,
+    "zuzycie_tokenow": {
+        "wejsciowe": 202,
+        "wyjsciowe": 837,
+        "suma": 1039
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

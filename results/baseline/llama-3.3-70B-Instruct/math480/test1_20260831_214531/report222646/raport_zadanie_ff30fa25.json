@@ -1,0 +1,20 @@
+{
+    "task_file": "raport_zadanie_ff30fa25",
+    "zadanie": "What is the largest negative integer $x$ satisfying $$24x \\equiv 15 \\pmod{1199}~?$$",
+    "oczekiwana_odpowiedz": "To start, notice that $24\\cdot 50 = 1200\\equiv 1\\pmod{1199}$ (in other words, $24$ and $50$ are inverses modulo $1199$).\n\nTo solve the congruence $24x\\equiv 15\\pmod{1199}$, we multiply both sides by $50$ and simplify: \\begin{align*}\n50\\cdot 24x &\\equiv 50\\cdot 15 \\pmod{1199} \\\\\nx &\\equiv 750 \\pmod{1199}\n\\end{align*}This process can also be reversed (by multiplying both sides by $50^{-1}=24$), so the solutions to the original congruence are precisely the same as the solutions to $x\\equiv 750\\pmod{1199}$. The largest negative solution is $750-1199 = \\boxed{-449}$.",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nWhat is the largest negative integer $x$ satisfying $$24x \\equiv 15 \\pmod{1199}~?$$\n",
+        "[AI]:\n## Step 1: Understand the problem\nWe are given the congruence $24x \\equiv 15 \\pmod{1199}$ and need to find the largest negative integer $x$ that satisfies this congruence.\n\n## Step 2: Simplify the congruence\nTo simplify the given congruence, we can try to find the multiplicative inverse of $24$ modulo $1199$ or simplify the equation in another manner. However, since $24$ and $1199$ are relatively prime, the inverse exists.\n\n## Step 3: Find the multiplicative inverse of 24 modulo 1199\nTo find the inverse of $24$ mod $1199$, we look for a number $a$ such that $24a \\equiv 1 \\pmod{1199}$. This can be done using the Extended Euclidean Algorithm.\n\n## Step 4: Apply the Extended Euclidean Algorithm\nThe Extended Euclidean Algorithm allows us to find integers $a$ and $b$ such that $24a + 1199b = \\gcd(24, 1199)$. Since $24$ and $1199$ are relatively prime, $\\gcd(24, 1199) = 1$. Thus, we are looking for $a$ and $b$ such that $24a + 1199b = 1$.\n\n## Step 5: Perform the Extended Euclidean Algorithm calculations\nCalculating using the Extended Euclidean Algorithm:\n- $1199 = 24 \\times 49 + 23$\n- $24 = 23 \\times 1 + 1$\n- Thus, $\\gcd(24, 1199) = 1$, which means an inverse exists.\n\n## Step 6: Back-substitute to find the inverse of 24 mod 1199\nFrom the second equation, $1 = 24 - 23 \\times 1$. Substituting $23 = 1199 - 24 \\times 49$ into the equation gives $1 = 24 - (1199 - 24 \\times 49)$. Simplifying yields $1 = 24 \\times 50 - 1199$. Thus, $24 \\times 50 \\equiv 1 \\pmod{1199}$, meaning $50$ is the multiplicative inverse of $24$ modulo $1199$.\n\n## Step 7: Use the inverse to solve the congruence\nNow, multiply both sides of the original congruence by $50$ (the inverse of $24$ mod $1199$) to solve for $x$: $50 \\times 24x \\equiv 50 \\times 15 \\pmod{1199}$. This simplifies to $x \\equiv 750 \\pmod{1199}$.\n\n## Step 8: Find the largest negative integer satisfying the congruence\nThe solutions will be of the form $x = 750 + 1199k$, where $k$ is an integer. To find the largest negative integer $x$, we need to find the largest $k$ that makes $x$ negative. Setting $k = -1$ gives $x = 750 - 1199 = -449$.\n\nThe final answer is: $\\boxed{-449}$\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\BOXED{-449}$, AND THE STUDENT'S FINAL ANSWER IS ALSO $-449$. THESE TWO FINAL ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY REPRESENT THE SAME INTEGER VALUE. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 241.93,
+    "zuzycie_tokenow": {
+        "wejsciowe": 115,
+        "wyjsciowe": 680,
+        "suma": 795
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_rag": 0
+}

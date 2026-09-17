@@ -1,0 +1,23 @@
+{
+    "task_file": "raport_zadanie_f862f036",
+    "zadanie": "An isosceles trapezoid has an inscribed circle tangent to each of its four sides. The radius of the circle is $3$, and the area of the trapezoid is $72$. Let the parallel sides of the trapezoid have lengths $r$ and $s$, with $r \\neq s$. Find $r^2+s^2$",
+    "oczekiwana_odpowiedz": "\\boxed{504}",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nAn isosceles trapezoid has an inscribed circle tangent to each of its four sides. The radius of the circle is $3$, and the area of the trapezoid is $72$. Let the parallel sides of the trapezoid have lengths $r$ and $s$, with $r \\neq s$. Find $r^2+s^2$\n",
+        "[AI]:\nTo solve this problem, let the lengths of the parallel sides (bases) of the isosceles trapezoid be $r$ and $s$. Let the height of the trapezoid be $h$.\n\n1.  **Determine the height $h$:**\n    Since a circle is inscribed in the trapezoid, the height of the trapezoid is equal to the diameter of the circle. Given the radius is $3$, the height is:\n    $$h = 2 \\times 3 = 6$$\n\n2.  **Use the area formula:**\n    The area $A$ of a trapezoid is given by $A = \\frac{r+s}{2} \\cdot h$. We are given $A = 72$ and $h = 6$:\n    $$72 = \\frac{r+s}{2} \\cdot 6$$\n    $$72 = 3(r+s)$$\n    $$r+s = 24$$\n\n3.  **Use the property of tangential quadrilaterals:**\n    For a quadrilateral to have an inscribed circle (a tangential quadrilateral), the sum of the lengths of opposite sides must be equal. Let the non-parallel sides (legs) be $L$. Since it is an isosceles trapezoid, both legs have length $L$.\n    The sum of the bases is $r+s$, and the sum of the legs is $L+L = 2L$.\n    Therefore:\n    $$r+s = 2L$$\n    Substituting $r+s = 24$:\n    $$24 = 2L \\implies L = 12$$\n\n4.  **Relate the sides using the Pythagorean theorem:**\n    In an isosceles trapezoid, if we drop perpendiculars from the ends of the shorter base to the longer base, we form a right triangle with the leg $L$ as the hypotenuse. The height is $h=6$, and the base of this triangle is $\\frac{|r-s|}{2}$.\n    By the Pythagorean theorem:\n    $$h^2 + \\left(\\frac{r-s}{2}\\right)^2 = L^2$$\n    $$6^2 + \\left(\\frac{r-s}{2}\\right)^2 = 12^2$$\n    $$36 + \\left(\\frac{r-s}{2}\\right)^2 = 144$$\n    $$\\left(\\frac{r-s}{2}\\right)^2 = 108$$\n    $$\\frac{(r-s)^2}{4} = 108$$\n    $$(r-s)^2 = 432$$\n\n5.  **Calculate $r^2 + s^2$:**\n    We have the following equations:\n    1) $r+s = 24$\n    2) $(r-s)^2 = 432$\n    \n    We know that $(r+s)^2 = r^2 + s^2 + 2rs$ and $(r-s)^2 = r^2 + s^2 - 2rs$.\n    Adding these two equations:\n    $$(r+s)^2 + (r-s)^2 = (r^2 + s^2 + 2rs) + (r^2 + s^2 - 2rs)$$\n    $$(r+s)^2 + (r-s)^2 = 2(r^2 + s^2)$$\n    \n    Substitute the known values:\n    $$24^2 + 432 = 2(r^2 + s^2)$$\n    $$576 + 432 = 2(r^2 + s^2)$$\n    $$1008 = 2(r^2 + s^2)$$\n    $$r^2 + s^2 = 504$$\n\nFinal check:\n$r+s=24$, $r-s = \\sqrt{432} = 12\\sqrt{3}$.\n$2r = 24 + 12\\sqrt{3} \\implies r = 12 + 6\\sqrt{3}$\n$2s = 24 - 12\\sqrt{3} \\implies s = 12 - 6\\sqrt{3}$\n$r^2 = (12+6\\sqrt{3})^2 = 144 + 108 + 144\\sqrt{3} = 252 + 144\\sqrt{3}$\n$s^2 = (12-6\\sqrt{3})^2 = 144 + 108 - 144\\sqrt{3} = 252 - 144\\sqrt{3}$\n$r^2 + s^2 = 252 + 252 = 504$.\n\n\\boxed{504}\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\BOXED{504}$, AND THE STUDENT'S FINAL ANSWER IS ALSO $\\BOXED{504}$. THESE TWO ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY REPRESENT THE SAME NUMERICAL VALUE. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 403.45,
+    "zuzycie_tokenow": {
+        "wejsciowe": 146,
+        "wyjsciowe": 1079,
+        "suma": 1225
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

@@ -1,0 +1,150 @@
+Evaluating MATH480/algebra
+Znaleziono 1 zadań do przetworzenia.
+
+--- Zakończono ewaluację ---
+Końcowe statystyki: RIGHT: 1
+
+--- PODSUMOWANIE WYDAJNOŚCI ---
+Ilość rozwiązanych zadań: 1
+Ilość zadań z poprawnym wynikiem: 1
+Ilość zadań z niepoprawnym wynikiem: 0
+Ilość przebiegów zakończonych błędem wykonania: 0
+Errors %: 0.0
+Dokładność:  100.00
+Mediana czasu na zadanie: 3.44 s
+Średni czas na zadanie:   3.44 s
+Średnio tokenów IN:       350
+Średnio tokenów OUT:      246
+Średnio tokenów ALL:      596
+Ilość rozwiązań z użyciem narzędzi: 0
+Ilość wywołań narzędzi(ogólnie): 0
+Ilość wywołań pythona: 0
+Ilość wywołań wolfram: 0
+Ilość wywołań brave: 0
+Ile razy rag dodał kontekst: 1
+
+Evaluating MATH480/counting_and_probability
+Znaleziono 1 zadań do przetworzenia.
+
+--- Zakończono ewaluację ---
+Końcowe statystyki: RIGHT: 1
+
+--- PODSUMOWANIE WYDAJNOŚCI ---
+Ilość rozwiązanych zadań: 1
+Ilość zadań z poprawnym wynikiem: 1
+Ilość zadań z niepoprawnym wynikiem: 0
+Ilość przebiegów zakończonych błędem wykonania: 0
+Errors %: 0.0
+Dokładność:  100.00
+Mediana czasu na zadanie: 10.54 s
+Średni czas na zadanie:   10.54 s
+Średnio tokenów IN:       222
+Średnio tokenów OUT:      1510
+Średnio tokenów ALL:      1732
+Ilość rozwiązań z użyciem narzędzi: 0
+Ilość wywołań narzędzi(ogólnie): 0
+Ilość wywołań pythona: 0
+Ilość wywołań wolfram: 0
+Ilość wywołań brave: 0
+Ile razy rag dodał kontekst: 0
+
+Evaluating MATH480/intermediate_algebra
+Znaleziono 1 zadań do przetworzenia.
+
+--- Zakończono ewaluację ---
+Końcowe statystyki: WRONG: 1
+
+--- PODSUMOWANIE WYDAJNOŚCI ---
+Ilość rozwiązanych zadań: 1
+Ilość zadań z poprawnym wynikiem: 0
+Ilość zadań z niepoprawnym wynikiem: 1
+Ilość przebiegów zakończonych błędem wykonania: 0
+Errors %: 0.0
+Dokładność:  0.00
+Mediana czasu na zadanie: 8.68 s
+Średni czas na zadanie:   8.68 s
+Średnio tokenów IN:       1579
+Średnio tokenów OUT:      1206
+Średnio tokenów ALL:      2785
+Ilość rozwiązań z użyciem narzędzi: 0
+Ilość wywołań narzędzi(ogólnie): 0
+Ilość wywołań pythona: 0
+Ilość wywołań wolfram: 0
+Ilość wywołań brave: 0
+Ile razy rag dodał kontekst: 1
+
+Evaluating MATH480/number_theory
+Znaleziono 1 zadań do przetworzenia.
+
+--- Zakończono ewaluację ---
+Końcowe statystyki: RIGHT: 1
+
+--- PODSUMOWANIE WYDAJNOŚCI ---
+Ilość rozwiązanych zadań: 1
+Ilość zadań z poprawnym wynikiem: 1
+Ilość zadań z niepoprawnym wynikiem: 0
+Ilość przebiegów zakończonych błędem wykonania: 0
+Errors %: 0.0
+Dokładność:  100.00
+Mediana czasu na zadanie: 4.86 s
+Średni czas na zadanie:   4.86 s
+Średnio tokenów IN:       302
+Średnio tokenów OUT:      689
+Średnio tokenów ALL:      991
+Ilość rozwiązań z użyciem narzędzi: 0
+Ilość wywołań narzędzi(ogólnie): 0
+Ilość wywołań pythona: 0
+Ilość wywołań wolfram: 0
+Ilość wywołań brave: 0
+Ile razy rag dodał kontekst: 1
+
+Evaluating MATH480/prealgebra
+Znaleziono 1 zadań do przetworzenia.
+
+--- Zakończono ewaluację ---
+Końcowe statystyki: WRONG: 1
+
+--- PODSUMOWANIE WYDAJNOŚCI ---
+Ilość rozwiązanych zadań: 1
+Ilość zadań z poprawnym wynikiem: 0
+Ilość zadań z niepoprawnym wynikiem: 1
+Ilość przebiegów zakończonych błędem wykonania: 0
+Errors %: 0.0
+Dokładność:  0.00
+Mediana czasu na zadanie: 6.13 s
+Średni czas na zadanie:   6.13 s
+Średnio tokenów IN:       185
+Średnio tokenów OUT:      701
+Średnio tokenów ALL:      886
+Ilość rozwiązań z użyciem narzędzi: 0
+Ilość wywołań narzędzi(ogólnie): 0
+Ilość wywołań pythona: 0
+Ilość wywołań wolfram: 0
+Ilość wywołań brave: 0
+Ile razy rag dodał kontekst: 0
+
+Evaluating MATH480/precalculus
+Znaleziono 1 zadań do przetworzenia.
+
+--- Zakończono ewaluację ---
+Końcowe statystyki: RIGHT: 1
+
+--- PODSUMOWANIE WYDAJNOŚCI ---
+Ilość rozwiązanych zadań: 1
+Ilość zadań z poprawnym wynikiem: 1
+Ilość zadań z niepoprawnym wynikiem: 0
+Ilość przebiegów zakończonych błędem wykonania: 0
+Errors %: 0.0
+Dokładność:  100.00
+Mediana czasu na zadanie: 7.42 s
+Średni czas na zadanie:   7.42 s
+Średnio tokenów IN:       623
+Średnio tokenów OUT:      1087
+Średnio tokenów ALL:      1710
+Ilość rozwiązań z użyciem narzędzi: 0
+Ilość wywołań narzędzi(ogólnie): 0
+Ilość wywołań pythona: 0
+Ilość wywołań wolfram: 0
+Ilość wywołań brave: 0
+Ile razy rag dodał kontekst: 1
+

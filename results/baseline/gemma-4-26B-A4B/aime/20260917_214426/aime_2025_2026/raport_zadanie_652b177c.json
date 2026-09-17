@@ -1,0 +1,23 @@
+{
+    "task_file": "raport_zadanie_652b177c",
+    "zadanie": "An urn contains $n$ marbles. Each marble is either red or blue, and there are at least $7$ marbles of each color. When $7$ marbles are drawn randomly from the urn without replacement, the probability that exactly $4$ of them are red equals the probability that exactly $5$ of them are red. Find the sum of the five least values of $n$ for which this is possible.",
+    "oczekiwana_odpowiedz": "\\boxed{190}",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nAn urn contains $n$ marbles. Each marble is either red or blue, and there are at least $7$ marbles of each color. When $7$ marbles are drawn randomly from the urn without replacement, the probability that exactly $4$ of them are red equals the probability that exactly $5$ of them are red. Find the sum of the five least values of $n$ for which this is possible.\n",
+        "[AI]:\nTo solve this problem, let $n$ be the total number of marbles in the urn. Let $r$ be the number of red marbles and $b$ be the number of blue marbles. We are given that $r \\ge 7$ and $b \\ge 7$, and $n = r + b$.\n\nWhen 7 marbles are drawn without replacement, the number of red marbles drawn follows a hypergeometric distribution. The probability that exactly $k$ red marbles are drawn is given by:\n$$P(X = k) = \\frac{\\binom{r}{k} \\binom{b}{7-k}}{\\binom{n}{7}}$$\n\nWe are given that $P(X = 4) = P(X = 5)$. Substituting the formula:\n$$\\frac{\\binom{r}{4} \\binom{b}{3}}{\\binom{n}{7}} = \\frac{\\binom{r}{5} \\binom{b}{2}}{\\binom{n}{7}}$$\nSince $\\binom{n}{7} \\neq 0$, we can simplify this to:\n$$\\binom{r}{4} \\binom{b}{3} = \\binom{r}{5} \\binom{b}{2}$$\n\nExpanding the binomial coefficients:\n$$\\frac{r!}{4!(r-4)!} \\cdot \\frac{b!}{3!(b-3)!} = \\frac{r!}{5!(r-5)!} \\cdot \\frac{b!}{2!(b-2)!}$$\nDivide both sides by $r!$ and $b!$:\n$$\\frac{1}{4!(r-4)! \\cdot 3!(b-3)!} = \\frac{1}{5!(r-5)! \\cdot 2!(b-2)!}$$\nRearrange the terms:\n$$\\frac{5!}{4!} \\cdot \\frac{(r-5)!}{(r-4)!} = \\frac{3!}{2!} \\cdot \\frac{(b-3)!}{(b-2)!}$$\nSimplify the factorials:\n$$5 \\cdot \\frac{1}{r-4} = 3 \\cdot \\frac{1}{b-2}$$\n$$\\frac{5}{r-4} = \\frac{3}{b-2}$$\nCross-multiply to solve for $r$ and $b$:\n$$5(b-2) = 3(r-4)$$\n$$5b - 10 = 3r - 12$$\n$$3r - 5b = 2$$\n\nWe need to find the values of $n = r + b$ subject to the constraints $r \\ge 7$ and $b \\ge 7$.\nFrom the equation $3r = 5b + 2$, we can express $r$ as $r = \\frac{5b+2}{3}$.\nFor $r$ to be an integer, $5b + 2 \\equiv 0 \\pmod{3}$.\n$2b + 2 \\equiv 0 \\pmod{3} \\implies 2b \\equiv -2 \\equiv 1 \\pmod{3} \\implies b \\equiv 2 \\pmod{3}$.\n\nLet $b = 3k + 2$ for some integer $k$.\nThen $r = \\frac{5(3k+2)+2}{3} = \\frac{15k+12}{3} = 5k + 4$.\nThe constraints are:\n1. $b \\ge 7 \\implies 3k + 2 \\ge 7 \\implies 3k \\ge 5 \\implies k \\ge 2$.\n2. $r \\ge 7 \\implies 5k + 4 \\ge 7 \\implies 5k \\ge 3 \\implies k \\ge 1$.\n\nThus, the smallest possible value for $k$ is $k=2$.\nWe calculate the values of $n = r + b = (5k+4) + (3k+2) = 8k + 6$ for $k \\ge 2$:\n- For $k=2$: $b = 3(2)+2 = 8$, $r = 5(2)+4 = 14$. $n = 8+14 = 22$.\n- For $k=3$: $b = 3(3)+2 = 11$, $r = 5(3)+4 = 19$. $n = 11+19 = 30$.\n- For $k=4$: $b = 3(4)+2 = 14$, $r = 5(4)+4 = 24$. $n = 14+24 = 38$.\n- For $k=5$: $b = 3(5)+2 = 17$, $r = 5(5)+4 = 29$. $n = 17+29 = 46$.\n- For $k=6$: $b = 3(6)+2 = 20$, $r = 5(6)+4 = 34$. $n = 20+34 = 54$.\n\nThe five least values of $n$ are $22, 30, 38, 46, 54$.\nThe sum of these values is:\n$22 + 30 + 38 + 46 + 54 = 190$.\n\nAlternatively, the sum of an arithmetic progression is $\\frac{5}{2}(22 + 54) = \\frac{5}{2}(76) = 5 \\times 38 = 190$.\n\n\\boxed{190}\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\BOXED{190}$, AND THE STUDENT'S FINAL ANSWER IS ALSO $\\BOXED{190}$. THESE TWO ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY REPRESENT THE SAME NUMERICAL VALUE. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 141.38,
+    "zuzycie_tokenow": {
+        "wejsciowe": 159,
+        "wyjsciowe": 1248,
+        "suma": 1407
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

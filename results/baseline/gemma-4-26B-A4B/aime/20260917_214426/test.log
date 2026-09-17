@@ -1,0 +1,25 @@
+Evaluating aime_2025_2026
+Znaleziono 54 zadań do przetworzenia.
+
+--- Zakończono ewaluację ---
+Końcowe statystyki: RIGHT: 27, WRONG: 27
+
+--- PODSUMOWANIE WYDAJNOŚCI ---
+Ilość rozwiązanych zadań: 54
+Ilość zadań z poprawnym wynikiem: 27
+Ilość zadań z niepoprawnym wynikiem: 27
+Ilość przebiegów zakończonych błędem wykonania: 0
+Errors %: 0.0
+Dokładność:  50.00
+Mediana czasu na zadanie: 262.07 s
+Średni czas na zadanie:   229.47 s
+Średnio tokenów IN:       189
+Średnio tokenów OUT:      1764
+Średnio tokenów ALL:      1952
+Ilość rozwiązań z użyciem narzędzi: 0
+Ilość wywołań narzędzi(ogólnie): 0
+Ilość wywołań pythona: 0
+Ilość wywołań wolfram: 0
+Ilość wywołań brave: 0
+Ile razy rag dodał kontekst: 0
+

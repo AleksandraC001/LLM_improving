@@ -1,0 +1,23 @@
+{
+    "task_file": "raport_zadanie_a8347356",
+    "zadanie": "Exits on a highway are numbered consecutively from 1 to 50. The distance from exit 41 to exit 50 is 100 km. If each exit is at least 6 km from the next exit, what is the longest possible distance, in kilometers, between exit 47 and exit 48?",
+    "oczekiwana_odpowiedz": "To make the distance between exit $47$ and exit $48$ as long as possible, we want to make the distance between any other two consecutive exits as short as possible (that is, $6$ km). There are nine distances between exits from exit $41$ to exit $50$; eight that we want to make as short as possible and one that we want to make as long as possible. Thus, the longest possible distance is $100 - 8 \\cdot 6 = \\boxed{52}$ km.",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n\n",
+        "[HUMAN]:\nExits on a highway are numbered consecutively from 1 to 50. The distance from exit 41 to exit 50 is 100 km. If each exit is at least 6 km from the next exit, what is the longest possible distance, in kilometers, between exit 47 and exit 48?\n",
+        "[AI]:\nTo find the longest possible distance between exit 47 and exit 48, we first need to understand the constraints given by the problem.\n\n1. Exits are numbered from 1 to 50.\n2. The distance from exit 41 to exit 50 is 100 km.\n3. Each exit is at least 6 km from the next exit.\n\nGiven that the distance from exit 41 to exit 50 is 100 km and there are 9 exits in this range (41, 42, 43, 44, 45, 46, 47, 48, 49, 50), we want to maximize the distance between exit 47 and exit 48. To do this, we should minimize the distances between the other exits as much as possible, since the total distance is fixed at 100 km.\n\nThe minimum distance between any two consecutive exits is 6 km. To maximize the distance between exit 47 and exit 48, we should assume that all other exits have this minimum distance between them.\n\nThere are 9 exits from 41 to 50, meaning there are 9 intervals between these exits. If we minimize the distance of 8 of these intervals to 6 km each, we can calculate the maximum possible distance for the remaining interval (between exit 47 and exit 48).\n\nMinimum total distance for 8 intervals = 8 * 6 km = 48 km\n\nSince the total distance from exit 41 to exit 50 is 100 km, the maximum distance we can allocate to the remaining interval (between exit 47 and exit 48) would be:\n\n100 km - 48 km = 52 km\n\nTherefore, the longest possible distance between exit 47 and exit 48, given the constraints, is 52 km.\n\nThe final answer is: $\\boxed{52}$\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\BOXED{52}$ KM, AND THE STUDENT'S FINAL ANSWER IS ALSO $52$ KM. THESE TWO ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY REPRESENT THE SAME NUMERICAL VALUE. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 213.2,
+    "zuzycie_tokenow": {
+        "wejsciowe": 153,
+        "wyjsciowe": 376,
+        "suma": 529
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

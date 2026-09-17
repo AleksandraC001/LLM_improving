@@ -1,0 +1,23 @@
+{
+    "task_file": "raport_zadanie_69a2cb8a",
+    "zadanie": "Three couples go to the movie theater. They want to seat people together for maximum enjoyment, but instead they randomly file into a row with six seats. What is the probability that they sit in a socially optimal configuration, in which each person is sitting next to his or her partner?",
+    "oczekiwana_odpowiedz": "There are $\\binom{6}{2} = 15$ ways to pick people to fill the first two seats, and 3 ways for those two people to be a couple, for a probability $3/15 = 1/5$ that the first two seats are a couple. If a couple is seated successfully, there are $\\binom{4}{2} = 6$ ways to seat people in the next two seats, and 2 ways for those two people to be a couple (you could pick either of the two remaining couples), for a probability $2/6 = 1/3$ that those two seats are a couple. If the first two couples are seated successfully, the last two seats will be guaranteed to go to the last couple. So, the probability that everything goes right is $1/5 \\cdot 1/3 = \\boxed{\\frac{1}{15}}$.",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nThree couples go to the movie theater. They want to seat people together for maximum enjoyment, but instead they randomly file into a row with six seats. What is the probability that they sit in a socially optimal configuration, in which each person is sitting next to his or her partner?\n",
+        "[AI]:\n## Step 1: Understand the problem and what is being asked\nWe need to find the probability that three couples (six people) randomly sitting in a row of six seats will sit in a socially optimal configuration, meaning each person is sitting next to their partner.\n\n## Step 2: Determine the total number of possible seating arrangements\nSince there are six seats and six people, the total number of possible arrangements without any restrictions is 6!. This is because there are 6 choices for the first seat, 5 for the second, 4 for the third, and so on, until there is only 1 choice for the last seat.\n\n## Step 3: Calculate the total number of possible seating arrangements\n6! = 6 * 5 * 4 * 3 * 2 * 1 = 720.\n\n## Step 4: Determine the number of socially optimal seating arrangements\nFor the couples to sit together, we can think of each couple as a single unit. There are 3 couples, so there are 3! ways to arrange these units. However, within each couple, there are 2 ways to arrange the individuals (since either partner can sit on the left). So, for each of the 3! arrangements, there are 2^3 ways to arrange the individuals within the couples.\n\n## Step 5: Calculate the number of socially optimal seating arrangements\n3! = 3 * 2 * 1 = 6. And 2^3 = 8. So, the total number of socially optimal arrangements is 6 * 8 = 48.\n\n## Step 6: Calculate the probability of a socially optimal configuration\nThe probability is the number of socially optimal arrangements divided by the total number of possible arrangements. So, the probability = 48 / 720.\n\n## Step 7: Simplify the fraction to find the probability\n48 / 720 = 1 / 15.\n\nThe final answer is: $\\boxed{\\frac{1}{15}}$\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\FRAC{1}{15}$, AND THE STUDENT'S FINAL ANSWER IS ALSO $\\FRAC{1}{15}$. THESE TWO ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY REPRESENT THE SAME FRACTION. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 131.73,
+    "zuzycie_tokenow": {
+        "wejsciowe": 144,
+        "wyjsciowe": 410,
+        "suma": 554
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

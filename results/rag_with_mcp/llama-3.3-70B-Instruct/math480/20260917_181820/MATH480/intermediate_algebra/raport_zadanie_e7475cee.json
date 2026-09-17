@@ -1,0 +1,19 @@
+{
+    "task_file": "raport_zadanie_e7475cee",
+    "zadanie": "Suppose that $a,$ $b,$ $c,$ $d,$ $e,$ $f$ are real numbers such that\n\\begin{align*}\na + b + c + d + e + f &= 0, \\\\\na + 2b + 3c + 4d + 2e + 2f &= 0, \\\\\na + 3b + 6c + 9d + 4e + 6f &= 0, \\\\\na + 4b + 10c + 16d + 8e + 24f &= 0, \\\\\na + 5b + 15c + 25d + 16e + 120f &= 42.\n\\end{align*}Compute $a + 6b + 21c + 36d + 32e + 720f$.",
+    "oczekiwana_odpowiedz": "Timeout - Endpoint API nie odpowiedzia\u0142 w wyznaczonym czasie",
+    "pelny_przebieg_rozumowania": [],
+    "decyzja_sedziego": "EMPTY",
+    "wynik_ewaluacji": "ERROR",
+    "czas_wykonania": 758.24,
+    "zuzycie_tokenow": {
+        "wejsciowe": 0,
+        "wyjsciowe": 0,
+        "suma": 0
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

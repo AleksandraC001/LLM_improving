@@ -1,0 +1,23 @@
+{
+    "task_file": "raport_zadanie_4b8d5491",
+    "zadanie": "Between what two consecutive integers on the number line is the graph of the sum $\\sqrt{30} + \\sqrt{50}$ located? Enter your answer in the form \"$m$ and $n$\", where $m$ and $n$ are replaced by appropriate numbers.",
+    "oczekiwana_odpowiedz": "Since $25<30<36$, we have $5<\\sqrt{30}<6$. We also know that $7^2=49$, so $\\sqrt{50}\\approx7$. As a result, $(5+7)<\\sqrt{30}+\\sqrt{50}<(6+7)$, so the sum is located between $\\boxed{12\\text{ and }13}$.\n\nTo be more precise, $\\sqrt{50}>7$, but we're still able to say that $\\sqrt{30}+\\sqrt{50}<(6+7)$ when we add a slightly greater quantity to the left side since the difference between $6$ and $\\sqrt{30}$ is much greater than the difference between $\\sqrt{50}$ and $7$.",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nBetween what two consecutive integers on the number line is the graph of the sum $\\sqrt{30} + \\sqrt{50}$ located? Enter your answer in the form \"$m$ and $n$\", where $m$ and $n$ are replaced by appropriate numbers.\n",
+        "[AI]:\nTo find the two consecutive integers between which the sum $\\sqrt{30} + \\sqrt{50}$ lies, we need to estimate the values of the square roots.\n\n**Step 1: Estimate $\\sqrt{30}$**\nWe look for perfect squares near 30:\n$5^2 = 25$\n$6^2 = 36$\nSince $25 < 30 < 36$, we know that $5 < \\sqrt{30} < 6$.\nTo get a more precise estimate, we can use the approximation $\\sqrt{x^2 + d} \\approx x + \\frac{d}{2x}$.\nFor $\\sqrt{30} = \\sqrt{25 + 5}$, we have $x=5$ and $d=5$:\n$\\sqrt{30} \\approx 5 + \\frac{5}{2(5)} = 5 + 0.5 = 5.5$.\nLet's check $5.4^2 = 29.16$ and $5.5^2 = 30.25$.\nSo, $5.4 < \\sqrt{30} < 5.5$.\n\n**Step 2: Estimate $\\sqrt{50}$**\nWe look for perfect squares near 50:\n$7^2 = 49$\n$8^2 = 64$\nSince $49 < 50 < 64$, we know that $7 < \\sqrt{50} < 8$.\nSince 50 is very close to 49, $\\sqrt{50}$ is just slightly larger than 7.\nUsing the approximation $\\sqrt{49 + 1} \\approx 7 + \\frac{1}{2(7)} = 7 + \\frac{1}{14} \\approx 7.07$.\nLet's check $7.07^2 \\approx 49.98$.\nSo, $7.07 < \\sqrt{50} < 7.08$.\n\n**Step 3: Sum the estimates**\nNow we add the estimated values:\nLower bound: $5.4 + 7.07 = 12.47$\nUpper bound: $5.5 + 7.08 = 12.58$\n\nLet's refine the bounds to be sure.\nWe know $5.47^2 = 29.9209$ and $5.48^2 = 30.0304$. So $5.47 < \\sqrt{30} < 5.48$.\nWe know $7.07^2 = 49.9849$ and $7.08^2 = 50.1264$. So $7.07 < \\sqrt{50} < 7.08$.\n\nAdding the lower bounds: $5.47 + 7.07 = 12.54$.\nAdding the upper bounds: $5.48 + 7.08 = 12.56$.\n\nSince the sum is approximately $12.55$, it lies between the integers 12 and 13.\n\n**Step 4: Verify with squares**\nLet $S = \\sqrt{30} + \\sqrt{50}$.\n$S^2 = (\\sqrt{30} + \\sqrt{50})^2 = 30 + 50 + 2\\sqrt{30 \\cdot 50} = 80 + 2\\sqrt{1500}$.\nWe know $\\sqrt{1500} = \\sqrt{100 \\cdot 15} = 10\\sqrt{15}$.\nSince $3^2 = 9$ and $4^2 = 16$, $\\sqrt{15}$ is between 3 and 4.\nSpecifically, $3.8^2 = 14.44$ and $3.9^2 = 15.21$.\nSo $3.8 < \\sqrt{15} < 3.9$.\nThen $38 < 10\\sqrt{15} < 39$.\n$S^2 = 80 + 2(10\\sqrt{15}) = 80 + 20\\sqrt{15}$.\nUsing $3.87^2 = 14.9769$ and $3.88^2 = 15.0544$, we have $3.87 < \\sqrt{15} < 3.88$.\n$S^2 \\approx 80 + 20(3.87) = 80 + 77.4 = 157.4$.\n$S^2 \\approx 80 + 20(3.88) = 80 + 77.6 = 157.6$.\nSince $12^2 = 144$ and $13^2 = 169$, the value $S$ must be between 12 and 13.\n\nThe sum $\\sqrt{30} + \\sqrt{50}$ is between 12 and 13.\n\n\\boxed{12 and 13}\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS THAT THE SUM $\\SQRT{30}+\\SQRT{50}$ LIES BETWEEN THE INTEGERS 12 AND 13. THE STUDENT'S FINAL ANSWER IS ALSO THAT THE SUM $\\SQRT{30}+\\SQRT{50}$ IS BETWEEN 12 AND 13. THESE TWO FINAL ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY BOTH INDICATE THAT THE SUM FALLS WITHIN THE SAME RANGE OF INTEGERS. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 154.19,
+    "zuzycie_tokenow": {
+        "wejsciowe": 131,
+        "wyjsciowe": 1194,
+        "suma": 1325
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

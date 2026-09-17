@@ -1,0 +1,23 @@
+{
+    "task_file": "raport_zadanie_a8c5c18d",
+    "zadanie": "One line is parameterized by\n\\[\\begin{pmatrix} 2 - 3t \\\\ -5 - 2t \\\\ 1 - 6t \\end{pmatrix}.\\]Another line is parameterized by\n\\[\\begin{pmatrix} -\\frac{3}{2} + s \\\\ 2s \\\\ -6 + 2s \\end{pmatrix}.\\]The two lines intersect at $P.$  If $\\theta$ is the acute angle formed by the two lines at $P,$ then find $\\cos \\theta.$",
+    "oczekiwana_odpowiedz": "The direction vectors of the lines are $\\begin{pmatrix} -3 \\\\ -2  \\\\ -6 \\end{pmatrix}$ and $\\begin{pmatrix} 1 \\\\ 2 \\\\ 2 \\end{pmatrix}.$  The cosine of the angle between them is then\n\\[\\frac{\\begin{pmatrix} -3 \\\\ -2 \\\\ -6 \\end{pmatrix} \\cdot \\begin{pmatrix} 1 \\\\ 2 \\\\ 2 \\end{pmatrix}}{\\left\\| \\begin{pmatrix} -3 \\\\ -2 \\\\ -6 \\end{pmatrix} \\right\\| \\left\\| \\begin{pmatrix} 1 \\\\ 2 \\\\ 2 \\end{pmatrix} \\right\\|} = \\frac{-19}{7 \\cdot 3} = -\\frac{19}{21}.\\]Since $\\theta$ is acute, $\\cos \\theta = \\boxed{\\frac{19}{21}}.$",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nOne line is parameterized by\n\\[\\begin{pmatrix} 2 - 3t \\\\ -5 - 2t \\\\ 1 - 6t \\end{pmatrix}.\\]Another line is parameterized by\n\\[\\begin{pmatrix} -\\frac{3}{2} + s \\\\ 2s \\\\ -6 + 2s \\end{pmatrix}.\\]The two lines intersect at $P.$  If $\\theta$ is the acute angle formed by the two lines at $P,$ then find $\\cos \\theta.$\n",
+        "[AI]:\nTo find the angle between two lines, we first identify their direction vectors.\n\nThe first line is parameterized by:\n\\[ \\mathbf{r}_1(t) = \\begin{pmatrix} 2 \\\\ -5 \\\\ 1 \\end{pmatrix} + t \\begin{pmatrix} -3 \\\\ -2 \\\\ -6 \\end{pmatrix} \\]\nThus, the direction vector of the first line is $\\mathbf{v}_1 = \\begin{pmatrix} -3 \\\\ -2 \\\\ -6 \\end{pmatrix}$.\n\nThe second line is parameterized by:\n\\[ \\mathbf{r}_2(s) = \\begin{pmatrix} -3/2 \\\\ 0 \\\\ -6 \\end{pmatrix} + s \\begin{pmatrix} 1 \\\\ 2 \\\\ 2 \\end{pmatrix} \\]\nThus, the direction vector of the second line is $\\mathbf{v}_2 = \\begin{pmatrix} 1 \\\\ 2 \\\\ 2 \\end{pmatrix}$.\n\nThe angle $\\theta$ between two lines is the angle between their direction vectors. The cosine of the angle $\\theta$ between two vectors $\\mathbf{a}$ and $\\mathbf{b}$ is given by the formula:\n\\[ \\cos \\theta = \\frac{|\\mathbf{a} \\cdot \\mathbf{b}|}{\\|\\mathbf{a}\\| \\|\\mathbf{b}\\|} \\]\nwhere $\\theta$ is the acute angle.\n\nFirst, we calculate the dot product $\\mathbf{v}_1 \\cdot \\mathbf{v}_2$:\n\\[ \\mathbf{v}_1 \\cdot \\mathbf{v}_2 = (-3)(1) + (-2)(2) + (-6)(2) \\]\n\\[ \\mathbf{v}_1 \\cdot \\mathbf{v}_2 = -3 - 4 - 12 = -19 \\]\n\nNext, we calculate the magnitude of each vector:\n\\[ \\|\\mathbf{v}_1\\| = \\sqrt{(-3)^2 + (-2)^2 + (-6)^2} = \\sqrt{9 + 4 + 36} = \\sqrt{49} = 7 \\]\n\\[ \\|\\mathbf{v}_2\\| = \\sqrt{1^2 + 2^2 + 2^2} = \\sqrt{1 + 4 + 4} = \\sqrt{9} = 3 \\]\n\nNow, we apply the formula for $\\cos \\theta$:\n\\[ \\cos \\theta = \\frac{|-19|}{7 \\times 3} \\]\n\\[ \\cos \\theta = \\frac{19}{21} \\]\n\nSince $19/21$ is positive, $\\theta$ is an acute angle, which matches the problem statement.\n\nFinal check of the intersection (optional but good for verification):\nSet $2 - 3t = -3/2 + s \\implies 3.5 - 3t = s$\nSet $-5 - 2t = 2s \\implies -5 - 2t = 2(3.5 - 3t) \\implies -5 - 2t = 7 - 6t \\implies 4t = 12 \\implies t = 3$.\nIf $t=3$, $s = 3.5 - 9 = -5.5$.\nCheck third component: $1 - 6(3) = -17$.\nFor second line: $-6 + 2(-5.5) = -6 - 11 = -17$.\nThe lines do indeed intersect.\n\nThe cosine of the acute angle is $\\frac{19}{21}$.\n\n\\boxed{\\frac{19}{21}}\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\COS \\THETA = \\FRAC{19}{21}$, AND THE STUDENT'S FINAL ANSWER IS ALSO $\\FRAC{19}{21}$. THESE TWO ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY REPRESENT THE SAME FRACTION. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 324.02,
+    "zuzycie_tokenow": {
+        "wejsciowe": 183,
+        "wyjsciowe": 782,
+        "suma": 965
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

@@ -1,0 +1,23 @@
+{
+    "task_file": "raport_zadanie_1cf05e56",
+    "zadanie": "Two complementary angles, A and B, have measures in the ratio of 7 to 23, respectively. What is the ratio of the measure of the complement of angle A to the measure of the complement of angle B? Express your answer as a common fraction.",
+    "oczekiwana_odpowiedz": "The complement of angle $A$ is just $B$, and the complement of $B$ is $A$.  So we seek the ratio of $B$ to $A$, which is reciprocal of $A$ to $B$, or just $\\boxed{\\frac{23}{7}}$.",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nTwo complementary angles, A and B, have measures in the ratio of 7 to 23, respectively. What is the ratio of the measure of the complement of angle A to the measure of the complement of angle B? Express your answer as a common fraction.\n",
+        "[AI]:\nTo find the ratio of the measure of the complement of angle $A$ to the measure of the complement of angle $B$, we follow these steps:\n\n1.  **Understand the definitions:**\n    *   Two angles are **complementary** if their sum is $90^\\circ$. Thus, $A + B = 90^\\circ$.\n    *   The **complement** of an angle $X$ is defined as $90^\\circ - X$.\n\n2.  **Determine the measures of angles $A$ and $B$:**\n    *   The ratio of $A$ to $B$ is $7:23$.\n    *   Let $A = 7x$ and $B = 23x$ for some constant $x$.\n    *   Since they are complementary: $7x + 23x = 90^\\circ \\implies 30x = 90^\\circ \\implies x = 3^\\circ$.\n    *   Therefore, $A = 7(3^\\circ) = 21^\\circ$ and $B = 23(3^\\circ) = 69^\\circ$.\n\n3.  **Find the measures of the complements:**\n    *   The complement of angle $A$ is $C_A = 90^\\circ - A = 90^\\circ - 21^\\circ = 69^\\circ$.\n    *   The complement of angle $B$ is $C_B = 90^\\circ - B = 90^\\circ - 69^\\circ = 21^\\circ$.\n    *   (Note: Since $A$ and $B$ are complementary, the complement of $A$ is simply $B$, and the complement of $B$ is simply $A$).\n\n4.  **Calculate the required ratio:**\n    *   We need the ratio of the complement of $A$ to the complement of $B$:\n    $$\\text{Ratio} = \\frac{C_A}{C_B} = \\frac{69^\\circ}{21^\\circ}$$\n    *   Simplify the fraction by dividing both the numerator and the denominator by their greatest common divisor, which is 3:\n    $$\\frac{69}{21} = \\frac{23}{7}$$\n\nAlternatively, using the variables directly:\nIf $A + B = 90^\\circ$, then the complement of $A$ is $B$ and the complement of $B$ is $A$.\nThe ratio of the complement of $A$ to the complement of $B$ is $\\frac{B}{A}$.\nGiven $\\frac{A}{B} = \\frac{7}{23}$, then $\\frac{B}{A} = \\frac{23}{7}$.\n\nFinal Answer: $\\frac{23}{7}$\n\n\\boxed{\\frac{23}{7}}\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\FRAC{23}{7}$, AND THE STUDENT'S FINAL ANSWER IS ALSO $\\FRAC{23}{7}$. THESE TWO ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY REPRESENT THE SAME FRACTION. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 81.44,
+    "zuzycie_tokenow": {
+        "wejsciowe": 128,
+        "wyjsciowe": 628,
+        "suma": 756
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

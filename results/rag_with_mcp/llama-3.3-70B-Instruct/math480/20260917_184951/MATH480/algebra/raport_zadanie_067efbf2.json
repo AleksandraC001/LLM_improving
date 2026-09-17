@@ -1,0 +1,19 @@
+{
+    "task_file": "raport_zadanie_067efbf2",
+    "zadanie": "Let $S$ be the set of all real numbers $\\alpha$ such that the function \\[\\frac{x^2+5x+\\alpha}{x^2 + 7x - 44}\\]can be expressed as a quotient of two linear functions. What is the sum of the elements of $S$?",
+    "oczekiwana_odpowiedz": "Timeout - Endpoint API nie odpowiedzia\u0142 w wyznaczonym czasie",
+    "pelny_przebieg_rozumowania": [],
+    "decyzja_sedziego": "EMPTY",
+    "wynik_ewaluacji": "ERROR",
+    "czas_wykonania": 721.58,
+    "zuzycie_tokenow": {
+        "wejsciowe": 0,
+        "wyjsciowe": 0,
+        "suma": 0
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

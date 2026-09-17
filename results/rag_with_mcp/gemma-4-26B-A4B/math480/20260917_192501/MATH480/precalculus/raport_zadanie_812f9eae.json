@@ -1,0 +1,19 @@
+{
+    "task_file": "raport_zadanie_812f9eae",
+    "zadanie": "The expression\n\\[2 \\sqrt[3]{3 \\sec^2 20^\\circ \\sin^2 10^\\circ}\\]can be expressed in the form $a + b \\sec 20^\\circ,$ where $a$ and $b$ are integers.  Find the ordered pair $(a,b).$",
+    "oczekiwana_odpowiedz": "API Connection Error: OpenAIConnectionError('Connection error.'); cause=APIConnectionError('Connection error.')",
+    "pelny_przebieg_rozumowania": [],
+    "decyzja_sedziego": "EMPTY",
+    "wynik_ewaluacji": "ERROR",
+    "czas_wykonania": 456.94,
+    "zuzycie_tokenow": {
+        "wejsciowe": 0,
+        "wyjsciowe": 0,
+        "suma": 0
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

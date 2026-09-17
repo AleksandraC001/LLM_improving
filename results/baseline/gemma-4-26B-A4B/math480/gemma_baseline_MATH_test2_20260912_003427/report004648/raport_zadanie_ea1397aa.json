@@ -1,0 +1,23 @@
+{
+    "task_file": "raport_zadanie_ea1397aa",
+    "zadanie": "Find the maximum value of\n\\[\\frac{x - y}{x^4 + y^4 + 6}\\]over all real numbers $x$ and $y.$",
+    "oczekiwana_odpowiedz": "Clearly, the maximum occurs when $x$ is positive and $y$ is negative.  Let $z = -y,$ so $z$ is positive, and $y = -z.$  Then\n\\[\\frac{x - y}{x^4 + y^4 + 6} = \\frac{x + z}{x^4 + z^4 + 6}.\\]By AM-GM,\n\\[x^4 + 1 + 1 + 1 \\ge 4 \\sqrt[4]{x^4} = 4x,\\]and\n\\[z^4 + 1 + 1 + 1 \\ge 4 \\sqrt[4]{z^4} = 4z.\\]Then $x^4 + z^4 + 6 \\ge 4(x + z),$ which implies\n\\[\\frac{x + z}{x^4 + z^4 + 6} \\le \\frac{1}{4}.\\]Equality occurs when $x = z = 1,$ so the maximum value is $\\boxed{\\frac{1}{4}}.$",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nFind the maximum value of\n\\[\\frac{x - y}{x^4 + y^4 + 6}\\]over all real numbers $x$ and $y.$\n",
+        "[AI]:\nTo find the maximum value of the expression $f(x, y) = \\frac{x - y}{x^4 + y^4 + 6}$, let $k$ be a possible value of the expression. We want to find the maximum $k$ such that there exist real numbers $x, y$ satisfying:\n\\[k = \\frac{x - y}{x^4 + y^4 + 6} \\implies k(x^4 + y^4 + 6) = x - y\\]\nRearranging the terms, we get:\n\\[kx^4 - x + ky^4 + y + 6k = 0\\]\nFor a fixed $k > 0$, we want to find if there exist $x, y$ that satisfy this equation. To maximize $k$, we can look at the minimum value of the function $g(x, y) = \\frac{x^4 + y^4 + 6}{x - y}$ for $x > y$.\nLet $u = x - y$ and $v = x + y$. Then $x = \\frac{u+v}{2}$ and $y = \\frac{v-u}{2}$.\nSubstituting these into the expression:\n\\[x^4 + y^4 = \\left(\\frac{u+v}{2}\\right)^4 + \\left(\\frac{v-u}{2}\\right)^4 = \\frac{1}{16} [(u+v)^4 + (v-u)^4]\\]\nUsing the expansion $(a+b)^4 = a^4 + 4a^3b + 6a^2b^2 + 4ab^3 + b^4$:\n\\[(u+v)^4 + (v-u)^4 = (u^4 + 4u^3v + 6u^2v^2 + 4uv^3 + v^4) + (v^4 - 4v^3u + 6v^2u^2 - 4vu^3 + u^4)\\]\n\\[= 2u^4 + 12u^2v^2 + 2v^4\\]\nSo, $x^4 + y^4 = \\frac{1}{16}(2u^4 + 12u^2v^2 + 2v^4) = \\frac{1}{8}u^4 + \\frac{3}{4}u^2v^2 + \\frac{1}{8}v^4$.\nThe expression becomes:\n\\[f(u, v) = \\frac{u}{\\frac{1}{8}u^4 + \\frac{3}{4}u^2v^2 + \\frac{1}{8}v^4 + 6}\\]\nTo maximize this for a fixed $u > 0$, we must minimize the denominator. The denominator is minimized when $v = 0$.\nWhen $v = 0$, the expression simplifies to:\n\\[f(u, 0) = \\frac{u}{\\frac{1}{8}u^4 + 6}\\]\nTo find the maximum of $h(u) = \\frac{u}{\\frac{1}{8}u^4 + 6}$, we take the derivative with respect to $u$ and set it to zero:\n\\[h'(u) = \\frac{(\\frac{1}{8}u^4 + 6)(1) - u(\\frac{4}{8}u^3)}{(\\frac{1}{8}u^4 + 6)^2} = 0\\]\n\\[\\frac{1}{8}u^4 + 6 - \\frac{1}{2}u^4 = 0\\]\n\\[6 - \\frac{3}{8}u^4 = 0 \\implies \\frac{3}{8}u^4 = 6 \\implies u^4 = 16 \\implies u = 2 \\text{ (since } u > 0)\\]\nNow, substitute $u = 2$ back into $h(u)$:\n\\[h(2) = \\frac{2}{\\frac{1}{8}(2^4) + 6} = \\frac{2}{\\frac{16}{8} + 6} = \\frac{2}{2 + 6} = \\frac{2}{8} = \\frac{1}{4}\\]\nSince $v = 0$ implies $x+y=0$, we have $x = -y$. For $u=2$, $x-y=2 \\implies x-(-x)=2 \\implies 2x=2 \\implies x=1, y=-1$.\nChecking the original expression with $x=1, y=-1$:\n\\[\\frac{1 - (-1)}{1^4 + (-1)^4 + 6} = \\frac{2}{1 + 1 + 6} = \\frac{2}{8} = \\frac{1}{4}\\]\n\nThe maximum value is $\\frac{1}{4}$.\n\n\\boxed{\\frac{1}{4}}\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\BOXED{\\FRAC{1}{4}}$, AND THE STUDENT'S FINAL ANSWER IS ALSO $\\FRAC{1}{4}$. THESE TWO ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY REPRESENT THE SAME FRACTION. THE STUDENT'S SOLUTION ARRIVES AT THE SAME CONCLUSION AS THE CORRECT SOLUTION, INDICATING THAT THEIR ANSWER IS CORRECT.\n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 257.88,
+    "zuzycie_tokenow": {
+        "wejsciowe": 111,
+        "wyjsciowe": 1113,
+        "suma": 1224
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

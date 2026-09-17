@@ -1,0 +1,23 @@
+{
+    "task_file": "raport_zadanie_db9c39b6",
+    "zadanie": "One day, 45 frogs were captured from a pond, marked and then returned to the pond. The next day, 40 frogs were observed in the pond, of which 10 had been marked the previous day. Assuming the marked frogs are equally distributed among all the frogs in the pond, what is the best estimate of how many frogs live in the pond?",
+    "oczekiwana_odpowiedz": "The marked frogs comprised $\\frac{1}{4}$ of the $40$ observed frogs, so we can estimate that the number of frogs that were captured and marked are one fourth of the total number of frogs. Thus, the total number of frogs can be estimated as $45 \\cdot 4 = \\boxed{180}$.",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nOne day, 45 frogs were captured from a pond, marked and then returned to the pond. The next day, 40 frogs were observed in the pond, of which 10 had been marked the previous day. Assuming the marked frogs are equally distributed among all the frogs in the pond, what is the best estimate of how many frogs live in the pond?\n",
+        "[AI]:\nTo solve this problem, we can use the concept of proportions, based on the idea that the ratio of marked frogs in the sample to the total number of frogs in the sample is equal to the ratio of marked frogs in the pond to the total number of frogs in the pond.\n\nLet's denote:\n- \\(M\\) as the number of marked frogs (which we know is 45),\n- \\(T\\) as the total number of frogs in the pond (which we are trying to find),\n- \\(S\\) as the number of frogs in the sample observed the next day (which is 40),\n- \\(m\\) as the number of marked frogs in the sample (which is 10).\n\nThe ratio of marked frogs in the sample to the total number of frogs in the sample is \\(\\frac{m}{S}\\), and this should be equal to the ratio of marked frogs in the pond to the total number of frogs in the pond, \\(\\frac{M}{T}\\).\n\nTherefore, we can set up the equation:\n\\[\n\\frac{m}{S} = \\frac{M}{T}\n\\]\n\nSubstituting the known values:\n\\[\n\\frac{10}{40} = \\frac{45}{T}\n\\]\n\nSolving for \\(T\\), we first simplify the left side of the equation:\n\\[\n\\frac{1}{4} = \\frac{45}{T}\n\\]\n\nThen, we can cross-multiply:\n\\[\nT = 45 \\times 4\n\\]\n\n\\[\nT = 180\n\\]\n\nSo, the best estimate of how many frogs live in the pond is 180.\n\nThe final answer is: $\\boxed{180}$\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\BOXED{180}$, AND THE STUDENT'S FINAL ANSWER IS ALSO $\\BOXED{180}$. THESE TWO ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY REPRESENT THE SAME NUMERICAL VALUE. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 118.81,
+    "zuzycie_tokenow": {
+        "wejsciowe": 161,
+        "wyjsciowe": 348,
+        "suma": 509
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

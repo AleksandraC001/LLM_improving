@@ -1,0 +1,19 @@
+{
+    "task_file": "raport_zadanie_f0f650f9",
+    "zadanie": "If $\\arccos x + \\arccos 2x + \\arccos 3x = \\pi,$ then $x$ satisfies a cubic polynomial of the form\n\\[ax^3 + bx^2 + cx + d = 0,\\]where $a,$ $b,$ $c,$ and $d$ are integers, and $a \\neq 0.$  Find the smallest possible value of $|a| + |b| + |c| + |d|.$",
+    "oczekiwana_odpowiedz": "API Connection Error: OpenAIConnectionError('Connection error.'); cause=APIConnectionError('Connection error.')",
+    "pelny_przebieg_rozumowania": [],
+    "decyzja_sedziego": "EMPTY",
+    "wynik_ewaluacji": "ERROR",
+    "czas_wykonania": 1243.33,
+    "zuzycie_tokenow": {
+        "wejsciowe": 0,
+        "wyjsciowe": 0,
+        "suma": 0
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

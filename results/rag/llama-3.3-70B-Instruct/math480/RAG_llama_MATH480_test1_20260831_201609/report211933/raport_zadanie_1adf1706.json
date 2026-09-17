@@ -1,0 +1,16 @@
+{
+    "task_file": "raport_zadanie_1adf1706",
+    "zadanie": "Let $T$ be the set of all triples $(a,b,c)$ of positive integers for which there exist triangles with side lengths $a,$ $b,$ $c.$  Compute\n\\[\\sum_{(a,b,c) \\in T} \\frac{2^a}{3^b 5^c}.\\]",
+    "oczekiwana_odpowiedz": "Timeout - Endpoint API nie odpowiedzia\u0142 w wyznaczonym czasie",
+    "pelny_przebieg_rozumowania": [],
+    "decyzja_sedziego": "EMPTY",
+    "wynik_ewaluacji": "ERROR",
+    "czas_wykonania": 971.26,
+    "zuzycie_tokenow": {
+        "wejsciowe": 0,
+        "wyjsciowe": 0,
+        "suma": 0
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_rag": 0
+}

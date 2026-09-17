@@ -1,0 +1,19 @@
+{
+    "task_file": "raport_zadanie_8d99cb00",
+    "zadanie": "A $12^{\\prime \\prime}$-diameter pizza and a $16^{\\prime \\prime}$-diameter pizza are each cut into eight congruent slices. Jane ate three slices of the $12^{\\prime \\prime}$ pizza. Mark ate three slices of the $16^{\\prime \\prime}$ pizza. How many more square inches of pizza did Mark eat than Jane? Express your answer as a common fraction in terms of $\\pi$.",
+    "oczekiwana_odpowiedz": "API Connection Error: OpenAIConnectionError('Connection error.'); cause=APIConnectionError('Connection error.')",
+    "pelny_przebieg_rozumowania": [],
+    "decyzja_sedziego": "EMPTY",
+    "wynik_ewaluacji": "ERROR",
+    "czas_wykonania": 14.73,
+    "zuzycie_tokenow": {
+        "wejsciowe": 0,
+        "wyjsciowe": 0,
+        "suma": 0
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

@@ -1,0 +1,23 @@
+{
+    "task_file": "raport_zadanie_6e843cd8",
+    "zadanie": "Find the cubic polynomial, in $x,$ with integer coefficients that has $\\cos 20^\\circ$ as a root.  The coefficient of $x^3$ should be positive, and the coefficients should have no common factor other than 1.",
+    "oczekiwana_odpowiedz": "By the triple angle formula,\n\\[\\cos 3x = 4 \\cos^3 x - 3 \\cos x.\\]Setting $x = 20^\\circ,$ we get\n\\[\\cos 60^\\circ = 4 \\cos^3 20^\\circ - 3 \\cos 20^\\circ,\\]so $4 \\cos^3 20^\\circ - 3 \\cos 20^\\circ = \\frac{1}{2},$ or $8 \\cos^3 20^\\circ - 6 \\cos 20^\\circ - 1 = 0.$  Thus, $x = \\cos 20^\\circ$ is a root of $\\boxed{8x^3 - 6x - 1}.$",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nFind the cubic polynomial, in $x,$ with integer coefficients that has $\\cos 20^\\circ$ as a root.  The coefficient of $x^3$ should be positive, and the coefficients should have no common factor other than 1.\n",
+        "[AI]:\nTo find a cubic polynomial with integer coefficients that has $\\cos 20^\\circ$ as a root, we use the triple angle formula for cosine:\n$$\\cos(3\\theta) = 4\\cos^3\\theta - 3\\cos\\theta$$\n\nLet $\\theta = 20^\\circ$. Then $3\\theta = 60^\\circ$.\nSubstituting these values into the formula:\n$$\\cos(60^\\circ) = 4\\cos^3(20^\\circ) - 3\\cos(20^\\circ)$$\n\nWe know that $\\cos(60^\\circ) = \\frac{1}{2}$. Let $x = \\cos 20^\\circ$. The equation becomes:\n$$\\frac{1}{2} = 4x^3 - 3x$$\n\nTo eliminate the fraction, multiply the entire equation by 2:\n$$1 = 8x^3 - 6x$$\n\nRearrange the equation into the standard polynomial form $ax^3 + bx^2 + cx + d = 0$:\n$$8x^3 - 6x - 1 = 0$$\n\nNow, let's check the requirements:\n1. **Cubic polynomial in $x$**: $8x^3 - 6x - 1$ is a cubic polynomial.\n2. **Integer coefficients**: The coefficients are $8, 0, -6, -1$, which are all integers.\n3. **$\\cos 20^\\circ$ is a root**: We derived this directly from the triple angle formula.\n4. **Coefficient of $x^3$ is positive**: The coefficient of $x^3$ is $8$, which is positive.\n5. **No common factor other than 1**: The coefficients are $8, 0, -6, -1$. The greatest common divisor $\\text{gcd}(8, 0, -6, -1) = 1$.\n\nThe polynomial is $8x^3 - 6x - 1$.\n\n\\boxed{8x^3 - 6x - 1}\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\BOXED{8X^3 - 6X - 1}$, AND THE STUDENT'S FINAL ANSWER IS ALSO $\\BOXED{8X^3 - 6X - 1}$. THESE TWO EXPRESSIONS ARE MATHEMATICALLY EQUIVALENT, AS THEY REPRESENT THE SAME CUBIC POLYNOMIAL. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 34.82,
+    "zuzycie_tokenow": {
+        "wejsciowe": 126,
+        "wyjsciowe": 454,
+        "suma": 580
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

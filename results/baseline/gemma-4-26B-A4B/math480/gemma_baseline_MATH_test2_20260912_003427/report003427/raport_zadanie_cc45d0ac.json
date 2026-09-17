@@ -1,0 +1,23 @@
+{
+    "task_file": "raport_zadanie_cc45d0ac",
+    "zadanie": "The equation $y = -16t^2 + 26t + 105$ describes the height (in feet) of a ball tossed up in the air at 26 feet per second from a height of 105 feet above the ground. In how many seconds will the ball hit the ground? Express your answer as a decimal rounded to the nearest tenth.",
+    "oczekiwana_odpowiedz": "Setting $y$ to zero, we find the following: \\begin{align*}\n0& = -16t^2 + 26t + 105\\\\\n& = 16t^2 - 26t - 105\\\\\n& = (8t + 15)(2t - 7)\n\\end{align*}As $t$ must be positive, we can see that $t = \\frac{7}{2} = \\boxed{3.5}.$",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nThe equation $y = -16t^2 + 26t + 105$ describes the height (in feet) of a ball tossed up in the air at 26 feet per second from a height of 105 feet above the ground. In how many seconds will the ball hit the ground? Express your answer as a decimal rounded to the nearest tenth.\n",
+        "[AI]:\nTo find when the ball hits the ground, we need to determine the time $t$ when the height $y$ is equal to $0$.\n\nThe given equation is:\n$$y = -16t^2 + 26t + 105$$\n\nSetting $y = 0$:\n$$-16t^2 + 26t + 105 = 0$$\n\nThis is a quadratic equation in the form $at^2 + bt + c = 0$, where:\n$a = -16$\n$b = 26$\n$c = 105$\n\nWe can solve for $t$ using the quadratic formula:\n$$t = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$$\n\nFirst, let's calculate the discriminant ($D = b^2 - 4ac$):\n$$D = (26)^2 - 4(-16)(105)$$\n$$D = 676 - (-6720)$$\n$$D = 676 + 6720$$\n$$D = 7396$$\n\nNow, we find the square root of the discriminant:\n$$\\sqrt{7396} = 86$$\n\nNow, substitute these values back into the quadratic formula:\n$$t = \\frac{-26 \\pm 86}{2(-16)}$$\n$$t = \\frac{-26 \\pm 86}{-32}$$\n\nThis gives us two possible solutions for $t$:\n1) $t = \\frac{-26 + 86}{-32} = \\frac{60}{-32} = -1.875$\n2) $t = \\frac{-26 - 86}{-32} = \\frac{-112}{-32} = 3.5$\n\nSince time $t$ cannot be negative in this context, we discard $t = -1.875$.\n\nThe ball hits the ground at $t = 3.5$ seconds.\n\nThe question asks for the answer as a decimal rounded to the nearest tenth. $3.5$ is already at the tenths place.\n\n\\boxed{3.5}\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $T = \\BOXED{3.5}$, AND THE STUDENT'S FINAL ANSWER IS ALSO $\\BOXED{3.5}$. THESE TWO ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY REPRESENT THE SAME DECIMAL VALUE.\n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 53.39,
+    "zuzycie_tokenow": {
+        "wejsciowe": 154,
+        "wyjsciowe": 493,
+        "suma": 647
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

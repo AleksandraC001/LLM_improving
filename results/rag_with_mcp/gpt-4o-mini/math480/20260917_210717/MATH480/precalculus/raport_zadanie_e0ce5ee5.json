@@ -1,0 +1,19 @@
+{
+    "task_file": "raport_zadanie_e0ce5ee5",
+    "zadanie": "Find the solutions to\n\\[\\frac{1}{x - \\tan 20^{\\circ}} + \\frac{1}{x + \\tan 40^{\\circ}} + \\frac{1}{x - \\tan 80^{\\circ}} = 0.\\]Enter the solutions, separated by commas.",
+    "oczekiwana_odpowiedz": "Recursion limit exceeded (Model si\u0119 zap\u0119tli\u0142)",
+    "pelny_przebieg_rozumowania": [],
+    "decyzja_sedziego": "EMPTY",
+    "wynik_ewaluacji": "ERROR",
+    "czas_wykonania": 197.85,
+    "zuzycie_tokenow": {
+        "wejsciowe": 0,
+        "wyjsciowe": 0,
+        "suma": 0
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

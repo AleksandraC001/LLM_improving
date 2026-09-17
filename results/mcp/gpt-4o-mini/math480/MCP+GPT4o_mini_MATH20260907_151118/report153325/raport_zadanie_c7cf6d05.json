@@ -1,0 +1,16 @@
+{
+    "task_file": "raport_zadanie_c7cf6d05",
+    "zadanie": "The equation \\[2000x^6+100x^5+10x^3+x-2=0\\]has two real roots. Compute the square of the difference between them.",
+    "oczekiwana_odpowiedz": "Recursion limit exceeded (Model si\u0119 zap\u0119tli\u0142)",
+    "pelny_przebieg_rozumowania": [],
+    "decyzja_sedziego": "EMPTY",
+    "wynik_ewaluacji": "ERROR",
+    "czas_wykonania": 114.38,
+    "zuzycie_tokenow": {
+        "wejsciowe": 0,
+        "wyjsciowe": 0,
+        "suma": 0
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_rag": 0
+}

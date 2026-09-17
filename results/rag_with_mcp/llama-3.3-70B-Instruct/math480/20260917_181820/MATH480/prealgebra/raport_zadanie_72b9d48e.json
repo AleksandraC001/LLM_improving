@@ -1,0 +1,19 @@
+{
+    "task_file": "raport_zadanie_72b9d48e",
+    "zadanie": "Eighty percent of the students in a class (group A) share $40\\%$ of the candy equally. The remaining $20\\%$ of the students (group B) share the other $60\\%$ of the candy equally. The ratio of the amount of candy a student in group A has to the amount of candy a student in group B has is equal to what common fraction?",
+    "oczekiwana_odpowiedz": "API Connection Error: OpenAIConnectionError('Connection error.'); cause=APIConnectionError('Connection error.')",
+    "pelny_przebieg_rozumowania": [],
+    "decyzja_sedziego": "EMPTY",
+    "wynik_ewaluacji": "ERROR",
+    "czas_wykonania": 14.66,
+    "zuzycie_tokenow": {
+        "wejsciowe": 0,
+        "wyjsciowe": 0,
+        "suma": 0
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

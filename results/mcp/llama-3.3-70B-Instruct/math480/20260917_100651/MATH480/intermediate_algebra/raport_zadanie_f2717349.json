@@ -1,0 +1,23 @@
+{
+    "task_file": "raport_zadanie_f2717349",
+    "zadanie": "For $0 \\le x \\le 40$ and $0 \\le y \\le 50,$ find the minimum value of\n\\[\\sqrt{x^2 + 400} + \\sqrt{y^2 + 900} + \\sqrt{x^2 + y^2 - 80x - 100y + 4100}.\\]",
+    "oczekiwana_odpowiedz": "Completing the square in $x$ and $y,$ the expression becomes\n\\[\\sqrt{x^2 + 400} + \\sqrt{y^2 + 900} + \\sqrt{(x - 40)^2 + (y - 50)^2} = \\sqrt{x^2 + 400} + \\sqrt{y^2 + 900} + \\sqrt{(40 - x)^2 + (50 - y)^2}.\\]By QM-AM,\n\\begin{align*}\n\\sqrt{\\frac{x^2 + 400}{2}} &\\ge \\frac{x + 20}{2}, \\\\\n\\sqrt{\\frac{y^2 + 900}{2}} &\\ge \\frac{y + 30}{2}, \\\\\n\\sqrt{\\frac{(40 - x)^2 + (50 - y)^2}{2}} &\\ge \\frac{(40 - x) + (50 - y)}{2},\n\\end{align*}so\n\\begin{align*}\n&\\sqrt{x^2 + 400} + \\sqrt{y^2 + 900} + \\sqrt{(40 - x)^2 + (50 - y)^2} \\\\\n&\\ge \\sqrt{2} \\cdot \\frac{x + 20}{2} + \\sqrt{2} \\cdot \\frac{y + 30}{2} + \\sqrt{2} \\cdot \\frac{(40 - x) + (50 - y)}{2} \\\\\n&= 70 \\sqrt{2}.\n\\end{align*}Equality occurs when $x = 20$ and $y = 30,$ so the minimum value is $\\boxed{70 \\sqrt{2}}.$",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Always in each step, formulate a thought, perform an action (you must call the tool), and draw conclusions from observing that action.\n\n    TOOL USE INSTRUCTION:\n    - You have access to tools, but you decide whether to use them. PREFER delegating calculations to tools over doing \"mental math\" in plain text.\n    - Python Interpreter ('python_interpreter'): Your primary tool. Use it for most numerical and symbolic calculations.\n    - Wolfram Alpha ('ask_wolfram'): Use this for complex symbolic mathematics, difficult integrals, or if Python returns an error.\n    - Brave Search ('brave_search'): Use to find general mathematical definitions, theorems, or formulas.\n\n    ERROR HANDLING:\n    If any tool returns an error, DO NOT repeat the exact same tool call. You must analyze the error, fix the syntax/parameters, switch to an alternative tool, or solve the step manually.    \n    \n    FINAL OUTPUT:\n    When you reach the final answer return it in enclosed in a LaTeX box: \\boxed{answer}\n",
+        "[HUMAN]:\nFor $0 \\le x \\le 40$ and $0 \\le y \\le 50,$ find the minimum value of\n\\[\\sqrt{x^2 + 400} + \\sqrt{y^2 + 900} + \\sqrt{x^2 + y^2 - 80x - 100y + 4100}.\\]\n",
+        "[AI]:\nTo find the minimum value of the given expression, we can use the Python interpreter to calculate the value of the expression for different values of x and y.\n\n```python\nimport numpy as np\n\n# Define the function to calculate the expression\ndef calculate_expression(x, y):\n    return np.sqrt(x**2 + 400) + np.sqrt(y**2 + 900) + np.sqrt(x**2 + y**2 - 80*x - 100*y + 4100)\n\n# Initialize the minimum value\nmin_value = float('inf')\n\n# Iterate over all possible values of x and y\nfor x in range(41):\n    for y in range(51):\n        # Calculate the value of the expression\n        value = calculate_expression(x, y)\n        \n        # Update the minimum value if necessary\n        if value < min_value:\n            min_value = value\n\n# Print the minimum value\nprint(min_value)\n``}\n\nNow, let's call the python_interpreter function with the above code.\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\BOXED{70 \\SQRT{2}}$. THE STUDENT'S SOLUTION DOES NOT PROVIDE A FINAL NUMERICAL ANSWER, BUT RATHER A PYTHON CODE TO CALCULATE THE MINIMUM VALUE. \n\nVERDICT: NO",
+    "wynik_ewaluacji": "WRONG",
+    "czas_wykonania": 83.83,
+    "zuzycie_tokenow": {
+        "wejsciowe": 863,
+        "wyjsciowe": 207,
+        "suma": 1070
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

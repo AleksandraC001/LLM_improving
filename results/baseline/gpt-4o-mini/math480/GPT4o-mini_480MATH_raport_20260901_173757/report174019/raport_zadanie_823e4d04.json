@@ -1,0 +1,20 @@
+{
+    "task_file": "raport_zadanie_823e4d04",
+    "zadanie": "The smallest distance between the origin and a point on the graph of $y=\\frac{1}{2}x^2-9$ can be expressed as $a$.  Find $a^2$.",
+    "oczekiwana_odpowiedz": "By the distance formula, we are trying to minimize $\\sqrt{x^2+y^2}=\\sqrt{x^2+\\frac{1}{4}x^4-9x^2+81}$. In general, minimization problems like this require calculus, but one optimization method that sometimes works is to try to complete the square.  Pulling out a factor of $\\frac{1}{4}$ from under the radical, we have \\begin{align*}\n\\frac{1}{2}\\sqrt{4x^2+x^4-36x^2+324}&=\\frac{1}{2}\\sqrt{(x^4-32x^2+256)+68} \\\\\n&= \\frac{1}{2}\\sqrt{(x^2-16)^2+68}\n\\end{align*}This last expression is minimized when the square equals $0$, that is, when $x^2=16$. Then the distance is $\\frac{\\sqrt{68}}{2}=\\sqrt{17}$.  Hence the desired answer is $\\sqrt{17}^2 = \\boxed{17}$.",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nThe smallest distance between the origin and a point on the graph of $y=\\frac{1}{2}x^2-9$ can be expressed as $a$.  Find $a^2$.\n",
+        "[AI]:\nTo find the smallest distance between the origin and a point on the graph of the function \\( y = \\frac{1}{2}x^2 - 9 \\), we start by expressing the distance \\( d \\) from the origin \\((0, 0)\\) to a point \\((x, y)\\) on the graph. The distance is given by the formula:\n\n\\[\nd = \\sqrt{x^2 + y^2}\n\\]\n\nSubstituting \\( y \\) from the equation of the graph, we have:\n\n\\[\nd = \\sqrt{x^2 + \\left(\\frac{1}{2}x^2 - 9\\right)^2}\n\\]\n\nTo minimize the distance \\( d \\), we can minimize \\( d^2 \\) instead, since the square root function is increasing. Thus, we define:\n\n\\[\nd^2 = x^2 + \\left(\\frac{1}{2}x^2 - 9\\right)^2\n\\]\n\nExpanding the second term:\n\n\\[\n\\left(\\frac{1}{2}x^2 - 9\\right)^2 = \\left(\\frac{1}{4}x^4 - 9x^2 + 81\\right)\n\\]\n\nNow substituting this back into the expression for \\( d^2 \\):\n\n\\[\nd^2 = x^2 + \\frac{1}{4}x^4 - 9x^2 + 81\n\\]\n\nCombining like terms:\n\n\\[\nd^2 = \\frac{1}{4}x^4 - 8x^2 + 81\n\\]\n\nNext, we need to find the critical points of \\( d^2 \\) by taking the derivative and setting it to zero. The derivative is:\n\n\\[\n\\frac{d}{dx}(d^2) = \\frac{1}{4} \\cdot 4x^3 - 8 \\cdot 2x = x^3 - 16x\n\\]\n\nSetting the derivative equal to zero:\n\n\\[\nx^3 - 16x = 0\n\\]\n\nFactoring out \\( x \\):\n\n\\[\nx(x^2 - 16) = 0\n\\]\n\nThis gives us:\n\n\\[\nx = 0 \\quad \\text{or} \\quad x^2 - 16 = 0\n\\]\n\nSolving \\( x^2 - 16 = 0 \\):\n\n\\[\nx^2 = 16 \\implies x = 4 \\quad \\text{or} \\quad x = -4\n\\]\n\nNow we have three critical points: \\( x = 0, 4, -4 \\). We will evaluate \\( d^2 \\) at these points.\n\n1. For \\( x = 0 \\):\n\n\\[\nd^2 = \\frac{1}{4}(0)^4 - 8(0)^2 + 81 = 81\n\\]\n\n2. For \\( x = 4 \\):\n\n\\[\nd^2 = \\frac{1}{4}(4)^4 - 8(4)^2 + 81 = \\frac{1}{4}(256) - 8(16) + 81 = 64 - 128 + 81 = 17\n\\]\n\n3. For \\( x = -4 \\):\n\n\\[\nd^2 = \\frac{1}{4}(-4)^4 - 8(-4)^2 + 81 = \\frac{1}{4}(256) - 8(16) + 81 = 64 - 128 + 81 = 17\n\\]\n\nNow we compare the values of \\( d^2 \\):\n\n- At \\( x = 0 \\), \\( d^2 = 81 \\)\n- At \\( x = 4 \\), \\( d^2 = 17 \\)\n- At \\( x = -4 \\), \\( d^2 = 17 \\)\n\nThe minimum value of \\( d^2 \\) occurs at \\( x = 4 \\) and \\( x = -4 \\), both yielding \\( d^2 = 17 \\).\n\nThus, the smallest distance squared \\( a^2 \\) is:\n\n\\[\n\\boxed{17}\n\\]\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\BOXED{17}$, AND THE STUDENT'S FINAL ANSWER IS ALSO $\\BOXED{17}$. THESE TWO FINAL ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY REPRESENT THE SAME NUMERICAL VALUE. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 10.62,
+    "zuzycie_tokenow": {
+        "wejsciowe": 109,
+        "wyjsciowe": 884,
+        "suma": 993
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_rag": 0
+}

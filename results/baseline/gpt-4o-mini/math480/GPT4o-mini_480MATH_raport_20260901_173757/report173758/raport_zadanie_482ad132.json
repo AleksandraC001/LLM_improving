@@ -1,0 +1,20 @@
+{
+    "task_file": "raport_zadanie_482ad132",
+    "zadanie": "I am going to buy exotic fruits.  Dragonfruit costs $x-4$ dollars.  Starfruit is five dollars less expensive than rambutan.  Rambutan costs $2x$ dollars more than dragonfruit.  How much does it cost to buy one rambutan, two starfruit, and three dragonfruit? Your answer will be an expression that depends on $x$.",
+    "oczekiwana_odpowiedz": "We know that one dragonfruit is $x-4$ dollars.  This means that one rambutan is $(x-4) + 2x = 3x-4$ dollars.  Then, one starfruit is $(3x-4) -5 = 3x-9$ dollars. We want to find $1 \\cdot (3x-4) + 2 \\cdot (3x-9) + 3 \\cdot (x-4)$.  Distributing these three smaller expressions gives us $(3x-4) + (6x-18) + (3x-12)$. Finally, we combine like terms, yielding $(3x + 6x + 3x) + (-4 + -18 + -12) = (12x) + (-34)$.  We obtain $\\boxed{12x -34}$, or $\\boxed{-34 + 12x}$.",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nI am going to buy exotic fruits.  Dragonfruit costs $x-4$ dollars.  Starfruit is five dollars less expensive than rambutan.  Rambutan costs $2x$ dollars more than dragonfruit.  How much does it cost to buy one rambutan, two starfruit, and three dragonfruit? Your answer will be an expression that depends on $x$.\n",
+        "[AI]:\nTo find the total cost of buying one rambutan, two starfruit, and three dragonfruit, we first need to express the costs of each fruit in terms of \\( x \\).\n\n1. **Cost of Dragonfruit**: \n   The cost of one dragonfruit is given as \\( x - 4 \\).\n\n2. **Cost of Rambutan**: \n   We know that rambutan costs \\( 2x \\) dollars more than dragonfruit. Therefore, we can express the cost of rambutan as:\n   \\[\n   \\text{Cost of Rambutan} = \\text{Cost of Dragonfruit} + 2x = (x - 4) + 2x = 3x - 4\n   \\]\n\n3. **Cost of Starfruit**: \n   Starfruit is five dollars less expensive than rambutan. Thus, we can express the cost of starfruit as:\n   \\[\n   \\text{Cost of Starfruit} = \\text{Cost of Rambutan} - 5 = (3x - 4) - 5 = 3x - 9\n   \\]\n\nNow we have the costs of all three fruits:\n- Dragonfruit: \\( x - 4 \\)\n- Rambutan: \\( 3x - 4 \\)\n- Starfruit: \\( 3x - 9 \\)\n\nNext, we calculate the total cost for one rambutan, two starfruit, and three dragonfruit:\n\n- Cost for 1 rambutan: \\( 3x - 4 \\)\n- Cost for 2 starfruit: \\( 2 \\times (3x - 9) = 6x - 18 \\)\n- Cost for 3 dragonfruit: \\( 3 \\times (x - 4) = 3x - 12 \\)\n\nNow, we sum these costs:\n\\[\n\\text{Total Cost} = (3x - 4) + (6x - 18) + (3x - 12)\n\\]\n\nCombining like terms:\n\\[\n\\text{Total Cost} = 3x + 6x + 3x - 4 - 18 - 12 = 12x - 34\n\\]\n\nThus, the total cost to buy one rambutan, two starfruit, and three dragonfruit is:\n\\[\n\\boxed{12x - 34}\n\\]\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\BOXED{12X -34}$, AND THE STUDENT'S FINAL ANSWER IS $\\BOXED{12X - 34}$. THESE TWO ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY REPRESENT THE SAME LINEAR EXPRESSION. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 7.49,
+    "zuzycie_tokenow": {
+        "wejsciowe": 145,
+        "wyjsciowe": 493,
+        "suma": 638
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_rag": 0
+}

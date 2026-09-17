@@ -1,0 +1,20 @@
+{
+    "task_file": "raport_zadanie_0e789ff4",
+    "zadanie": "Simplify the radical $\\sqrt{2940}$.",
+    "oczekiwana_odpowiedz": "We need to find square factors of 2940.  Beginning the search, we can first see it is divisible by 10.  So, $2940=2\\cdot5\\cdot294$.  Looking at 294, we can see it is divisible by 2 and 3.  Taking out these factors, find that $294=2\\cdot3\\cdot49$.  Since $49=7^2$, there is a square factor of 2 and a square factor of 7.  The complete factorization is $2940=2^2\\cdot3\\cdot5\\cdot7^2$.  Therefore, $$\\sqrt{2940}=\\sqrt{2^2\\cdot3\\cdot5\\cdot7^2}=2\\sqrt{3\\cdot5\\cdot7^2}=2\\cdot7\\sqrt{3\\cdot5}=\\boxed{14\\sqrt{15}}$$",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n\n\n    CONTEXT INSTRUCTIONS:\n    Below you will find a [HELPFUL CONTEXT FROM RAG] block. It contains a solved mathematical problems that shares SIMILAR LOGIC OF THE SOLUTION to your current problem.\n    - Analize given examples and use their context to understand the required methodology, the solution concept, theorems, or algebraic tricks BEFORE proceeding with your solving process.\n\n    [HELPFUL CONTEXT FROM RAG]\n    \n    --- USEFUL EXAMPLE ---\nProblem: Simplify $\\sqrt{288}$.\nSolution: We have:\n\n$\\sqrt{288}=\\sqrt{144\\cdot 2}=\\boxed{12\\sqrt{2}}$.\n\n--- USEFUL EXAMPLE ---\nProblem: Simplify $\\sqrt{245}$.\nSolution: We check what squares divide 245. None of the squares from $2^2$ to $6^2$ divides 245, but $7^2=49$ does. Dividing 245 by 49 gives 5, which has no square factors. So, $\\sqrt{245}=\\sqrt{49\\cdot5}=\\boxed{7\\sqrt{5}}$.\n\n--- USEFUL EXAMPLE ---\nProblem: Simplify $\\sqrt{25000}$.\nSolution: We have:\n\n$\\sqrt{25000}=\\sqrt{2500\\cdot 10}=\\boxed{50\\sqrt{10}}$.\n\n\n    \n    [/HELPFUL CONTEXT FROM RAG]\n",
+        "[HUMAN]:\nSimplify the radical $\\sqrt{2940}$.\n",
+        "[AI]:\nTo simplify the radical $\\sqrt{2940}$, we need to find the largest perfect square that divides 2940.\n\n## Step 1: Factorize 2940\nFirst, let's break down 2940 into its prime factors to identify any perfect squares. We start by dividing 2940 by the smallest prime numbers and continue until we cannot divide evenly anymore.\n\n## Step 2: Identify Perfect Square Factors\nWe look for pairs of the same prime number, as these pairs multiplied together form a perfect square.\n\n## Step 3: Calculate Prime Factorization\n2940 can be broken down as follows:\n- Start with 2 (the smallest prime): $2940 / 2 = 1470$\n- Continue with 2: $1470 / 2 = 735$\n- Move to the next prime, which is 3: $735 / 3 = 245$\n- 245 can be divided by 5 (next prime after 3): $245 / 5 = 49$\n- 49 is a square of 7, so we have $49 = 7^2$\n\nThus, $2940 = 2^2 \\times 3 \\times 5 \\times 7^2$.\n\n## Step 4: Simplify the Radical\nNow, we can rewrite $\\sqrt{2940}$ using its prime factorization:\n$\\sqrt{2940} = \\sqrt{2^2 \\times 3 \\times 5 \\times 7^2}$.\nWe can take the square root of the perfect squares ($2^2$ and $7^2$) outside of the radical:\n$\\sqrt{2940} = 2 \\times 7 \\times \\sqrt{3 \\times 5}$.\n\n## Step 5: Final Simplification\nSimplify the expression inside the radical:\n$\\sqrt{3 \\times 5} = \\sqrt{15}$.\nSo, $\\sqrt{2940} = 2 \\times 7 \\times \\sqrt{15} = 14\\sqrt{15}$.\n\nThe final answer is: $\\boxed{14\\sqrt{15}}$\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\BOXED{14\\SQRT{15}}$, AND THE STUDENT'S FINAL ANSWER IS $14\\SQRT{15}$. THESE TWO ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY REPRESENT THE SAME NUMERICAL VALUE WITH THE SAME RADICAL EXPRESSION. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 223.26,
+    "zuzycie_tokenow": {
+        "wejsciowe": 388,
+        "wyjsciowe": 443,
+        "suma": 831
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_rag": 1
+}

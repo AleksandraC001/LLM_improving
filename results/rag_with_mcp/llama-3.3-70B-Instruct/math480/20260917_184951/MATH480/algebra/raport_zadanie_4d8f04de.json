@@ -1,0 +1,19 @@
+{
+    "task_file": "raport_zadanie_4d8f04de",
+    "zadanie": "Given that the absolute value of the difference of the two roots of $ax^2 + 5x - 3 = 0$ is $\\frac{\\sqrt{61}}{3}$, and $a$ is positive, what is the value of $a$?",
+    "oczekiwana_odpowiedz": "Timeout - Endpoint API nie odpowiedzia\u0142 w wyznaczonym czasie",
+    "pelny_przebieg_rozumowania": [],
+    "decyzja_sedziego": "EMPTY",
+    "wynik_ewaluacji": "ERROR",
+    "czas_wykonania": 721.6,
+    "zuzycie_tokenow": {
+        "wejsciowe": 0,
+        "wyjsciowe": 0,
+        "suma": 0
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

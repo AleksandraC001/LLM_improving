@@ -1,0 +1,23 @@
+{
+    "task_file": "raport_zadanie_652b177c",
+    "zadanie": "An urn contains $n$ marbles. Each marble is either red or blue, and there are at least $7$ marbles of each color. When $7$ marbles are drawn randomly from the urn without replacement, the probability that exactly $4$ of them are red equals the probability that exactly $5$ of them are red. Find the sum of the five least values of $n$ for which this is possible.",
+    "oczekiwana_odpowiedz": "\\boxed{190}",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nAn urn contains $n$ marbles. Each marble is either red or blue, and there are at least $7$ marbles of each color. When $7$ marbles are drawn randomly from the urn without replacement, the probability that exactly $4$ of them are red equals the probability that exactly $5$ of them are red. Find the sum of the five least values of $n$ for which this is possible.\n",
+        "[AI]:\nTo solve this problem, let $n$ be the total number of marbles in the urn. Let $r$ be the number of red marbles and $b$ be the number of blue marbles. We are given that $r \\ge 7$ and $b \\ge 7$, and $n = r + b$.\n\nWhen 7 marbles are drawn without replacement, the number of red marbles drawn follows a hypergeometric distribution. The probability that exactly $k$ red marbles are drawn is given by:\n$$P(X = k) = \\frac{\\binom{r}{k} \\binom{b}{7-k}}{\\binom{n}{7}}$$\n\nWe are given that $P(X = 4) = P(X = 5)$. Substituting the formula:\n$$\\frac{\\binom{r}{4} \\binom{b}{3}}{\\binom{n}{7}} = \\frac{\\binom{r}{5} \\binom{b}{2}}{\\binom{n}{7}}$$\nSince $\\binom{n}{7} \\neq 0$, we can simplify this to:\n$$\\binom{r}{4} \\binom{b}{3} = \\binom{r}{5} \\binom{b}{2}$$\n\nExpanding the binomial coefficients:\n$$\\frac{r!}{4!(r-4)!} \\cdot \\frac{b!}{3!(b-3)!} = \\frac{r!}{5!(r-5)!} \\cdot \\frac{b!}{2!(b-2)!}$$\nCancel $r!$ and $b!$ from both sides:\n$$\\frac{1}{4!(r-4)! \\cdot 3!(b-3)!} = \\frac{1}{5!(r-5)! \\cdot 2!(b-2)!}$$\nRearrange the terms:\n$$\\frac{5!}{4!} \\cdot \\frac{(r-5)!}{(r-4)!} = \\frac{3!}{2!} \\cdot \\frac{(b-3)!}{(b-2)!}$$\nSimplify the factorials:\n$$5 \\cdot \\frac{1}{r-4} = 3 \\cdot \\frac{1}{b-2}$$\n$$\\frac{5}{r-4} = \\frac{3}{b-2}$$\nCross-multiply:\n$$5(b-2) = 3(r-4)$$\n$$5b - 10 = 3r - 12$$\n$$5b + 2 = 3r$$\n\nWe also know $n = r + b$, so $r = n - b$. Substitute this into the equation:\n$$5b + 2 = 3(n - b)$$\n$$5b + 2 = 3n - 3b$$\n$$8b + 2 = 3n$$\n$$3n = 8b + 2$$\n\nWe need to find values of $n$ such that $r \\ge 7$ and $b \\ge 7$.\nFrom $3r = 5b + 2$, since $r \\ge 7$:\n$5b + 2 \\ge 21 \\implies 5b \\ge 19 \\implies b \\ge 4$.\nHowever, the problem states $b \\ge 7$.\nFrom $3n = 8b + 2$, we need $8b + 2$ to be a multiple of 3.\nChecking values of $b \\ge 7$:\n- If $b = 7$, $3n = 8(7) + 2 = 58$ (not divisible by 3).\n- If $b = 8$, $3n = 8(8) + 2 = 66 \\implies n = 22$.\n  Then $r = n - b = 22 - 8 = 14$. (Check: $3(14) = 42$, $5(8)+2 = 42$. Correct.)\n- If $b = 9$, $3n = 8(9) + 2 = 74$ (not divisible by 3).\n- If $b = 10$, $3n = 8(10) + 2 = 82$ (not divisible by 3).\n- If $b = 11$, $3n = 8(11) + 2 = 90 \\implies n = 30$.\n  Then $r = 30 - 11 = 19$. (Check: $3(19) = 57$, $5(11)+2 = 57$. Correct.)\n\nThe condition $3n = 8b + 2$ implies $8b \\equiv -2 \\equiv 1 \\pmod 3$.\nSince $8 \\equiv 2 \\pmod 3$, we have $2b \\equiv 1 \\equiv 4 \\pmod 3$, so $b \\equiv 2 \\pmod 3$.\nThe possible values for $b$ are $b \\in \\{8, 11, 14, 17, 20, \\dots\\}$.\nSince $b \\ge 7$, all these values are valid.\nThe corresponding values for $n$ are:\n1. $b = 8 \\implies n = \\frac{8(8)+2}{3} = 22$\n2. $b = 11 \\implies n = \\frac{8(11)+2}{3} = 30$\n3. $b = 14 \\implies n = \\frac{8(14)+2}{3} = 38$\n4. $b = 17 \\implies n = \\frac{8(17)+2}{3} = 46$\n5. $b = 20 \\implies n = \\frac{8(20)+2}{3} = 54$\n\nThe five least values of $n$ are $22, 30, 38, 46, 54$.\nThe sum is $22 + 30 + 38 + 46 + 54 = 190$.\n\n$\\boxed{190}$\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\BOXED{190}$, AND THE STUDENT'S FINAL ANSWER IS ALSO $\\BOXED{190}$. THESE TWO ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY REPRESENT THE SAME NUMERICAL VALUE. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 363.55,
+    "zuzycie_tokenow": {
+        "wejsciowe": 159,
+        "wyjsciowe": 1357,
+        "suma": 1516
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

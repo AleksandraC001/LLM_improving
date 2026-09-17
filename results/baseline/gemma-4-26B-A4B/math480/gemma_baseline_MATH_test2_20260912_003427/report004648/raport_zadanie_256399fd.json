@@ -1,0 +1,23 @@
+{
+    "task_file": "raport_zadanie_256399fd",
+    "zadanie": "Let $a,$ $b,$ $c$ be real numbers such that\n\\[a + 3b + 4c = a^2 + b^2 + c^2 = 25.\\]Find the largest possible value of $a.$",
+    "oczekiwana_odpowiedz": "By Cauchy-Schwarz,\n\\[(3^2 + 4^2)(b^2 + c^2) \\ge (3b + 4c)^2.\\]Since $a + 3b + 4c = a^2 + b^2 + c^2 = 25,$ we can write this as\n\\[25(25 - a^2) \\ge (25 - a)^2.\\]Expanding, we get\n\\[625 - 25a^2 \\ge 625 - 50a + a^2,\\]so $26a^2 - 50a \\le 0.$  This factors as $2a(13a - 25) \\le 0.$  This implies $a \\le \\frac{25}{13}.$\n\nFor $a = \\frac{25}{13},$ since we have equality above, we want $\\frac{b^2}{9} = \\frac{c^2}{16}.$  We also want $a + 3b + 4c = 25.$  We can solve to get $b = \\frac{36}{13}$ and $c = \\frac{48}{13},$ so the largest possible value of $a$ is $\\boxed{\\frac{25}{13}}.$",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nLet $a,$ $b,$ $c$ be real numbers such that\n\\[a + 3b + 4c = a^2 + b^2 + c^2 = 25.\\]Find the largest possible value of $a.$\n",
+        "[AI]:\nTo find the largest possible value of $a$, we are given the system of equations:\n1) $a + 3b + 4c = 25$\n2) $a^2 + b^2 + c^2 = 25$\n\nWe want to maximize $a$ subject to these constraints. From equation (1), we can express the relationship between $b$ and $c$ in terms of $a$:\n$3b + 4c = 25 - a$\n\nFrom equation (2), we have:\n$b^2 + c^2 = 25 - a^2$\n\nFor $b$ and $c$ to be real numbers, the values must satisfy the Cauchy-Schwarz inequality. Specifically, for any real numbers $b, c$, the following inequality holds:\n$(3^2 + 4^2)(b^2 + c^2) \\ge (3b + 4c)^2$\n\nSubstituting the expressions derived from the given equations:\n$(9 + 16)(25 - a^2) \\ge (25 - a)^2$\n$25(25 - a^2) \\ge (25 - a)^2$\n\nNow, we expand and solve this inequality for $a$:\n$625 - 25a^2 \\ge 625 - 50a + a^2$\n$0 \\ge 26a^2 - 50a$\n$26a^2 - 50a \\le 0$\n\nFactor out the common terms:\n$2a(13a - 25) \\le 0$\n\nThe roots of the quadratic $26a^2 - 50a = 0$ are $a = 0$ and $a = \\frac{25}{13}$.\nSince the parabola $26a^2 - 50a$ opens upwards, the inequality $26a^2 - 50a \\le 0$ is satisfied when $a$ is between the two roots:\n$0 \\le a \\le \\frac{25}{13}$\n\nThe largest possible value of $a$ is $\\frac{25}{13}$.\n\nTo verify, if $a = \\frac{25}{13}$, then $25(25 - a^2) = (25 - a)^2$, which implies that the equality in Cauchy-Schwarz holds. This happens when the vector $(b, c)$ is proportional to $(3, 4)$, i.e., $b = 3k$ and $c = 4k$ for some constant $k$.\nSubstituting into $3b + 4c = 25 - a$:\n$3(3k) + 4(4k) = 25 - \\frac{25}{13}$\n$25k = \\frac{325 - 25}{13} = \\frac{300}{13}$\n$k = \\frac{12}{13}$\nThen $b = \\frac{36}{13}$ and $c = \\frac{48}{13}$.\nChecking $a^2 + b^2 + c^2$:\n$(\\frac{25}{13})^2 + (\\frac{36}{13})^2 + (\\frac{48}{13})^2 = \\frac{625 + 1296 + 2304}{169} = \\frac{4225}{169} = 25$.\nThe conditions are satisfied.\n\nThe largest possible value of $a$ is $\\frac{25}{13}$.\n\n\\boxed{\\frac{25}{13}}\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\FRAC{25}{13}$, AND THE STUDENT'S FINAL ANSWER IS ALSO $\\FRAC{25}{13}$. THESE TWO ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY REPRESENT THE SAME VALUE. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 354.95,
+    "zuzycie_tokenow": {
+        "wejsciowe": 127,
+        "wyjsciowe": 826,
+        "suma": 953
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

@@ -1,0 +1,19 @@
+{
+    "task_file": "raport_zadanie_8bef951a",
+    "zadanie": "The parabola $y = x^2$ is tangent to the graph of $y = x^4 + ax^3 + x^2 + bx + 1$ at two points.  Find the positive difference between the $x$-coordinates of the points of tangency.",
+    "oczekiwana_odpowiedz": "Timeout - Endpoint API nie odpowiedzia\u0142 w wyznaczonym czasie",
+    "pelny_przebieg_rozumowania": [],
+    "decyzja_sedziego": "EMPTY",
+    "wynik_ewaluacji": "ERROR",
+    "czas_wykonania": 721.72,
+    "zuzycie_tokenow": {
+        "wejsciowe": 0,
+        "wyjsciowe": 0,
+        "suma": 0
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

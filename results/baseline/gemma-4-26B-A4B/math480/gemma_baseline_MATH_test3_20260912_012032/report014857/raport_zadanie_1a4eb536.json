@@ -1,0 +1,23 @@
+{
+    "task_file": "raport_zadanie_1a4eb536",
+    "zadanie": "A square piece of paper is folded once so that one pair of opposite corners coincide. When the paper is unfolded, two congruent triangles have been formed. Given that the area of the original square is $49$ square inches, what is the number of inches in the perimeter of one of these triangles? Express your answer in simplest radical form.",
+    "oczekiwana_odpowiedz": "Since the area of the square is 49 square inches, the side length of the square is $\\sqrt{49} = 7$ square inches.  Each triangle formed by the fold is a 45-45-90 triangle whose legs are sides of the square and whose hypotenuse is the fold.  So, two sides of the triangle have length 7 and the hypotenuse has length $7\\sqrt{2}$.  Therefore, the perimeter of the triangle is $7+7+7\\sqrt{2} = \\boxed{14+7\\sqrt{2}}$.",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nA square piece of paper is folded once so that one pair of opposite corners coincide. When the paper is unfolded, two congruent triangles have been formed. Given that the area of the original square is $49$ square inches, what is the number of inches in the perimeter of one of these triangles? Express your answer in simplest radical form.\n",
+        "[AI]:\nTo solve this problem, let's represent the square piece of paper on a coordinate plane.\n\n1.  **Identify the dimensions of the square:**\n    The area of the square is $49$ square inches. Let $s$ be the side length of the square.\n    $s^2 = 49 \\implies s = 7$ inches.\n\n2.  **Set up the coordinates:**\n    Let the vertices of the square be $A(0, 7)$, $B(7, 7)$, $C(7, 0)$, and $D(0, 0)$.\n    The problem states that the paper is folded so that one pair of opposite corners coincide. Let's choose corners $A(0, 7)$ and $C(7, 0)$.\n\n3.  **Determine the fold line:**\n    When a paper is folded so that point $A$ meets point $C$, the fold line is the perpendicular bisector of the segment $AC$.\n    The midpoint of $AC$ is $M = \\left(\\frac{0+7}{2}, \\frac{7+0}{2}\\right) = (3.5, 3.5)$.\n    The slope of $AC$ is $m_{AC} = \\frac{0-7}{7-0} = -1$.\n    The slope of the perpendicular bisector is $m_{\\perp} = -\\frac{1}{-1} = 1$.\n    The equation of the fold line is $y - 3.5 = 1(x - 3.5)$, which simplifies to $y = x$.\n\n4.  **Identify the triangles formed:**\n    When the paper is unfolded, the fold line $y=x$ divides the square into two congruent shapes. Since the fold line passes through the vertices $D(0,0)$ and $B(7,7)$, the two shapes formed are triangles.\n    The vertices of one triangle are $D(0,0)$, $C(7,0)$, and $B(7,7)$.\n    The vertices of the other triangle are $D(0,0)$, $A(0,7)$, and $B(7,7)$.\n    These two triangles are congruent. Let's calculate the perimeter of triangle $BCD$.\n\n5.  **Calculate the side lengths of the triangle:**\n    The vertices of triangle $BCD$ are $D(0,0)$, $C(7,0)$, and $B(7,7)$.\n    - Side $DC$: The distance between $(0,0)$ and $(7,0)$ is $7$.\n    - Side $CB$: The distance between $(7,0)$ and $(7,7)$ is $7$.\n    - Side $BD$: The distance between $(0,0)$ and $(7,7)$ is $\\sqrt{(7-0)^2 + (7-0)^2} = \\sqrt{49 + 49} = \\sqrt{98} = 7\\sqrt{2}$.\n\n6.  **Calculate the perimeter:**\n    Perimeter $P = DC + CB + BD$\n    $P = 7 + 7 + 7\\sqrt{2}$\n    $P = 14 + 7\\sqrt{2}$\n\nThe question asks for the perimeter in simplest radical form.\n\n\\boxed{14 + 7\\sqrt{2}}\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\BOXED{14+7\\SQRT{2}}$. THE STUDENT'S FINAL ANSWER IS $\\BOXED{14 + 7\\SQRT{2}}$. THESE TWO EXPRESSIONS ARE MATHEMATICALLY EQUIVALENT, AS THEY REPRESENT THE SAME VALUE WITH THE SAME TERMS AND COEFFICIENTS. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 94.59,
+    "zuzycie_tokenow": {
+        "wejsciowe": 143,
+        "wyjsciowe": 735,
+        "suma": 878
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

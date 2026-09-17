@@ -1,0 +1,150 @@
+Evaluating MATH480/algebra
+Znaleziono 80 zadań do przetworzenia.
+
+--- Zakończono ewaluację ---
+Końcowe statystyki: ERROR: 2, RIGHT: 66, WRONG: 12
+
+--- PODSUMOWANIE WYDAJNOŚCI ---
+Ilość rozwiązanych zadań: 80
+Ilość zadań z poprawnym wynikiem: 66
+Ilość zadań z niepoprawnym wynikiem: 12
+Ilość przebiegów zakończonych błędem wykonania: 2
+Errors %: 2.5
+Dokładność:  82.50
+Mediana czasu na zadanie: 7.30 s
+Średni czas na zadanie:   11.36 s
+Średnio tokenów IN:       1213
+Średnio tokenów OUT:      701
+Średnio tokenów ALL:      1914
+Ilość rozwiązań z użyciem narzędzi: 12
+Ilość wywołań narzędzi(ogólnie): 37
+Ilość wywołań pythona: 37
+Ilość wywołań wolfram: 0
+Ilość wywołań brave: 0
+Ile razy rag dodał kontekst: 0
+
+Evaluating MATH480/counting_and_probability
+Znaleziono 80 zadań do przetworzenia.
+
+--- Zakończono ewaluację ---
+Końcowe statystyki: WRONG: 32, RIGHT: 48
+
+--- PODSUMOWANIE WYDAJNOŚCI ---
+Ilość rozwiązanych zadań: 80
+Ilość zadań z poprawnym wynikiem: 48
+Ilość zadań z niepoprawnym wynikiem: 32
+Ilość przebiegów zakończonych błędem wykonania: 0
+Errors %: 0.0
+Dokładność:  60.00
+Mediana czasu na zadanie: 70.00 s
+Średni czas na zadanie:   70.65 s
+Średnio tokenów IN:       5129
+Średnio tokenów OUT:      1316
+Średnio tokenów ALL:      6445
+Ilość rozwiązań z użyciem narzędzi: 54
+Ilość wywołań narzędzi(ogólnie): 208
+Ilość wywołań pythona: 150
+Ilość wywołań wolfram: 57
+Ilość wywołań brave: 1
+Ile razy rag dodał kontekst: 0
+
+Evaluating MATH480/intermediate_algebra
+Znaleziono 80 zadań do przetworzenia.
+
+--- Zakończono ewaluację ---
+Końcowe statystyki: WRONG: 55, RIGHT: 22, ERROR: 3
+
+--- PODSUMOWANIE WYDAJNOŚCI ---
+Ilość rozwiązanych zadań: 80
+Ilość zadań z poprawnym wynikiem: 22
+Ilość zadań z niepoprawnym wynikiem: 55
+Ilość przebiegów zakończonych błędem wykonania: 3
+Errors %: 3.75
+Dokładność:  27.50
+Mediana czasu na zadanie: 11.68 s
+Średni czas na zadanie:   20.65 s
+Średnio tokenów IN:       2265
+Średnio tokenów OUT:      1164
+Średnio tokenów ALL:      3429
+Ilość rozwiązań z użyciem narzędzi: 7
+Ilość wywołań narzędzi(ogólnie): 41
+Ilość wywołań pythona: 41
+Ilość wywołań wolfram: 0
+Ilość wywołań brave: 0
+Ile razy rag dodał kontekst: 0
+
+Evaluating MATH480/number_theory
+Znaleziono 80 zadań do przetworzenia.
+
+--- Zakończono ewaluację ---
+Końcowe statystyki: RIGHT: 51, WRONG: 28, ERROR: 1
+
+--- PODSUMOWANIE WYDAJNOŚCI ---
+Ilość rozwiązanych zadań: 80
+Ilość zadań z poprawnym wynikiem: 51
+Ilość zadań z niepoprawnym wynikiem: 28
+Ilość przebiegów zakończonych błędem wykonania: 1
+Errors %: 1.25
+Dokładność:  63.75
+Mediana czasu na zadanie: 9.48 s
+Średni czas na zadanie:   15.27 s
+Średnio tokenów IN:       1336
+Średnio tokenów OUT:      1024
+Średnio tokenów ALL:      2360
+Ilość rozwiązań z użyciem narzędzi: 12
+Ilość wywołań narzędzi(ogólnie): 42
+Ilość wywołań pythona: 42
+Ilość wywołań wolfram: 0
+Ilość wywołań brave: 0
+Ile razy rag dodał kontekst: 0
+
+Evaluating MATH480/prealgebra
+Znaleziono 80 zadań do przetworzenia.
+
+--- Zakończono ewaluację ---
+Końcowe statystyki: RIGHT: 68, WRONG: 12
+
+--- PODSUMOWANIE WYDAJNOŚCI ---
+Ilość rozwiązanych zadań: 80
+Ilość zadań z poprawnym wynikiem: 68
+Ilość zadań z niepoprawnym wynikiem: 12
+Ilość przebiegów zakończonych błędem wykonania: 0
+Errors %: 0.0
+Dokładność:  85.00
+Mediana czasu na zadanie: 15.31 s
+Średni czas na zadanie:   44.86 s
+Średnio tokenów IN:       2767
+Średnio tokenów OUT:      631
+Średnio tokenów ALL:      3398
+Ilość rozwiązań z użyciem narzędzi: 38
+Ilość wywołań narzędzi(ogólnie): 132
+Ilość wywołań pythona: 119
+Ilość wywołań wolfram: 13
+Ilość wywołań brave: 0
+Ile razy rag dodał kontekst: 0
+
+Evaluating MATH480/precalculus
+Znaleziono 80 zadań do przetworzenia.
+
+--- Zakończono ewaluację ---
+Końcowe statystyki: RIGHT: 37, WRONG: 43
+
+--- PODSUMOWANIE WYDAJNOŚCI ---
+Ilość rozwiązanych zadań: 80
+Ilość zadań z poprawnym wynikiem: 37
+Ilość zadań z niepoprawnym wynikiem: 43
+Ilość przebiegów zakończonych błędem wykonania: 0
+Errors %: 0.0
+Dokładność:  46.25
+Mediana czasu na zadanie: 11.90 s
+Średni czas na zadanie:   19.72 s
+Średnio tokenów IN:       2133
+Średnio tokenów OUT:      1324
+Średnio tokenów ALL:      3457
+Ilość rozwiązań z użyciem narzędzi: 14
+Ilość wywołań narzędzi(ogólnie): 61
+Ilość wywołań pythona: 59
+Ilość wywołań wolfram: 2
+Ilość wywołań brave: 0
+Ile razy rag dodał kontekst: 0
+

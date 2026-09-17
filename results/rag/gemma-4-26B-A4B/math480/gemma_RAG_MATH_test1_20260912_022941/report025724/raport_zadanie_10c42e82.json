@@ -1,0 +1,23 @@
+{
+    "task_file": "raport_zadanie_10c42e82",
+    "zadanie": "How many three digit numbers are there such that the digits are non-zero, the tens digit is a multiple of the hundreds digit, the units digit is a multiple of the tens digit, and none of the digits are the same?",
+    "oczekiwana_odpowiedz": "If the hundreds digit is $1,$ there are $3$ possible numbers for the tens digit: $2,$ $3,$ and $4.$ Any number greater than $4$ is impossible because the units digit must be a multiple of the tens digit. Therefore, we have $124,$ $126,$ $128,$ $136,$ $139,$ and $148.$\n\nIf the hundreds digit is $2,$ there is only $1$ possible number for the tens digit: $4$ because any number greater than $4$ would have a multiple that has two digits. Therefore, we have $248.$\n\nWe cannot have any number with a hundreds digit larger than $2$. Therefore, there are $6+1=\\boxed{7}$ possible numbers.",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n\n",
+        "[HUMAN]:\nHow many three digit numbers are there such that the digits are non-zero, the tens digit is a multiple of the hundreds digit, the units digit is a multiple of the tens digit, and none of the digits are the same?\n",
+        "[AI]:\nTo find the number of three-digit numbers that satisfy the given conditions, let the three-digit number be represented as $abc$, where $a$ is the hundreds digit, $b$ is the tens digit, and $c$ is the units digit.\n\nThe conditions are:\n1. $a, b, c \\in \\{1, 2, 3, 4, 5, 6, 7, 8, 9\\}$ (non-zero digits).\n2. $b$ is a multiple of $a$ ($b = k_1 a$ for some integer $k_1$).\n3. $c$ is a multiple of $b$ ($c = k_2 b$ for some integer $k_2$).\n4. $a \\neq b$, $b \\neq c$, and $a \\neq c$ (none of the digits are the same).\n\nSince $b$ is a multiple of $a$ and $a \\neq b$, we must have $k_1 \\ge 2$.\nSince $c$ is a multiple of $b$ and $b \\neq c$, we must have $k_2 \\ge 2$.\nThis implies $b \\ge 2a$ and $c \\ge 2b$.\nCombining these, we have $c \\ge 2(2a) = 4a$.\n\nLet's iterate through possible values of $a$:\n\n**Case 1: $a = 1$**\nIf $a = 1$, then $b$ must be a multiple of 1 and $b > 1$.\nPossible values for $b$: $\\{2, 3, 4, 5, 6, 7, 8, 9\\}$.\nNow we find $c$ for each $b$, where $c$ is a multiple of $b$, $c > b$, and $c \\le 9$.\n\n- If $b = 2$: $c \\in \\{4, 6, 8\\}$ (3 values)\n- If $b = 3$: $c \\in \\{6, 9\\}$ (2 values)\n- If $b = 4$: $c \\in \\{8\\}$ (1 value)\n- If $b = 5$: No $c$ possible ($2 \\times 5 = 10 > 9$)\n- If $b \\ge 5$: No $c$ possible.\n\nTotal for $a=1$: $3 + 2 + 1 = 6$.\nThe numbers are: 124, 126, 128, 136, 139, 148.\n\n**Case 2: $a = 2$**\nIf $a = 2$, then $b$ must be a multiple of 2 and $b > 2$.\nPossible values for $b$: $\\{4, 6, 8\\}$.\nNow we find $c$ for each $b$, where $c$ is a multiple of $b$, $c > b$, and $c \\le 9$.\n\n- If $b = 4$: $c \\in \\{8\\}$ (1 value)\n- If $b = 6$: No $c$ possible ($2 \\times 6 = 12 > 9$)\n- If $b = 8$: No $c$ possible.\n\nTotal for $a=2$: $1$.\nThe number is: 248.\n\n**Case 3: $a = 3$**\nIf $a = 3$, then $b$ must be a multiple of 3 and $b > 3$.\nPossible values for $b$: $\\{6, 9\\}$.\n- If $b = 6$: No $c$ possible ($2 \\times 6 = 12 > 9$)\n- If $b = 9$: No $c$ possible.\n\nTotal for $a=3$: $0$.\n\n**Case 4: $a \\ge 4$**\nIf $a = 4$, the smallest possible $b$ is $2 \\times 4 = 8$. The smallest possible $c$ is $2 \\times 8 = 16$, which is not a single digit.\nThus, no solutions exist for $a \\ge 3$ (except for the $a=3$ case we checked).\n\n**Summary of all valid numbers:**\n124, 126, 128, 136, 139, 148, 248.\n\nCounting them: $6 + 1 = 7$.\n\nFinal check of the conditions for each:\n124: $2=2(1), 4=2(2), 1\\neq2\\neq4$ (Yes)\n126: $2=2(1), 6=3(2), 1\\neq2\\neq6$ (Yes)\n128: $2=2(1), 8=4(2), 1\\neq2\\neq8$ (Yes)\n136: $3=3(1), 6=2(3), 1\\neq3\\neq6$ (Yes)\n139: $3=3(1), 9=3(3), 1\\neq3\\neq9$ (Yes)\n148: $4=4(1), 8=2(4), 1\\neq4\\neq8$ (Yes)\n248: $4=2(2), 8=2(4), 2\\neq4\\neq8$ (Yes)\n\nAll conditions are satisfied.\n\n\\boxed{7}\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\BOXED{7}$, AND THE STUDENT'S FINAL ANSWER IS ALSO $\\BOXED{7}$. THESE TWO ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY REPRESENT THE SAME NUMERICAL VALUE. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 268.74,
+    "zuzycie_tokenow": {
+        "wejsciowe": 121,
+        "wyjsciowe": 1247,
+        "suma": 1368
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

@@ -1,0 +1,20 @@
+{
+    "task_file": "raport_zadanie_9612f9dd",
+    "zadanie": "Joan tries to solve a really hard problem once each day.  She has a 1/4 probability of solving it each day.  What is the probability that she will solve it before her sixth try?",
+    "oczekiwana_odpowiedz": "We must find the probability that Joan can solve it at any time before the sixth try, so it is the sum of the probabilities that she will solve it on her first, second, third, fourth, and fifth tries.  We could evaluate all those cases, but seeing all that casework, we wonder if it will be easier to find the probability that she fails to solve it before 6 tries, and subtract the result from 1.\n\nIn order for her to fail to solve it before her sixth try, she must fail 5 times.  The probability of failure on each try is $1 - \\frac{1}{4} = \\frac{3}{4}$, so the probability that she fails on each of her first 5 tries is $\\left(\\frac{3}{4}\\right)^5 = \\frac{243}{1024}$.  Therefore, the probability that she succeeds before her sixth try is \\[1-\\frac{243}{1024} = \\boxed{\\frac{781}{1024}}.\\]",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nJoan tries to solve a really hard problem once each day.  She has a 1/4 probability of solving it each day.  What is the probability that she will solve it before her sixth try?\n",
+        "[AI]:\nTo find the probability that Joan solves the problem before her sixth try, we can use the concept of complementary probability. \n\nFirst, we need to determine the probability that she does not solve the problem in any of her first five tries. The probability of not solving the problem on any given day is:\n\n\\[\n1 - \\frac{1}{4} = \\frac{3}{4}\n\\]\n\nNow, if she tries for five days and does not solve the problem on any of those days, the probability of this happening is:\n\n\\[\n\\left(\\frac{3}{4}\\right)^5\n\\]\n\nNext, we calculate \\(\\left(\\frac{3}{4}\\right)^5\\):\n\n\\[\n\\left(\\frac{3}{4}\\right)^5 = \\frac{3^5}{4^5} = \\frac{243}{1024}\n\\]\n\nThis value represents the probability that she does not solve the problem in the first five tries. To find the probability that she solves the problem at least once in those five tries, we take the complement of the above probability:\n\n\\[\nP(\\text{solving before sixth try}) = 1 - P(\\text{not solving in five tries}) = 1 - \\left(\\frac{3}{4}\\right)^5\n\\]\n\nNow we can compute this:\n\n\\[\nP(\\text{solving before sixth try}) = 1 - \\frac{243}{1024} = \\frac{1024 - 243}{1024} = \\frac{781}{1024}\n\\]\n\nThus, the probability that Joan will solve the problem before her sixth try is:\n\n\\[\n\\boxed{\\frac{781}{1024}}\n\\]\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\FRAC{781}{1024}$, AND THE FINAL ANSWER IN THE STUDENT'S TEXT IS ALSO $\\FRAC{781}{1024}$. THESE TWO ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY REPRESENT THE SAME FRACTION. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 4.31,
+    "zuzycie_tokenow": {
+        "wejsciowe": 110,
+        "wyjsciowe": 354,
+        "suma": 464
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_rag": 0
+}

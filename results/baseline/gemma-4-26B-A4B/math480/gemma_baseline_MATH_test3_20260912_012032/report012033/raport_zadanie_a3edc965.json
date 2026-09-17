@@ -1,0 +1,23 @@
+{
+    "task_file": "raport_zadanie_a3edc965",
+    "zadanie": "An audience of $450$ people is seated in an auditorium. Each row contains the same number of seats and each seat in the auditorium is occupied. With three fewer seats per row, and five extra rows, the same audience could still be seated, occupying all seats. How many rows does the auditorium have?",
+    "oczekiwana_odpowiedz": "Let $r$ be the number of rows, and $s$ be the number of seats per row. It follows that $rs = 450$ and $(r + 5)(s - 3) = 450$. Expanding the second equation, it follows that $rs - 3r + 5s - 15 = 450$, and substituting the value of $rs$, it follows that $3r - 5s + 15 = 0$. Substituting $s = \\frac{450}{r}$ into this new equation, we obtain that $$3r - 5 \\cdot \\frac{450}{r}+ 15 = 0 \\Longrightarrow r +5 -\\frac{750}{r} = 0.$$ Multiplying both sides of the equation by $r$ yields the quadratic equation $r^2 + 5r - 750 = 0$, which factors as $(r + 30)(r - 25) = 0$. Thus, $r = \\boxed{25}$.",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nAn audience of $450$ people is seated in an auditorium. Each row contains the same number of seats and each seat in the auditorium is occupied. With three fewer seats per row, and five extra rows, the same audience could still be seated, occupying all seats. How many rows does the auditorium have?\n",
+        "[AI]:\nTo solve this problem, we need to determine the number of rows in the auditorium. Let's define the variables based on the information provided.\n\n1.  **Define Variables:**\n    Let $r$ be the original number of rows in the auditorium.\n    Let $s$ be the original number of seats per row.\n\n2.  **Set up the first equation:**\n    We are told that the total number of people is 450 and every seat is occupied. Therefore:\n    $$r \\times s = 450$$\n\n3.  **Set up the second equation:**\n    The problem states that if there were three fewer seats per row ($s - 3$) and five extra rows ($r + 5$), the same audience (450 people) could still be seated, occupying all seats. Therefore:\n    $$(r + 5)(s - 3) = 450$$\n\n4.  **Solve the system of equations:**\n    From the first equation, we can express $s$ in terms of $r$:\n    $$s = \\frac{450}{r}$$\n\n    Substitute this expression for $s$ into the second equation:\n    $$(r + 5)\\left(\\frac{450}{r} - 3\\right) = 450$$\n\n    Expand the left side of the equation:\n    $$r\\left(\\frac{450}{r}\\right) - 3r + 5\\left(\\frac{450}{r}\\right) - 15 = 450$$\n    $$450 - 3r + \\frac{2250}{r} - 15 = 450$$\n\n    Subtract 450 from both sides:\n    $$-3r + \\frac{2250}{r} - 15 = 0$$\n\n    To eliminate the fraction, multiply the entire equation by $r$ (noting that $r \\neq 0$):\n    $$-3r^2 + 2250 - 15r = 0$$\n\n    Rearrange the terms into a standard quadratic equation form ($ax^2 + bx + c = 0$):\n    $$-3r^2 - 15r + 2250 = 0$$\n\n    Divide the entire equation by $-3$ to simplify:\n    $$r^2 + 5r - 750 = 0$$\n\n5.  **Factor the quadratic equation:**\n    We need to find two numbers that multiply to $-750$ and add up to $5$.\n    Looking at factors of 750:\n    $25 \\times 30 = 750$\n    Since the sum is $+5$, we use $+30$ and $-25$.\n    $$(r + 30)(r - 25) = 0$$\n\n6.  **Find the value of $r$:**\n    The solutions are $r = -30$ and $r = 25$.\n    Since the number of rows must be a positive integer, we discard $r = -30$.\n    Thus, $r = 25$.\n\n7.  **Verify the result:**\n    If $r = 25$, then $s = 450 / 25 = 18$.\n    Check the second condition:\n    New rows: $r + 5 = 25 + 5 = 30$\n    New seats per row: $s - 3 = 18 - 3 = 15$\n    Total seats: $30 \\times 15 = 450$.\n    The conditions are satisfied.\n\nThe auditorium has 25 rows.\n\n\\boxed{25}\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $R = \\BOXED{25}$, AND THE STUDENT'S FINAL ANSWER IS ALSO $R = \\BOXED{25}$. THESE TWO ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY BOTH REPRESENT THE SAME NUMERICAL VALUE FOR THE NUMBER OF ROWS.\n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 140.08,
+    "zuzycie_tokenow": {
+        "wejsciowe": 138,
+        "wyjsciowe": 838,
+        "suma": 976
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

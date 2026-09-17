@@ -1,0 +1,23 @@
+{
+    "task_file": "raport_zadanie_72b9d48e",
+    "zadanie": "Eighty percent of the students in a class (group A) share $40\\%$ of the candy equally. The remaining $20\\%$ of the students (group B) share the other $60\\%$ of the candy equally. The ratio of the amount of candy a student in group A has to the amount of candy a student in group B has is equal to what common fraction?",
+    "oczekiwana_odpowiedz": "Suppose that there are $c$ pieces of candy total shared by $s$ students in the class. In group A, there are $.8 \\cdot s$ students sharing $.4 \\cdot c$ pieces of candy. Dividing the two, we have $\\frac{.4c \\textnormal{ pieces of candy}}{.8s \\textnormal{ students}}$, or $.5\\frac{c}{s}$ pieces of candy per student. In group B, there are $.2 \\cdot s$ students sharing $.6 \\cdot c$ pieces of candy. Dividing the two, we have $\\frac{.6c \\textnormal{ pieces of candy}}{.2s \\textnormal{ students}}$, or $3\\frac{c}{s}$ pieces of candy per student. The ratio between the pieces of candy per student in group A and that in group B is $\\frac{.5\\frac{c}{s}}{3\\frac{c}{s}} = \\boxed{\\frac{1}{6}}$.",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nEighty percent of the students in a class (group A) share $40\\%$ of the candy equally. The remaining $20\\%$ of the students (group B) share the other $60\\%$ of the candy equally. The ratio of the amount of candy a student in group A has to the amount of candy a student in group B has is equal to what common fraction?\n",
+        "[AI]:\n## Step 1: Calculate the percentage of students in group A and group B\nFirst, let's calculate the percentage of students in group A and group B. Given that $80\\%$ of the students are in group A and the remaining $20\\%$ are in group B.\n\n## Step 2: Calculate the percentage of candy shared by group A and group B\nNext, we need to calculate the percentage of candy shared by group A and group B. Group A shares $40\\%$ of the candy, and group B shares the remaining $60\\%$.\n\n## Step 3: Determine the ratio of candy per student in group A to group B\nLet's assume there are $100$ students in total for simplicity. This means $80$ students are in group A and $20$ students are in group B. Group A shares $40\\%$ of the candy, which is $0.4$ times the total candy, and group B shares $60\\%$ of the candy, which is $0.6$ times the total candy.\n\n## Step 4: Calculate the amount of candy per student in group A and group B\nIf we denote the total amount of candy as $T$, then the amount of candy per student in group A is $\\frac{0.4T}{80}$ and the amount of candy per student in group B is $\\frac{0.6T}{20}$.\n\n## Step 5: Calculate the ratio of the amount of candy per student in group A to group B\nThe ratio of the amount of candy per student in group A to the amount in group B is $\\frac{\\frac{0.4T}{80}}{\\frac{0.6T}{20}}$. Simplifying this expression gives us the ratio.\n\n## Step 6: Simplify the ratio expression\n$\\frac{\\frac{0.4T}{80}}{\\frac{0.6T}{20}} = \\frac{0.4T}{80} \\times \\frac{20}{0.6T} = \\frac{0.4 \\times 20}{80 \\times 0.6} = \\frac{8}{48} = \\frac{1}{6}$.\n\nThe final answer is: $\\boxed{\\frac{1}{6}}$\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\FRAC{1}{6}$, AND THE STUDENT'S FINAL ANSWER IS ALSO $\\FRAC{1}{6}$. THESE TWO ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY REPRESENT THE SAME FRACTION. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 174.95,
+    "zuzycie_tokenow": {
+        "wejsciowe": 170,
+        "wyjsciowe": 478,
+        "suma": 648
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

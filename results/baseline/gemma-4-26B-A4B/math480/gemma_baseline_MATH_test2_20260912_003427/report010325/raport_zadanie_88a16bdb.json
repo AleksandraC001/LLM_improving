@@ -1,0 +1,23 @@
+{
+    "task_file": "raport_zadanie_88a16bdb",
+    "zadanie": "How many integers between 100 and 500 have at least two 3s as digits?",
+    "oczekiwana_odpowiedz": "First consider the two $3$s to appear in the units and tens places. Between $100$ and $500$, there are four such numbers: $133$, $233$, $333$, and $433$. Now consider the two $3$s to appear in the units and hundreds places. The numbers will be in the $300$s, so we don't need to worry about if they are between $100$ and $500$. There are $10$ choices for the tens digit, but we have already counted $333$, so such a scenario will add nine numbers. Finally, consider the two $3$s to appear in the tens and hundreds places. Again, these numbers are automatically between $100$ and $500$. There are $10$ choices for the units digit, but we again discard $333$ for a final count of nine such numbers. Thus, our answer is $4+9+9 = \\boxed{22}$.",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nHow many integers between 100 and 500 have at least two 3s as digits?\n",
+        "[AI]:\nTo find the number of integers between 100 and 500 that have at least two 3s as digits, we can categorize these integers based on their hundreds digit.\n\nThe range is $100 \\le n \\le 500$. The possible hundreds digits are $1, 2, 3,$ and $4$. (Note: 500 does not contain any 3s, so we only consider $1xx, 2xx, 3xx,$ and $4xx$).\n\nWe will analyze each case separately:\n\n**Case 1: Hundreds digit is 1, 2, or 4**\nIn these cases, the hundreds digit is not a 3. For the integer to have at least two 3s, both the tens digit and the units digit must be 3.\n- For the 100s: The only number is $133$. (1 number)\n- For the 200s: The only number is $233$. (1 number)\n- For the 400s: The only number is $433$. (1 number)\nTotal for Case 1: $1 + 1 + 1 = 3$.\n\n**Case 2: Hundreds digit is 3**\nIn this case, the hundreds digit is already a 3. For the integer to have \"at least two 3s\", we need at least one more 3 in the tens or units place.\nIt is easier to use the complement method for this case:\nTotal numbers in the 300s (from 300 to 399) is $100$.\nWe subtract the numbers in the 300s that have **no other 3s** (i.e., the tens digit is not 3 AND the units digit is not 3).\n- The tens digit can be any of $\\{0, 1, 2, 4, 5, 6, 7, 8, 9\\}$ (9 choices).\n- The units digit can be any of $\\{0, 1, 2, 4, 5, 6, 7, 8, 9\\}$ (9 choices).\nNumber of integers in the 300s with no other 3s: $9 \\times 9 = 81$.\n\nNumber of integers in the 300s with at least one more 3: $100 - 81 = 19$.\n(Alternatively, these are: 330-339 (10 numbers), 303, 313, 323, 343, 353, 363, 373, 383, 393 (9 numbers). $10 + 9 = 19$).\n\n**Total Calculation:**\nTotal = (Numbers in 100s, 200s, 400s) + (Numbers in 300s)\nTotal = $3 + 19 = 22$.\n\nLet's double check the list:\n133, 233, 303, 313, 323, 330, 331, 332, 333, 334, 335, 336, 337, 338, 339, 343, 353, 363, 373, 383, 393, 433.\nCounting them:\n1. 133\n2. 233\n3. 303\n4. 313\n5. 323\n6. 330\n7. 331\n8. 332\n9. 333\n10. 334\n11. 335\n12. 336\n13. 337\n14. 338\n15. 339\n16. 343\n17. 353\n18. 363\n19. 373\n20. 383\n21. 393\n22. 433\n\nThe count is 22.\n\n\\boxed{22}\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\BOXED{22}$, AND THE STUDENT'S FINAL ANSWER IS ALSO $\\BOXED{22}$. THESE TWO ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY REPRESENT THE SAME NUMERICAL VALUE. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 132.86,
+    "zuzycie_tokenow": {
+        "wejsciowe": 97,
+        "wyjsciowe": 980,
+        "suma": 1077
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

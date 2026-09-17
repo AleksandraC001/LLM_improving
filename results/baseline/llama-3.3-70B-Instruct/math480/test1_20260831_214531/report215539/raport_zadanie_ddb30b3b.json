@@ -1,0 +1,20 @@
+{
+    "task_file": "raport_zadanie_ddb30b3b",
+    "zadanie": "A ball travels on a parabolic path in which the height (in feet) is given by the expression $-25t^2+75t+24$, where $t$ is the time after launch. At what time is the height of the ball at its maximum?",
+    "oczekiwana_odpowiedz": "First, we find the maximum height of the ball by maximizing the expression $-25t^2+75t+24$. We will do this by completing the square. Factoring a $-25$ from the first two terms, we have  \\[-25t^2+75t+24=-25(t^2-3t)+24\\]To complete the square, we add and subtract $\\left( -\\frac{3}{2}\\right)^2=\\frac{9}{4}$ inside the parentheses to get \\begin{align*}\n-25(t^2-3t)+24&=-25\\left(t^2-3t+\\frac{9}{4}-\\frac{9}{4}\\right)+24\\\\\n&=-25\\left(\\left(t-\\frac{3}{2}\\right)^2-\\frac{9}{4}\\right)+24\\\\\n&=-25\\left(t-\\frac{3}{2}\\right)^2+\\frac{225}{4}+\\frac{96}{4}\\\\\n&=-25\\left(t-\\frac{3}{2}\\right)^2+\\frac{321}{4}\n\\end{align*}Since $-25\\left(t-\\frac{3}{2}\\right)^2$ is always non-positive, the maximum value of the expression is achieved when $-25\\left(t-\\frac{3}{2}\\right)^2=0$. This happens when $t-\\frac{3}{2}=0$. Therefore the height of the ball is at its maximum when $t=\\boxed{\\frac{3}{2}}$.",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nA ball travels on a parabolic path in which the height (in feet) is given by the expression $-25t^2+75t+24$, where $t$ is the time after launch. At what time is the height of the ball at its maximum?\n",
+        "[AI]:\n## Step 1: Identify the given expression for the height of the ball\nThe height of the ball is given by the expression $-25t^2+75t+24$, where $t$ is the time after launch.\n\n## Step 2: Determine the nature of the expression\nThe given expression is a quadratic equation in the form of $at^2+bt+c$, where $a=-25$, $b=75$, and $c=24$. The graph of a quadratic equation is a parabola, and since $a$ is negative, the parabola opens downwards, indicating that the vertex of the parabola will be the maximum point.\n\n## Step 3: Find the time at which the height of the ball is at its maximum\nTo find the time $t$ at which the height is maximum, we need to find the vertex of the parabola. The $t$-coordinate of the vertex of a parabola given by $at^2+bt+c$ can be found using the formula $t = -\\frac{b}{2a}$.\n\n## Step 4: Apply the formula to find the time\nSubstitute $a=-25$ and $b=75$ into the formula $t = -\\frac{b}{2a}$ to find the time at which the height is maximum.\n$t = -\\frac{75}{2 \\times (-25)}$\n\n## Step 5: Simplify the expression\nSimplify the expression to find the value of $t$.\n$t = -\\frac{75}{-50}$\n$t = \\frac{75}{50}$\n$t = \\frac{3}{2}$\n\nThe final answer is: $\\boxed{\\frac{3}{2}}$\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $T=\\BOXED{\\FRAC{3}{2}}$, AND THE STUDENT'S FINAL ANSWER IS $T = \\FRAC{3}{2}$. THESE TWO ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY REPRESENT THE SAME VALUE. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 117.0,
+    "zuzycie_tokenow": {
+        "wejsciowe": 144,
+        "wyjsciowe": 365,
+        "suma": 509
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_rag": 0
+}

@@ -1,0 +1,23 @@
+{
+    "task_file": "raport_zadanie_bb8c3f49",
+    "zadanie": "Let $0 \\le a, b, c \\le 5$ be integers. For how many ordered triples $(a,b,c)$ is $a^2b+b^2c+c^2a-ab^2-bc^2-ca^2 = 0$?",
+    "oczekiwana_odpowiedz": "Let $P(a,b,c) = a^2b+b^2c+c^2a-ab^2-bc^2-ca^2$. Notice that if $a=b$, $P(a,b,c) = a^3+a^2c+ac^2-a^3-ac^2-a^2c = 0$. By symmetry, $P(a,b,c)=0$ when $b=c, c=a$ as well. Since $P(a,b,c)$ has degree 3 and is divisible by three linear terms, $P(a,b,c)$ must factor as $k(a-b)(b-c)(c-a)$ where $k$ is a constant. Hence, $P(a,b,c) = 0$ if and only if at least two of $a,b,c$ are equal.\n\nTo count how many triples $(a,b,c)$ satisfy this, we count the complement. There are $6\\cdot5\\cdot4 = 120$ triples where $a,b,c$ are all distinct, and $6\\cdot6\\cdot6=216$ triples total, so there are $216-120 = \\boxed{96}$ triples such that $P(a,b,c) = 0$.",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n\n",
+        "[HUMAN]:\nLet $0 \\le a, b, c \\le 5$ be integers. For how many ordered triples $(a,b,c)$ is $a^2b+b^2c+c^2a-ab^2-bc^2-ca^2 = 0$?\n",
+        "[AI]:\nTo solve the equation $a^2b + b^2c + c^2a - ab^2 - bc^2 - ca^2 = 0$, we first factor the expression.\n\nThe expression is:\n$E = a^2b - ab^2 + b^2c - bc^2 + c^2a - ca^2$\n$E = ab(a - b) + bc(b - c) + ca(c - a)$\n\nAlternatively, we can group terms to factor it as a polynomial:\n$E = a^2b - ca^2 - ab^2 + b^2c + c^2a - bc^2$\n$E = a^2(b - c) - a(b^2 - c^2) + bc(b - c)$\n$E = a^2(b - c) - a(b - c)(b + c) + bc(b - c)$\n$E = (b - c) [a^2 - a(b + c) + bc]$\n$E = (b - c) [a^2 - ab - ac + bc]$\n$E = (b - c) [a(a - b) - c(a - b)]$\n$E = (b - c)(a - b)(a - c)$\n\nWait, let's re-check the sign.\n$(a-b)(b-c)(a-c) = (ab - ac - b^2 + bc)(a-c) = a^2b - abc - a^2c + ac^2 - ab^2 + b^2c + abc - bc^2$\n$= a^2b - a^2c + ac^2 - ab^2 + b^2c - bc^2$\n$= a^2b + b^2c + c^2a - ab^2 - bc^2 - ca^2$\nThis matches the original expression.\n\nSo the condition is $(a-b)(b-c)(a-c) = 0$.\nFor this product to be zero, at least one of the factors must be zero:\n1. $a - b = 0 \\implies a = b$\n2. $b - c = 0 \\implies b = c$\n3. $a - c = 0 \\implies a = c$\n\nThe problem asks for the number of ordered triples $(a, b, c)$ where $0 \\le a, b, c \\le 5$ are integers. The set of possible values for $a, b, c$ is $S = \\{0, 1, 2, 3, 4, 5\\}$, which has $n = 6$ elements.\n\nThe total number of possible triples is $6^3 = 216$.\nWe want to find the number of triples where $a=b$ or $b=c$ or $a=c$.\nUsing the Principle of Inclusion-Exclusion:\nLet $A$ be the set of triples where $a=b$.\nLet $B$ be the set of triples where $b=c$.\nLet $C$ be the set of triples where $a=c$.\n\n$|A| = 6 \\times 1 \\times 6 = 36$ (since $a=b$, we choose $a$ in 6 ways, $c$ in 6 ways)\n$|B| = 6 \\times 6 \\times 1 = 36$\n$|C| = 6 \\times 6 \\times 1 = 36$\n\nNow find the intersections:\n$|A \\cap B|$ is the set where $a=b$ and $b=c$, which means $a=b=c$.\n$|A \\cap B| = 6$\n$|B \\cap C|$ is the set where $b=c$ and $a=c$, which means $a=b=c$.\n$|B \\cap C| = 6$\n$|A \\cap C|$ is the set where $a=b$ and $a=c$, which means $a=b=c$.\n$|A \\cap C| = 6$\n\nThe intersection of all three is:\n$|A \\cap B \\cap C| = 6$\n\nBy the Principle of Inclusion-Exclusion:\n$|A \\cup B \\cup C| = |A| + |B| + |C| - (|A \\cap B| + |B \\cap C| + |A \\cap C|) + |A \\cap B \\cap C|$\n$|A \\cup B \\cup C| = 36 + 36 + 36 - (6 + 6 + 6) + 6$\n$|A \\cup B \\cup C| = 108 - 18 + 6 = 96$\n\nAlternatively, we can count the complement: triples where $a, b, c$ are all distinct.\nThe number of ways to choose 3 distinct elements from 6 is $P(6, 3) = 6 \\times 5 \\times 4 = 120$.\nThe number of triples where at least two are equal is $216 - 120 = 96$.\n\nFinal check:\nTotal triples = 216.\nTriples with $a, b, c$ all distinct = $6 \\times 5 \\times 4 = 120$.\nTriples with at least two equal = $216 - 120 = 96$.\n\nThe condition $(a-b)(b-c)(a-c)=0$ is satisfied if and only if at least two of $a, b, c$ are equal.\n\n$\\boxed{96}$\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\BOXED{96}$, AND THE STUDENT'S FINAL ANSWER IS ALSO $\\BOXED{96}$. THESE TWO ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY REPRESENT THE SAME NUMERICAL VALUE. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 251.05,
+    "zuzycie_tokenow": {
+        "wejsciowe": 136,
+        "wyjsciowe": 1277,
+        "suma": 1413
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

@@ -1,0 +1,19 @@
+{
+    "task_file": "raport_zadanie_0e91e581",
+    "zadanie": "An ordinary $6$-sided die has a number on each face from $1$ to $6$ (each number appears on one face). How many ways can I paint two faces of a die blue, so that the product of the numbers on the painted faces isn't equal to $6$?",
+    "oczekiwana_odpowiedz": "API Connection Error: OpenAIConnectionError('Connection error.'); cause=APIConnectionError('Connection error.')",
+    "pelny_przebieg_rozumowania": [],
+    "decyzja_sedziego": "EMPTY",
+    "wynik_ewaluacji": "ERROR",
+    "czas_wykonania": 14.65,
+    "zuzycie_tokenow": {
+        "wejsciowe": 0,
+        "wyjsciowe": 0,
+        "suma": 0
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

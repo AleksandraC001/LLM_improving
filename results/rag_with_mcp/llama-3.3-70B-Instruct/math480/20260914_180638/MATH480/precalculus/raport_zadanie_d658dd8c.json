@@ -1,0 +1,19 @@
+{
+    "task_file": "raport_zadanie_d658dd8c",
+    "zadanie": "A sequence $(z_n)$ of complex numbers satisfies the following properties:\n\n$z_1$ and $z_2$ are not real.\n$z_{n+2}=z_{n+1}^2z_n$ for all integers $n\\geq 1$.\n$\\dfrac{z_{n+3}}{z_n^2}$ is real for all integers $n\\geq 1$.\n$\\left|\\dfrac{z_3}{z_4}\\right|=\\left|\\dfrac{z_4}{z_5}\\right|=2$.\n\nFind the product of all possible values of $z_1$.",
+    "oczekiwana_odpowiedz": "Timeout - Endpoint API nie odpowiedzia\u0142 w wyznaczonym czasie",
+    "pelny_przebieg_rozumowania": [],
+    "decyzja_sedziego": "EMPTY",
+    "wynik_ewaluacji": "ERROR",
+    "czas_wykonania": 766.44,
+    "zuzycie_tokenow": {
+        "wejsciowe": 0,
+        "wyjsciowe": 0,
+        "suma": 0
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

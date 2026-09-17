@@ -1,0 +1,19 @@
+{
+    "task_file": "raport_zadanie_5b419c70",
+    "zadanie": "A rectangular garden has a length that is twice its width. The dimensions are increased so that the perimeter is doubled and the new shape is a square with an area of 3600 square feet. What was the area of the original garden, in square feet?",
+    "oczekiwana_odpowiedz": "API Connection Error: OpenAIConnectionError('Connection error.'); cause=APIConnectionError('Connection error.')",
+    "pelny_przebieg_rozumowania": [],
+    "decyzja_sedziego": "EMPTY",
+    "wynik_ewaluacji": "ERROR",
+    "czas_wykonania": 14.66,
+    "zuzycie_tokenow": {
+        "wejsciowe": 0,
+        "wyjsciowe": 0,
+        "suma": 0
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

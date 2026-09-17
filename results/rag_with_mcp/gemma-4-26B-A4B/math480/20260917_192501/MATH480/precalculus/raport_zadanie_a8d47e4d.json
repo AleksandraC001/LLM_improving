@@ -1,0 +1,19 @@
+{
+    "task_file": "raport_zadanie_a8d47e4d",
+    "zadanie": "Let $\\alpha$ and $\\beta$ be angles such that\n\\[\\frac{\\cos \\alpha}{\\cos \\beta} + \\frac{\\sin \\alpha}{\\sin \\beta} = -1.\\]Find all possible values of\n\\[\\frac{\\cos^3 \\beta}{\\cos \\alpha} + \\frac{\\sin^3 \\beta}{\\sin \\alpha}.\\]Enter all possible values, separated by commas.",
+    "oczekiwana_odpowiedz": "API Connection Error: OpenAIConnectionError('Connection error.'); cause=APIConnectionError('Connection error.')",
+    "pelny_przebieg_rozumowania": [],
+    "decyzja_sedziego": "EMPTY",
+    "wynik_ewaluacji": "ERROR",
+    "czas_wykonania": 947.2,
+    "zuzycie_tokenow": {
+        "wejsciowe": 0,
+        "wyjsciowe": 0,
+        "suma": 0
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

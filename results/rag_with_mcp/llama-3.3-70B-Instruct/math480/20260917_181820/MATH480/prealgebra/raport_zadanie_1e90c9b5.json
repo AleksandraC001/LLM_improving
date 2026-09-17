@@ -1,0 +1,19 @@
+{
+    "task_file": "raport_zadanie_1e90c9b5",
+    "zadanie": "John and Gary are playing a game. John spins a spinner numbered with integers from 1 to 20. Gary then writes a list of all of the positive factors of the number spun except for the number itself. Gary then creates a new spinner with all of the numbers on his list. John then spins this spinner, and the process continues. The game is over when the spinner has no numbers on it. If John spins a 20 on his first spin, what is the maximum number of total spins (including the one he already made) that John can make before the game is over?",
+    "oczekiwana_odpowiedz": "API Connection Error: OpenAIConnectionError('Connection error.'); cause=APIConnectionError('Connection error.')",
+    "pelny_przebieg_rozumowania": [],
+    "decyzja_sedziego": "EMPTY",
+    "wynik_ewaluacji": "ERROR",
+    "czas_wykonania": 14.93,
+    "zuzycie_tokenow": {
+        "wejsciowe": 0,
+        "wyjsciowe": 0,
+        "suma": 0
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

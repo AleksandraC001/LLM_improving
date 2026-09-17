@@ -1,0 +1,20 @@
+{
+    "task_file": "raport_zadanie_9951cbab",
+    "zadanie": "What is the sum of all integer values of $x$ such that $\\frac{67}{2x - 23}$ is an integer?",
+    "oczekiwana_odpowiedz": "Checking the primes less than $\\sqrt{67}$, namely 2, 3, 5, and 7, as potential divisors, we find that 67 is prime. Thus, $\\frac{67}{2x-23}$ is an integer if and only if $2x-23=\\pm1$ or $2x-23=\\pm67$. The first equation yields $x=12$ or $x=11$ and the second gives $x=45$ or $x=-22$. The sum is $12+11+45-22=\\boxed{46}$.",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n\n\n    CONTEXT INSTRUCTIONS:\n    Below you will find a [HELPFUL CONTEXT FROM RAG] block. It contains a solved mathematical problems that shares SIMILAR LOGIC OF THE SOLUTION to your current problem.\n    - Analize given examples and use their context to understand the required methodology, the solution concept, theorems, or algebraic tricks BEFORE proceeding with your solving process.\n\n    [HELPFUL CONTEXT FROM RAG]\n    \n    --- USEFUL EXAMPLE ---\nProblem: What is the sum of all positive integer values of $n$ such that $\\frac{n+18}{n}$ is an integer?\nSolution: $\\frac{n+18}{n}=1+\\frac{18}{n}$. Thus, $\\frac{n+18}{n}$ is an integer if and only if $n|18$. The positive factors of 18 are 1, 18, 2, 9, 3, and 6. Their sum is $\\boxed{39}$.\n\n\n    \n    [/HELPFUL CONTEXT FROM RAG]\n",
+        "[HUMAN]:\nWhat is the sum of all integer values of $x$ such that $\\frac{67}{2x - 23}$ is an integer?\n",
+        "[AI]:\nTo determine the integer values of \\( x \\) such that \\( \\frac{67}{2x - 23} \\) is an integer, we start by analyzing the expression. For \\( \\frac{67}{2x - 23} \\) to be an integer, the denominator \\( 2x - 23 \\) must be a divisor of 67.\n\nFirst, we find the divisors of 67. Since 67 is a prime number, its only positive divisors are \\( 1 \\) and \\( 67 \\). Additionally, we also consider the negative divisors, which are \\( -1 \\) and \\( -67 \\). Therefore, the complete set of divisors of 67 is:\n\n\\[\n\\{ 1, -1, 67, -67 \\}\n\\]\n\nNext, we set \\( 2x - 23 \\) equal to each of these divisors and solve for \\( x \\).\n\n1. **For \\( 2x - 23 = 1 \\)**:\n   \\[\n   2x = 1 + 23 = 24 \\implies x = \\frac{24}{2} = 12\n   \\]\n\n2. **For \\( 2x - 23 = -1 \\)**:\n   \\[\n   2x = -1 + 23 = 22 \\implies x = \\frac{22}{2} = 11\n   \\]\n\n3. **For \\( 2x - 23 = 67 \\)**:\n   \\[\n   2x = 67 + 23 = 90 \\implies x = \\frac{90}{2} = 45\n   \\]\n\n4. **For \\( 2x - 23 = -67 \\)**:\n   \\[\n   2x = -67 + 23 = -44 \\implies x = \\frac{-44}{2} = -22\n   \\]\n\nNow we have found the integer values of \\( x \\):\n\\[\nx = 12, 11, 45, -22\n\\]\n\nNext, we calculate the sum of these integer values:\n\\[\n12 + 11 + 45 - 22 = 12 + 11 = 23\n\\]\n\\[\n23 + 45 = 68\n\\]\n\\[\n68 - 22 = 46\n\\]\n\nThus, the sum of all integer values of \\( x \\) such that \\( \\frac{67}{2x - 23} \\) is an integer is:\n\n\\[\n\\boxed{46}\n\\]\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\BOXED{46}$, AND THE FINAL ANSWER IN THE STUDENT'S TEXT IS ALSO $\\BOXED{46}$. THESE TWO FINAL ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY REPRESENT THE SAME NUMERICAL VALUE. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 49.26,
+    "zuzycie_tokenow": {
+        "wejsciowe": 312,
+        "wyjsciowe": 534,
+        "suma": 846
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_rag": 1
+}

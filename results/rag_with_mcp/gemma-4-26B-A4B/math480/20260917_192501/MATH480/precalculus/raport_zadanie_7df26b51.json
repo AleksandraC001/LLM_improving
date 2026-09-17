@@ -1,0 +1,19 @@
+{
+    "task_file": "raport_zadanie_7df26b51",
+    "zadanie": "Let $$P(x)=24x^{24}+\\sum_{j=1}^{23}(24-j)\\left(x^{24-j}+x^{24+j}\\right).$$Let $z_1, z_2, \\ldots, z_r$ be the distinct zeros of $P(x)$, and let $z_k^2=a_k+b_{k}i$ for $k=1, 2, \\ldots, r$, where $i=\\sqrt{-1}$, and $a_k$ and $b_k$ are real numbers. Find\n\\[\\sum_{k=1}^{r}|b_k|.\\]",
+    "oczekiwana_odpowiedz": "API Connection Error: OpenAIConnectionError('Connection error.'); cause=APIConnectionError('Connection error.')",
+    "pelny_przebieg_rozumowania": [],
+    "decyzja_sedziego": "EMPTY",
+    "wynik_ewaluacji": "ERROR",
+    "czas_wykonania": 182.06,
+    "zuzycie_tokenow": {
+        "wejsciowe": 0,
+        "wyjsciowe": 0,
+        "suma": 0
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

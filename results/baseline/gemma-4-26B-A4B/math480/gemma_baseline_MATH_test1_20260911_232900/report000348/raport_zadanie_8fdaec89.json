@@ -1,0 +1,23 @@
+{
+    "task_file": "raport_zadanie_8fdaec89",
+    "zadanie": "Suppose that the minimum value of $f(x) = \\cos 2x - 2a (1 + \\cos x)$ is $-\\frac{1}{2}.$  Find $a.$",
+    "oczekiwana_odpowiedz": "We can write\n\\begin{align*}\nf(x) &= 2 \\cos^2 x - 1 - 2a (1 + \\cos x) \\\\\n&= 2 \\cos^2 x - 2a \\cos x - 1 - 2a \\\\\n&= 2 \\left( \\cos x - \\frac{a}{2} \\right)^2 - \\frac{1}{2} a^2 - 2a - 1.\n\\end{align*}If $a > 2,$ then $f(x)$ attains its minimum value when $\\cos x = 1,$ in which case\n\\[f(x) = 2 - 2a - 1 - 2a = 1 - 4a.\\]If $1 - 4a = -\\frac{1}{2},$ then $a = \\frac{3}{8},$ contradiction.\n\nIf $a < -2,$ then $f(x)$ attains its minimum value when $\\cos x = -1,$ in which case\n\\[f(x) = 2 + 2a - 1 - 2a = 1,\\]so this case is not possible either.\n\nOtherwise, $-2 \\le a \\le 2,$ and $f(x)$ attains its minimum when $\\cos x = \\frac{a}{2},$ in which case\n\\[f(x) = -\\frac{1}{2} a^2 - 2a - 1.\\]Thus, $-\\frac{1}{2} a^2 - 2a - 1 = -\\frac{1}{2},$ so $a^2 + 4a + 1 = 0.$  By the quadratic formula,\n\\[a = -2 \\pm \\sqrt{3}.\\]Since $-2 \\le a \\le 2,$ $a = \\boxed{-2 + \\sqrt{3}}.$",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nSuppose that the minimum value of $f(x) = \\cos 2x - 2a (1 + \\cos x)$ is $-\\frac{1}{2}.$  Find $a.$\n",
+        "[AI]:\nTo find the value of $a$ such that the minimum value of $f(x) = \\cos 2x - 2a(1 + \\cos x)$ is $-\\frac{1}{2}$, we first express the function in terms of $\\cos x$.\n\nUsing the double-angle identity $\\cos 2x = 2\\cos^2 x - 1$, we substitute this into the function:\n$$f(x) = (2\\cos^2 x - 1) - 2a(1 + \\cos x)$$\n$$f(x) = 2\\cos^2 x - 2a\\cos x - 2a - 1$$\n\nLet $u = \\cos x$. Since $x$ is a real number, the range of $u$ is $[-1, 1]$. We define a new function $g(u)$ for $u \\in [-1, 1]$:\n$$g(u) = 2u^2 - 2au - (2a + 1)$$\n\nThis is a quadratic function in $u$. The vertex of the parabola $g(u) = Au^2 + Bu + C$ occurs at $u = -\\frac{B}{2A}$. Here, $A = 2$ and $B = -2a$, so the vertex is at:\n$$u_v = -\\frac{-2a}{2(2)} = \\frac{a}{2}$$\n\nThe minimum value of $g(u)$ on the interval $[-1, 1]$ depends on the position of the vertex $u_v = \\frac{a}{2}$ relative to the interval $[-1, 1]$.\n\n**Case 1: The vertex is within the interval, i.e., $-1 \\le \\frac{a}{2} \\le 1 \\implies -2 \\le a \\le 2$.**\nThe minimum value occurs at $u = \\frac{a}{2}$:\n$$g\\left(\\frac{a}{2}\\right) = 2\\left(\\frac{a}{2}\\right)^2 - 2a\\left(\\frac{a}{2}\\right) - 2a - 1 = \\frac{a^2}{2} - a^2 - 2a - 1 = -\\frac{a^2}{2} - 2a - 1$$\nWe are given that the minimum value is $-\\frac{1}{2}$:\n$$-\\frac{a^2}{2} - 2a - 1 = -\\frac{1}{2}$$\nMultiply by $-2$:\n$$a^2 + 4a + 2 = 1 \\implies a^2 + 4a + 1 = 0$$\nUsing the quadratic formula:\n$$a = \\frac{-4 \\pm \\sqrt{16 - 4}}{2} = \\frac{-4 \\pm \\sqrt{12}}{2} = -2 \\pm \\sqrt{3}$$\nWe must check if these values satisfy $-2 \\le a \\le 2$:\n- $a = -2 + \\sqrt{3} \\approx -2 + 1.732 = -0.268$ (This is in $[-2, 2]$)\n- $a = -2 - \\sqrt{3} \\approx -2 - 1.732 = -3.732$ (This is NOT in $[-2, 2]$)\n\n**Case 2: The vertex is to the left of the interval, i.e., $\\frac{a}{2} < -1 \\implies a < -2$.**\nThe function $g(u)$ is increasing on $[-1, 1]$, so the minimum occurs at $u = -1$:\n$$g(-1) = 2(-1)^2 - 2a(-1) - 2a - 1 = 2 + 2a - 2a - 1 = 1$$\nSince $1 \\neq -\\frac{1}{2}$, there is no solution in this case.\n\n**Case 3: The vertex is to the right of the interval, i.e., $\\frac{a}{2} > 1 \\implies a > 2$.**\nThe function $g(u)$ is decreasing on $[-1, 1]$, so the minimum occurs at $u = 1$:\n$$g(1) = 2(1)^2 - 2a(1) - 2a - 1 = 2 - 2a - 2a - 1 = 1 - 4a$$\nWe set this equal to $-\\frac{1}{2}$:\n$$1 - 4a = -\\frac{1}{2} \\implies 4a = \\frac{3}{2} \\implies a = \\frac{3}{8}$$\nHowever, we assumed $a > 2$, and $\\frac{3}{8} < 2$, so there is no solution in this case.\n\nThus, the only valid solution is $a = -2 + \\sqrt{3}$.\n\n\\boxed{-2+\\sqrt{3}}\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $A = \\BOXED{-2 + \\SQRT{3}}$. THE STUDENT'S FINAL ANSWER IS ALSO $A = \\BOXED{-2 + \\SQRT{3}}$. THESE TWO ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY REPRESENT THE SAME VALUE. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 328.03,
+    "zuzycie_tokenow": {
+        "wejsciowe": 115,
+        "wyjsciowe": 1106,
+        "suma": 1221
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

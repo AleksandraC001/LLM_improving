@@ -1,0 +1,16 @@
+{
+    "task_file": "raport_zadanie_1aec52b8",
+    "zadanie": "Suppose that $x,$ $y,$ and $z$ are complex numbers such that \\[\\begin{aligned} xy &= -80 - 320i, \\\\ yz &=60, \\\\ zx &= -96 + 24i, \\end{aligned}\\]where $i^2 = -1.$ Compute $|x+y+z|.$",
+    "oczekiwana_odpowiedz": "Timeout - Endpoint API nie odpowiedzia\u0142 w wyznaczonym czasie",
+    "pelny_przebieg_rozumowania": [],
+    "decyzja_sedziego": "EMPTY",
+    "wynik_ewaluacji": "ERROR",
+    "czas_wykonania": 233.83,
+    "zuzycie_tokenow": {
+        "wejsciowe": 0,
+        "wyjsciowe": 0,
+        "suma": 0
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_rag": 0
+}

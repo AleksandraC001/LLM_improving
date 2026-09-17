@@ -1,0 +1,19 @@
+{
+    "task_file": "raport_zadanie_7ac9dd4b",
+    "zadanie": "The complex number $z = re^{i \\theta}$ satisfies\n\\[\\left| 2z + \\frac{1}{z} \\right| = 1.\\]Find the minimum value of $\\sin^2 \\theta.$",
+    "oczekiwana_odpowiedz": "Timeout - Endpoint API nie odpowiedzia\u0142 w wyznaczonym czasie",
+    "pelny_przebieg_rozumowania": [],
+    "decyzja_sedziego": "EMPTY",
+    "wynik_ewaluacji": "ERROR",
+    "czas_wykonania": 721.47,
+    "zuzycie_tokenow": {
+        "wejsciowe": 0,
+        "wyjsciowe": 0,
+        "suma": 0
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

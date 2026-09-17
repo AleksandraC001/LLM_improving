@@ -1,0 +1,20 @@
+{
+    "task_file": "raport_zadanie_066a7a69",
+    "zadanie": "A point $(2, n)$ is 5 units away from the point $(-1, 1)$. What is the product of all possible integer values for $n$?",
+    "oczekiwana_odpowiedz": "By the Pythagorean theorem, the distance from $(2,n)$ to $(-1,1)$ is $\\sqrt{(2-(-1))^2+(n-1)^2}$.  Setting this equal to $5$, we find \\begin{align*}\n9+(n-1)^2 &= 25 \\implies \\\\\n(n-1)^2 &= 16 \\implies \\\\\nn-1 = 4 \\quad&\\text{or}\\quad n-1=-4 \\implies \\\\\nn = 5 \\quad&\\text{or}\\quad n=-3.\n\\end{align*} Both of these solutions are integers, and their product is $\\boxed{-15}$.",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nA point $(2, n)$ is 5 units away from the point $(-1, 1)$. What is the product of all possible integer values for $n$?\n",
+        "[AI]:\n## Step 1: Understand the problem and recall the distance formula\nThe problem involves finding the possible integer values for $n$ such that the point $(2, n)$ is 5 units away from the point $(-1, 1)$. The distance between two points $(x_1, y_1)$ and $(x_2, y_2)$ in a coordinate plane is given by the distance formula: $d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$.\n\n## Step 2: Apply the distance formula to the given points\nWe can use the distance formula to set up an equation for the distance between $(2, n)$ and $(-1, 1)$. The distance is given as 5 units, so we have: $5 = \\sqrt{(2 - (-1))^2 + (n - 1)^2}$.\n\n## Step 3: Simplify the equation\nSimplifying the equation from Step 2: $5 = \\sqrt{(3)^2 + (n - 1)^2}$, which further simplifies to $5 = \\sqrt{9 + (n - 1)^2}$.\n\n## Step 4: Square both sides to eliminate the square root\nTo solve for $n$, we square both sides of the equation: $5^2 = (\\sqrt{9 + (n - 1)^2})^2$, resulting in $25 = 9 + (n - 1)^2$.\n\n## Step 5: Solve for $(n - 1)^2$\nSubtract 9 from both sides to isolate $(n - 1)^2$: $25 - 9 = (n - 1)^2$, which simplifies to $16 = (n - 1)^2$.\n\n## Step 6: Solve for $n - 1$\nTaking the square root of both sides gives $n - 1 = \\pm\\sqrt{16}$, which simplifies to $n - 1 = \\pm4$.\n\n## Step 7: Solve for $n$\nAdding 1 to both sides to solve for $n$ gives two possible values: $n = 4 + 1 = 5$ and $n = -4 + 1 = -3$.\n\n## Step 8: Calculate the product of all possible integer values for $n$\nThe possible integer values for $n$ are $5$ and $-3$. The product of these values is $5 \\times -3 = -15$.\n\nThe final answer is: $\\boxed{-15}$\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\BOXED{-15}$, AND THE STUDENT'S FINAL ANSWER IS ALSO $-15$. THESE TWO FINAL ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY REPRESENT THE SAME NUMERICAL VALUE. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 196.12,
+    "zuzycie_tokenow": {
+        "wejsciowe": 125,
+        "wyjsciowe": 546,
+        "suma": 671
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_rag": 0
+}

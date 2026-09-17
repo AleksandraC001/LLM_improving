@@ -1,0 +1,23 @@
+{
+    "task_file": "raport_zadanie_f3d79744",
+    "zadanie": "A plane contains points $A$ and $B$ with $AB = 1$. Point $A$ is rotated in the plane counterclockwise through an acute angle $\\theta$ around point $B$ to point $A^\\prime$. Then $B$ is rotated in the plane clockwise through angle $\\theta$ around point $A^\\prime$ to point $B^\\prime$. Suppose that $AB^\\prime = \\frac{4}{3}$. The value of $\\cos \\theta$ can be written as $\\frac{m}{n}$ , where $m$ and $n$ are relatively prime positive integers. Find $m + n$.",
+    "oczekiwana_odpowiedz": "\\boxed{65}",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nA plane contains points $A$ and $B$ with $AB = 1$. Point $A$ is rotated in the plane counterclockwise through an acute angle $\\theta$ around point $B$ to point $A^\\prime$. Then $B$ is rotated in the plane clockwise through angle $\\theta$ around point $A^\\prime$ to point $B^\\prime$. Suppose that $AB^\\prime = \\frac{4}{3}$. The value of $\\cos \\theta$ can be written as $\\frac{m}{n}$ , where $m$ and $n$ are relatively prime positive integers. Find $m + n$.\n",
+        "[AI]:\nTo solve this problem, we set up a coordinate system in the plane. Let point $B$ be the origin $(0,0)$. Since $AB = 1$, we can place point $A$ at $(1,0)$.\n\n**Step 1: Find the coordinates of $A^\\prime$.**\nPoint $A$ is rotated counterclockwise through an acute angle $\\theta$ around point $B$.\nThe coordinates of $A^\\prime$ are:\n$A^\\prime = (1 \\cdot \\cos \\theta, 1 \\cdot \\sin \\theta) = (\\cos \\theta, \\sin \\theta)$.\n\n**Step 2: Find the coordinates of $B^\\prime$.**\nPoint $B$ is rotated clockwise through angle $\\theta$ around point $A^\\prime$ to point $B^\\prime$.\nLet $B = (0,0)$ and $A^\\prime = (\\cos \\theta, \\sin \\theta)$.\nA clockwise rotation of a point $P$ around a center $C$ by angle $\\theta$ can be represented using complex numbers or rotation matrices. Let $z_B = 0$ and $z_{A^\\prime} = \\cos \\theta + i \\sin \\theta$.\nThe formula for rotating a point $z$ around a center $c$ by angle $-\\theta$ (clockwise) is:\n$z' = c + (z - c)e^{-i\\theta}$\nHere, $z = 0$ and $c = \\cos \\theta + i \\sin \\theta = e^{i\\theta}$.\n$z_{B^\\prime} = e^{i\\theta} + (0 - e^{i\\theta})e^{-i\\theta}$\n$z_{B^\\prime} = e^{i\\theta} - e^{i\\theta} \\cdot e^{-i\\theta}$\n$z_{B^\\prime} = e^{i\\theta} - 1$\n\nConverting back to coordinates:\n$B^\\prime = (\\cos \\theta - 1, \\sin \\theta)$.\n\n**Step 3: Use the distance $AB^\\prime = \\frac{4}{3}$.**\nThe coordinates of $A$ are $(1,0)$ and the coordinates of $B^\\prime$ are $(\\cos \\theta - 1, \\sin \\theta)$.\nThe distance squared is:\n$AB^\\prime^2 = ((\\cos \\theta - 1) - 1)^2 + (\\sin \\theta - 0)^2$\n$AB^\\prime^2 = (\\cos \\theta - 2)^2 + \\sin^2 \\theta$\n$AB^\\prime^2 = \\cos^2 \\theta - 4\\cos \\theta + 4 + \\sin^2 \\theta$\nSince $\\cos^2 \\theta + \\sin^2 \\theta = 1$:\n$AB^\\prime^2 = 1 - 4\\cos \\theta + 4 = 5 - 4\\cos \\theta$\n\nWe are given $AB^\\prime = \\frac{4}{3}$, so $AB^\\prime^2 = \\frac{16}{9}$.\n$5 - 4\\cos \\theta = \\frac{16}{9}$\n$4\\cos \\theta = 5 - \\frac{16}{9}$\n$4\\cos \\theta = \\frac{45 - 16}{9}$\n$4\\cos \\theta = \\frac{29}{9}$\n$\\cos \\theta = \\frac{29}{36}$\n\n**Step 4: Find $m+n$.**\nThe value $\\cos \\theta = \\frac{29}{36}$ is in the form $\\frac{m}{n}$.\nSince 29 is a prime number and does not divide 36, $m=29$ and $n=36$ are relatively prime.\n$m + n = 29 + 36 = 65$.\n\nFinal check: $\\theta$ is acute, and $\\cos \\theta = 29/36 \\approx 0.8$, which corresponds to an acute angle.\n\n\\boxed{65}\n"
+    ],
+    "decyzja_sedziego": "THE FINAL CONCLUSION IN THE CORRECT SOLUTION IS $\\BOXED{65}$, AND THE STUDENT'S FINAL ANSWER IS ALSO $\\BOXED{65}$. THESE TWO ANSWERS ARE MATHEMATICALLY EQUIVALENT, AS THEY REPRESENT THE SAME NUMERICAL VALUE. \n\nVERDICT: YES",
+    "wynik_ewaluacji": "RIGHT",
+    "czas_wykonania": 301.9,
+    "zuzycie_tokenow": {
+        "wejsciowe": 205,
+        "wyjsciowe": 901,
+        "suma": 1106
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

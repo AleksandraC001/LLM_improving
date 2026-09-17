@@ -1,0 +1,23 @@
+{
+    "task_file": "raport_zadanie_f710970e",
+    "zadanie": "Let $a,$ $b,$ $c$ be positive real numbers such that $a + b + c = 4abc.$  Find the maximum value of\n\\[\\frac{4 \\sqrt{a} + 6 \\sqrt{b} + 12 \\sqrt{c}}{\\sqrt{abc}}.\\]",
+    "oczekiwana_odpowiedz": "By Cauchy-Schwarz,\n\\[(4 \\sqrt{a} + 6 \\sqrt{b} + 12 \\sqrt{c})^2 \\le (4^2 + 6^2 + 12^2)(a + b + c) = (196)(4abc) = 784abc,\\]so\n\\[4 \\sqrt{a} + 6 \\sqrt{b} + 12 \\sqrt{c} \\le 28 \\sqrt{abc},\\]and\n\\[\\frac{4 \\sqrt{a} + 6 \\sqrt{b} + 12 \\sqrt{c}}{\\sqrt{abc}} \\le 28.\\]Equality occurs when\n\\[\\frac{a}{16} = \\frac{b}{36} = \\frac{c}{144}.\\]Along with the condition $a + b + c = 4abc,$ we can solve to get $a = \\frac{7}{18},$ $b = \\frac{7}{8},$ $c = \\frac{7}{2}.$  Therefore, the maximum value is $\\boxed{28}.$",
+    "pelny_przebieg_rozumowania": [
+        "[SYSTEM]:\nYou are a math problem solver. You solve complex math problems. \n    Your task is to solve a math problem step by step. Explain your reasoning clearly before the final conclusion.\n    Return the final answer in enclosed in a LaTeX box: \\boxed{answer}\n    \n",
+        "[HUMAN]:\nLet $a,$ $b,$ $c$ be positive real numbers such that $a + b + c = 4abc.$  Find the maximum value of\n\\[\\frac{4 \\sqrt{a} + 6 \\sqrt{b} + 12 \\sqrt{c}}{\\sqrt{abc}}.\\]\n",
+        "[AI]:\n## Step 1: Understand the problem and the given condition\nWe are given that $a + b + c = 4abc$, and we need to find the maximum value of $\\frac{4 \\sqrt{a} + 6 \\sqrt{b} + 12 \\sqrt{c}}{\\sqrt{abc}}$.\n\n## Step 2: Apply the AM-GM inequality to the expression\nBy the AM-GM inequality, we have $\\frac{4 \\sqrt{a} + 6 \\sqrt{b} + 12 \\sqrt{c}}{3} \\ge \\sqrt[3]{4 \\sqrt{a} \\cdot 6 \\sqrt{b} \\cdot 12 \\sqrt{c}} = \\sqrt[3]{288abc}$.\n\n## Step 3: Simplify the expression from the AM-GM inequality\nThis simplifies to $\\frac{4 \\sqrt{a} + 6 \\sqrt{b} + 12 \\sqrt{c}}{3} \\ge 6 \\sqrt[3]{abc}$, and then $\\frac{4 \\sqrt{a} + 6 \\sqrt{b} + 12 \\sqrt{c}}{\\sqrt{abc}} \\ge 18$.\n\n## Step 4: Use the given condition to find the maximum value\nWe also know that $a + b + c = 4abc$. We can use this condition to find the maximum value.\n\n## Step 5: Apply the AM-GM inequality to the given condition\nApplying the AM-GM inequality to $a + b + c = 4abc$, we get $a + b + c \\ge 3 \\sqrt[3]{abc}$.\n\n## Step 6: Simplify the expression from the AM-GM inequality\nSince $a + b + c = 4abc$, we have $4abc \\ge 3 \\sqrt[3]{abc}$.\n\n## Step 7: Find the maximum value\nTo maximize $\\frac{4 \\sqrt{a} + 6 \\sqrt{b} + 12 \\sqrt{c}}{\\sqrt{abc}}$, we need to find when equality holds in the AM-GM inequality.\n\n## Step 8: Determine the condition for equality\nEquality holds when $4 \\sqrt{a} = 6 \\sqrt{b} = 12 \\sqrt{c}$ and $a = b = c$.\n\n## Step 9: Solve for a, b, and c\nFrom $a + b + c = 4abc$, if $a = b = c$, then $3a = 4a^3$, which gives $a = \\frac{1}{\\sqrt[3]{4}}$.\n\n## Step 10: Check if the condition for equality is satisfied\nSubstituting $a = b = c = \\frac{1}{\\sqrt[3]{4}}$ into the expression, we can verify if this gives the maximum value.\n\n## Step 11: Calculate the maximum value\nSubstituting $a = b = c = \\frac{1}{\\sqrt[3]{4}}$ into $\\frac{4 \\sqrt{a} + 6 \\sqrt{b} + 12 \\sqrt{c}}{\\sqrt{abc}}$, we get $\\frac{4 \\sqrt{\\frac{1}{\\sqrt[3]{4}}} + 6 \\sqrt{\\frac{1}{\\sqrt[3]{4}}} + 12 \\sqrt{\\frac{1}{\\sqrt[3]{4}}}}{\\sqrt{\\frac{1}{\\sqrt[3]{4}} \\cdot \\frac{1}{\\sqrt[3]{4}} \\cdot \\frac{1}{\\sqrt[3]{4}}}}$.\n\n## Step 12: Simplify the expression\nThis simplifies to $\\frac{4 \\cdot \\sqrt{\\frac{1}{\\sqrt[3]{4}}} + 6 \\cdot \\sqrt{\\frac{1}{\\sqrt[3]{4}}} + 12 \\cdot \\sqrt{\\frac{1}{\\sqrt[3]{4}}}}{\\sqrt{\\frac{1}{4}}} = \\frac{22 \\cdot \\sqrt{\\frac{1}{\\sqrt[3]{4}}}}{\\frac{1}{2}}$.\n\n## Step 13: Further simplify the expression\nThis becomes $44 \\cdot \\sqrt{\\frac{1}{\\sqrt[3]{4}}} = 44 \\cdot \\sqrt{\\frac{1}{\\sqrt[3]{4}}} \\cdot \\frac{\\sqrt[3]{4}}{\\sqrt[3]{4}}$.\n\n## Step 14: Final simplification\nWhich is $44 \\cdot \\frac{\\sqrt[3]{4}}{\\sqrt[3]{4}} = 44$.\n\n\nThe final answer is: $\\boxed{18}$\n"
+    ],
+    "decyzja_sedziego": "THE CORRECT SOLUTION CONCLUDES WITH A MAXIMUM VALUE OF $\\BOXED{28}$, WHILE THE STUDENT'S SOLUTION PROVIDES A FINAL ANSWER OF $\\BOXED{18}$. THESE TWO VALUES ARE NOT MATHEMATICALLY EQUIVALENT, INDICATING A DISCREPANCY IN THE STUDENT'S SOLUTION.\n\nVERDICT: NO",
+    "wynik_ewaluacji": "WRONG",
+    "czas_wykonania": 393.75,
+    "zuzycie_tokenow": {
+        "wejsciowe": 155,
+        "wyjsciowe": 1013,
+        "suma": 1168
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

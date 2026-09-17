@@ -1,0 +1,19 @@
+{
+    "task_file": "raport_zadanie_00043d27",
+    "zadanie": "For certain vectors $\\mathbf{p}$ and $\\mathbf{q},$ the vectors $3 \\mathbf{p} + \\mathbf{q}$ and $5 \\mathbf{p} - 3 \\mathbf{q}$ are orthogonal.  Also, the vectors $2 \\mathbf{p} + \\mathbf{q}$ and $4 \\mathbf{p} - 2 \\mathbf{q}$ are orthogonal.  If $\\theta$ is the angle between $\\mathbf{p}$ and $\\mathbf{q},$ then find $\\cos \\theta.$",
+    "oczekiwana_odpowiedz": "Timeout - Endpoint API nie odpowiedzia\u0142 w wyznaczonym czasie",
+    "pelny_przebieg_rozumowania": [],
+    "decyzja_sedziego": "EMPTY",
+    "wynik_ewaluacji": "ERROR",
+    "czas_wykonania": 721.49,
+    "zuzycie_tokenow": {
+        "wejsciowe": 0,
+        "wyjsciowe": 0,
+        "suma": 0
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

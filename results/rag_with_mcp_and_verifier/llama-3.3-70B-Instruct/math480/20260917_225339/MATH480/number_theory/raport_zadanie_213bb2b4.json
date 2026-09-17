@@ -1,0 +1,19 @@
+{
+    "task_file": "raport_zadanie_213bb2b4",
+    "zadanie": "Let $n$ be a positive integer greater than or equal to $3$. Let $a,b$ be integers such that $ab$ is invertible modulo $n$ and $(ab)^{-1}\\equiv 2\\pmod n$. Given $a+b$ is invertible, what is the remainder when $(a+b)^{-1}(a^{-1}+b^{-1})$ is divided by $n$?",
+    "oczekiwana_odpowiedz": "Timeout - Endpoint API nie odpowiedzia\u0142 w wyznaczonym czasie",
+    "pelny_przebieg_rozumowania": [],
+    "decyzja_sedziego": "EMPTY",
+    "wynik_ewaluacji": "ERROR",
+    "czas_wykonania": 721.52,
+    "zuzycie_tokenow": {
+        "wejsciowe": 0,
+        "wyjsciowe": 0,
+        "suma": 0
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}

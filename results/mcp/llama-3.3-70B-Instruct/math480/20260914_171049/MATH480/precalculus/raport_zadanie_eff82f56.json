@@ -1,0 +1,19 @@
+{
+    "task_file": "raport_zadanie_eff82f56",
+    "zadanie": "The matrix\n\\[\\mathbf{A} = \\begin{pmatrix} 4 & 7 \\\\ c & d \\end{pmatrix}\\]has the property that if you are told the value of $\\|\\mathbf{v}\\|,$ then you can derive the value of $\\|\\mathbf{A} \\mathbf{v}\\|.$  Compute $|c - d|,$ assuming that $c$ and $d$ are real numbers.",
+    "oczekiwana_odpowiedz": "Timeout - Endpoint API nie odpowiedzia\u0142 w wyznaczonym czasie",
+    "pelny_przebieg_rozumowania": [],
+    "decyzja_sedziego": "EMPTY",
+    "wynik_ewaluacji": "ERROR",
+    "czas_wykonania": 721.63,
+    "zuzycie_tokenow": {
+        "wejsciowe": 0,
+        "wyjsciowe": 0,
+        "suma": 0
+    },
+    "uzycie_narzedzi": 0,
+    "uzycie_python": 0,
+    "uzycie_wolfram": 0,
+    "uzycie_brave": 0,
+    "uzycie_rag": 0
+}
