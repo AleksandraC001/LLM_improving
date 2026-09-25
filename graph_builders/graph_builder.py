@@ -25,7 +25,7 @@ class GraphBuilder(abc.ABC):
     def get_llm(self) -> ChatOpenAI:
         return {
             Model.GPT_4O_MINI: ChatOpenAI(model="gpt-4o-mini", temperature=0.0),
-            Model.GPT_4O: ChatOpenAI(model="gpt-4o", temperature=0.0),
+            #Model.GPT_4O: ChatOpenAI(model="gpt-4o", temperature=0.0),
             Model.LLAMA: ChatOpenAI(
                 model="nvidia/Llama-3.3-70B-Instruct-NVFP4",
                 api_key=None,
@@ -41,8 +41,8 @@ class GraphBuilder(abc.ABC):
                 base_url="http://localhost:8002/v1",
                 temperature=0,
                 max_tokens=self.gemma_max_tokens,
-                timeout=900.0,
-                max_retries=0
+                timeout=900,
+                max_retries=1
             ),
         }[self.model]
 

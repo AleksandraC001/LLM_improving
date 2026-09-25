@@ -9,9 +9,9 @@ from langchain_core.messages import ToolMessage
 
 import prompts_used
 from graph_builders.graph_builder import GraphBuilder
-from model import Model, llama_params1
-from rag import rag_agent
+from model import Model
 from tools_MCP_async import get_tools_auto
+
 
 
 class State(TypedDict):
@@ -37,7 +37,10 @@ def count_tool_calls(messages):
     return sum(isinstance(m, ToolMessage) for m in messages)
 
 class Builder(GraphBuilder):
-    name = 'rag_with_mcp'
+    name = 'mcp'
+
+    def __init__(self, model: Model):
+        super().__init__(model)
 
     def get_solver(self):
         llm = self.get_llm()
@@ -47,12 +50,7 @@ class Builder(GraphBuilder):
             messages = state["messages"]
             max_tool_calls = 6
             tool_calls = count_tool_calls(messages)
-            rag_context = state.get("rag_context")
-            system_prompt_text = prompts_used.get_MCP_RAG_solver_prompt(rag_context=rag_context)
-            feedback = state.get("feedback")
-            if feedback:
-                system_prompt_text = system_prompt_text + feedback
-            system_prompt = SystemMessage(content=system_prompt_text)
+            system_prompt = SystemMessage(content=prompts_used.get_solver_MCP_prompt_auto())
             prompt_with_history = [system_prompt] + messages
             if tool_calls >= max_tool_calls:
                 print(f"Limit narzędzi osiągnięty: {tool_calls}/{max_tool_calls}")
@@ -69,14 +67,12 @@ class Builder(GraphBuilder):
                         )
                     ]
                 )
-
             else:
                 print(f"Tool calls: {tool_calls}/{max_tool_calls}")
                 response = await llm_with_tools.ainvoke(
                     prompt_with_history
                 )
             #response = await llm_with_tools.ainvoke(prompt_with_history)
-
             return {"messages": [response], "system_prompt_text": system_prompt}
 
         return solver
@@ -85,13 +81,9 @@ class Builder(GraphBuilder):
         tool_node = ToolNode(get_tools_auto())
         graph_builder = StateGraph(State)
 
-        graph_builder.add_edge(START, "rag_agent")
-        graph_builder.add_node("rag_agent", rag_agent)
-
         graph_builder.add_node("solver", self.get_solver())
         graph_builder.add_node("tools", tool_node)
-
-        graph_builder.add_edge("rag_agent", "solver")
+        graph_builder.add_edge(START, "solver")
         graph_builder.add_edge("tools", "solver")
         graph_builder.add_conditional_edges("solver", solver_router, {"tools": "tools", END: END})
 

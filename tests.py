@@ -16,17 +16,18 @@ import openai
 from langchain_core.messages import HumanMessage
 from langchain_openai import ChatOpenAI
 from langgraph.errors import GraphRecursionError
-from langsmith import Client
+# from langsmith import Client
 
 from graph_builders.graph_builder import Graph
 from prompts_used import llm_as_a_judge_prompt
 
-ls_client = Client()
+# ls_client = Client()
 import langsmith as ls
 
 from dataset import Dataset
 
 MAX_CONCURRENT_TASKS = 80
+LIMIT_PROBLEMS = 80
 
 
 class ModelEvaluation(Enum):
@@ -42,8 +43,10 @@ evaluator_llm = ChatOpenAI(
     temperature=0,
     max_tokens=2000,
     timeout=400.0,
-    max_retries=0
+    max_retries=1
 )
+
+#evaluator_llm = ChatOpenAI(model="gpt-4o-mini", temperature=0.0)
 
 
 def make_task_id(task_content: str, length: int = 16) -> str:
@@ -78,7 +81,6 @@ class Evaluator:
         file_path = os.path.join(category_catalog, f"{report_name}.json")
         with open(file_path, "w", encoding="utf-8") as f:
             json.dump(report_data, f, indent=4)
-        # print("Zapisano raport przebiegu zadań")
 
     def save_report_to_csv(self, report_name, problem, solution, conversation, llm_decision, evaluation, response_time,
                            in_tokens, out_tokens, tool_use, python_use, wolfram_use, brave_use, rag_use):
@@ -132,7 +134,11 @@ class Evaluator:
                     f"\n\n___________________________________\nNowe zadanie: {data['problem']}\n____________________________________\n")
                 start_time = time.perf_counter()
                 try:
-                    result = await self.graph.graph.ainvoke({"messages": [{"role": "user", "content": problem}]},
+                    if verifier is True:
+                        result = await self.graph.graph.ainvoke({"messages": [{"role": "user", "content": problem}]},
+                                                                config={"recursion_limit": 45, "run_id": main_run_id})
+                    else:
+                        result = await self.graph.graph.ainvoke({"messages": [{"role": "user", "content": problem}]},
                                                             config={"recursion_limit": 25, "run_id": main_run_id})
                 finally:
                     end_time = time.perf_counter()
@@ -171,6 +177,8 @@ class Evaluator:
                 error = "Recursion limit exceeded (Model się zapętlił)"
             except openai.BadRequestError as e:
                 error = f"Bad request - SZCZEGÓŁY BŁĘDU: {e}"
+            except openai.APIConnectionError as e:
+                error = f"API Connection Error: {repr(e)}; cause={repr(e.__cause__)}"
             except Exception as e:
                 error = f"Inny błąd: {e}"
             if error:
@@ -183,11 +191,11 @@ class Evaluator:
                                         evaluation.name, execution_time, total_input_tokens, total_output_tokens,
                                         tool_use,
                                         python_use, wolfram_use, brave_use, rag_use)
-                ls_client.create_feedback(
-                    run_id=main_run_id,
-                    key="accuracy",
-                    score=0.0
-                )
+                # ls_client.create_feedback(
+                #     run_id=main_run_id,
+                #     key="accuracy",
+                #     score=0.0
+                # ) POTRZEBNE DO LANGSMITH!
                 stats_counter[evaluation] += 1
             else:
                 last_messages = result["messages"][-1]
@@ -215,13 +223,13 @@ class Evaluator:
                         f"odpowiedź systemu: {last_messages}, \n odpowiedź oczekiwana: {data['solution']}\n Odpowiedzi niezgodne - uzasadnienie: {llm_decision}\n\n")
                     evaluation = ModelEvaluation.WRONG
 
-                if main_run_id and evaluation != ModelEvaluation.ERROR:
-                    score = 1.0 if evaluation == ModelEvaluation.RIGHT else 0.0
-                    ls_client.create_feedback(
-                        run_id=main_run_id,
-                        key="accuracy",
-                        score=score
-                    )
+                # if main_run_id and evaluation != ModelEvaluation.ERROR:
+                #     score = 1.0 if evaluation == ModelEvaluation.RIGHT else 0.0
+                #     ls_client.create_feedback(
+                #         run_id=main_run_id,
+                #         key="accuracy",
+                #         score=score
+                #     )#POTRZEBNE DO TRACINGU LANGSMITH
 
                 stats_counter[evaluation] += 1
                 logs.append(f"Aktualne statystyki: {', '.join(f'{k.name}: {v}' for k, v in stats_counter.items())}")
@@ -252,7 +260,7 @@ class Evaluator:
             return
 
         for filename in filenames:
-            if len(tasks) >= 2:
+            if len(tasks) >= LIMIT_PROBLEMS:
                 break
             with open(os.path.join(dir_, filename), 'r', encoding='utf-8') as file:
                 data = json.load(file)
@@ -347,9 +355,10 @@ class Evaluator:
 
         match dataset:
             case Dataset.MATH480:
-                for category in sorted(os.listdir("MATH480")):
-                    category_dir = os.path.join("MATH480", category)
-                    await self.evaluate_llm(category_dir, verifier=verifier)
+                #await self.evaluate_llm("MATH480/precalculus", verifier = verifier)
+                 for category in sorted(os.listdir("MATH480")):
+                     category_dir = os.path.join("MATH480", category)
+                     await self.evaluate_llm(category_dir, verifier=verifier)
             case Dataset.AIME:
                 await self.evaluate_llm("aime_2025_2026", verifier=verifier)
 

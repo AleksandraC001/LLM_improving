@@ -1,18 +1,21 @@
-import os
+import asyncio
 import functools
 import json
+import os
+from pathlib import Path
 from typing import List
-from pydantic import BaseModel, Field
 
 from langchain_core.messages import HumanMessage
 from langchain_openai import ChatOpenAI
-
+from llama_index.core import VectorStoreIndex, StorageContext, load_index_from_storage
+from llama_index.core.retrievers import VectorIndexRetriever
 from llama_index.core.schema import Document
 from llama_index.core.settings import Settings
 from llama_index.embeddings.huggingface import HuggingFaceEmbedding
-from llama_index.core import VectorStoreIndex, StorageContext, load_index_from_storage
-from llama_index.core.retrievers import VectorIndexRetriever
+from pydantic import BaseModel, Field
+
 import prompts_used
+
 
 def load_math_documents(directory):
     documents = []
@@ -32,6 +35,7 @@ def load_math_documents(directory):
             )
             documents.append(doc)
     return documents
+
 
 @functools.cache
 def initialize_retriever(train_path='/home/olacz/Downloads/MATH/train/', persist_dir="./math_index2"):
@@ -70,60 +74,130 @@ llm_RAG = ChatOpenAI(
     max_retries=2
 )
 
+#llm_RAG = ChatOpenAI(model="gpt-4o-mini", temperature=0.0)
+
+
 class RAGEvaluation(BaseModel):
     useful_example_numbers: List[int] = Field(
         description="A list of numbers of the useful examples (e.g., [1, 2]). Return an empty list [] if none are logically useful."
     )
 
+
+class SimilarProblemFinder:
+    def __init__(self):
+        self.path = Path("similar_problems.json")
+        self.data = json.loads(self.path.read_text()) if self.path.exists() else {}
+        self._in_flight = {}
+        self._save_lock = asyncio.Lock()
+        self._retriever = initialize_retriever()
+        self._llm = llm_RAG.with_structured_output(RAGEvaluation)
+
+    async def _save(self):
+        async with self._save_lock:
+            await asyncio.to_thread(self.path.write_text, json.dumps(self.data, indent=2))
+
+    def __getitem__(self, key):
+        if key in self.data:
+            fut = asyncio.get_running_loop().create_future()
+            fut.set_result(self.data[key])
+            return fut
+
+        if key not in self._in_flight:
+            self._in_flight[key] = asyncio.create_task(self._compute_and_store(key))
+        return self._in_flight[key]
+
+    async def _compute_and_store(self, key):
+        try:
+            result = await self._retrieve_similar_problems(key)
+            self.data[key] = result
+            await self._save()
+            return result
+        finally:
+            self._in_flight.pop(key, None)
+
+    async def _retrieve_similar_problems(self, problem):
+        retrieved_docs = await self._retriever.aretrieve(problem)
+
+        examples_for_evaluation = ""
+        for i, doc in enumerate(retrieved_docs, 1):
+            examples_for_evaluation += f"--- Example {i} ---\n"
+            examples_for_evaluation += f"Problem: {doc.text}\n\n"
+
+        # print("zadania wybrane przez agenta RAG:")
+        # print(examples_for_evaluation)
+
+        prompt = prompts_used.get_rag_eval_prompt(
+            original_problem=problem,
+            rag_found=examples_for_evaluation
+        )
+
+        result = await self._llm.ainvoke([HumanMessage(content=prompt)])
+
+        selected_nums = result.useful_example_numbers
+
+        result = []
+        for num in selected_nums:
+            selected_doc = retrieved_docs[num - 1]
+            if "solution" not in selected_doc.metadata:
+                continue
+            result.append(f"--- USEFUL EXAMPLE ---\n"
+                          f"Problem: {selected_doc.text}\n"
+                          f"Solution: {selected_doc.metadata["solution"]}\n\n")
+        return result
+
+similar_problem_finder = SimilarProblemFinder()
+
 async def rag_agent(state: dict):
     original_problem = state["messages"][0].content
-    retriever = initialize_retriever()
-    retrieved_docs = await retriever.aretrieve(original_problem)
+    # retriever = initialize_retriever()
+    # retrieved_docs = await retriever.aretrieve(original_problem)
+    #
+    # examples_for_evaluation = ""
+    # for i, doc in enumerate(retrieved_docs, 1):
+    #     examples_for_evaluation += f"--- Example {i} ---\n"
+    #     examples_for_evaluation += f"Problem: {doc.text}\n\n"
 
-    examples_for_evaluation = ""
-    for i, doc in enumerate(retrieved_docs, 1):
-        examples_for_evaluation += f"--- Example {i} ---\n"
-        examples_for_evaluation += f"Problem: {doc.text}\n\n"
+    # print("zadania wybrane przez agenta RAG:")
+    # print(examples_for_evaluation)
 
-    #print("zadania wybrane przez agenta RAG:")
-    #print(examples_for_evaluation)
-
-    prompt = prompts_used.get_rag_eval_prompt(
-        original_problem=original_problem,
-        rag_found=examples_for_evaluation
-    )
-
-    structured_llm = llm_RAG.with_structured_output(RAGEvaluation)
-    result = await structured_llm.ainvoke([HumanMessage(content=prompt)])
-
-    selected_nums = result.useful_example_numbers
-    print("Logicznie dopasowane zadania nr:")
-    print(selected_nums)
+    # prompt = prompts_used.get_rag_eval_prompt(
+    #     original_problem=original_problem,
+    #     rag_found=examples_for_evaluation
+    # )
+    #
+    # structured_llm = llm_RAG.with_structured_output(RAGEvaluation)
+    # result = await structured_llm.ainvoke([HumanMessage(content=prompt)])
+    #
+    # selected_nums = result.useful_example_numbers
+    # print("Logicznie dopasowane zadania nr:")
+    # print(selected_nums)
 
     context_to_inject = ""
-    if selected_nums:
-        #print(f"RAG AGENT: Sukces! Wybrano logicznie przydatne przykłady: {selected_nums}.")
-        print("Original problem: \n")
-        print(original_problem)
-        for num in selected_nums:
-            if 1 <= num <= len(retrieved_docs):
-                selected_idx = num - 1
-                selected_doc = retrieved_docs[selected_idx]
-
-                solution = selected_doc.metadata.get("solution", "Brak rozwiązania")
-                context_to_inject += (
-                    f"--- USEFUL EXAMPLE ---\n"
-                    f"Problem: {selected_doc.text}\n"
-                    f"Solution: {solution}\n\n"
-                )
-                print(f"\nWybór agenta RAG nr {selected_idx}:\n__________________________________________________\n")
-                print(f"polecenie: {selected_doc.text}")
-                print(f"rozwiązanie: {solution}")
-                print(f"\n\n__________________________________________________\n")
-            else:
-                print(f"RAG AGENT: Ostrzeżenie! LLM podał numer spoza zakresu: {num}")
-    # else:
-    #     print("RAG AGENT: Brak logicznego dopasowania (Zwrócono pustą listę). Odrzucam przykłady.")
-
+    examples = await similar_problem_finder[original_problem]
+    for example in examples:
+        context_to_inject += example
+    # if selected_nums:
+    #     # print(f"RAG AGENT: Sukces! Wybrano logicznie przydatne przykłady: {selected_nums}.")
+    #     print("Original problem: \n")
+    #     print(original_problem)
+    #     for num in selected_nums:
+    #         if 1 <= num <= len(retrieved_docs):
+    #             selected_idx = num - 1
+    #             selected_doc = retrieved_docs[selected_idx]
+    #
+    #             solution = selected_doc.metadata.get("solution", "Brak rozwiązania")
+    #             context_to_inject += (
+    #                 f"--- USEFUL EXAMPLE ---\n"
+    #                 f"Problem: {selected_doc.text}\n"
+    #                 f"Solution: {solution}\n\n"
+    #             )
+    #             print(f"\nWybór agenta RAG nr {selected_idx}:\n__________________________________________________\n")
+    #             print(f"polecenie: {selected_doc.text}")
+    #             print(f"rozwiązanie: {solution}")
+    #             print(f"\n\n__________________________________________________\n")
+    #         else:
+    #             print(f"RAG AGENT: Ostrzeżenie! LLM podał numer spoza zakresu: {num}")
+    # # else:
+    # #     print("RAG AGENT: Brak logicznego dopasowania (Zwrócono pustą listę). Odrzucam przykłady.")
 
     return {"rag_context": context_to_inject}

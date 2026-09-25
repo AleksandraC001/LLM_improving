@@ -15,7 +15,6 @@ my_env["BRAVE_API_KEY"] = BRAVE_API_KEY
 
 @cache
 def python_interpreter():
-    # Uruchomienie serwera MCP dla interpretera Pythona
     print("Łączenie z serwerem MCP Python Interpreter...")
 
     mcp_python_client = BasicMCPClient(
@@ -55,10 +54,6 @@ def python_interpreter():
 
 @cache
 def ask_wolfram():
-    # print("Łączenie z serwerem MCP Wolfram Alpha...")
-
-    # print("Łączenie z serwerem MCP wewnątrz kontenera Docker...")
-
     mcp_wolfram_client = BasicMCPClient(
         command_or_url="docker",
         # args = [
@@ -92,46 +87,11 @@ def ask_wolfram():
         """
 
         for t in mcp_wolfram_tools:
-            # 04.09.2026 zakomentowane
             if "wolfram" in t.metadata.name.lower() or "query" in t.metadata.name.lower():
                 try:
                     response = await t.acall(query=query)
                     print(f"\nAGENT PYTA WOLFRAM ALPHA: {query}\n")
                     print(f"odpowiedź wolframa:{response}")
-                    # result_text = ""
-                    # content_list = getattr(response, 'content', response)
-                    # if isinstance(content_list, list):
-                    #     for item in content_list:
-                    #         item_type = getattr(item, 'type', '')
-                    #         if item_type == 'text':
-                    #             text_val = getattr(item, 'text', '')
-                    #             if text_val:
-                    #                 result_text += text_val + "\n"
-                    #         elif hasattr(item, 'text') and item.text and not getattr(item, 'type', '') == 'image':
-                    #             result_text += item.text + "\n"
-                    # else:
-                    #     result_text = str(content_list)
-                    #
-                    # # Wycina obiekty ImageContent ze stringów
-                    # result_text = re.sub(r"ImageContent\(.*?\)", "", result_text)
-                    # # Wycina długie ciągi Base64
-                    # result_text = re.sub(r"data='[A-Za-z0-9+/=]{50,}'", "data='[USUNIĘTY OBRAZEK]'", result_text)
-                    # # Wycina zduplikowane spacje i entery
-                    # result_text = re.sub(r'\n\s*\n', '\n', result_text).strip()
-                    #
-                    # if not result_text:
-                    #     return "Error: Wolfram Alpha returned an empty response or only images."
-                    #
-                    # if getattr(response, 'isError', False) or "Failed to query" in result_text:
-                    #     return (f"ERROR: Wolfram Alpha could not understand the query. "
-                    #             f"DO NOT REPEAT THIS EXACT QUERY. "
-                    #             f"Rewrite your math expression into standard plain text (e.g., x^(1/3)) or switch to using the 'python_interpreter' tool.")
-                    #
-                    # if len(result_text) > 1500:
-                    #     result_text = result_text[
-                    #                   :1500] + "\n\n...[CRITICAL WARNING: Output was too long and was truncated. Use Python if you need more precise steps]"
-                    #
-                    # print(f"Oczyszczona odpowiedź Wolfram: {result_text}")
                     return response
 
                 except Exception as e:
@@ -178,35 +138,34 @@ def brave_search():
 
     return brave_search
 
-@cache
-def submit_to_verifier():
-    @tool
-    async def submit_to_verifier(final_answer_in_latex: str):
-        """
-        Call this tool ONLY when you have completed all calculations and want to submit your final answer.
-        Provide the exact answer as the argument.
-        """
-        pass
-
-    return submit_to_verifier
-
-@cache
-def create_thought():
-    @tool
-    async def create_thought(thought: str):
-        """
-        Use this tool to formulate your own logical steps, break down the problem,
-        plan your approach, or analyze the output of previous tools.
-        Call this tool when you need to "think out loud", make deductions,
-        or transition between steps without relying on external computations.
-        """
-        return "Thought recorded. Proceed to the next step."
-
-    return create_thought
-
 def get_tools_auto():
-    return [python_interpreter(), brave_search(), ask_wolfram()]  # search_arxiv,
+    return [python_interpreter(), brave_search(), ask_wolfram()]
 
+# @cache
+# def submit_to_verifier():
+#     @tool
+#     async def submit_to_verifier(final_answer_in_latex: str):
+#         """
+#         Call this tool ONLY when you have completed all calculations and want to submit your final answer.
+#         Provide the exact answer as the argument.
+#         """
+#         pass
+#
+#     return submit_to_verifier
 
-def get_tools_required():
-    return [python_interpreter(), brave_search(), submit_to_verifier(), ask_wolfram()]
+# @cache
+# def create_thought():
+#     @tool
+#     async def create_thought(thought: str):
+#         """
+#         Use this tool to formulate your own logical steps, break down the problem,
+#         plan your approach, or analyze the output of previous tools.
+#         Call this tool when you need to "think out loud", make deductions,
+#         or transition between steps without relying on external computations.
+#         """
+#         return "Thought recorded. Proceed to the next step."
+#
+#     return create_thought
+
+# def get_tools_required():
+#     return [python_interpreter(), brave_search(), submit_to_verifier(), ask_wolfram()]

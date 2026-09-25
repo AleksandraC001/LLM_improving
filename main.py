@@ -1,11 +1,11 @@
 import os
 
-with open("API_Langsmith", "r") as f:
-    API_Langsmith = f.read().strip()
-# os.environ["LANGSMITH_TRACING"] = "true"
-os.environ["LANGCHAIN_PROJECT"] = "A_solver_llamma_MATH490"  # only_solver_MATH490
-os.environ["LANGSMITH_ENDPOINT"] = "https://eu.api.smith.langchain.com"
-os.environ["LANGSMITH_API_KEY"] = API_Langsmith
+# with open("API_Langsmith", "r") as f:
+#     API_Langsmith = f.read().strip()
+# # os.environ["LANGSMITH_TRACING"] = "true"
+# os.environ["LANGCHAIN_PROJECT"] = "testowy"
+# os.environ["LANGSMITH_ENDPOINT"] = "https://eu.api.smith.langchain.com"
+# os.environ["LANGSMITH_API_KEY"] = API_Langsmith
 
 with open("API_OPEN_AI", "r") as f:
     OPENAI_API_KEY = f.read().strip()
@@ -13,14 +13,13 @@ with open("API_OPEN_AI", "r") as f:
 os.environ["OPENAI_API_KEY"] = OPENAI_API_KEY
 
 import asyncio
-from enum import StrEnum, auto
 
 from pick import pick
 
-from graph_builders import BaselineBuilder, GraphBuilder, McpBuilder, MultiAgentBuilder, RagBuilder, RagWithMcpBuilder
 from tests import Evaluator
 from dataset import Dataset
 from model import Model
+from pipeline import Pipeline, pipeline_to_builder_module
 
 if not os.path.exists("API_brave_search") or os.path.getsize("API_brave_search") == 0:
     api_brave = input("Wprowadź API Brave Search:")
@@ -39,15 +38,6 @@ if not os.path.exists("API_Langsmith") or os.path.getsize("API_Langsmith") == 0:
     with open("API_Langsmith", "w") as f:
         f.write(api_langsmith)
 
-
-class Pipeline(StrEnum):
-    BASELINE = auto()
-    RAG = auto()
-    MCP = auto()
-    RAG_WITH_MCP = auto()
-    MULTI_AGENT = auto()
-
-
 # parser = argparse.ArgumentParser()
 # parser.add_argument("--model", type=Model, choices=list(Model), required=True)
 # parser.add_argument("--dataset", type=str, required=True)
@@ -55,16 +45,8 @@ class Pipeline(StrEnum):
 # model = args.model
 # dataset = args.dataset
 
-pipeline_to_builder_module = {
-    Pipeline.BASELINE: BaselineBuilder,
-    Pipeline.RAG: RagBuilder,
-    Pipeline.MCP: McpBuilder,
-    Pipeline.RAG_WITH_MCP: RagWithMcpBuilder,
-    Pipeline.MULTI_AGENT: MultiAgentBuilder,
-}
-
 if __name__ == '__main__':
-    title = 'Wybierz z listy rzepływ do rozwiązania zadania:'
+    title = 'Wybierz z listy przepływ do rozwiązania zadania:'
     pipeline, _ = pick(list(Pipeline), title)
 
     title = 'Wybierz zbiór danych do ewaluacji:'
@@ -76,4 +58,4 @@ if __name__ == '__main__':
     print(f"Rozpoczynam ewaluację {pipeline.name} (Model: {model.name}) na zbiorze {dataset}...")
     graph_builder = pipeline_to_builder_module[pipeline](model)
     evaluator = Evaluator(graph_builder.build())
-    asyncio.run(evaluator.evaluate_dataset(dataset, verifier=False))
+    asyncio.run(evaluator.evaluate_dataset(dataset, verifier=(pipeline == Pipeline.RAG_WITH_MCP_AND_VERIFIER)))

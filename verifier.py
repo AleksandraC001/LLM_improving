@@ -12,8 +12,8 @@ llm = ChatOpenAI(
     base_url="http://localhost:8001/v1",
     temperature=0,
     max_tokens=2000,
-    timeout=120.0,
-    max_retries=2
+    timeout=480.0,
+    max_retries=0
 )
 
 def create_conversation(messages):
@@ -42,7 +42,7 @@ class NewVerificationResult(BaseModel):
 async def verifier(state: dict):
     print("--- WERYFIKATOR ---")
     new_iteration = state.get("iterations", 0) + 1
-    if new_iteration >= 3:
+    if new_iteration >= 2:
         to_end_flag = True
         msg = [SystemMessage(content="Verification limit")]
         return {"messages": msg, "to_end": to_end_flag, "iterations": new_iteration}
@@ -64,7 +64,7 @@ async def verifier(state: dict):
             answer = response.feedback
     except (httpx.ReadTimeout, openai.APITimeoutError):
         print("\n!!! WERYFIKATOR TIMEOUT: Zwracam sztuczny komunikat błędu !!!\n")
-        answer = "VERDICT: FEEDBACK: AWARIA WERYFIKACJI - Weryfikator uległ awarii z powodu zbyt długiego czasu oczekiwania na odpowiedź (Timeout)."
+        answer = [HumanMessage(content="VERDICT: FEEDBACK: AWARIA WERYFIKACJI - Weryfikator uległ awarii z powodu zbyt długiego czasu oczekiwania na odpowiedź (Timeout).")]
         to_end_flag = True
 
     return {"messages": answer, "to_end": to_end_flag, "iterations": new_iteration}
