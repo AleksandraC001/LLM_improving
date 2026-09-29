@@ -1,0 +1,5 @@
+{
+    "id": "AIME_2026_7",
+    "problem": "\nFind the number of functions $\\pi$ mapping the set $A =\\{1,2,3,4,5,6\\}$ onto $A$ such that for every $a \\in A,$\n\\[\n\\pi(\\pi(\\pi(\\pi(\\pi(\\pi(a)))))) = a.\n\\]",
+    "solution": "\\boxed{396}"
+}

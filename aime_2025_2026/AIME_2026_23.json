@@ -1,0 +1,5 @@
+{
+    "id": "AIME_2026_23",
+    "problem": "Isosceles triangle $\\triangle ABC$ has $AB = BC.$ Let $I$ be the incenter of $\\triangle ABC.$ The perimeters of $\\triangle ABC$ and $\\triangle AIC$ are in the ratio $125:6,$ and all the sides of both triangles have integer lengths. Find the minimum possible value of $AB.$",
+    "solution": "\\boxed{245}"
+}

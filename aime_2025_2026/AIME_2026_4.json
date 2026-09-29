@@ -1,0 +1,5 @@
+{
+    "id": "AIME_2026_4",
+    "problem": "Find the number of integers less than or equal to 100 that are equal to $a+b+ab$ for some choice of distinct positive integers a and b.",
+    "solution": "\\boxed{70}"
+}
