@@ -38,7 +38,7 @@ def load_math_documents(directory):
 
 
 @functools.cache
-def initialize_retriever(train_path='/home/olacz/Downloads/MATH/train/', persist_dir="./math_index2"):
+def initialize_retriever(train_path='MATH/train', persist_dir="./math_index2"):
     try:
         topics = os.listdir(train_path)
         print("Files and directories in '", train_path, "' :")
