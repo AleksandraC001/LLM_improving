@@ -41,7 +41,7 @@ class GraphBuilder(abc.ABC):
                 base_url="http://localhost:8002/v1",
                 temperature=0,
                 max_tokens=self.gemma_max_tokens,
-                timeout=900,
+                timeout=700,
                 max_retries=1
             ),
         }[self.model]
