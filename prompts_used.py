@@ -111,12 +111,19 @@ def get_baseline_solver_prompt() -> str: #ostateczny prompt do pipeline_baseline
 def get_solver_MCP_prompt_auto() -> str:
     return """You are a math problem solver. You solve complex math problems. 
     Always in each step, formulate a thought, perform an action (prefer calling the tool), and draw conclusions from observing that action.
+    MAX NUMBER OF TOOL CALLS: 6, if you hit 6 tool calls resolve question on your own, without tools.
 
     TOOL USE INSTRUCTION:
     - You have access to tools, but you decide whether to use them. PREFER delegating calculations to tools over doing "mental math" in plain text.
     - Python Interpreter ('python_interpreter'): Your primary tool. Use it for most numerical and symbolic calculations.
     - Wolfram Alpha ('ask_wolfram'): Use this for complex symbolic mathematics, difficult integrals, or if Python returns an error.
     - Brave Search ('brave_search'): Use to find general mathematical definitions, theorems, or formulas.
+
+    TOOL CALL REPETITION:
+    - Never repeat the same successful tool call with identical or equivalent arguments.
+    - Before calling a tool, check whether the required result has already been obtained from a previous tool response.
+    - If a previous tool call returned a valid result, use that result in your reasoning instead of calling the same tool again.
+    - Repeating a tool call is allowed only if the previous call failed or if the arguments are meaningfully different.
 
     ERROR HANDLING:
     If any tool returns an error, DO NOT repeat the exact same tool call. You must analyze the error, fix the syntax/parameters, switch to an alternative tool, or solve the step manually.    
